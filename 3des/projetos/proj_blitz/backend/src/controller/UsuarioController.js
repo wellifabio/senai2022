@@ -1,20 +1,52 @@
 const Usuario = require('../model/Usuario');
 
-const create = (req, res) => {
+const create = async (req, res) => {
     const data = req.body;
 
-    const ret = Usuario.create(data);
+    const ret = await Usuario.create(data);
 
     res.json(ret);
 }
 
-const read = (req, res) => {
-    const ret = Usuario.findAll();
+const read = async (req, res) => {
+    const ret = await Usuario.findAll();
 
     res.json(ret);
+}
+
+const update = async (req, res) => {
+    const id = req.params.id;
+
+    const data = req.body;
+
+    let ret = await Usuario.update(data, {
+        where : { id: id}
+    });
+
+    ret = await Usuario.findAll({ 
+        where : {id: id}
+    })
+
+    res.json(ret);
+}
+
+const remove = async (req, res) => {
+    const id = req.params.id;
+
+    const ret = await Usuario.destroy({
+        where: {id: id}
+    })
+    
+    if(ret == 1) {
+        res.json({id: id});
+    }else {
+        res.status(400).send();
+    }
 }
 
 module.exports = {
     create,
     read,
+    update,
+    remove,
 }
