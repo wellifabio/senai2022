@@ -9,7 +9,13 @@ const create = async (req, res) => {
 }
 
 const read = async (req, res) => {
-    const ret = await Usuario.findAll();
+    let filtro = {};
+    
+    let id = req.params.id;
+
+    if(id != undefined) filtro = { where : { id: id }}
+
+    const ret = await Usuario.findAll(filtro);
 
     res.json(ret);
 }
