@@ -3,6 +3,7 @@ const { Sequelize } = require('sequelize');
 
 const Usuario = require('../model/Usuario');
 const Alerta = require('../model/Alerta');
+const Localizacao = require('../model/Localizacao');
 
 const sequelize = new Sequelize(process.env.DATABASE, process.env.USER, '', {
     host: process.env.HOST,
@@ -15,8 +16,15 @@ const sequelize = new Sequelize(process.env.DATABASE, process.env.USER, '', {
 const sync = () => {
     Usuario.init(sequelize);
     Alerta.init(sequelize);
+    Localizacao.init(sequelize);
 
-    sequelize.sync({ force: true });
+    Usuario.associate(sequelize.models);
+    Alerta.associate(sequelize.models);
+    Localizacao.associate(sequelize.models);
+
+    console.log(sequelize);
+
+    sequelize.sync({ force : false });
 }
 
 module.exports = {

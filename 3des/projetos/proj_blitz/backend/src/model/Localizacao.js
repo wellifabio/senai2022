@@ -12,7 +12,7 @@ class Localizacao extends Model {
                     type: DataTypes.INTEGER,
                     allowNull: false,
                     references: {
-                        model: 'usuario',
+                        model: 'usuarios',
                         key: 'id',
                     }
                 },
@@ -20,7 +20,7 @@ class Localizacao extends Model {
                     type: DataTypes.INTEGER,
                     allowNull: false,
                     references: {
-                        model: 'alerta',
+                        model: 'alertas',
                         key: 'id',
                     }
                 },
@@ -36,4 +36,11 @@ class Localizacao extends Model {
             }
         );
     }
+
+    static associate(models) {
+        Localizacao.belongsTo(models.usuario, { foreignKey: 'id_user' });
+        Localizacao.belongsTo(models.alerta, { foreignKey: 'id_alerta' });
+    }
 }
+
+module.exports = Localizacao;
