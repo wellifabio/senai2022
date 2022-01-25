@@ -26,7 +26,7 @@ class Alerta extends Model {
     }
 
     static associate(models) {
-        Alerta.hasMany(models.localizacao, { foreignKey: 'id_alerta'});
+        Alerta.hasMany(models.localizacao, { foreignKey: 'id_alerta' });
     }
 }
 

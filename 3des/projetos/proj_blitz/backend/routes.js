@@ -12,6 +12,8 @@ route.get('/usuario/:id', UsuarioController.read);
 route.put('/usuario/:id', UsuarioController.update);
 route.delete('/usuario/:id', UsuarioController.remove);
 
+route.post('/login', UsuarioController.login);
+
 route.post('/alerta', AlertaController.create);
 route.get('/alerta', AlertaController.read);
 route.get('/alerta/:id', AlertaController.read);
