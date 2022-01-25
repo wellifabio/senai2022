@@ -1,0 +1,44 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "sinventario",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "item",
+			"attributes" : [
+				"ni",
+				"incorporacao",
+				"denominacao",
+				"valaquis"
+			]
+		},
+		{
+			"name" : "local",
+			"attributes" : [
+				"nome",
+				"descricao"
+			]
+		},
+		{
+			"name" : "movimentacao",
+			"attributes" : [
+				"id",
+				"ni",
+				"local",
+				"data",
+				"tipo"
+			]
+		}		
+	]
+}

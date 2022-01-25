@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+
+<body onload="loadMovimentacoes()">
+	<table id="tabela">
+		<thead>
+			<tr>
+				<th style="max-width:50px;">Id</th>
+				<th style="max-width:80px;">NI</th>
+				<th style="max-width:80px;">Incorporação</th>
+				<th style="min-width:200px;">Denominação</th>
+				<th style="max-width:80px;">Local</th>
+				<th style="max-width:80px;">Data</th>
+				<th style="max-width:80px;">Tipo</th>
+				<th style="max-width:80px;">User</th>
+				<th style="max-width:80px;">Ações</th>
+			</tr>
+			<tr>
+				<th><input type="number" style="max-width:50px;" id="c1"/></th>
+				<th><input type="text" style="max-width:80px;" id="c2"/></th>
+				<th><input type="text" style="max-width:80px;" id="c3"/></th>
+				<th><input type="text" style="max-width:200px;" id="c4"/></th>
+				<th><input type="text" style="max-width:80px;" id="c5"/></th>
+				<th><input type="text" style="max-width:80px;" id="c6"/></th>
+				<th><input type="text" style="max-width:80px;" id="c7"/></th>
+				<th><input type="text" style="max-width:80px;" id="c8"/></th>
+				<th><button onclick="exportar()" style="width:75px;height: 35px;">Exportar CSV</button></th>
+			</tr>
+		</thead>
+		<tbody id="corpo"></tbody>
+	</table>
+	<script src="./movimentacoes.js"></script>
+</body>
+
+</html>
