@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/itable.png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>CheckList Inventário</title>
+</head>
+
+<body>
+    <div class="botoes">
+        <button onclick="document.getElementById('frame').setAttribute('src','./locais.html')">Locais</button>
+        <button onclick="addLocal()">Add Local</button>
+        <button onclick="document.getElementById('frame').setAttribute('src','./itens.html')">Itens</button>
+        <button onclick="addItem()">Add Ítem</button>
+        <button
+            onclick="document.getElementById('frame').setAttribute('src','./movimentacoes.html')">Movimentações</button>
+        <button onclick="conferencia()">Conferência</button>
+    </div>
+    <iframe id="frame" src="./locais.html"></iframe>
+    <div id="modal1">
+        <div id="modal-local">
+            <label>Local:</label><input type="text" id="nome" placeholder="Nome do local" />
+            <label>Descrição:</label><input type="text" id="descricao" placeholder="Descrição do local" />
+            <input type="button" onclick="this.parentNode.parentNode.setAttribute('style','display:nome')"
+                value="Cancelar" />
+            <input type="button" onclick="adicionarLocal()" value="Add Local" />
+        </div>
+    </div>
+    <div id="modal2">
+        <div id="modal-item">
+            <label>NI:</label><input type="text" id="ni" placeholder="Digite o NI" />
+            <label>Denominação:</label><input type="text" id="denominacao" placeholder="Denominação do Ítem" />
+            <label>Valor Aquisição:</label><input type="text" id="valaquis" placeholder="Valor de Aquisição" />
+            <input type="button" onclick="this.parentNode.parentNode.setAttribute('style','display:nome')"
+                value="Cancelar" />
+            <input type="button" onclick="adicionarItem()" value="Add Ítem" />
+        </div>
+    </div>
+    <div id="modal3">
+        <div id="modal-confere">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Escolha o local:</th>
+                        <th>Escolha o NI:</th>
+                        <th>Quem é você?</th>
+                        <th>Ações</th>
+                    </tr>
+                    <tr>
+                        <th><input type="text" id="f1" placeholder="Digite o local" autocomplete="off"
+                                onkeyup="loadLocais(this.value)" />
+                        </th>
+                        <th><input type="text" id="f2" placeholder="Digite o NI" autocomplete="off"
+                                onkeyup="loadItens(this.value)" /></th>
+                        <th><select id="f3">
+                                <option value='rafael'>Rafael</option>
+                                <option value='reenye'>Reenye</option>
+                                <option value='wellington'>Wellington</option>
+                            </select></th>
+                        <th> <input type="button" onclick="window.location.reload()" value="Cancelar" />
+                            <input type="button" onclick="adicionarMovimentacao()" value="Checar" />
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan='4' id="col"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
