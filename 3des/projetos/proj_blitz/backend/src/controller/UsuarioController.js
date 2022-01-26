@@ -64,6 +64,8 @@ const remove = async (req, res) => {
 const login = async (req, res) => {
     const data = req.body;
 
+    console.log(data);
+
     const ret = await Usuario.findAll({
         attributes: {
             exclude: ['senha']
