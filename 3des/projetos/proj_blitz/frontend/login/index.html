@@ -18,10 +18,14 @@
             <form>
                 <input type="text" placeholder="Email" id="email">
                 <input type="password" placeholder="Senha" id="senha">
-                <a>Cadastrar-se</a>
-                <button id="login">Login</button>
+                <input type="file" id="foto" hidden>
+                <img src="../assets/camera.png" alt="Camera" id="camera" width="32" hidden>
+                <a onclick="cadastrar()">Cadastrar-se</a>
+                <button type="button" id="login" onclick="conectar()">Login</button>
             </form>
         </main>
     </div>
 </body>
+<script src="../global/md5.js"></script>
+<script src="./script.js"></script>
 </html>
