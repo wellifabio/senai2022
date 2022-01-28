@@ -22,7 +22,7 @@ const sync = () => {
     Alerta.associate(sequelize.models);
     Localizacao.associate(sequelize.models);
 
-    sequelize.sync({ force : true });
+    sequelize.sync({ force : false });
 }
 
 module.exports = {

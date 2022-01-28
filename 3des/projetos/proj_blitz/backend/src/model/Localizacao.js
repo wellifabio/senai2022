@@ -5,7 +5,7 @@ class Localizacao extends Model {
         super.init(
             {
                 coordenadas: {
-                    type: DataTypes.STRING(25),
+                    type: DataTypes.STRING(70),
                     allowNull: false,
                 },
                 id_user: {
