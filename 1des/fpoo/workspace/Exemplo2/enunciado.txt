@@ -1,4 +1,5 @@
-Exemplo de conficional com programa que
-calcula a média e mostra o conceito
+Exemplo de condicional com programa que
+calcula a média e mostra o conceito:
+Aprovado ou Reprovado
 Exercício com um programa que calcula
 expressões de segundo grau
