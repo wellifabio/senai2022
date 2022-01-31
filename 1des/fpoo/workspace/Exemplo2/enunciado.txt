@@ -1,0 +1,4 @@
+Exemplo de conficional com programa que
+calcula a média e mostra o conceito
+Exercício com um programa que calcula
+expressões de segundo grau
