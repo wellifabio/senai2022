@@ -8,15 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="inicializar()">
-    <div class="map"></div>
+    <div class="container">
+        <header>
+            <img src="../assets/menu.png" onclick="showMenu()" alt="Menu">
+            <img src="../assets/logo.png" class="logo" alt="Logo">
+        </header>
+        <div class="map"></div>
+    </div>
 
-    <select id="alerta" hidden>
-    </select>
-    <button id="cadastrar" onclick="cadastro()" hidden>Cadastrar Alerta</button>
+    <div class="menu">
+        <span onclick="closeMenu()">
+            <img src="../assets/close.png" alt="Fechar">
+        </span>
+        <ul>
+            <li>Configurações</li>
+            <li>Sair</li>
+        </ul>
+    </div>
+
+    <div class="modal" hidden>
+        <div class="form-modal">
+            <span onclick="closeModal()" id="closeButton">
+                <img src="../assets/close.png" alt="Fechar">
+            </span>
+            <select id="alerta">
+            </select>
+            <button id="cadastrar" onclick="cadastro()">Cadastrar Alerta</button>
+        </div>
+    </div>
 </body>
 <script src="./script.js"></script>
 <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaXxoy5hT3yqTpF85JVG_7xmaC4obZveQ&callback=initMap&v=weekly"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0xWCNQwnEqDZ7I7obm7rQzTD9ZfY8bYE&callback=initMap&v=weekly"
     async
 ></script>
 </html>

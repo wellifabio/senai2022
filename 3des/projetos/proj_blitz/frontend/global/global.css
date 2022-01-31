@@ -34,6 +34,13 @@ input[type="text"], input[type="password"] {
     margin-top: 15px;
 }
 
+select {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 button {
     border: none;
     padding: var(--padding-default);
@@ -48,4 +55,14 @@ button {
 .hidden {
     display: none;
     visibility: hidden;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,.7);
+    transition: all .2s;
 }

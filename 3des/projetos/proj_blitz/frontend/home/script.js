@@ -1,11 +1,13 @@
 const alerta = document.querySelector("#alerta");
 const cadastrar = document.querySelector("#cadastrar");
+const modal = document.querySelector(".modal");
 const body = document.querySelector("body");
+const menu = document.querySelector(".menu");
 
 var map;
 var meuAlerta;
 
-function initMap() {
+function initMap() {    
     map = new google.maps.Map(document.querySelector(".map"), {
         center: { lat: -34.397, lng: 150.644 },
         zoom: 18,
@@ -16,9 +18,8 @@ function initMap() {
 
         //addMarker(coord, "Teste", "../assets/radar.png");
         meuAlerta = coord;
-
-        alerta.hidden = false;
-        cadastrar.hidden = false;
+        
+        showModal();
     });
 
     navigator.geolocation.getCurrentPosition((location) => {
@@ -26,7 +27,7 @@ function initMap() {
         
         map.setCenter(coord);
 
-        addMarker(coord, "Minha Localizacao", "../assets/radar.png");
+        addMarker(coord, "Minha Localizacao", "../assets/localiza.png");
     });
 }
 
@@ -48,12 +49,10 @@ function cadastro() {
     
     .then(resp => { return resp.json() })
     .then(data => {
-        console.log(data);
         if(data.id != undefined){ 
             let tipo = alerta.value;
-            addMarker(meuAlerta, tipo, "../assets/radar.png");
-            alerta.hidden = true;
-            cadastrar.hidden = true;
+            addMarker(meuAlerta, tipo, "../assets/"+ tipo +".png");
+            closeModal();
         }else {
             alert("Falha ao informar alerta");
         }
@@ -83,7 +82,8 @@ function carregarMarcacoes() {
             let coordenadas = localizacao.coordenadas.split(',');
             let coord = { lat: Number(coordenadas[0]), lng: Number(coordenadas[1]) };
 
-            addMarker(coord, localizacao.alertum.tipo, "../assets/radar.png");
+            let imagem = "../assets/" + localizacao.alertum.id + ".png";
+            addMarker(coord, localizacao.alertum.tipo, imagem);
         });
     })
 }
@@ -99,4 +99,20 @@ function carregarAlertas() {
             alerta.appendChild(op);
         })
     })
+}
+
+function showModal() {
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+function showMenu() {
+    menu.style.left = "0px";
+}
+
+function closeMenu() {
+    menu.style.left = "-50vw";
 }
