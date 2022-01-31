@@ -9,12 +9,13 @@ GitHub x Git
 5.1 Clonar o diretório remoto vazio
 	git clone <endereco do diretorio remoto.git>
 5.2 Copiar ou mover os arquivos para o diretório clonado
+	E acessar o git bash de dentro do reporitório
 5.3 Adicionar os novos arquivos ao repositório local
 	git add .
 5.4 Colocar uma mensagem no seu commit
 	git commit -m "Mensagem sobre o commit"
 5.5 Caso seja necessário configure seus dados ex:
-	config user.name "wellifabio"
+	git config user.name "wellifabio"
 	git config user.email wellifabio@hotmail.com
 5.6 Enviar /empurrar os dados para o repositório remoto
 	git push
@@ -22,6 +23,7 @@ GitHub x Git
 Caso você já tenha o repositório local e apenas adicionou novos códigos
 Basta iniciar o processo, mas ao invés de clonar utilize
 	git pull
+De dentro do repositório
 Para atualizar o repositório local com o remoto
 
 Se estiver utilizando um computador público
