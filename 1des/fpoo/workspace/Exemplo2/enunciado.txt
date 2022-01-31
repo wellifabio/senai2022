@@ -1,5 +1,10 @@
-Exemplo de condicional com programa que
-calcula a média e mostra o conceito:
-Aprovado ou Reprovado
-Exercício com um programa que calcula
-expressões de segundo grau
+Exemplos e exercícios sobre: Condicionais
+
+1 - programa que calcula a média e
+mostra o conceito: Aprovado ou Reprovado
+2 - Programa que calcula expressões de
+segundo grau
+3 - Programa que verifica a idade e
+retorna se é maior ou menor de idade
+4 - Programa que recebe o
+ano de nascimento e verifica se é maior ou menor de idade.
