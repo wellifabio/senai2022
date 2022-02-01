@@ -7,6 +7,8 @@ const create = async (req, res) => {
 
     try {
         ret = await Usuario.create(data);
+
+        delete ret.dataValues.senha;
     }catch(err) {
         if(err.parent.code == 'ER_DUP_ENTRY') {
             ret = {

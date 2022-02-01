@@ -32,8 +32,10 @@ function initMap() {
 }
 
 function cadastro() {
+    let idUser = JSON.parse(localStorage.getItem("userdata")).id;
+
     let data = JSON.stringify({
-        "id_user": 1,
+        "id_user": idUser,
         "id_alerta": alerta.value,
         "coordenadas": meuAlerta.lat + "," + meuAlerta.lng,
         "ativo": true,

@@ -1,0 +1,16 @@
+@import url('../global/global.css');
+
+.meusalertas {
+    width: 90vw;
+    height: 3rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

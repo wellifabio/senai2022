@@ -22,7 +22,13 @@ foto.addEventListener("change", (e) => {
     }
 
     reader.readAsDataURL(file);
-})
+});
+
+function verificaLogin() {
+    if(localStorage.getItem('userdata') != null) {
+        window.location.href = '../home';
+    }
+}
 
 function conectar() {
     let data = JSON.stringify({
@@ -64,7 +70,12 @@ function registrar() {
     })
     .then(resp => { return resp.json() })
     .then(data => {
-        console.log(data);
+        if(data.id !== undefined) {
+            localStorage.setItem("userdata", JSON.stringify(data));
+            window.location.href = '../home';
+        }else {
+            alert("Falha ao cadastrar");
+        }
     })
 }
 

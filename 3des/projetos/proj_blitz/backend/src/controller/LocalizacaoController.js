@@ -15,6 +15,8 @@ const read = async (req, res) => {
     
     let id = req.params.id;
 
+    let id_user = req.query.id_user;
+
     if(id != undefined) filtro = { where : { id: id } }
 
     filtro.attributes = {
@@ -25,6 +27,10 @@ const read = async (req, res) => {
         { model: Usuario, attributes: { exclude: ['senha'] } },
         { model: Alerta }
     ];
+
+    if(id_user !== undefined) {
+        filtro.include[0].where = { id: id_user}
+    }
 
     const ret = await Localizacao.findAll(filtro);
 
