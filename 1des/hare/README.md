@@ -1,10 +1,12 @@
-Resolução CNE/CEB nº 4/12 e 6/12
-Técnico em Desenvolvimento de Sistemas
+Plano de Curso:
 
-UNIDADE CURRICULAR
+- Resolução CNE/CEB nº 4/12 e 6/12
+- Técnico em Desenvolvimento de Sistemas
+
+- UNIDADE CURRICULAR
 Hardware e Redes: 75 horas
 
-Objetivo Geral: Hardware e Redes têm como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a preparação do ambiente de hardware e dos requisitos para funcionamento de redes de computadores, necessários para o funcionamento de sistemas computacionais, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
+- Objetivo Geral: Hardware e Redes têm como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a preparação do ambiente de hardware e dos requisitos para funcionamento de redes de computadores, necessários para o funcionamento de sistemas computacionais, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
 
 Fundamentos Técnicos e Científicos
 Hardware

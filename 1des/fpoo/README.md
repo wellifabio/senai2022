@@ -1,6 +1,10 @@
-- Utilizaremos para praticar os conhecimentos a linguagem: java bean
+Dados para testar os Códigos:
+
+- Linguagem: java bean
 - JDK: jdk1.8.0_131
 - IDE: Eclipse IDE 2021-12
+
+Plano de Curso:
 
 - Resolução CNE/CEB nº 4/12 e 6/12
 - Técnico em Desenvolvimento de Sistemas
