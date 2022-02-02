@@ -1,15 +1,15 @@
 Nesta aula vimos exemplos de:
 
-Listas ordenadas <ul><li>
+- Listas ordenadas <ul><li>
 
-Links internos <a href=#ancora></a>
+- Links internos <a href=#ancora></a>
 Ancora <a name="ancora"></a>
 
-Links internos para id id <a href=#id></a>
+- Links internos para id id <a href=#id></a>
 
-Links externos <a href="./enderecodapagina"></a>
+- Links externos <a href="./enderecodapagina"></a>
 
-Tabelas <table>
+- Tabelas <table>
 Cabeçalho da tabela <thead>
 Corpo da tabela <tbody>
 Rodapé da tabela <tfoot>
