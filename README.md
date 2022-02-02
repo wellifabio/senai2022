@@ -1,0 +1,2 @@
+- Repositorio com conteúdos das aulas do curso Técnico em Desenvolvimento de Sistemas.
+- Compartilhado com o o Professor Reenye https://github.com/ReenyeLima
