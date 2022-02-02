@@ -1,10 +1,14 @@
-Resolução CNE/CEB nº 4/12 e 6/12
-Técnico em Desenvolvimento de Sistemas
+- Utilizaremos para praticar os conhecimentos a linguagem: java bean
+- JDK: jdk1.8.0_131
+- IDE: Eclipse IDE 2021-12
 
-UNIDADE CURRICULAR
+- Resolução CNE/CEB nº 4/12 e 6/12
+- Técnico em Desenvolvimento de Sistemas
+
+- UNIDADE CURRICULAR
 Fundamentos De Programação Orientada A Objeto: 150 horas
 
-Objetivo Geral: Fundamentos de Programação tem como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a lógica de programação, como ferramenta para desenvolvimento de aplicações, utilizando linguagem orientada a objetos, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
+- Objetivo Geral: Fundamentos de Programação tem como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a lógica de programação, como ferramenta para desenvolvimento de aplicações, utilizando linguagem orientada a objetos, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
 
 Fundamentos Técnicos e Científicos
 1. Identificar as características e tipos de linguagem de programação

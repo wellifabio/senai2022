@@ -1,3 +1,4 @@
+Compitar por linha de comando "cmd":
 1 - Criar uma variável de ambiente apontando para o JDK (C:\Program Files\Java\jdk*versão*\bin)
 a) comando cmd para verificar se a variável de ambiente está configurada:
 javac -version
