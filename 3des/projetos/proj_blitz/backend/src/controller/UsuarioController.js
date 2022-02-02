@@ -43,6 +43,9 @@ const update = async (req, res) => {
     });
 
     ret = await Usuario.findAll({ 
+        attributes: {
+            exclude: ['senha']
+        },
         where : {id: id}
     })
 
