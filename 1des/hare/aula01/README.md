@@ -6,16 +6,21 @@ GitHub x Git
 3) Organizar suas pastas locais com seus códigos fonte
 4) Criar um repositório remoto para seus códigos
 5) Abrir o git bash clicanco com o botão direito do mouse
+
 a) Clonar o diretório remoto vazio
 - git clone <endereco do diretorio remoto.git>
+
 b) Copiar ou mover os arquivos para o diretório clonado e acessar o git bash de dentro do reporitório
 5.3) Adicionar os novos arquivos ao repositório local
 - git add .
+
 c) Colocar uma mensagem no seu commit
 - git commit -m "Mensagem sobre o commit"
+
 d) Caso seja necessário configure seus dados ex:
 - git config user.name "wellifabio"
 - git config user.email wellifabio@hotmail.com
+
 e) Enviar /empurrar os dados para o repositório remoto
 - git push
 
