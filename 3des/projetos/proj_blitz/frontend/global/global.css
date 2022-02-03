@@ -26,6 +26,41 @@ header {
     background-color: rgba(255,255,255,.2);
 }
 
+header > ul {
+    list-style: none;
+}
+
+header > ul > li {
+    float: left;
+    margin-left: 15px;
+}
+
+header > ul > li > a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu > ul {
+    margin-top: 5rem;
+    list-style: none;
+}
+
+.menu > ul > li {
+    margin: 25px;
+}
+
+.menu > span {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
 .container {
     width: 100vw;
     height: 100vh;    
@@ -79,6 +114,20 @@ button {
     left: -50vw;
     width: 50vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     transition: all .2s;
+}
+
+header > #iconMenu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    header > #iconMenu {
+        display: block;
+    }
+
+    header > ul {
+        display: none;
+    }
 }

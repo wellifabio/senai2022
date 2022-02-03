@@ -2,7 +2,6 @@ const alerta = document.querySelector("#alerta");
 const cadastrar = document.querySelector("#cadastrar");
 const modal = document.querySelector(".modal");
 const body = document.querySelector("body");
-const menu = document.querySelector(".menu");
 
 var map;
 var meuAlerta;
@@ -116,12 +115,4 @@ function showModal() {
 
 function closeModal() {
     modal.style.display = "none";
-}
-
-function showMenu() {
-    menu.style.left = "0px";
-}
-
-function closeMenu() {
-    menu.style.left = "-50vw";
 }

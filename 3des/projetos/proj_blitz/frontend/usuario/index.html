@@ -11,8 +11,12 @@
 <body onload="load()">
     <div class="container">
         <header>
-            <img src="../assets/menu.png" onclick="showMenu()" alt="Menu">
+            <img src="../assets/menu.png" id="iconMenu" onclick="showMenu()" alt="Menu">
             <img src="../assets/logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="../home/">Home</a></li>
+                <li><a onclick="logout()">Sair</a></li>
+            </ul>
         </header>
 
         <div class="menu">
@@ -20,8 +24,8 @@
                 <img src="../assets/close.png" alt="Fechar">
             </span>
             <ul>
-                <li>Configurações</li>
-                <li>Sair</li>
+                <li><a href="../home/">Home</a></li>
+                <li><a onclick="logout()">Sair</a></li>
             </ul>
         </div>
 
@@ -35,36 +39,39 @@
                 <button onclick="atualizarDados()">Atualizar</button>
             </div>
     
-            <div class="alertas">
-                <div class="title">
-                    <h2>Alertas Ativos</h2>
-                    <img src="../assets/seta.png" onclick="mostrarMeusAlertas(this)" class="seta" alt="Seta">
+            <div class="dir">           
+                <div class="alertas">
+                    <div class="title">
+                        <h2>Alertas Ativos</h2>
+                        <img src="../assets/seta.png" onclick="mostrarMeusAlertas(this)" class="seta" alt="Seta">
+                    </div>
+                    <div class="containerdata" id="alerts"></div>
+                    <button onclick="salvarAlertasAtivos()">Salvar</button>
                 </div>
-                <div class="containerdata" id="alerts"></div>
-                <button>Salvar</button>
-            </div>
-    
-            <div class="alertas">
-                <div class="title">
-                    <h2>Meus Alertas</h2>
-                    <img src="../assets/seta.png" onclick="mostrarMeusAlertas(this)" class="seta" alt="Seta">
+        
+                <div class="alertas">
+                    <div class="title">
+                        <h2>Meus Alertas</h2>
+                        <img src="../assets/seta.png" onclick="mostrarMeusAlertas(this)" class="seta" alt="Seta">
+                    </div>
+                    <div class="containerdata">
+                        <table id="show">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Coordenada</th>
+                                    <th>Tipo</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="containerdata">
-                    <table id="show">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Coordenada</th>
-                                <th>Tipo</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-            </div>
+            </div> 
         </main>        
     </div>
 </body>
 <script src="../global/md5.js"></script>
+<script src="../global/functions.js"></script>
 <script src="./script.js"></script>
 </html>

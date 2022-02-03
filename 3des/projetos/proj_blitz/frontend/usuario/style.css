@@ -1,13 +1,14 @@
 @import url('../global/global.css');
 
 .alertas {
-    width: 95vw;
+    width: 95%;
     height: 3rem;
     border: 1px solid gray;
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
     transition: all .2s;
+    margin-bottom: 5rem;
 }
 
 .show {
@@ -73,11 +74,25 @@ tbody > tr:nth-child(odd) {
 }
 
 main {
-    width: 100%;
+    width: 100vw;
     height: 90%;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media (min-width: 800px) {
+    main {
+        flex-direction: row;
+    }
+
+    .dados {
+        width: 50%;
+    }
+
+    .dir {
+        width: 50%;
+    }
 }
