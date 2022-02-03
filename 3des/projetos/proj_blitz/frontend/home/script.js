@@ -76,6 +76,8 @@ function inicializar() {
 }
 
 function carregarMarcacoes() {
+    let alertas = localStorage.getItem("alertas");
+
     fetch("http://localhost:3000/localizacao")
     .then(resp => { return resp.json() })
     .then(data => {
@@ -85,7 +87,12 @@ function carregarMarcacoes() {
             let coord = { lat: Number(coordenadas[0]), lng: Number(coordenadas[1]) };
 
             let imagem = "../assets/" + localizacao.alertum.id + ".png";
-            addMarker(coord, localizacao.alertum.tipo, imagem);
+
+            if(alertas !== null) {
+                if(alertas.includes(localizacao.alertum.id)) addMarker(coord, localizacao.alertum.tipo, imagem);
+            }else {
+                addMarker(coord, localizacao.alertum.tipo, imagem);
+            }
         });
     })
 }

@@ -136,4 +136,5 @@ function salvarAlertasAtivos() {
     });
 
     localStorage.setItem('alertas', arr);
+    alert("Configuração salva !");
 }

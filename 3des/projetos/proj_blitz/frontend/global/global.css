@@ -16,6 +16,22 @@ body {
     background-color: var(--background-color);
 }
 
+header {
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    background-color: rgba(255,255,255,.2);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;    
+    background: linear-gradient(to right, #b92b27, var(--base-color));
+}
+
 .logo {
     width: 64px;
     height: 64px;
