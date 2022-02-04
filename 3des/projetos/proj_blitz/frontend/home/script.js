@@ -2,7 +2,6 @@ const alerta = document.querySelector("#alerta");
 const cadastrar = document.querySelector("#cadastrar");
 const modal = document.querySelector(".modal");
 const body = document.querySelector("body");
-const menu = document.querySelector(".menu");
 
 var map;
 var meuAlerta;
@@ -76,6 +75,8 @@ function inicializar() {
 }
 
 function carregarMarcacoes() {
+    let alertas = localStorage.getItem("alertas");
+
     fetch("http://localhost:3000/localizacao")
     .then(resp => { return resp.json() })
     .then(data => {
@@ -85,7 +86,12 @@ function carregarMarcacoes() {
             let coord = { lat: Number(coordenadas[0]), lng: Number(coordenadas[1]) };
 
             let imagem = "../assets/" + localizacao.alertum.id + ".png";
-            addMarker(coord, localizacao.alertum.tipo, imagem);
+
+            if(alertas !== null) {
+                if(alertas.includes(localizacao.alertum.id)) addMarker(coord, localizacao.alertum.tipo, imagem);
+            }else {
+                addMarker(coord, localizacao.alertum.tipo, imagem);
+            }
         });
     })
 }
@@ -109,12 +115,4 @@ function showModal() {
 
 function closeModal() {
     modal.style.display = "none";
-}
-
-function showMenu() {
-    menu.style.left = "0px";
-}
-
-function closeMenu() {
-    menu.style.left = "-50vw";
 }

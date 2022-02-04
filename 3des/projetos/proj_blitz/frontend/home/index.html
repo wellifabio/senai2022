@@ -11,8 +11,12 @@
 <body onload="inicializar()">
     <div class="container">
         <header>
-            <img src="../assets/menu.png" onclick="showMenu()" alt="Menu">
+            <img src="../assets/menu.png" id="iconMenu" onclick="showMenu()" alt="Menu">
             <img src="../assets/logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="../usuario/">Configurações</a></li>
+                <li><a onclick="logout()">Sair</a></li>
+            </ul>
         </header>
         <div class="map"></div>
     </div>
@@ -22,8 +26,8 @@
             <img src="../assets/close.png" alt="Fechar">
         </span>
         <ul>
-            <li>Configurações</li>
-            <li>Sair</li>
+            <li><a href="../usuario/">Configurações</a></li>
+            <li><a onclick="logout()">Sair</a></li>
         </ul>
     </div>
 
@@ -38,6 +42,7 @@
         </div>
     </div>
 </body>
+<script src="../global/functions.js"></script>
 <script src="./script.js"></script>
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0xWCNQwnEqDZ7I7obm7rQzTD9ZfY8bYE&callback=initMap&v=weekly"
