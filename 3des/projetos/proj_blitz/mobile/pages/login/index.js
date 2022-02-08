@@ -10,6 +10,8 @@ export default function Login({ navigation }) {
 
     const [imagem, setImagem] = useState(require('../../assets/app/avatar.png'));
 
+    const [cadastrando, setCadastrando] = useState(false);
+
     const autenticar = () => {
         let usuario = {
             email: email,
@@ -40,13 +42,30 @@ export default function Login({ navigation }) {
             allowsEditing: true,
             aspect: [4, 3],
             quality: 1,
+            base64: true,
         });
 
-        if (!result.cancelled) {
+        if (!result.cancelled && result.base64.length < 59500) {
             setImagem({
-                uri: result.uri,
+                uri: 'data:image/jpeg;base64,' + result.base64,
             })
+        }else if(!result.cancelled) {
+            ToastAndroid.show('Selecione uma imagem menor', ToastAndroid.SHORT);
         }
+    }
+
+    const habilitarCadastro = () => {
+        setCadastrando(true);
+    }
+
+    const cadastrar = () => {
+        let usuario = {
+            email: email,
+            senha: senha,
+            foto: (imagem.uri !== undefined) ? imagem.uri : '',
+        }
+
+        
     }
 
     return(
@@ -62,12 +81,19 @@ export default function Login({ navigation }) {
                 onChangeText={setSenha}
             />
 
-            <TouchableOpacity onPress={() => { selecionarImagem() }}>
-                <Image source={require('../../assets/app/camera.png')} style={{width: 32, height: 32}} />
-            </TouchableOpacity>
+            { 
+                (cadastrando) ?
+                    <TouchableOpacity onPress={() => { selecionarImagem() }}>
+                        <Image source={require('../../assets/app/camera.png')} style={{width: 32, height: 32}} />
+                    </TouchableOpacity>
+                :  
+                    <TouchableOpacity onPress={() => { habilitarCadastro() }}>
+                        <Text>Cadastrar-se</Text>
+                    </TouchableOpacity>
+            }
 
-            <TouchableOpacity onPress={() => autenticar()}>
-                <Text>Login</Text>
+            <TouchableOpacity onPress={() => { if(!cadastrando) autenticar(); else cadastrar(); }}>
+                <Text>{(cadastrando) ? "Cadastrar" : "Login"}</Text>
             </TouchableOpacity>
         </View>
     )

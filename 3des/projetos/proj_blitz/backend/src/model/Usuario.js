@@ -19,7 +19,7 @@ class Usuario extends Model {
                     allowNull: false,
                 },
                 foto: {
-                    type: DataTypes.STRING(5000),
+                    type: DataTypes.STRING(60000),
                     allowNull: true,
                 }
             },
