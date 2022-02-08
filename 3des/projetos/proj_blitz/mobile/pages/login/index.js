@@ -61,11 +61,27 @@ export default function Login({ navigation }) {
     const cadastrar = () => {
         let usuario = {
             email: email,
-            senha: senha,
+            senha: md5(senha),
             foto: (imagem.uri !== undefined) ? imagem.uri : '',
         }
 
-        
+        fetch('http://10.87.207.2:3000/usuario', {
+            method: 'POST',
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(usuario),
+        })
+        .then(resp => { return resp.json(); })
+        .then(async data => {
+            if(data.id === undefined) {
+                ToastAndroid.show('Falha ao cadastrar', ToastAndroid.SHORT);
+                setCadastrando(false);
+            } else {
+                await AsyncStorage.setItem('userdata', JSON.stringify(data));
+                navigation.navigate('Main');
+            }
+        });
     }
 
     return(
