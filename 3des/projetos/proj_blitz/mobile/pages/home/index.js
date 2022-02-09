@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Dimensions, StyleSheet, ToastAndroid } from 'react-native';
+import { View, Text, Dimensions, StyleSheet, ToastAndroid, Image } from 'react-native';
 
 import * as Location from 'expo-location';
 
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 
 export default function Home() {
+    const [marcadores, setMarcadores] = useState([]);
     const [coord, setCoord] = useState({
         latitude: 37.78825,
         longitude: -122.4324,
@@ -17,9 +18,26 @@ export default function Home() {
         if (status !== 'granted') {
             ToastAndroid.show('Localização negada', ToastAndroid.SHORT);
         }else {
-            let location = await Location.getCurrentPositionAsync({});
+            let location = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.BestForNavigation});
 
-            console.log(location);
+            setCoord({
+                latitude: location.coords.latitude,
+                longitude: location.coords.longitude
+            });
+
+            let posi = {
+                coordenadas: location.coords.latitude + ',' + location.coords.longitude,
+                alertum: {
+                    tipo: "marker",
+                    descricao: "Minha Localização",
+                },                
+            }
+
+            let arr = [];
+
+            arr.push(posi);
+
+            setMarcadores(arr);
         }
     }, []);
 
@@ -29,9 +47,30 @@ export default function Home() {
             style={styles.map} 
             region={{
                 ...coord,
-                latitudeDelta: 0.05,
-                longitudeDelta: 0.05,
-            }}/>
+                latitudeDelta: 0.0065,
+                longitudeDelta: 0.00065,
+            }}>
+                {
+                    marcadores.map((marcador, index) => {
+                        let loc = marcador.coordenadas.split(',');
+                        let teste = "marker";
+                        let image = require(`../../assets/app/${teste}.png`);
+                        return(
+                            <Marker
+                                key={index}
+                                coordinate={{
+                                    latitude: Number(loc[0]),
+                                    longitude: Number(loc[1]),
+                                }}
+                                title={marcador.alertum.tipo}
+                                description={""}
+                            >
+                                <Image source={image} style={styles.marcador} />
+                            </Marker>
+                        )
+                    })
+                }                
+            </MapView>
         </View>
     )
 }
@@ -47,4 +86,8 @@ const styles = StyleSheet.create({
       width: Dimensions.get('window').width,
       height: Dimensions.get('window').height,
     },
+    marcador: {
+        width: 32,
+        height: 32,
+    }
 });
