@@ -1,3 +1,12 @@
+Conhecimentos 
+----------------------------------
+. Linguagem de Marcação
+. Definição
+. Tipos
+. World wide web (www)
+. Definição
+. Mudanças na world wide web
+----------------------------------
 -hyper text market language
 	-o que é linguagem de marcação?
 		-no caso do html, dizer atraves das tags o que cada parte do texto vai ser
@@ -107,3 +116,35 @@
 
 			- center
 				- Alinha o texto para ao centro
+----------------------------
+4. HTML
+4.1. Definição (Hyper text market language)
+4.2. Validação de código pelo W3C
+4.3. Elementos da linguagem
+4.3.1. Html
+4.3.2. Head
+4.3.3. Title
+4.3.4. Body e seus atributos
+4.3.5. Metas tag
+4.3.6. Comentários
+4.4. Semântica dos elementos
+4.5. Elementos para manipulação de textos
+4.5.1. Fonte
+4.5.2. Estilos de formatação (b, strong, I, em, sub, sup)
+4.5.3. Parágrafo
+4.5.4. Elementos de cabeçalho (h1 até h6)
+4.5.5. Quebra de linha
+4.5.6. Alinhamentos
+4.6. Elementos de cores e imagens
+4.6.1. Formato de cores (hexadecimal, RGB)
+4.6.2. Psicologia das cores 4.6.3. Cores em elementos de texto 4.6.4. Cores em elementos de fundo (background)
+4.6.5. Tipos de extensões para manipulação de imagens
+4.6.6. Imagens como elemento da página e seus atributos
+4.6.7. Imagens em elementos de fundo (background)
+4.6.8. Vídeos
+4.7. Elementos de ancoras (links)
+4.7.1. Dentro de arquivos
+4.7.2. Entre arquivos
+4.7.3. Para páginas externas
+4.7.4. Para download de arquivos
+4.7.5. Formatação de links
