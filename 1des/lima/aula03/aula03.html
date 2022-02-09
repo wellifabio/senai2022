@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<form>
+			Nome:
+			<input type="text" value="nome"/><br/><!-- Campo de texto, permite todos os tipos de caracter, simbolos e numeros -->
+			Senha:
+			<input type="password" value="senha"/><br/><!-- Semelhante ao text porém oculta tudo que é digitado -->
+			email:
+			<input type="email"/><br/> <!-- permite o envio de emails apenas, precisa conter o '@' -->
+			data:
+			<input type="date"/><br/><!-- campo de seleção de datas -->
+			idade: 
+			<input type="number"/><br/><!-- permite apenas numeros -->
+			busca:
+			<input type="search"/></br><!-- campo de pesquisa -->
+			<input type="submit"/><!-- botão que envia o valor dos inputs para o backend -->
+			<input type="reset"/><!-- botão que seta o valor dos inputs para o valor padrão -->	
+		</form>	
+		
+		<input type="radio" name="genero" value="m"/> masculino
+		<input type="radio" name="genero" value="f"/> feminino<br/><!-- permite a seleção de apenas 1 das opções -->
+		
+		<input type="checkbox" name="cidade" value="jaguariuna"> jaguariuna<br/>
+		<input type="checkbox" name="cidade" value="pedreira"> pedreira<br/>
+		<input type="checkbox" name="cidade" value="amparo"> amparo<br/><!-- permite multiplas seleções -->
+		
+		<input type="color" /><!-- permite a seleção de uma cor -->
+		<input type="range" /><!-- permite a seleção de um espctro pré estabelecido -->
+	</body>
+</html>
