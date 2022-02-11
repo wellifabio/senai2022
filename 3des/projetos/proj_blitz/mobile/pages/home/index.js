@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Dimensions, StyleSheet, ToastAndroid, Image, Modal } from 'react-native';
+import { View, Text, Dimensions, StyleSheet, ToastAndroid, Image, Modal, TouchableOpacity } from 'react-native';
 
 import * as Location from 'expo-location';
 
