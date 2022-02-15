@@ -1,0 +1,24 @@
+.Conhecimentos
+------------------
+- 1. Requisitos
+- 1.1.Definição
+- 1.2.Modelos de documentação
+- 1.2.1.Requisitos
+- 1.2.2.Modelagem de dados
+- 1.3.Regras de Negócio
+- 1.4.Restrições
+- 1.5.Tipos
+- 1.5.1.Funcionais
+- 1.5.2.Não funcionais
+- 2. Levantamento de Requisitos
+- 2.1.Definição
+- 2.2.Técnicas
+- 2.2.1.Levantamento orientado a pontos de vista
+- 2.2.2.Etnografia (observação)
+- 2.2.3.Método Analítico
+- 2.2.4.Workshops
+- 2.2.5.Prototipagem
+- 2.2.6.Entrevistas
+- 2.2.7.Questionários
+- 2.2.8.Brainstorming
+- 2.2.9.Métodos Sistêmicos (JAD - Joint Application Design)
