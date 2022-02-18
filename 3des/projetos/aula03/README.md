@@ -34,9 +34,9 @@
 		- Ex: RF003 fazer login (x)essencial()importante()desejável
 	- em formato de imagem, o prototipo do front-end e back-end pode utilizar a ferramenta figma para este objetivo
 -------------------
-Exemplos de DCUs e documentos de projetos
-https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/Aula/21/docsTemas
-https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/ProjetoHortelino/documentacao
-https://github.com/wellifabio/senai2021/blob/master/1des/fpoo/Aula/20/workspace/ViagensIdData/docs/documentacao.png
-https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/Mapeador/docs
-https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/EstacionamentoMenu/docs
+Exemplos de DCUs (Diagrama de casos de uso) e documentos de projetos
+- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/Aula/21/docsTemas
+- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/ProjetoHortelino/documentacao
+- https://github.com/wellifabio/senai2021/blob/master/1des/fpoo/Aula/20/workspace/ViagensIdData/docs/documentacao.png
+- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/Mapeador/docs
+- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/EstacionamentoMenu/docs
