@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(255, 166, 0);
+	font-size: 18px;
+}
+
+.titulo{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.meio{
+	background-color: #fff;
+	width: 1000px;
+	margin: auto;
+}
+
+table{
+	margin-top: 100px;
+}
+
+input{
+	padding: 10px 20px;
+	margin: 15px 0;
+	border-radius: 15px;
+}
+
+.btn{
+	background-color: rgb(103, 192, 107);
+	border: none;
+}
+
+button{
+	margin: 100px 0;
+	padding: 15px;
+	background-color: #fff;
+	font-size: 18px;
+}
