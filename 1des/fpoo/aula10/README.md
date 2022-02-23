@@ -3,4 +3,4 @@
 - Algoritmo de contagem e acumulação
 - Números aleatórios
 - BEECROWD - antigo - URI https://www.beecrowd.com.br/judge/en/login
-Exercítar até o exercício 20 da lista básica.
+(Programar até o exercício 20 da lista básica).
