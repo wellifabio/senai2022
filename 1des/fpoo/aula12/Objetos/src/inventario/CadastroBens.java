@@ -3,8 +3,6 @@ package inventario;
 import java.util.Random;
 import java.util.Scanner;
 
-import inventario.CadastroBens.Bem;
-
 public class CadastroBens {
 	// Atributos da classe principal
 	static Scanner s = new Scanner(System.in);

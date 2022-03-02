@@ -20,5 +20,5 @@
 - Baseado no exemplo do inventário implemente as seguintes funcionalidades
 	- Buscar por id
 	- Buscar por descrição
-	- Mostrar qual o mais caro
-	- Mostrar qual o mais barato
+	- Mostrar qual o bem com valor mais alto
+	- Mostrar qual o bem com valor mais baixo
