@@ -1,0 +1,24 @@
+.3. Programação Orientada a Objetos
+---------------
+- 3.1. Definição
+- 3.2. Pacotes
+- 3.3. Classes
+- 3.3.2. Interna
+- 3.3.4. Atributos
+- 3.3.5. Métodos
+- 3.3.5.1 Métodos Construtores (Vazio e Cheio)
+- 3.3.6. Modificadores de acesso (encapsulamento)
+---------------
+.Exercícios
+---------------
+- Crie uma agenda em java utilizando a classe Contato "Vista em aula"
+	- O programa deve perguntar ao usuário quantos contatos quer cadastrar
+	- Em seguida receber os dados cadastrados como entrada
+	- Após o cadastro deve apresentar um menú com as opções:
+	- "1.Mostrar Todos, 2.Buscar por Id, 3.Buscar por Nome, 4.Buscar por Telefone, 5.Sair"
+	- Implemente cada uma destas funconalidades
+- Baseado no exemplo do inventário implemente as seguintes funcionalidades
+	- Buscar por id
+	- Buscar por descrição
+	- Mostrar qual o mais caro
+	- Mostrar qual o mais barato
