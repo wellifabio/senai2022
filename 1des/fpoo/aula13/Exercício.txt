@@ -1,0 +1,14 @@
+1 - Em uma matriz 5x5 preenchida de maneira aleatória com valores numéricos de 1 a 100 identifique:
+	- O maior e menor valor impar;
+	- O maior e menor valor par;
+	- Quais valores são ímpares e sua quantidade;
+	- Quais valores são pares e sua quantidade;
+	- A média e mediana entre os pares;
+	- A média e mediana entre os ímpares;
+
+2 - Utilizando uma matriz para armazenar os dados dos alunos (Nome, Matrícula, Nota 1, Nota 2 e Nota 3), o programa terá as seguintes opções:
+	- Cadastrar um novo aluno (Máx. 10);
+	- Buscar aluno por matrícula e nome;
+	- Exibir a média do aluno e informar se o mesmo foi aprovado ou não;
+
+Obs.: A nota 1 possui peso 5, nota 2 peso 3 e a nota 3 peso 2;
