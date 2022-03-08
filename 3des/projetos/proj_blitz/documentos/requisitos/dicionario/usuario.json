@@ -1,0 +1,46 @@
+{
+    "rota1": "/usuario",
+    "verbo1": "READ",
+    "result1": [
+        {
+            "id": 1,
+            "email": "beltrano@gmail.com",
+            "senha": "81dc9bdb52d04dc20036dbd8313ed055",
+            "foto": ""
+        },
+        {
+            "id": 21,
+            "email": "wellington@gmail.com",
+            "senha": "81dc9bdb52d04dc20036dbd8313ed055",
+            "foto": "data:image/png;base64,/9j/2wCEAAgGB..."
+        },
+        {
+            "id": 22,
+            "email": "juliana@gmail.com",
+            "senha": "81dc9bdb52d04dc20036dbd8313ed055",
+            "foto": ""
+        }
+    ],
+    "rota2": "/usuario/1",
+    "verbo2": "READ",
+    "result2": {
+        "id": 1,
+        "email": "beltrano@gmail.com",
+        "senha": "81dc9bdb52d04dc20036dbd8313ed055",
+        "foto": ""
+    },
+    "rota3": "/usuario",
+    "verbo3": "POST",
+    "send3": {
+        "email": "oi@gmail.com",
+        "senha": "1234",
+        "foto": ""
+    },
+    "rota4": "/usuario/1",
+    "verbo4": "PUT",
+    "sen4":{
+        "senha":"81dc9bdb52d04dc20036dbd8313ed055"
+    },
+    "rota5": "/usuario/1",
+    "verbo5": "DELETE"
+}
