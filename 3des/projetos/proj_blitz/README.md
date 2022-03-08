@@ -1,6 +1,6 @@
 .Projeto Blitz (Modelo de Projeto FullStack com documentação)
 -----------
-Projeto de um aplicativo simples, onde os usuários podem adicionar alertas de trânsito, como acidentes, radares, engarrafamentos, entre outros.
+- Projeto de um aplicativo simples, onde os usuários podem adicionar alertas de trânsito, como acidentes, radares, engarrafamentos, entre outros.
 -----------
 - Requisitos não funcionais
     - DB: MySQL
