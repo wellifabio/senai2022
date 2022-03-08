@@ -8,4 +8,4 @@
     - FrontEnd: HTML, CSS, JavaScript (Sem utilização de framework)
     - Mobile: React Native, Expo
 ------------
-.OBS: Consumo da API Google maps
+.OBS: Consumo da API Google Maps
