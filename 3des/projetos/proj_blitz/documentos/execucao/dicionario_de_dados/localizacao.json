@@ -1,0 +1,136 @@
+{
+    "01-verbo": "GET",
+    "01-rota": "/localizacao",
+    "01-status": 200,
+    "01-response": [
+        {
+            "id": 1,
+            "coordenadas": "-22.701347063849923,-46.992755096958916",
+            "ativo": true,
+            "usuario": {
+                "id": 1,
+                "email": "oi@gmail.com"
+            },
+            "alertum": {
+                "id": 1,
+                "tipo": "Radar"
+            }
+        },
+        {
+            "id": 2,
+            "coordenadas": "-22.701436142784136,-46.99265853743438",
+            "ativo": true,
+            "usuario": {
+                "id": 1,
+                "email": "oi@gmail.com"
+            },
+            "alertum": {
+                "id": 2,
+                "tipo": "Blitz"
+            }
+        },
+        {
+            "id": 3,
+            "coordenadas": "-22.700377089482824,-46.995651882695",
+            "ativo": true,
+            "usuario": {
+                "id": 1,
+                "email": "oi@gmail.com"
+            },
+            "alertum": {
+                "id": 6,
+                "tipo": "Animal na pista"
+            }
+        },
+        {
+            "id": 4,
+            "coordenadas": "-22.7019953592143,-46.99209527354125",
+            "ativo": true,
+            "usuario": {
+                "id": 1,
+                "email": "oi@gmail.com"
+            },
+            "alertum": {
+                "id": 5,
+                "tipo": "Acidente"
+            }
+        },
+        {
+            "id": 5,
+            "coordenadas": "-22.702420956029204,-46.99159638266448",
+            "ativo": true,
+            "usuario": {
+                "id": 1,
+                "email": "oi@gmail.com"
+            },
+            "alertum": {
+                "id": 1,
+                "tipo": "Radar"
+            }
+        }
+    ],
+    "02-verbo": "GET",
+    "02-rota": "/localizacao/1",
+    "02-status": 200,
+    "02-response": [
+        {
+            "id": 1,
+            "coordenadas": "-22.701347063849923,-46.992755096958916",
+            "ativo": true,
+            "usuario": {
+                "id": 1,
+                "email": "oi@gmail.com",
+                "foto": ""
+            },
+            "alertum": {
+                "id": 1,
+                "tipo": "Radar",
+                "duracao": 180,
+                "descricao": "Enchente"
+            }
+        }
+    ],
+    "03-verbo": "POST",
+    "03-rota": "/localizacao",
+    "03-request": {
+        "coordenadas": "-12.123,-12.123",
+        "id_user": 2,
+        "id_alerta": 1,
+        "ativo": true
+    },
+    "03-true-status": 201,
+    "03-response": {
+        "id": 11,
+        "coordenadas": "-12.123,-12.123",
+        "id_user": 2,
+        "id_alerta": 1,
+        "ativo": true
+    },
+    "03-false-status": 400,
+    "04-verbo": "PUT",
+    "04-rota": "/localizacao/1",
+    "04-request": {
+        "coordenadas": "-12.123,-12.123",
+        "id_user": 2,
+        "id_alerta": 1,
+        "ativo": false
+    },
+    "04-true-status": 200,
+    "04-response": [
+        {
+            "id": 1,
+            "coordenadas": "-22.701347063849923,-46.992755096958916",
+            "id_user": 1,
+            "id_alerta": 1,
+            "ativo": false
+        }
+    ],
+    "04-false-status": 404,
+    "05-verbo": "DELEYE",
+    "05-rota": "/localizacao/2",
+    "05-true-status": 200,
+    "05-response": {
+        "id": "2"
+    },
+    "05-false-status": 404
+}
