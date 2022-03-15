@@ -11,7 +11,7 @@ public class Pet {
 
 	//Métodos
 	//Construtor vazio
-	Pet() {
+	public Pet() {
 	}
 
 	//Construtor completo
