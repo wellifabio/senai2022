@@ -1,4 +1,5 @@
-.Exercícios com laços de repetição
+Lista de Recuperação
+Exercícios com laços de repetição
 ------------
 - 1 Utilizando apenas o for, imprima os números pares entre dois valores informados pelo usuário.
 
