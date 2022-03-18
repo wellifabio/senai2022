@@ -1,7 +1,7 @@
 Correção Desafio Alunos e Notas<br/>
 -----------
 - Segue um exemplo conforme aula16
-- Agora volte a aula 12 e cumpra os dois desafios
+- Agora volte a aula 16 e melhore o Projeto BanhoTosa com as facilidades que o professor indicou
 -----------
 Lista de Recuperação<br/>
 Exercícios com matrizes.
