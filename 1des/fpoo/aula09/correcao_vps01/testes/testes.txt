@@ -1,0 +1,10 @@
+1
+Horas trabalhadas: 100
+Horas extras: 10
+
+2
+ViraOuro	10	8	7
+MoçaIdade	5	8	6
+Gabicões	10	10	10
+RozasDeCouro	3	5	8
+RozasDePapel	7	5	9
