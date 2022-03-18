@@ -1,5 +1,7 @@
 Correção Desafio Alunos e Notas<br/>
-Segue um exemplo conforme aula16
+-----------
+- Segue um exemplo conforme aula16
+- Agora volte a aula 12 e cumpra os dois desafios
 -----------
 Lista de Recuperação<br/>
 Exercícios com matrizes.
