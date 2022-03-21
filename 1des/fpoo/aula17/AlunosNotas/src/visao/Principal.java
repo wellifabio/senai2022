@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 import modelo.Aluno;
-import modelo.Nota;
+import modelo.Componente;
 
 public class Principal {
 
@@ -174,11 +174,11 @@ public class Principal {
 			System.out.println("Cada componente permite até três notas");
 			System.out.println("Caso não tenha nota de alguma das alvaliações digite -1");
 			System.out.println("Nome do componente\tNota1\tNota2\tNota3");
-			alunos[indice].notas[quantasNotas] = new Nota();
-			alunos[indice].notas[quantasNotas].componente = scan.next();
-			alunos[indice].notas[quantasNotas].nota[0] = scan.nextFloat();
-			alunos[indice].notas[quantasNotas].nota[1] = scan.nextFloat();
-			alunos[indice].notas[quantasNotas].nota[2] = scan.nextFloat();
+			alunos[indice].componentes[quantasNotas] = new Componente();
+			alunos[indice].componentes[quantasNotas].componente = scan.next();
+			alunos[indice].componentes[quantasNotas].nota[0] = scan.nextFloat();
+			alunos[indice].componentes[quantasNotas].nota[1] = scan.nextFloat();
+			alunos[indice].componentes[quantasNotas].nota[2] = scan.nextFloat();
 		} else {
 			System.out.println("Todas as notas dos componentes já foram cadastradas.");
 		}
@@ -186,8 +186,8 @@ public class Principal {
 
 	private static int obterQuantasNotas(int indice) {
 		int total = 0;
-		for (int i = 0; i < alunos[indice].notas.length; i++)
-			if (alunos[indice].notas[i] != null)
+		for (int i = 0; i < alunos[indice].componentes.length; i++)
+			if (alunos[indice].componentes[i] != null)
 				total++;
 		return total;
 	}
