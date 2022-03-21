@@ -1,0 +1,10 @@
+Comentários
+
+Sem utilizar o construtor cheio no método cadastrarVeiculo()	
+		veiculos[indice] = new Veiculo();
+		veiculos[indice].placa = scan.next();
+		veiculos[indice].marca = scan.next();
+		veiculos[indice].modelo = scan.next();
+		veiculos[indice].anoModelo = scan.nextInt();
+		veiculos[indice].anoFabricacao = scan.nextInt();
+		veiculos[indice].cor = scan.next();
