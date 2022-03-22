@@ -17,6 +17,7 @@ Também pensando em quem tem dificuldades com contraste de cores alterar com CSS
 - 4.6.5. Tipos de extensões para manipulação de imagens
 - 4.6.6. Imagens como elemento da página e seus atributos
 - 4.6.7. Imagens em elementos de fundo (background)<br>
+
 .CSS
 -------------
 - 5. Estilização de páginas
