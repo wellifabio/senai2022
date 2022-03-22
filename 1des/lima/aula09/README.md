@@ -16,8 +16,8 @@ Também pensando em quem tem dificuldades com contraste de cores alterar com CSS
 - 4.6.2. Psicologia das cores 4.6.3. Cores em elementos de texto 4.6.4. Cores em elementos de fundo (background)
 - 4.6.5. Tipos de extensões para manipulação de imagens
 - 4.6.6. Imagens como elemento da página e seus atributos
-- 4.6.7. Imagens em elementos de fundo (background)
-CSS
+- 4.6.7. Imagens em elementos de fundo (background)<br>
+.CSS
 -------------
 - 5. Estilização de páginas
 - 5.1. Definição
