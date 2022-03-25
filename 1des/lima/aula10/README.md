@@ -37,3 +37,6 @@ Também pensando em quem tem dificuldades com contraste de cores alterar com CSS
 - Simuladores de dificuldades visuais que podem testar um site online
 	- http://lowvision.support/
 	- https://www.toptal.com/designers/colorfilter
+- Validador de acessibilidade para códigos html
+	- https://validator.w3.org/
+	- https://accessmonitor.acessibilidade.gov.pt/
