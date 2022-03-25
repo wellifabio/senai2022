@@ -3,10 +3,13 @@
 - Como melhorar a acessibilidade de seu site
 - Ferramentas que auxiliam https://instruct.com.br/publicacoes/7-ferramentas-que-auxiliam-na-acessibilidade-para-web/
 - WAI-ARIA https://tableless.com.br/wai-aria-estendendo-o-significado-das-interacoes/
-- Desafio de acessibilidade Suzano, Baseado no Reality da Rocketseat segue o 
-<br>github do Heitor Carmo https://github.com/heitorpc/reality-desafio-suzano <br>
-Faça um clone deste repositório e aplique a semântica HTML mais adequada para aumentar a acessibilidade.<br>
-Também pensando em quem tem dificuldades com contraste de cores alterar com CSS as cores como forma de melhorar o constraste.
+- Desafio de acessibilidade Suzano, Baseado no Reality da Rocketseat
+	- Segue o <br>github do Heitor Carmo https://github.com/heitorpc/reality-desafio-suzano
+	- Faça um clone deste repositório e:
+	- Aplique a semântica HTML mais adequada para aumentar a acessibilidade.
+	- Também, pensando em quem tem dificuldades com contraste, altere a estilização CSS
+	- Melhore Sem descaracterizar as cores do cliente "suzano".
+	- Utilizando recursos CSS como @media() melhore a responsividade para diversos dispositivos.
 
 .HTML
 -------------
