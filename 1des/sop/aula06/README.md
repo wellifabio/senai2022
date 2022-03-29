@@ -14,3 +14,5 @@
 -----------
 .Exercícios
 -----------
+- execute os exercícios com funções
+- execute os exercícios com gráficos
