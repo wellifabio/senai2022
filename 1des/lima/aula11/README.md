@@ -1,7 +1,13 @@
 .Estilização CSS
 -----------
+- Hard Skills
 - Desafio:
 	- Neste subrepositório você encontra uma pasta chamada exercício
 	- Contendo um arquivo HTML "jornal.html" e uma pasta "img" com as imagens utilizadas
 	- Aplique estilização CSS nesta página de modo que fique o mais semelhante possível ao arquivo "resultado_esperado.png" deste repositório.
 	- Aplique responsividade utilizando @media()
+-----------
+- Soft Skills
+	- Metolodogia de desenvolvimento de software: Ágil
+	- Subcategoria: XP (Extreme Programming)
+	- Prática: Pair Programming (Programação em par - piloto e copiloto)
