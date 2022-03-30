@@ -3,7 +3,7 @@
 - Verificar se os computadores possuem os seguintes usuários
 	- SUPORTE (Grupo:Administrador) senha: Padrão informada na aula
 	- des (Grupo:Administrador) senha: Padrão informada na aula
-	- aluno (Grupo:Administrador) senha: Sem senha
+	- aluno (Grupo:Usuario) senha: Sem senha
 - Caso não possua, criamos estes usuários e configuramos
 - Caso exista outros usuários a mais, vamos remover exceto (SEPSecurity, WKRADAR, Administrador)
 - Usuário Administrador deve estar DESABILITADO
