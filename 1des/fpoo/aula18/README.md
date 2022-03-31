@@ -1,4 +1,4 @@
-.Atividades:Abstração de Objetos
+.Atividades: Abstração de Objetos
 --------------
 - Conforme arquivo "classes.png" criar as classes e funcionalidades de cadastro e listar.
 .Conhecimentos
