@@ -1,2 +1,4 @@
+# senai2022
 - Repositorio com conteúdos das aulas do curso Técnico em Desenvolvimento de Sistemas.
-- Compartilhado com o o Professor Reenye https://github.com/ReenyeLima
+- Curso que visa a formação de programador Full Stack para atuar como técnico na Indústria em Geral
+- Compartilhado com o Professor Reenye https://github.com/ReenyeLima
