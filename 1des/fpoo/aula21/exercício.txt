@@ -1,0 +1,11 @@
+Uma loja está crescendo além do esperado e seu sistema atual não suporta o fluxo de informações.
+A dona da loja te procurou buscando uma solução, o desenvolvimento de uma aplicação que ajude o 
+gerenciamento.
+Será necessário o cadastro de produtos, funcionários e clientes. É importante também que exista um 
+relatório das vendas e manutenções efetuadas, Lembrando que cada manutenção e venda gera uma 
+bonificação ao funcionário.
+A loja também irá disponibilizar um sistema de fidelidade, onde o cliente irá ganhar um desconto 
+de 15% ao completar 10 compras/reparos
+
+
+Para esse exercício será necessário o desenvolvimento do diagrama de classes e a codificação do sistema.
