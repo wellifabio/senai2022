@@ -1,4 +1,2 @@
 
-
-
 Para esse exercício será necessário o desenvolvimento do diagrama de classes e a codificação do sistema.
