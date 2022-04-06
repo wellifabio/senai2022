@@ -1,0 +1,12 @@
+create database bdvendas;
+use bdvendas;
+
+
+create table produtos
+(codprod int PRIMARY KEY AUTO_INCREMENT,
+nomeprod varchar(30) not null,
+descriprod varchar(255) not null,
+qtdprod smallint,
+precoprod decimal not null,
+fotoprod varchar(20)
+);

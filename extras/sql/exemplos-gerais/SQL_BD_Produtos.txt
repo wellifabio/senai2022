@@ -1,0 +1,44 @@
+create database bdprodutos;
+use bdprodutos;
+
+Create table usuarios(
+login varchar(30) not null,
+senha varchar(20) not null,
+perfil varchar(20),
+status varchar(1),
+primary key(login));
+
+
+Create table pessoas(
+codpessoa int not null auto_increment primary key,
+nomepessoa varchar(30) not null,
+telpessoa varchar(14));
+
+Create table produtos(
+codprod int not null auto_increment primary key,
+nomeprod varchar(30) not null,
+valorprod decimal(5,2),
+imgprod varchar(30));
+
+
+INSERT INTO usuarios VALUES('adm1','1234','admin','0');
+INSERT INTO usuarios VALUES('adm2','1234','admin','0');
+INSERT INTO usuarios VALUES('comum1','1234','comum','0');
+INSERT INTO usuarios VALUES('comum2','1234','comum','0');
+
+
+INSERT INTO pessoas VALUES (NULL,'Ana','19-34673073');
+INSERT INTO pessoas VALUES (NULL,'Maria','19-34673346');
+
+INSERT INTO produtos VALUES (NULL,'Cueca',1.25,'./imgsprod/iprint1.png');
+INSERT INTO produtos VALUES (NULL,'Calcinha',1.50,'./imgsprod/iprint1.png');
+INSERT INTO produtos VALUES (NULL,'Meia',2.05,'./imgsprod/iprint1.png');
+INSERT INTO produtos VALUES (NULL,'Saia',15.50,'./imgsprod/iprint1.png');
+INSERT INTO produtos VALUES (NULL,'Sutia',20.25,'./imgsprod/iprint1.png');
+
+SELECT * FROM usuarios;
+SELECT * FROM 
+pessoas;
+SELECT * FROM produtos;
+SHOW TABLES;
+

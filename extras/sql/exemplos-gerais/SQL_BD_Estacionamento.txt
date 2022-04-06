@@ -1,0 +1,33 @@
+DROP DATABASE dbestacionamento;
+CREATE DATABASE dbestacionamento DEFAULT CHAR SET utf8 DEFAULT COLLATE utf8_general_ci;
+use dbestacionamento;
+CREATE TABLE tbveiculos(
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	vaga varchar(2) not null,
+	placa varchar(8) not null,
+	datain date not null,
+	horain time not null,
+	dataout date,
+	horaout time,
+	valor decimal(5,2)
+);
+
+use dbestacionamento;
+INSERT INTO tbveiculos VALUES (NULL,'C1','XXX-0000','2016-11-02','10:00:00','2016-11-02','11:00:00',10);
+INSERT INTO tbveiculos VALUES (NULL,'C2','XXX-1111','2016-11-03','10:00:00','2016-11-03','12:00:00',13);
+INSERT INTO tbveiculos VALUES (NULL,'C3','XXX-2222','2016-11-02','10:00:00','2016-11-02','12:00:00',13);
+INSERT INTO tbveiculos VALUES (NULL,'C4','XXX-3333','2016-11-04','10:00:00','2016-11-04','12:00:00',13);
+INSERT INTO tbveiculos VALUES (NULL,'C8','XXX-7777','2016-11-05','10:00:00','2016-11-05','12:00:00',13);
+INSERT INTO tbveiculos VALUES (NULL,'C1','XXX-0000','2016-11-05','10:00:00','2016-11-05','12:00:00',13);
+INSERT INTO tbveiculos VALUES (NULL,'C2','XXX-1111','2016-11-05','10:00:00','2016-11-05','12:00:00',13);
+INSERT INTO tbveiculos VALUES (NULL,'C3','XXX-2222',CURRENT_DATE,CURRENT_TIME,NULL,NULL,NULL);
+INSERT INTO tbveiculos VALUES (NULL,'C4','XXX-3333',CURRENT_DATE,CURRENT_TIME,NULL,NULL,NULL);
+INSERT INTO tbveiculos VALUES (NULL,'C8','XXX-7777',CURRENT_DATE,CURRENT_TIME,NULL,NULL,NULL);
+INSERT INTO tbveiculos VALUES (NULL,'M1','YYY-0000',CURRENT_DATE,CURRENT_TIME,NULL,NULL,NULL);
+INSERT INTO tbveiculos VALUES (NULL,'M3','YYY-2222',CURRENT_DATE,CURRENT_TIME,NULL,NULL,NULL);
+SELECT * FROM tbveiculos;
+
+update tbveiculos set dataout = 'CURRENT_DATE', horaout = 'CURRENT_TIME', valor=10 where id = 4;
+SELECT * FROM tbveiculos;
+
+SELECT * FROM tbveiculos WHERE dataout IS NULL;

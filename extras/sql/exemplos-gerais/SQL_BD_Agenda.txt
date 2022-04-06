@@ -1,0 +1,15 @@
+drop database agenda;
+create database agenda;
+use agenda;
+create table compromissos(
+   horacomp time,
+   datacomp date,
+   descricao varchar(50),
+   PRIMARY KEY(horacomp,datacomp)
+);
+insert into compromissos values (CURTIME(),CURDATE(),"Dar aula");
+insert into compromissos values (CURTIME()+12000,CURDATE(),"Jantar com a familia");
+insert into compromissos values (CURTIME()+18000,CURDATE(),"Dormir");
+insert into compromissos values (CURTIME(),CURDATE()+1,"Dar aula novamente");
+describe compromissos;
+select * from compromissos order by datacomp;

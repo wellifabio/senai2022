@@ -1,0 +1,16 @@
+create database dbanimais;
+use dbanimais;
+
+Create table tbanimais(
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nome varchar(20) not null,
+	raca varchar(20) not null,
+	especie varchar(20) not null
+);
+
+INSERT INTO tbanimais VALUES (NULL,'Marley','Labrador','Cachorro');
+INSERT INTO tbanimais VALUES (NULL,'Mimi','Vira Latas','Gato');
+INSERT INTO tbanimais VALUES (NULL,'Leão','Vira Latas','Cachorro');
+
+
+SELECT * FROM tbanimais;

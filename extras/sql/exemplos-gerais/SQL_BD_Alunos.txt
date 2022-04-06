@@ -1,0 +1,25 @@
+create database projeto_alunos;
+use projeto_alunos;
+drop table cad_alunos;
+create table cad_alunos(
+	id_alunos int not null auto_increment,
+	Nome varchar(50) not null,
+	Nascimento date,
+	Endereco varchar(50),
+	Cidade varchar(50),
+	Bairro varchar(50),
+	Estado varchar(50),
+	CEP varchar(13),
+	Fone varchar(15),
+	Cell varchar(15),
+	EstadoCivil varchar(20),
+	Email varchar(50),
+	OBS text,
+	Login varchar(30),
+	Password varchar(30),
+	Primary key (id_alunos)
+);
+
+insert into cad_alunos(Nome, Login, Password) values("Wellington","aluno","aluno");
+select * from cad_alunos;
+

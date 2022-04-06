@@ -1,0 +1,53 @@
+drop database nota_fiscal;
+create database nota_fiscal;
+use nota_fiscal;
+create table nf_p_fisica(
+	nf int(11) not null,
+	vendedor varchar(40),
+	cliente varchar(40),
+	cpf varchar(15) not null,
+	frete dec(8,2),
+	forma_pgto varchar(20),
+	total dec(8,2),
+	primary key (nf)
+);
+
+create table itens_nf(
+	item_cod int not null auto_increment,
+	produto varchar(40),
+	qtd int,
+	vunit dec(8,2),
+	total dec(8,2),
+	nf int(11),
+	primary key (item_cod),
+	CONSTRAINT nf_fk FOREIGN KEY (nf) REFERENCES nf_p_fisica (nf)
+);
+
+
+insert into nf_p_fisica(nf, vendedor, cliente, cpf, frete, forma_pgto, total) values(1010,"CARLOS ALBERTO","JANAINA SILVA","234.123.123-23",18.50,"DINHEIRO",50.00);
+insert into nf_p_fisica(nf, vendedor, cliente, cpf, frete, forma_pgto, total) values(1020,"ANA MARIA","MARIA ANA","111.123.123-10",10.50,"CARTÃO",193.00);
+insert into nf_p_fisica(nf, vendedor, cliente, cpf, frete, forma_pgto, total) values(1030,"CARLOS ALBERTO","VIVIANE SILVA","123.123.123-13",8.50,"DINHEIRO",10.00);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("PREGO M",100,0.1,10,1010);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("PORCA M",100,0.1,10,1010);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("PARAFUSO M",100,0.1,10,1010);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("ARRUELA M",100,0.1,10,1010);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("ARREBITE M",100,0.1,10,1010);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("PARAFUSO G",100,1.10,110,1020);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("MARTELO",3,15,45,1020);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("CIMENTO",2,19,38,1020);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("ARREBITE M",50,0.1,5,1030);
+insert into itens_nf(produto,qtd,vunit,total,nf) values("PREGO M",50,0.1,5,1030);
+
+select * from nf_p_fisica;
+select * from itens_nf;
+
+select A.nf "NF", A.vendedor "Vendedor", A.cliente "Cliente", A.cpf "CPF", A.frete "Frete", A.forma_pgto "Pagto", A.total "Total",
+B.item_cod "CodItem", B.produto "Produto", B.qtd "Quantidade", B.vunit "Preço Un.", B.total "SubTotal"
+from nf_p_fisica A
+inner join itens_nf B on B.nf = A.nf;
+
+select A.nf "NF", A.vendedor "Vendedor", A.cliente "Cliente", A.cpf "CPF", A.frete "Frete", A.forma_pgto "Pagto", A.total "Total",
+B.item_cod "CodItem", B.produto "Produto", B.qtd "Quantidade", B.vunit "Preço Un.", B.total "SubTotal"
+from nf_p_fisica A
+inner join itens_nf B on B.nf = A.nf
+where A.nf = 1020;
