@@ -1,2 +1,9 @@
+Um posto de gasolina está para inaugurar e será necessario um sistema de gerenciamento. Você foi procurado
+para o desenvolvimento do mesmo.
+Conhecendo o funcionamento do posto, o programa irá gerenciar a quantidade de combustível disponível, os
+abastecimentos feitos e a loja de conveniência.
+Os frentistas irão receber uma comissão de 5% nos abastecimentos realizados.
+O posto terá um programa de fidelidade onde o cliente ganha uma lavagem após abastecer 1000L.
+
 
 Para esse exercício será necessário o desenvolvimento do diagrama de classes e a codificação do sistema.

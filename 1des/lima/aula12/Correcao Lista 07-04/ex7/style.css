@@ -1,0 +1,32 @@
+@import url('../global.css');
+
+.header, .footer {
+    width: 100vw;
+    height: 15vh;
+}
+
+.content {
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+}
+
+.nav {
+    width: 20%;
+    height: 100%;
+    background-color: #CD9292;
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    background-color: #753535;
+}
+
+.header {
+    background-color: rgb(253,77,77);
+}
+
+.footer {
+    background-color: #9F3E3E;
+}

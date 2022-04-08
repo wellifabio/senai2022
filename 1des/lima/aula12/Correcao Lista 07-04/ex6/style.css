@@ -1,0 +1,44 @@
+@import url('../global.css');
+
+main {
+    width: 100vw;
+    height: 85vh;
+}
+
+section {
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+section div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}

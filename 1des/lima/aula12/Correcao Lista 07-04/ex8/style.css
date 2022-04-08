@@ -1,0 +1,47 @@
+@import url('../global.css');
+
+main div {
+    display: flex;
+    align-items: center;
+}
+
+ul liv {
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+input, img {
+    border-radius: 20px;
+}
+
+input {
+    width: 20%;
+    height: 65%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.nav, .footer {
+    width: 100vw;
+    height: 5vh;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.content {
+    width: 100vw;
+    height: 75vh;
+    background-color: #753535;
+    justify-content: center;
+}
+
+.nav {
+    background-color: rgb(253,77,77);
+}
+
+.footer {
+    background-color: #9F3E3E;
+}

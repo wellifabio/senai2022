@@ -1,0 +1,48 @@
+@import url('../global.css');
+
+main {
+    width: 100vw;
+    height: 85vh;
+    background-image: url('./assets/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+main div {
+    background-color: rgba(128,128,128, .7);
+}
+
+ul {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+}
+
+.footer {
+    width: 60%;
+    height: 10%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img{
+    margin: 35px;
+}
