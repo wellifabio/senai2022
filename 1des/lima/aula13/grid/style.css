@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "h h"
+                         "n m"
+                         "f f";
+}
+
+header {
+    height: 100%;
+    grid-area: h;
+    background-color: green;
+}
+
+nav {
+    height: 100%;
+    grid-area: n;
+    background-color: pink;
+}
+
+main {
+    height: 100%;
+    grid-area: m;
+    background-color: purple;
+}
+
+footer {
+    height: 100%;
+    grid-area: f;
+    background-color: yellow;
+}
