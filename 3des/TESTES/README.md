@@ -54,10 +54,10 @@
 -------------
 .Referências básicas
 -------------
-- RIOS, Emerson; BASTOS, Anderson; CRISTALLI, Ricardo; MOREIRA, Trayahú.
-- Base de conhecimento em teste de software. São Paulo: Martins Fontes, 2012.CRISTALLI, Ricardo. et al.
+- RIOS, Emerson; BASTOS, Anderson; CRISTALLI, Ricardo; MOREIRA, Trayahú; Base de conhecimento em teste de software. São Paulo: Martins Fontes, 2012.CRISTALLI, Ricardo. et al.
 - Gerenciando projetos de teste de software. Rio de Janeiro: Imagem Art Studio, 2011.MOLINARI, L.
 - Testes de software: Produzindo sistemas melhores e mais confiáveis. São Paulo: Érica, 2008.
+-------------
 .Referências complementares
 -------------
 - KOSCIANSKI, André; SOARES, Michel dos Santos. Qualidade de software. São Paulo: Novatec, 2007.
