@@ -34,10 +34,10 @@ OBS(Anote em um script.sql os comandos utilizados para cada uma das etapas a seg
 ------------
 .Desafio nível 3
 ------------
-Liste apenas os clientes que fizeram pedidos (com repetidos)
-Liste apenas os clientes que fizeram pedidos (sem repetidos)
-Liste apenas os clientes que fizeram pedidos (sem repetidos, mas com total de pedidos que cada um fez)
-Liste apenas os clientes que que não fizeram pedidos
+- Liste apenas os clientes que fizeram pedidos (com repetidos)
+- Liste apenas os clientes que fizeram pedidos (sem repetidos)
+- Liste apenas os clientes que fizeram pedidos (sem repetidos, mas com total de pedidos que cada um fez)
+- Liste apenas os clientes que que não fizeram pedidos
 ------------
 .Conhecimentos
 ------------
