@@ -32,7 +32,7 @@
 
 - Grupo 1 (Diogo, Ana, Daniel) - Rede Social Acessibilidade ()
 - Grupo 2 (Roberto, Leo, Jake) - Ong Assistencial (https://github.com/LeoImenes/Projeto-ONG/blob/main/DOCUMENTOS/PROJETO%20-%20SISTEMA%20ONG%20DIGITAL.pdf)
-- Grupo 3 (Zé, Medeiros, Faria) - Banco digital ()
+- Grupo 3 (Zé, Medeiros, Faria) - Banco digital (https://github.com/MiichaelJose/-banco-digital-/blob/main/doc/SENAI_Jaguariúna.pdf)
 - Grupo 4 (Elian, Larissa, Lavínia) - Livros digitais (https://github.com/laviniasa/SENAI-2021/blob/main/documenta%C3%A7%C3%A3o.pdf)
 - Grupo 5 (Danilo, Carlos, Pignata) - Masters (https://github.com/daniloafalcirolli/Master/blob/master/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3o.pdf)
 - Grupo 6 (Allan, Vital, Rodrigo) - Apostas (https://github.com/Allan2077/ApostaNowTrabalhoInacabado/blob/master/requisitos/funcionais/Documenta%C3%A7%C3%A3o%20(Site%20de%20Apostas).pdf)
