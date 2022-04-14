@@ -4,7 +4,7 @@
 	- 1. Definir a sequência das atividades para desenvolvimento dos componentes, de acordo com os requisitos do sistema (Problema x Solução)
 	- 2. Implementar as funcionalidades de acordo com os requisitos definidos (Essencial, Importante, Desejável)
 	- 3. Apresentar tecnicamente ao cliente o sistema de software desenvolvido, sanando as possíveis dúvidas sobre o funcionamento do mesmo
-	- 4. Pesquisar em diversas fontes de informação tendo em vista as melhores práticas de mercado considerando, inclusive, a performance e a qualidade de software (Inivação x Criatividade)
+	- 4. Pesquisar em diversas fontes de informação tendo em vista as melhores práticas de mercado considerando, inclusive, a performance e a qualidade de software (Inovação x Criatividade)
 	- 5. Demonstrar capacidade de organização (Integração Front x Back x Mobile)
 	- 6. Seguir método de trabalho (Agil + Scrim + Resolve o problema)
 	- 7. Trabalhar em equipe (Todos participaram?)
@@ -37,4 +37,4 @@
 - Grupo 5 (Danilo, Carlos, Pignata) - Masters (https://github.com/daniloafalcirolli/Master/blob/master/Documenta%C3%A7%C3%A3o/Documenta%C3%A7%C3%A3o.pdf)
 - Grupo 6 (Allan, Vital, Rodrigo) - Apostas (https://github.com/Allan2077/ApostaNowTrabalhoInacabado/blob/master/requisitos/funcionais/Documenta%C3%A7%C3%A3o%20(Site%20de%20Apostas).pdf)
 - Grupo 7 (Belli, Felipe, Gabriel, Vic) - Loja Bolos (https://github.com/vick7000/Bolos/blob/master/Documentos/Projeto_ciasto.pdf)
-- Grupo 8 (Gusta, Tieppo, Vitor) - Joja Suplementos ()
+- Grupo 8 (Gusta, Tieppo, Vitor) - Joja Suplementos (https://github.com/rafaeltieppo/RVGSuplementos/blob/master/Documenta%C3%A7%C3%A3o/ProjetoSuplementos.pdf)
