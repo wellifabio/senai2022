@@ -30,7 +30,7 @@
 	- 7. Demonstrar visão sistêmica (16)
 	- 8. Manter relacionamento interpessoal
 
-- Grupo 1 (Diogo, Ana, Daniel) - Rede Social Acessibilidade ()
+- Grupo 1 (Diogo, Ana, Daniel) - Rede Social Acessibilidade (https://github.com/diogohmedeiros/FacePlus/blob/main/Projeto/documenta%C3%A7%C3%A3o/FacePlus%20(1).pdf)
 - Grupo 2 (Roberto, Leo, Jake) - Ong Assistencial (https://github.com/LeoImenes/Projeto-ONG/blob/main/DOCUMENTOS/PROJETO%20-%20SISTEMA%20ONG%20DIGITAL.pdf)
 - Grupo 3 (Zé, Medeiros, Faria) - Banco digital (https://github.com/MiichaelJose/-banco-digital-/blob/main/doc/SENAI_Jaguariúna.pdf)
 - Grupo 4 (Elian, Larissa, Lavínia) - Livros digitais (https://github.com/laviniasa/SENAI-2021/blob/main/documenta%C3%A7%C3%A3o.pdf)
