@@ -1,0 +1,10 @@
+1 - Em um arquivo de texto, armazene o nome e o ano de nascimento das pessoas.
+Ao ler esse arquivo o sistema irá informar o nome e a idade.
+
+2 - Escreva um arquivo de texto com números aleatórios, depois o leia e exiba
+os números em ordem crescente.
+
+3 - Armezene o nome dos alunos e os valores de 3 notas. Ao ler o conteúdo do
+arquivo mostre o nome do aluno e sua média.
+
+4 - Crie um sistema de login utilizando arquivos.
