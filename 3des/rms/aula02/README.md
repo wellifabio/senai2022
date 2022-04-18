@@ -1,15 +1,18 @@
-.Conhecimentos
---------------
-- 4. UML (Unified Modeling Language)
-- 4.1.Definição
-- 4.2.Casos de Uso
-- 4.2.1.Diagrama
-Diagrama da Classes
-- link: https://www.youtube.com/watch?v=rDidOn6KN9k
---------------
-Exemplos de Diagramas de Classes
-- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/Aula/21/docsTemas
-- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/ProjetoHortelino/documentacao
-- https://github.com/wellifabio/senai2021/blob/master/1des/fpoo/Aula/20/workspace/ViagensIdData/docs/documentacao.png
-- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/Mapeador/docs
-- https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI/EstacionamentoMenu/docs
+. CONHECIMENTOS - Levantamento, Análise e Registros
+-------------
+- 2. Levantamento de Requisitos
+	- 2.1.Definição
+	- 2.2.Técnicas
+		- 2.2.1.Levantamento orientado a pontos de vista
+		- 2.2.2.Etnografia (observação)
+		- 2.2.3.Método Analítico
+		- 2.2.4.Workshops
+		- 2.2.5.Prototipagem
+		- 2.2.6.Entrevistas
+		- 2.2.7.Questionários
+		- 2.2.8.Brainstorming
+		- 2.2.9.Métodos Sistêmicos (JAD - Joint Application Design)
+	- 2.3.Fases
+		- 2.3.1.Coleta
+		- 2.3.2.Análise
+		- 2.3.3.Registros

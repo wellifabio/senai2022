@@ -1,12 +1,5 @@
-.Pré Projeto
+.METODOLOGIAS - Conhecimentos
 ---------------
-.Objetivos da aula
----------------
-- 1. Qualidade de software
-- 1.1. Definição
-- 1.2. Ferramentas
-- 1.3. Processos de trabalho
-----------------
 - 2. Metodologias de desenvolvimento
 - 2.1. Clássicas
 - 2.1.1. Definição
@@ -24,7 +17,9 @@
 ------------------
 - 3.1. Escopo
 - 3.2. Revisão dos objetivos
-.Missão da aula
+---------------
+
+.Pré Projeto (Missão da aula)
 ------------------
 - Criar um repositorio no github para o preprojeto com o nome ou sigla do seu tema:
 - com a estrutura de pastas: projeto\requisitos\funcionalidades

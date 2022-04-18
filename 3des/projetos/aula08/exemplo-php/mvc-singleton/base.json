@@ -1,0 +1,32 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "database_name",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "Produto",
+			"attributes" : [
+				"id",
+				"descricao"
+			]
+		},
+		{
+			"name" : "Pedido",
+			"attributes" : [
+				"num",
+				"produto"
+			]
+		}
+	]
+}

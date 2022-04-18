@@ -1,9 +1,12 @@
-.Recursos avançados de Banco de dados
+.REVISÕES, COMPLEMENTOS E INOVAÇÕES (Técinas de recuperação contínua)
+------------
+.Recursos avançados de Banco de dados (SGBD SQL RELACIONAL)
 ------------
 	- Entendendo as regras de negócio
 	- Manipulando dados DML
 	- Criando queries DQL
 	- Utilizando funções
+	- SQL(DDL, DML, DQL, DCL)
 ------------
 .Acessando o banco de dados
 ------------
