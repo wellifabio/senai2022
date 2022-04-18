@@ -7,3 +7,6 @@
 	- Criação
 	- Estrutura
 	- Comportamento
+------------
+- Links importantes
+	- (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
