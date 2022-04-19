@@ -9,6 +9,7 @@ select day(curDate()) as dia;
 select day("1980-09-08") as dia;
 select month("1980-09-08") as dia;
 select datediff(curDate(),"1980-09-08")/365;
+select concat("R$ ",3.55);
 -- As segintes funções agrupam array (vetor)
 -- maximo
 select max(valor) from itens_pedido;
@@ -21,5 +22,12 @@ select sum(valor) from itens_pedido;
 -- contar
 select count(valor) from itens_pedido;
 
--- Criando Funções
-select * from itens_pedido;
+-- Criando Funções (Exemplo de uma função que formata valores como moeda)
+delimiter //
+create function moeda(v decimal(7,2)) returns text
+Begin
+    return concat("R$ ",v);
+end//
+delimiter ;
+-- Utilização da função criada no banco de dados Pizzaria
+select pedido_id, pizza_id, quantidade, moeda(valor) from itens_pedido;
