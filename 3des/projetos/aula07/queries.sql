@@ -31,12 +31,12 @@ end//
 delimiter ;
 -- Para excluir uma função
 drop function moeda;
--- Criar a função novamente modificada
+-- Criar a função novamente modificada com declaração de variáveis
 delimiter //
 create function moeda(v decimal(7,2)) returns text
-Begin
-    declare x decimal(7,2);
-    set x = v + 10;
+begin
+    declare x varchar(20);
+    set x = format(v,2,'de_DE');
     return concat("R$ ",x);
 end//
 delimiter ;
