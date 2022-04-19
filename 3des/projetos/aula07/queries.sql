@@ -36,7 +36,7 @@ delimiter //
 create function moeda(v decimal(7,2)) returns text
 Begin
     declare x decimal(7,2);
-    set x = v + 2;
+    set x = v + 10;
     return concat("R$ ",v);
 end//
 delimiter ;
