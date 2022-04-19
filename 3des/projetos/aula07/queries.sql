@@ -49,5 +49,27 @@ SHOW PROCEDURE STATUS;
 
 -- Exercícios
 -- 1 - Crie uma função chamada desconto(valor) que aplique um desconto de 10% em um valor de parâmetro
+drop function if exists desconto;
+delimiter $
+create function desconto(valor decimal(7,2)) returns decimal(7,2)
+begin
+    return valor - valor * 10 / 100;
+end$
+delimiter ;
+-- Testar
+select desconto(100);
+-- Aplicando desconto ao contexto da pizzaria
+select pedido_id, pizza_id, quantidade, moeda(valor)
+as preco, moeda(desconto(valor)) as a_vista from itens_pedido;
+
 -- 2 - Crie uma função chamada juros(valor,meses) que aplique um juros composto de 1% ao mês 
 -- e receba como parâmetro o valor e quantos mêses.
+drop function if exists juros;
+delimiter $
+create function juros(valor decimal(7,2),meses integer) returns decimal(7,2)
+begin
+    return valor * pow((1 + 0.01),meses);
+end$
+delimiter ;
+-- testar
+select juros(100,10);
