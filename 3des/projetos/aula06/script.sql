@@ -98,7 +98,7 @@ drop view vw_pedidos;
 create view vw_pedidos as
 select
 p.pedido_id, p.cliente_id, p.data, p.hora,
-v.pizza_id, v.nome, v.quantidade, v.valor, (v.quantidade * v.valor) as subtotal,
+v.pizza_id, v.nome as pizza, v.quantidade, v.valor, (v.quantidade * v.valor) as subtotal,
 sum(v.quantidade * v.valor) as total
 from pedidos p
 inner join vw_itens v
@@ -107,3 +107,37 @@ group by p.pedido_id;
 -- Testando a view
 select * from vw_pedidos;
 -- Acrescente na view anterior o nome do cliente e mostre na ordem de pedido decrescente.
+drop view vw_pedidos;
+create view vw_pedidos as
+select
+p.pedido_id, p.cliente_id, c.nome, p.data, p.hora,
+v.pizza_id, v.nome as pizza, v.quantidade, v.valor, (v.quantidade * v.valor) as subtotal,
+sum(v.quantidade * v.valor) as total
+from pedidos p
+inner join vw_itens v
+on p.pedido_id = v.pedido_id
+inner join clientes c
+on p.cliente_id = c.cliente_id
+group by p.pedido_id;
+
+-- DESAFIO NÍVEL 3
+-- Liste apenas os clientes que fizeram pedidos (com repetidos)
+select * from clientes inner join pedidos on clientes.cliente_id = pedidos.cliente_id;
+select clientes.nome from clientes inner join pedidos on clientes.cliente_id = pedidos.cliente_id;
+select c.nome from clientes c inner join pedidos p on c.cliente_id = p.cliente_id;
+-- Liste apenas os clientes que fizeram pedidos (sem repetidos)
+select c.nome from clientes c inner join pedidos p
+on c.cliente_id = p.cliente_id 
+group by c.cliente_id;
+-- Liste apenas os clientes que fizeram pedidos
+-- (sem repetidos, mas com total de pedidos que cada um fez)
+select c.nome, count(p.pedido_id) as total_pedido from clientes c inner join pedidos p
+on c.cliente_id = p.cliente_id 
+group by c.cliente_id;
+-- - Liste apenas os clientes que que não fizeram pedidos
+select * from clientes c left join pedidos p on c.cliente_id = p.cliente_id;
+-- solução com LEFT JOIN
+select c.nome from clientes c left join pedidos p on c.cliente_id = p.cliente_id
+where p.pedido_id is null;
+-- Solução com SubConsulta
+select c.nome from clientes c where c.cliente_id not in (select cliente_id from pedidos);
