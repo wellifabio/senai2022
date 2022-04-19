@@ -29,5 +29,25 @@ Begin
     return concat("R$ ",v);
 end//
 delimiter ;
+-- Para excluir uma função
+drop function moeda;
+-- Criar a função novamente modificada
+delimiter //
+create function moeda(v decimal(7,2)) returns text
+Begin
+    declare x decimal(7,2);
+    set x = v + 2;
+    return concat("R$ ",v);
+end//
+delimiter ;
 -- Utilização da função criada no banco de dados Pizzaria
 select pedido_id, pizza_id, quantidade, moeda(valor) from itens_pedido;
+
+-- Para ver as funções e procedimentos criados no seu SGBD ou BD
+SHOW FUNCTION STATUS;
+SHOW PROCEDURE STATUS;
+
+-- Exercícios
+-- 1 - Crie uma função chamada desconto(valor) que aplique um desconto de 10% em um valor de parâmetro
+-- 2 - Crie uma função chamada juros(valor,meses) que aplique um juros composto de 1% ao mês 
+-- e receba como parâmetro o valor e quantos mêses.
