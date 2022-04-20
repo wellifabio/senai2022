@@ -24,5 +24,17 @@ call ver_preco(12);
 -- cliente_id, pizza_id e quantidade
 -- gere um pedido e coloque esta pizza como item (nome: Pedido_um_sabor)
 
-insert into pedidos values (default, 86,curdate(),curtime(),null);
-insert into itens_pedido values (27, 1,1,(select valor from pizzas where pizza_id = 1));
+drop procedure if exists pedido_um_sabor;
+delimiter //
+create procedure pedido_um_sabor(id_cliente integer, id_pizza integer, qtd integer)
+begin
+    insert into pedidos values (default, id_cliente,curdate(),curtime(),null);
+    insert into itens_pedido values (last_insert_id(), id_pizza,qtd,(select valor from pizzas where pizza_id = id_pizza));
+    select * from pedidos where pedido_id = last_insert_id();
+    select * from itens_pedido where pedido_id = last_insert_id();
+end//
+delimiter ;
+
+call pedido_um_sabor(1,1,2);
+
+
