@@ -1,3 +1,5 @@
+-- Todos os exemplos a seguir podem ser utilizados dentro de Procedures, Functions e Triggers
+-- Condicionais (IF ELSE) e Laços (LOOP WHILE)
 -- Fonte oficial: https://dev.mysql.com/doc/refman/8.0/en/if.html
 -- Exemplo1 IF ELSE
 DELIMITER //
