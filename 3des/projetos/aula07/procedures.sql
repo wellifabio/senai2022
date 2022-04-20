@@ -22,5 +22,7 @@ call ver_preco(12);
 
 -- Desafio: crie uma procedure que receba os dados a seguir:
 -- cliente_id, pizza_id e quantidade
--- gere um pedido e coloque esta pizza como item
+-- gere um pedido e coloque esta pizza como item (nome: Pedido_um_sabor)
 
+insert into pedidos values (default, 86,curdate(),curtime(),null);
+insert into itens_pedido values (27, 1,1,(select valor from pizzas where pizza_id = 1));

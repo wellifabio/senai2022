@@ -14,4 +14,4 @@
 ------------
 .Atividades 2
 ------------
-- Crie uma procedure que receba os dados a seguir: cliente_id, pizza_id e quantidade, e gere um pedido e coloque esta pizza como item.
+- Crie uma procedure que receba os dados a seguir: cliente_id, pizza_id e quantidade, e gere um pedido e coloque esta pizza como item. (nome: Pedido_um_sabor).
