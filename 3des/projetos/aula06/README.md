@@ -1,4 +1,4 @@
-.REVISÕES, COMPLEMENTOS E INOVAÇÕES (Técinas de recuperação contínua)
+.REVISÕES, COMPLEMENTOS E INOVAÇÕES (Técnicas de recuperação contínua)
 ------------
 .Recursos avançados de Banco de dados (SGBD SQL RELACIONAL)
 ------------
