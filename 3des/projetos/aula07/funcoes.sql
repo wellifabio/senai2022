@@ -1,3 +1,7 @@
+-- Para ver as funções criadas no seu SGBD.
+-- Escopo das funções SGBD
+SHOW FUNCTION STATUS;
+
 -- Exemplos de funções nativas MySQL MariaDB
 select curtime() as hora;
 select curDate() as data;
@@ -42,10 +46,6 @@ end//
 delimiter ;
 -- Utilização da função criada no banco de dados Pizzaria
 select pedido_id, pizza_id, quantidade, moeda(valor) from itens_pedido;
-
--- Para ver as funções e procedimentos criados no seu SGBD ou BD
-SHOW FUNCTION STATUS;
-SHOW PROCEDURE STATUS;
 
 -- Exercícios
 -- 1 - Crie uma função chamada desconto(valor) que aplique um desconto de 10% em um valor de parâmetro
