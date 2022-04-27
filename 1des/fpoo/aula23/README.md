@@ -6,7 +6,7 @@
 -------------
 .Desafios do professor Reenye
 -------------
-- 1 Em um arquivo de texto, armazene o nome e o ano de nascimento das pessoas a seguir em um arquivo chamado "pessoas.csv"
+1 Em um arquivo de texto, armazene o nome e o ano de nascimento das pessoas a seguir em um arquivo chamado "pessoas.csv"
 	<table border = 0>
 		<tr><td>André</td><td>1998</td></tr>
 		<tr><td>Jussára</td><td>2000</td></tr>
