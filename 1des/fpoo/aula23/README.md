@@ -1,8 +1,23 @@
 .Persistência de Dados
 -------------
-- Situação Problema (Wellington)
+- Este repositório possui duas soluções de "exemplo" para a seguinte Situação Problema:
 	- Solução estrutural "porca" (sep)
 	- Solução mvc orientada a objeto(spoo)
+- Um arquivo chamado "entrada.csv" com duas colunas de dados numéricos
+	<table>
+		<tr><td>15</td><td>10</td></tr>
+		<tr><td>5</td><td>20</td></tr>
+		<tr><td>30</td><td>19</td></tr>
+		<tr><td>100</td><td>28</td></tr>
+		<tr><td>400</td><td>200</td></tr>
+	</table>
+- O programa deve ler os dados deste arquivo e apresentar uma tela com um menú de quatro opções:
+- 1.Adição 2. Subtração 3. Multiplicação 4. Divisão 5. Sair
+- Assim que o usuário escolher uma das opções, um arquivo chamado "saida.csv" deve ser criado com resultados da operação escolhida.
+-------------
+. Desafio da aula
+-------------
+- Conforme exemplo "spoo" altere o programa para que o arquivo de entrada possua 3 colunas de números
 -------------
 .Desafios do professor Reenye
 -------------
