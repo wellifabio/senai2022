@@ -1,0 +1,11 @@
+.Situação Problema (Posto de Gasolina)
+-------------
+- Contextualização: Um posto de gasolina está para ser inalgurado e será necessario um sistema de gerenciamento. Você foi procurado para o desenvolvimento do mesmo. Conhecendo o funcionamento do posto, foram levantados os seguintes requisitos que o programa deverá gerenciar:
+	- A quantidade de combustível disponível (essencial),
+	- Os abastecimentos feitos (essencial),
+	- E os produtos vendidos na loja de conveniência (essencial).
+	- Os frentistas irão receber uma comissão de 5% nos abastecimentos realizados (desejável).
+	- O posto terá um programa de fidelidade onde o cliente ganha uma lavagem após abastecer 1000L (desejável).
+- Entregas:
+	- Um diagrama de classes (utilize o site draw.io, Paint ou outra ferramenta que preferir)
+	- A codificação do sistema nos pacotes modelo e visão.
