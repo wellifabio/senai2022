@@ -63,3 +63,10 @@
 		<tr><td>sirlei@gmail.com</td><td>abc#1234</td></tr>
 	</table>
 - Utilize POO (Programação orientada a objeto) e padrão de projeto MVC conforme exemplo visto em aula.
+-------------
+.Obs:
+-------------
+- Os arquivos .csv devem possuir colunas separadas pelo caracter ";"
+- Os desafios podem ser feitos individualmente ou em duplas.
+- Cada desafio deve ser um projeto java.
+- No final da aula o professor vai disponibilizar uma pasta na rede para que os códigos fonte sejam entregues.
