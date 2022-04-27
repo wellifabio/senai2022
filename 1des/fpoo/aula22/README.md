@@ -1,0 +1,14 @@
+.Manipulação de arquivos de texto
+---------------
+- Arquivos de texto são um meio comum de fornecer dados de entrada e receber resultados como saída de um programa de computador.
+- Agregando sentido ao fluxo: "Entrada" -> "Processamento" -> "Saída".
+- Este repositório possui um exemplo de entrada e saída de dados em forma de arquivos.
+- Utilizando as classes Java:
+	- BufferedReader
+	- BufferedWriter
+	- FileReader
+	- FileWriter
+- Os arquivos de texto devem possuir alguma estrutura, neste caso utilizamos o formato .csv
+- Os arquivos de texto tipo CSV são facilmente manipulados por planilhas eletrônicas como Excel, por possuir esta estrutura
+	- Linhas separadas por "\r\n"
+	- Colunas separadas por ";"
