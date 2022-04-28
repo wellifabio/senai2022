@@ -1,0 +1,33 @@
+.Formatação de Trabalho acadêmico padrão ABNT
+--------------
+- modelo: Esta pasta possui um modelo em PDF e um em DOCX sobre como o trabalho deve ficar
+- instruções: Padrão de formatação e fonte e páginas
+- exemplo: Os trabalhos entregues pelos alunos
+--------------
+- Temas:
+	- Inteligência Artificial
+	- Indústria 4.0
+	- iOt
+	- Computação em Núvem
+	- Containner Docker
+	- Mineração de Dados
+	- Ciência de dados
+	- Big Data
+---------------
+- Utilize o Google e o Google acadêmico
+- Encontre três sites ou livros ou artigos que falem sobre o assunto
+- Em português
+- Para cada questão abaixo, copie e cole um ou dois parágrafos de texto encontrado
+- Faça uma resenha para cada parágrafo copiado.
+- Monte o seu trabalho no Word separando as respostas em capítulos
+- Faça um Resumo, uma Introdução e uma Conclusão.
+- Exporte para PDF e entregue ao professor.
+---------------
+- Pesquisa que responda as questões
+	- O que é?
+	- Como?
+	- Por quê?
+	- Quando?
+	- Onde?
+----------------
+Para isso utilize a técnica 5why apresentada em sala de aula.
