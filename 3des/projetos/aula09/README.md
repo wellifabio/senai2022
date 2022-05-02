@@ -10,3 +10,8 @@
 ------------
 - Links importantes
 	- (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
+	- Slides: https://github.com/wellifabio/senai2021/blob/master/3des/projetos/aula22/design_patterns.pdf
+------------
+.Simulado 2 (P/ Avaliação Final)
+------------
+	- Forms https://forms.office.com/Pages/ResponsePage.aspx?id=SxwFsZQ7q0GUQec6cjQv3Sbaj0Bk0-VNo0GRPoZlHn5UNUxKQlhGVFlPNVdXRjdISkNDM09NT0lWTSQlQCN0PWcu

@@ -19,3 +19,4 @@
 	- 1.4.6.Paralelo
 --------------
 Link: https://engsoftmoderna.info/cap8.html
+Selenium: https://www.selenium.dev/selenium-ide/
