@@ -23,13 +23,18 @@ public class PetForm extends JFrame implements ActionListener {
 	private JComboBox<String> cbEspecie;
 	private JTextArea verResultados;
 	private JButton create, read, update, delete;
-	private String imgPath = "C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\doguinho.png";
-	private ImageIcon icon = new ImageIcon(new ImageIcon(imgPath).getImage().getScaledInstance(150, 115, 100));
+	private String imgIco = "C:\\Users\\Professor\\Desktop\\work\\Pets\\assets\\icone.png";
+	private String[] imagens = { "C:\\Users\\Professor\\Desktop\\work\\Pets\\assets\\doguinho.png",
+			"C:\\Users\\Professor\\Desktop\\work\\Pets\\assets\\miau.png",
+			"C:\\Users\\Professor\\Desktop\\work\\Pets\\assets\\coelho.png",
+			"C:\\Users\\Professor\\Desktop\\work\\Pets\\assets\\ornitorrinco.png" };
+	private ImageIcon icon;
 	private int autoId = 1;
 
 	PetForm() {
 		setTitle("Formulário de Pets");
 		setBounds(200, 300, 500, 500);
+		setIconImage(new ImageIcon(imgIco).getImage());
 		painel = new JPanel();
 		painel.setBackground(new Color(255, 233, 213));
 		setContentPane(painel);
@@ -68,7 +73,7 @@ public class PetForm extends JFrame implements ActionListener {
 		tfId.setEditable(false);
 		tfId.setBounds(140, 20, 160, 30);
 		painel.add(tfId);
-		cbEspecie = new JComboBox(new String[] { "Gato", "Cachorro", "Coelho", "Outro" });
+		cbEspecie = new JComboBox<String>(new String[] {"Cachorro", "Gato", "Coelho", "Outro" });
 		cbEspecie.setBounds(140, 50, 160, 30);
 		painel.add(cbEspecie);
 		tfNomePet = new JTextField();
@@ -97,7 +102,7 @@ public class PetForm extends JFrame implements ActionListener {
 		imagem = new JLabel();
 		imagem.setBounds(310, 145, 150, 115);
 		imagem.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
-		imagem.setIcon(icon);
+		mostrarImagem(0);
 		painel.add(imagem);
 
 		create = new JButton("Cadastrar");
@@ -115,11 +120,24 @@ public class PetForm extends JFrame implements ActionListener {
 		painel.add(update);
 		painel.add(delete);
 
+		cbEspecie.addActionListener(this);
+		create.addActionListener(this);
+		read.addActionListener(this);
+		update.addActionListener(this);
+		delete.addActionListener(this);
+
+	}
+
+	private void mostrarImagem(int indice) {
+		icon = new ImageIcon(new ImageIcon(imagens[indice]).getImage().getScaledInstance(150, 115, 100));
+		imagem.setIcon(icon);
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
+		if (e.getSource() == cbEspecie) {
+			mostrarImagem(cbEspecie.getSelectedIndex());
+		}
 	}
 
 	public static void main(String[] agrs) {
