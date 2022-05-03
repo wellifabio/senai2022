@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -33,7 +34,7 @@ public class PetForm extends JFrame implements ActionListener {
 			"C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\coelho.png",
 			"C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\ornitorrinco.png" };
 	private ImageIcon icon;
-	private int autoId = 1;
+	private int autoId = PetProcess.pets.size() + 1;
 	private String texto = "";
 
 	PetForm() {
@@ -70,8 +71,7 @@ public class PetForm extends JFrame implements ActionListener {
 		telefone = new JLabel("Telefone:");
 		telefone.setBounds(20, 230, 120, 30);
 		painel.add(telefone);
-		rotulos = new JLabel(
-				"Id|Espécie|NomePet|Raça|Peso|Idade|Dono|Telefone:");
+		rotulos = new JLabel("Id|Espécie|NomePet|Raça|Peso|Idade|Dono|Telefone:");
 		rotulos.setBounds(20, 260, 500, 30);
 		painel.add(rotulos);
 
@@ -101,7 +101,7 @@ public class PetForm extends JFrame implements ActionListener {
 		tfTelefone.setBounds(140, 230, 260, 30);
 		painel.add(tfTelefone);
 		verResultados = new JTextArea();
-		//verResultados.setEnabled(false);
+		// verResultados.setEnabled(false);
 		verResultados.setBounds(20, 290, 545, 150);
 		verResultados.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
 		preencherAreaDeTexto();
@@ -127,12 +127,13 @@ public class PetForm extends JFrame implements ActionListener {
 		painel.add(update);
 		painel.add(delete);
 
+		// Ouvir os eventos dos Botões, ComboBox e outros
 		cbEspecie.addActionListener(this);
 		create.addActionListener(this);
 		read.addActionListener(this);
 		update.addActionListener(this);
 		delete.addActionListener(this);
-		
+
 	}
 
 	private void alternarImagens(int indice) {
@@ -140,24 +141,54 @@ public class PetForm extends JFrame implements ActionListener {
 		imagem.setIcon(icon);
 	}
 
-	//CREATE - CRUD
+	// CREATE - CRUD
 	private void cadastrar() {
-		if(tfNomePet.getText().length() != 0) {
-			
+		if (tfNomePet.getText().length() != 0 && tfRaca.getText().length() != 0 && tfPeso.getText().length() != 0
+				&& tfNascimento.getText().length() != 0 && tfNomeDono.getText().length() != 0
+				&& tfTelefone.getText().length() != 0) {	
+			PetProcess.pets
+					.add(new Pet(autoId, cbEspecie.getSelectedItem().toString(), tfNomePet.getText(), tfRaca.getText(), Float.parseFloat(tfPeso.getText()), tfNascimento.getText(), tfNomeDono.getText(), tfTelefone.getText()));
+			autoId++;
+			preencherAreaDeTexto();
+			limparCampos();
+		} else {
+			JOptionPane.showMessageDialog(this, "Favor preencher todos os campos.");
 		}
+	}
+
+	private void limparCampos(){
+		tfNomePet.setText(null);
+		tfRaca.setText(null);
+		tfPeso.setText(null);
+		tfNascimento.setText(null);
+		tfNomeDono.setText(null);
+		tfTelefone.setText(null);
 	}
 	
 	private void preencherAreaDeTexto() {
+		texto = ""; //Limpar a área de texto antes de preenher
 		for (Pet p : PetProcess.pets) {
 			texto += p.toString();
 		}
 		verResultados.setText(texto);
 	}
-	
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == cbEspecie) {
 			alternarImagens(cbEspecie.getSelectedIndex());
+		}
+		if (e.getSource() == create) {
+			cadastrar();
+		}
+		if (e.getSource() == read) {
+
+		}
+		if (e.getSource() == update) {
+
+		}
+		if (e.getSource() == delete) {
+
 		}
 	}
 

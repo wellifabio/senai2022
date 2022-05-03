@@ -9,7 +9,7 @@ public class PetProcess {
 
 	public static ArrayList<Pet> pets = new ArrayList<>();
 
-	public static void carregarTestes() throws ParseException {
+	public static void carregarTestes() {
 		// Limpar a lista
 		pets = new ArrayList<>();
 		// Preencher com testes
