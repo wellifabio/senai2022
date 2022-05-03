@@ -3,6 +3,7 @@ package visao;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -13,6 +14,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+
+import controle.PetProcess;
+import modelo.Pet;
 
 public class PetForm extends JFrame implements ActionListener {
 
@@ -30,7 +34,7 @@ public class PetForm extends JFrame implements ActionListener {
 			"C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\ornitorrinco.png" };
 	private ImageIcon icon;
 	private int autoId = 1;
-	private String saida = "";
+	private String texto = "";
 
 	PetForm() {
 		setTitle("Formulário de Pets");
@@ -67,7 +71,7 @@ public class PetForm extends JFrame implements ActionListener {
 		telefone.setBounds(20, 230, 120, 30);
 		painel.add(telefone);
 		rotulos = new JLabel(
-				"Id:...Espécie:.......Pet:.....................Peso:...................Idade:..................Dono:..................Telefone:");
+				"Id|Espécie|NomePet|Raça|Peso|Idade|Dono|Telefone:");
 		rotulos.setBounds(20, 260, 500, 30);
 		painel.add(rotulos);
 
@@ -97,9 +101,10 @@ public class PetForm extends JFrame implements ActionListener {
 		tfTelefone.setBounds(140, 230, 260, 30);
 		painel.add(tfTelefone);
 		verResultados = new JTextArea();
-		verResultados.setEnabled(false);
+		//verResultados.setEnabled(false);
 		verResultados.setBounds(20, 290, 545, 150);
 		verResultados.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
+		preencherAreaDeTexto();
 		painel.add(verResultados);
 		imagem = new JLabel();
 		imagem.setBounds(410, 145, 150, 115);
@@ -127,7 +132,7 @@ public class PetForm extends JFrame implements ActionListener {
 		read.addActionListener(this);
 		update.addActionListener(this);
 		delete.addActionListener(this);
-
+		
 	}
 
 	private void alternarImagens(int indice) {
@@ -135,6 +140,20 @@ public class PetForm extends JFrame implements ActionListener {
 		imagem.setIcon(icon);
 	}
 
+	//CREATE - CRUD
+	private void cadastrar() {
+		if(tfNomePet.getText().length() != 0) {
+			
+		}
+	}
+	
+	private void preencherAreaDeTexto() {
+		for (Pet p : PetProcess.pets) {
+			texto += p.toString();
+		}
+		verResultados.setText(texto);
+	}
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == cbEspecie) {
@@ -142,7 +161,8 @@ public class PetForm extends JFrame implements ActionListener {
 		}
 	}
 
-	public static void main(String[] agrs) {
+	public static void main(String[] agrs) throws ParseException {
+		PetProcess.carregarTestes();
 		new PetForm().setVisible(true);
 	}
 
