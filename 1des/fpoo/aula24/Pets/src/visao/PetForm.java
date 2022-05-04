@@ -3,6 +3,7 @@ package visao;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.text.ParseException;
 
 import javax.swing.BorderFactory;
@@ -28,11 +29,9 @@ public class PetForm extends JFrame implements ActionListener {
 	private JComboBox<String> cbEspecie;
 	private JTextArea verResultados;
 	private JButton create, read, update, delete;
-	private String imgIco = "C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\icone.png";
-	private String[] imagens = { "C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\doguinho.png",
-			"C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\miau.png",
-			"C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\coelho.png",
-			"C:\\Users\\Aluno.DSN5131112167\\Desktop\\gui\\Pets\\assets\\ornitorrinco.png" };
+	private String imgIco = "./assets/icone.png";
+	private String[] imagens = { "./assets/doguinho.png", "./assets/miau.png", "./assets/coelho.png",
+			"./assets/ornitorrinco.png" };
 	private ImageIcon icon;
 	private int autoId = PetProcess.pets.size() + 1;
 	private String texto = "";
@@ -145,9 +144,10 @@ public class PetForm extends JFrame implements ActionListener {
 	private void cadastrar() {
 		if (tfNomePet.getText().length() != 0 && tfRaca.getText().length() != 0 && tfPeso.getText().length() != 0
 				&& tfNascimento.getText().length() != 0 && tfNomeDono.getText().length() != 0
-				&& tfTelefone.getText().length() != 0) {	
-			PetProcess.pets
-					.add(new Pet(autoId, cbEspecie.getSelectedItem().toString(), tfNomePet.getText(), tfRaca.getText(), Float.parseFloat(tfPeso.getText()), tfNascimento.getText(), tfNomeDono.getText(), tfTelefone.getText()));
+				&& tfTelefone.getText().length() != 0) {
+			PetProcess.pets.add(new Pet(autoId, cbEspecie.getSelectedItem().toString(), tfNomePet.getText(),
+					tfRaca.getText(), Float.parseFloat(tfPeso.getText()), tfNascimento.getText(), tfNomeDono.getText(),
+					tfTelefone.getText()));
 			autoId++;
 			preencherAreaDeTexto();
 			limparCampos();
@@ -156,7 +156,7 @@ public class PetForm extends JFrame implements ActionListener {
 		}
 	}
 
-	private void limparCampos(){
+	private void limparCampos() {
 		tfNomePet.setText(null);
 		tfRaca.setText(null);
 		tfPeso.setText(null);
@@ -164,15 +164,33 @@ public class PetForm extends JFrame implements ActionListener {
 		tfNomeDono.setText(null);
 		tfTelefone.setText(null);
 	}
-	
+
 	private void preencherAreaDeTexto() {
-		texto = ""; //Limpar a área de texto antes de preenher
+		texto = ""; // Limpar a área de texto antes de preenher
 		for (Pet p : PetProcess.pets) {
 			texto += p.toString();
 		}
 		verResultados.setText(texto);
 	}
 
+	private void buscar() {
+		String entrada = JOptionPane.showInputDialog("Digite o Id do animal:");
+		int id = Integer.parseInt(entrada);
+		Pet pet = new Pet(id);
+		if(PetProcess.pets.contains(pet)) {
+			int indice = PetProcess.pets.indexOf(pet);
+			tfNomePet.setText(PetProcess.pets.get(indice).getNomePet());
+			tfRaca.setText(PetProcess.pets.get(indice).getRaca());
+			tfPeso.setText(PetProcess.pets.get(indice).getPeso("s"));
+			tfNascimento.setText(PetProcess.pets.get(indice).getNascimento("s"));
+			tfNomeDono.setText(PetProcess.pets.get(indice).getNomeDono());
+			tfTelefone.setText(PetProcess.pets.get(indice).getTelefone());
+		} else {
+			JOptionPane.showMessageDialog(this,"Pet não encontrado");
+		}
+		
+	}
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == cbEspecie) {
@@ -182,7 +200,7 @@ public class PetForm extends JFrame implements ActionListener {
 			cadastrar();
 		}
 		if (e.getSource() == read) {
-
+			buscar();
 		}
 		if (e.getSource() == update) {
 

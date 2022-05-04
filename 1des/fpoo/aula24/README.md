@@ -29,3 +29,5 @@
 			<tr><td>3</td><td>5</td></tr>
 			<tr><td>4</td><td>7</td></tr>
 		</table>
+	- Entendendo Equals And HashCode https://www.youtube.com/watch?v=T008B4vURk4
+	
