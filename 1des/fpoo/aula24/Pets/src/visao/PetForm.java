@@ -3,8 +3,10 @@ package visao;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
+import java.text.DecimalFormat;
 import java.text.ParseException;
+import java.util.Currency;
+import java.util.Locale;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -14,6 +16,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -27,6 +30,7 @@ public class PetForm extends JFrame implements ActionListener {
 	private JLabel id, especie, nomePet, raca, peso, nascimento, nomeDono, telefone, rotulos, imagem;
 	private JTextField tfId, tfNomePet, tfRaca, tfPeso, tfNascimento, tfNomeDono, tfTelefone;
 	private JComboBox<String> cbEspecie;
+	private JScrollPane rolagem;
 	private JTextArea verResultados;
 	private JButton create, read, update, delete;
 	private String imgIco = "./assets/icone.png";
@@ -35,6 +39,9 @@ public class PetForm extends JFrame implements ActionListener {
 	private ImageIcon icon;
 	private int autoId = PetProcess.pets.size() + 1;
 	private String texto = "";
+
+	private final Locale BRASIL = new Locale("pt", "BR");
+	private DecimalFormat df = new DecimalFormat("#.00");
 
 	PetForm() {
 		setTitle("Formulário de Pets");
@@ -100,11 +107,11 @@ public class PetForm extends JFrame implements ActionListener {
 		tfTelefone.setBounds(140, 230, 260, 30);
 		painel.add(tfTelefone);
 		verResultados = new JTextArea();
-		// verResultados.setEnabled(false);
-		verResultados.setBounds(20, 290, 545, 150);
 		verResultados.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
 		preencherAreaDeTexto();
-		painel.add(verResultados);
+		rolagem = new JScrollPane(verResultados);
+		rolagem.setBounds(20, 290, 545, 150);
+		painel.add(rolagem);
 		imagem = new JLabel();
 		imagem.setBounds(410, 145, 150, 115);
 		imagem.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
@@ -145,9 +152,19 @@ public class PetForm extends JFrame implements ActionListener {
 		if (tfNomePet.getText().length() != 0 && tfRaca.getText().length() != 0 && tfPeso.getText().length() != 0
 				&& tfNascimento.getText().length() != 0 && tfNomeDono.getText().length() != 0
 				&& tfTelefone.getText().length() != 0) {
+
+			// Converter o peso no formato Brasileiro usando virgula como decimal
+			df.setCurrency(Currency.getInstance(BRASIL));
+			float peso;
+			try {
+				peso = Float.parseFloat(df.parse(tfPeso.getText()).toString());
+			} catch (ParseException e) {
+				System.out.println(e);
+				peso = 0;
+			}
+
 			PetProcess.pets.add(new Pet(autoId, cbEspecie.getSelectedItem().toString(), tfNomePet.getText(),
-					tfRaca.getText(), Float.parseFloat(tfPeso.getText()), tfNascimento.getText(), tfNomeDono.getText(),
-					tfTelefone.getText()));
+					tfRaca.getText(), peso, tfNascimento.getText(), tfNomeDono.getText(), tfTelefone.getText()));
 			autoId++;
 			preencherAreaDeTexto();
 			limparCampos();
@@ -173,24 +190,96 @@ public class PetForm extends JFrame implements ActionListener {
 		verResultados.setText(texto);
 	}
 
+	// Retornar índice da espécie
+	int obterIndiceEspecie(String especie) {
+		switch (especie) {
+		case "Cachorro":
+			return 0;
+		case "Gato":
+			return 1;
+		case "Coelho":
+			return 2;
+		case "Outro":
+			return 3;
+		default:
+			return -1;
+		}
+	}
+
+	// READ - CRUD
 	private void buscar() {
 		String entrada = JOptionPane.showInputDialog("Digite o Id do animal:");
 		int id = Integer.parseInt(entrada);
 		Pet pet = new Pet(id);
-		if(PetProcess.pets.contains(pet)) {
+		if (PetProcess.pets.contains(pet)) {
 			int indice = PetProcess.pets.indexOf(pet);
+			tfId.setText(PetProcess.pets.get(indice).getId("s"));
+			cbEspecie.setSelectedIndex(obterIndiceEspecie(PetProcess.pets.get(indice).getEspecie()));
 			tfNomePet.setText(PetProcess.pets.get(indice).getNomePet());
 			tfRaca.setText(PetProcess.pets.get(indice).getRaca());
 			tfPeso.setText(PetProcess.pets.get(indice).getPeso("s"));
 			tfNascimento.setText(PetProcess.pets.get(indice).getNascimento("s"));
 			tfNomeDono.setText(PetProcess.pets.get(indice).getNomeDono());
 			tfTelefone.setText(PetProcess.pets.get(indice).getTelefone());
+			create.setEnabled(false);
+			update.setEnabled(true);
+			delete.setEnabled(true);
+			PetProcess.salvar();
 		} else {
-			JOptionPane.showMessageDialog(this,"Pet não encontrado");
+			JOptionPane.showMessageDialog(this, "Pet não encontrado");
 		}
-		
+
 	}
 	
+	//UPDATE - CRUD
+	private void alterar() {
+		int id = Integer.parseInt(tfId.getText());
+		Pet pet = new Pet(id);
+		int indice = PetProcess.pets.indexOf(pet);
+		if (tfNomePet.getText().length() != 0 && tfRaca.getText().length() != 0 && tfPeso.getText().length() != 0
+				&& tfNascimento.getText().length() != 0 && tfNomeDono.getText().length() != 0
+				&& tfTelefone.getText().length() != 0) {
+
+			// Converter o peso no formato Brasileiro usando virgula como decimal
+			df.setCurrency(Currency.getInstance(BRASIL));
+			float peso;
+			try {
+				peso = Float.parseFloat(df.parse(tfPeso.getText()).toString());
+			} catch (ParseException e) {
+				System.out.println(e);
+				peso = 0;
+			}
+
+			PetProcess.pets.set(indice,new Pet(id, cbEspecie.getSelectedItem().toString(), tfNomePet.getText(),
+					tfRaca.getText(), peso, tfNascimento.getText(), tfNomeDono.getText(), tfTelefone.getText()));
+			preencherAreaDeTexto();
+			limparCampos();
+		} else {
+			JOptionPane.showMessageDialog(this, "Favor preencher todos os campos.");
+		}
+		create.setEnabled(true);
+		update.setEnabled(false);
+		delete.setEnabled(false);
+		tfId.setText(String.format("%d", autoId));
+		PetProcess.salvar();
+	}
+	
+	
+	// DELETE - CRUD
+	private void excluir() {
+		int id = Integer.parseInt(tfId.getText());
+		Pet pet = new Pet(id);
+		int indice = PetProcess.pets.indexOf(pet);
+		PetProcess.pets.remove(indice);
+		preencherAreaDeTexto();
+		limparCampos();
+		create.setEnabled(true);
+		update.setEnabled(false);
+		delete.setEnabled(false);
+		tfId.setText(String.format("%d", autoId));
+		PetProcess.salvar();
+	}
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == cbEspecie) {
@@ -203,15 +292,16 @@ public class PetForm extends JFrame implements ActionListener {
 			buscar();
 		}
 		if (e.getSource() == update) {
-
+			alterar();
 		}
 		if (e.getSource() == delete) {
-
+			excluir();
 		}
 	}
 
 	public static void main(String[] agrs) throws ParseException {
-		PetProcess.carregarTestes();
+		//PetProcess.carregarTestes();
+		PetProcess.abrir();
 		new PetForm().setVisible(true);
 	}
 
