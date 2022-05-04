@@ -1,6 +1,5 @@
 package controle;
 
-import java.text.ParseException;
 import java.util.ArrayList;
 
 import modelo.Pet;

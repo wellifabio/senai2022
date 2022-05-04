@@ -1,7 +1,5 @@
 package visao;
 
-import java.text.ParseException;
-
 import controle.PetProcess;
 import modelo.Pet;
 
