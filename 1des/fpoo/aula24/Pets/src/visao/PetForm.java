@@ -107,6 +107,7 @@ public class PetForm extends JFrame implements ActionListener {
 		tfTelefone.setBounds(140, 270, 255, 30);
 		painel.add(tfTelefone);
 		verResultados = new JTextArea();
+		verResultados.setEditable(false);
 		verResultados.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
 		preencherAreaDeTexto();
 		rolagem = new JScrollPane(verResultados);
