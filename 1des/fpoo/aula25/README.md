@@ -1,49 +1,60 @@
-.Grupo 1:
-- Felipe Augusto Ribeiro Serra
-- Felipe dos Santos Canizela
-- Beatriz Gabriela Godoi de Souza
-
-. Grupo 2:
-- Guilherme Henrique dos Santos
-- Raul Souza Pereira
-- Victória Heloise Cunha Duó
+.Atividade em Grupo
+-------------
+- Desenvolver uma solução Desktop:
+	- Reuna-se com seu grupo e defina um tema semelhante ao exemplo da anterior (Pet)
+	- Crie uma planilha utilizando Excel com dados fictícios, pelo menos 20 linhas da base de dados
+	- Apresente a planilha ao professor e se aprovada siga com o projeto.
+	- Transforme a planilha em um arquivo .CSV separado por ";"
+	- Desenvolva a documentação prévia utilizando UML (Unified Modeling Language) ferramenta: draw.io
+		- DCU (Diagrama de Casos de Uso)
+		- Lista de Prioridade dos Requisitos (Essencial, Importante, Desejável)
+		- DC (Diagrama de Classes) com os Atributos e mátodos principais
+	- Desenvolva o programa no padrão de projeto MVC (Model, View, Controller)
+	- Dentro da pasta do projeto deve conter os seguintes diretórios
+		- src (Com os pacotes: modelo, visao e controle)
+		- doc (com os documentos do projeto DCU, DC, Requisitos e um Print da tela Principal:Protótipo)
+	- Haverá sorteio de três projetos que serão apresentados para a turma.
+	- A pasta do projeto será entregue via rede ao diretório que o professor disponibilizar e ficará neste repositório para exemplos futuros
+-------------
+- Grupo 1:
+	- Felipe Augusto Ribeiro Serra
+	- Felipe dos Santos Canizela
+	- Beatriz Gabriela Godoi de Souza
+- Grupo 2:
+	- Guilherme Henrique dos Santos
+	- Raul Souza Pereira
+	- Victória Heloise Cunha Duó
+- Grupo 3:
+	- Guilherme Melro
+	- João Augusto Rocha Carloto
+	- Julia Marra Pastorelli
+- Grupo 4:
+	- Santiago Conti Zapparoli
+	- Breno Jorge de Lima Silva
+	- Pietra Giuliane Oliveira Ferreira
+- Grupo 5:
+	- Carlos Daniel de Abreu
+	- Vinicius Campos Ferreira
+	- Gabriel Alves Sousa Silva
+- Grupo 6:
+	- Victor Gabriel Souza Adamastor
+	- Luana Silva BrandÃ£o Lopes
+	- Gleidson Pereira da Silva
+- Grupo 7:
+	- Bruno Favaro
+	- Luiz Fernando de Souza
+	- Carlos Eduardo Silva Miranda
  
-.Grupo 3:
-- Guilherme Melro
-- João Augusto Rocha Carloto
-- Julia Marra Pastorelli
-- 
-.Grupo 4:
-- Santiago Conti Zapparoli
-- Breno Jorge de Lima Silva
-- Pietra Giuliane Oliveira Ferreira
+- Grupo 8:
+	- Rodolfo dos Santos Aura
+	- Ana Clara Oliveira Santos
+	- Andreina Costa Moura
  
-.Grupo 5:
-- Carlos Daniel de Abreu
-- Vinicius Campos Ferreira
-- Gabriel Alves Sousa Silva
- 
-.Grupo 6:
-- Victor Gabriel Souza Adamastor
-- Luana Silva BrandÃ£o Lopes
-- Gleidson Pereira da Silva
- 
-.Grupo 7:
-- Bruno Favaro
-- Luiz Fernando de Souza
-- Carlos Eduardo Silva Miranda
- 
-.Grupo 8:
-- Rodolfo dos Santos Aura
-- Ana Clara Oliveira Santos
-- Andreina Costa Moura
- 
-.Grupo 9:
-- Eduardo Venosi de Campos
-- Natã Batista Fernandes
-- Emerson Cleudison Colares Santos
- 
-.Grupo 10:
-- Leticia Amaral Lopes
-- Cyro BrandÃ£o Alvares
-- Rodrigo Caetano Silva
+- Grupo 9:
+	- Eduardo Venosi de Campos
+	- Natã Batista Fernandes
+	- Emerson Cleudison Colares Santos
+- Grupo 10:
+	- Leticia Amaral Lopes
+	- Cyro BrandÃ£o Alvares
+	- Rodrigo Caetano Silva
