@@ -58,3 +58,7 @@
 	- Leticia Amaral Lopes
 	- Cyro BrandÃ£o Alvares
 	- Rodrigo Caetano Silva
+-------------
+.Para ajudar a ter idéias para o Projeto Final
+-------------
+- https://telecomwebinar.com/iot2022-brasil-summit/
