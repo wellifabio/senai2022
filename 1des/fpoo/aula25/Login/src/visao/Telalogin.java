@@ -12,6 +12,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import controle.UsuarioProcessa;
+import uteis.Cripto;
 
 public class Telalogin extends JFrame implements ActionListener {
 
@@ -24,7 +25,7 @@ public class Telalogin extends JFrame implements ActionListener {
 	private JButton login;
 
 	Telalogin() {
-		// Propriedades Básicas
+		// Propriedades Bï¿½sicas
 		setTitle("Tela de Login");
 		setBounds(600, 300, 360, 200);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -32,7 +33,7 @@ public class Telalogin extends JFrame implements ActionListener {
 		setContentPane(painel); //Configua o painel
 		setLayout(null);
 
-		// Conteúdos da tela
+		// Conteï¿½dos da tela
 		rotulo1 = new JLabel("Email:");
 		rotulo1.setBounds(20, 20, 100, 20);
 		email = new JTextField();
@@ -45,7 +46,7 @@ public class Telalogin extends JFrame implements ActionListener {
 		login = new JButton("Login");
 		login.setBounds(120, 100, 200, 30);
 		
-		//Habilitando o evento de clicar no botão
+		//Habilitando o evento de clicar no botï¿½o
 		login.addActionListener(this);
 
 		//Adicioar todos os elementos no painel
@@ -59,19 +60,21 @@ public class Telalogin extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == login) {
+			if(email.getText().length() > 0 && new String(senha.getPassword()).length() > 0) {
 			int indice = UsuarioProcessa.checarEmail(email.getText());
 			if (indice != -1) {
-				if (UsuarioProcessa.checarSenha(indice, senha.getPassword().toString())) {
-					JOptionPane.showMessageDialog(this, "Acesso permitido");
-					this.dispose();// Fecha o Formulário
+				if (UsuarioProcessa.checarSenha(indice, Cripto.encripta(new String(senha.getPassword())))) {
+					this.dispose();// Fecha o Formulï¿½rio
+					UsuarioCRUD uc = new UsuarioCRUD();
+					uc.setVisible(true);
 				} else {
 					JOptionPane.showMessageDialog(this, "Acesso negado");
 				}
 			} else {
-				//JOptionPane.showMessageDialog(this, "Usuário não encontrado");
-				this.dispose();
-				UsuarioCRUD uc = new UsuarioCRUD();
-				uc.setVisible(true);
+				JOptionPane.showMessageDialog(this, "UsuÃ¡rio nÃ£o encontrado");
+			}
+			}else {
+				JOptionPane.showMessageDialog(this, "Preencha o email e a senha");
 			}
 		}
 	}

@@ -1,8 +1,10 @@
 package controle;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -11,6 +13,7 @@ import modelo.Usuario;
 public class UsuarioDAO {
 	
 	private BufferedReader br;
+	private BufferedWriter bw;
 	private String path = "./dados/usuarios.csv";
 
 	public ArrayList<Usuario> ler() {
@@ -31,5 +34,17 @@ public class UsuarioDAO {
 			System.out.println(e);
 		}
 		return linhas;
+	}
+	
+	public void escrever(ArrayList<Usuario> linhas) {
+		try {
+			bw = new BufferedWriter(new FileWriter(path));
+			for (Usuario u : linhas) {
+				bw.write(u.toCSV());
+			}
+			bw.close();
+		} catch (IOException e) {
+			System.out.println(e);
+		}
 	}
 }

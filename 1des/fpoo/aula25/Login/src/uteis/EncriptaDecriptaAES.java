@@ -1,6 +1,6 @@
 /* Fonte: https://www.devmedia.com.br/utilizando-criptografia-simetrica-em-java/31170 */
 
-package visao.testes;
+package uteis;
 
 import javax.crypto.spec.SecretKeySpec;
 import javax.crypto.spec.IvParameterSpec;

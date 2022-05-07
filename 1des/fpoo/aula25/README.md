@@ -1,7 +1,7 @@
 .Atividade em Grupo
 -------------
 - Desenvolver uma solução Desktop:
-	- Reuna-se com seu grupo e defina um tema semelhante ao exemplo da anterior (Pet)
+	- Reuna-se com seu grupo e defina um tema semelhante ao exemplo da anterior (Pet) e (Login)
 	- Crie uma planilha utilizando Excel com dados fictícios, pelo menos 20 linhas da base de dados
 	- Apresente a planilha ao professor e se aprovada siga com o projeto.
 	- Transforme a planilha em um arquivo .CSV separado por ";"

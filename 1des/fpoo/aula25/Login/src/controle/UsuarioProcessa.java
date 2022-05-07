@@ -3,6 +3,7 @@ package controle;
 import java.util.ArrayList;
 
 import modelo.Usuario;
+import uteis.Cripto;
 
 public class UsuarioProcessa {
 
@@ -11,8 +12,15 @@ public class UsuarioProcessa {
 
 	public static void carregar() {
 		usuarios = ud.ler();
+		if(usuarios.size() == 0) {
+			usuarios.add(new Usuario("admin@admin.com",Cripto.encripta("admin")));
+		}
 	}
 
+	public static void salvar() {
+		ud.escrever(usuarios);
+	}
+	
 	public static int checarEmail(String email) {
 		int retorno = -1;
 		for (int i = 0; i < usuarios.size(); i++) {
@@ -29,5 +37,4 @@ public class UsuarioProcessa {
 		}
 		return false;
 	}
-	
 }

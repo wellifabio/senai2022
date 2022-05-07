@@ -19,7 +19,7 @@ public class Usuario {
 		this.senha = linha.split(";")[1];
 	}
 
-	// Métodos de acesso (Getters && Setters)
+	// Mï¿½todos de acesso (Getters && Setters)
 	public String getEmail() {
 		return email;
 	}
@@ -35,7 +35,7 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-		
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(email);
@@ -53,9 +53,13 @@ public class Usuario {
 		return Objects.equals(email, other.email);
 	}
 
-	// Saídas
+	// Saï¿½das
 	@Override
 	public String toString() {
-		return email + senha;
+		return email + "\t" + senha;
+	}
+
+	public String toCSV() {
+		return email + ";" + senha + "\r\n";
 	}
 }

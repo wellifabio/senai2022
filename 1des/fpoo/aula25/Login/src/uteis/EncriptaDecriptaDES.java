@@ -1,5 +1,5 @@
 /* Fonte: https://www.devmedia.com.br/utilizando-criptografia-simetrica-em-java/31170 */
-package visao.testes;
+package uteis;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -25,7 +25,7 @@ public class EncriptaDecriptaDES {
 			// Cria a cifra
 			cifraDES = Cipher.getInstance("DES/ECB/PKCS5Padding");
 
-			// Inicializa a cifra para o processo de encriptação
+			// Inicializa a cifra para o processo de encriptaï¿½ï¿½o
 			cifraDES.init(Cipher.ENCRYPT_MODE, chaveDES);
 
 			// Texto puro
@@ -39,7 +39,7 @@ public class EncriptaDecriptaDES {
 
 			System.out.println("Texto Encriptado : " + textoEncriptado);
 
-			// Inicializa a cifra também para o processo de decriptação
+			// Inicializa a cifra tambï¿½m para o processo de decriptaï¿½ï¿½o
 			cifraDES.init(Cipher.DECRYPT_MODE, chaveDES);
 
 			// Decriptografa o texto
