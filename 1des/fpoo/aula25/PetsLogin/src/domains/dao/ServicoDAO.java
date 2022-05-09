@@ -1,4 +1,4 @@
-package domains;
+package domains.dao;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,21 +8,23 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PetDAO {
+import domains.Servico;
 
+public class ServicoDAO {
+	
 	private BufferedReader br;
 	private BufferedWriter bw;
-	private String path = "./data/pets.csv";
-	
-	public ArrayList<Pet> ler() {
-		ArrayList<Pet> linhas = new ArrayList<>();
-		Pet p;
+	private String path = "./data/servicos.csv";
+
+	public ArrayList<Servico> ler() {
+		ArrayList<Servico> linhas = new ArrayList<>();
+		Servico servico;
 		try {
 			br = new BufferedReader(new FileReader(path));
 			String linha = br.readLine();
 			while(linha != null) {
-				p = new Pet(linha);
-				linhas.add(p);
+				servico = new Servico(linha);
+				linhas.add(servico);
 				linha = br.readLine();
 			}
 			br.close();
@@ -34,11 +36,11 @@ public class PetDAO {
 		return linhas;
 	}
 	
-	public void escrever(ArrayList<Pet> linhas) {
+	public void escrever(ArrayList<Servico> linhas) {
 		try {
 			bw = new BufferedWriter(new FileWriter(path));
-			for (Pet p : linhas) {
-				bw.write(p.toCSV());
+			for (Servico s : linhas) {
+				bw.write(s.toCSV());
 			}
 			bw.close();
 		} catch (IOException e) {

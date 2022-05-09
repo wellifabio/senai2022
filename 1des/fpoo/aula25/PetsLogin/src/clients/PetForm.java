@@ -12,7 +12,7 @@ import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
+import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 import controllers.PetProcess;
 import domains.Pet;
 
-public class PetForm extends JFrame implements ActionListener {
+public class PetForm extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel painel;
@@ -45,8 +45,8 @@ public class PetForm extends JFrame implements ActionListener {
 	private DecimalFormat df = new DecimalFormat("#.00");
 
 	public PetForm() {
-		setTitle("Formulário de Pets");
-		setBounds(100, 100, 800, 600);
+		setTitle("Cadastro de Animais/Pets");
+		setBounds(150, 170, 800, 600);
 		setIconImage(new ImageIcon(imgIco).getImage());
 		painel = new JPanel();
 		painel.setBackground(new Color(255, 233, 213));
@@ -187,6 +187,7 @@ public class PetForm extends JFrame implements ActionListener {
 	}
 
 	private void limparCampos() {
+		tfId.setText(String.format("%d",autoId));
 		tfNomePet.setText(null);
 		tfRaca.setText(null);
 		tfPeso.setText(null);
@@ -229,7 +230,7 @@ public class PetForm extends JFrame implements ActionListener {
 		String entrada = JOptionPane.showInputDialog(this, "Digite o Id do animal:");
 
 		boolean isNumeric = true;
-		if (entrada != null) {
+		if (entrada != null && !entrada.equals("")) {
 			for (int i = 0; i < entrada.length(); i++) {
 				if (!Character.isDigit(entrada.charAt(i))) {
 					isNumeric = false;

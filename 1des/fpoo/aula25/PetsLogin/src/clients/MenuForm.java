@@ -1,4 +1,4 @@
-package domains;
+package clients;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -12,10 +12,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
-import clients.PetForm;
-import controllers.PetProcess;
-
-public class PetMenu extends JFrame implements ActionListener {
+public class MenuForm extends JFrame implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel painel;
@@ -27,11 +24,11 @@ public class PetMenu extends JFrame implements ActionListener {
 	private ImageIcon fundo;
 	private JLabel lbFundo = new JLabel();
 
-	PetMenu(){
+	MenuForm(){
 		// COnfigurações do Form principal
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("PetShop - Sistema de Serviços");
-		setBounds(200, 100, 700, 500);
+		setBounds(100, 100, 900, 700);
 		setIconImage(new ImageIcon(imgIco).getImage());
 		painel = new JPanel();
 		painel.setBackground(new Color(255, 233, 213));
@@ -41,9 +38,9 @@ public class PetMenu extends JFrame implements ActionListener {
 		setLayout(null);
 		
 		//Imagem de fundo
-		fundo = new ImageIcon(new ImageIcon(pathFundo).getImage().getScaledInstance(650,405, 100));
+		fundo = new ImageIcon(new ImageIcon(pathFundo).getImage().getScaledInstance(850,605, 100));
 		lbFundo.setIcon(fundo);
-		lbFundo.setBounds(20,15,650,405);
+		lbFundo.setBounds(20,15,850,605);
 		painel.add(lbFundo);
 		
 		// Barra de Menús
@@ -75,18 +72,21 @@ public class PetMenu extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == itemPets) {
 			PetForm pf = new PetForm();
+			pf.setModal(true);
 			pf.setVisible(true);
+		}
+		if(e.getSource() == itemServicos) {
+			ServicoForm sf = new ServicoForm();
+			sf.setModal(true);
+			sf.setVisible(true);
+		}
+		if(e.getSource() == itemUsuarios) {
+			UsuarioForm uf = new UsuarioForm();
+			uf.setModal(true);
+			uf.setVisible(true);
 		}
 		if(e.getSource() == itemSair) {
 			this.dispose();
 		}
 	}
-	
-	public static void main(String[] args) {
-		PetProcess.abrir();
-		new PetMenu().setVisible(true);
-	}
-
-
-
 }
