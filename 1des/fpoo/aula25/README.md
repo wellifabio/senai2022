@@ -16,6 +16,13 @@
 	- Haverá sorteio de três projetos que serão apresentados para a turma.
 	- A pasta do projeto será entregue via rede ao diretório que o professor disponibilizar e ficará neste repositório para exemplos futuros
 -------------
+.OBS Login:
+-------------
+- O sistema de loguin utiliza criptografia manual de senha.
+- Possui 4 exemplos de criptografias tradicionais
+- Para funcionar com a criptografia básica de exemplo altere o charset para utf-8
+- Todas as linhas de comando que utilizam criptografia possuem uma linha comentada logo acima ou abaixo sem a criptografia para testar sem ela e comparar
+-------------
 - Grupo 1:
 	- Felipe Augusto Ribeiro Serra
 	- Felipe dos Santos Canizela
