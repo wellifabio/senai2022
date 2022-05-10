@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Currency;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Objects;
 
 public class Servico {
 
@@ -52,8 +53,16 @@ public class Servico {
 		}
 	}
 
+	public Servico(int id) {
+		this.id = id;
+	}
+	
 	public int getId() {
-		return id;
+		return this.id;
+	}
+
+	public String getId(String string) {
+		return String.format("%d", id);
 	}
 
 	public void setId(int id) {
@@ -84,16 +93,16 @@ public class Servico {
 		this.tipo = tipo;
 	}
 
-	public Date getData() {
-		return data;
+	public String getData(String string) {
+		return sdf.format(data);
 	}
 
 	public void setData(Date data) {
 		this.data = data;
 	}
 
-	public Date getHora() {
-		return hora;
+	public String getHora(String string) {
+		return shf.format(hora);
 	}
 
 	public void setHora(Date hora) {
@@ -103,9 +112,29 @@ public class Servico {
 	public double getValor() {
 		return valor;
 	}
+	public String getValor(String string) {
+		return String.format("%.2f", valor);
+	}
 
 	public void setValor(double valor) {
 		this.valor = valor;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Servico other = (Servico) obj;
+		return id == other.id;
 	}
 
 	@Override
@@ -123,4 +152,5 @@ public class Servico {
 		return new String[] { String.format("%d", id), usuario.getLogin(), String.format("%d", pet.getId()), tipo,
 				sdf.format(data), shf.format(hora), String.format("%.2f", valor) };
 	}
+
 }

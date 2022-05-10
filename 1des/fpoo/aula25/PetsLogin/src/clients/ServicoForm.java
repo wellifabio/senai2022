@@ -31,21 +31,21 @@ public class ServicoForm extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel painel;
-	private JLabel id, usuario, pet, tipo, data, hora, valor;
-	private JTextField tfId, tfUsuario, tfPet, tfData, tfHora, tfValor;
+	private JLabel id, usuario, pet, tipo, data, hora, valor, cabecalhoPets, cabecalhoFiltros;
+	private JTextField tfId, tfUsuario, tfPet, tfData, tfHora, tfValor, tfFiltroPet, tfFiltroData, tfFiltroTipo;
 	private JComboBox<String> cbTipo;
 	private JScrollPane rolagem1, rolagem2;
 	private JTable tableServicos, tablePets;
 	private DefaultTableModel tableModelServicos, tableModelPets;
-	private JButton create, readServico, readPet, update, delete, filtroPet, filtroData, filtroTipo;
+	private JButton create, readServico, readPet, update, delete, filtro;
 	private String imgIco = "./assets/icone.png";
-	private int autoId = ServicoProcess.servicos.size() + 1;
+	private int autoId = ServicoProcess.servicos.get(ServicoProcess.servicos.size() - 1).getId() + 1;
 
 	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	private SimpleDateFormat shf = new SimpleDateFormat("HH:mm");
 
 	public ServicoForm() {
-		setTitle("Cadastro de Serviï¿½os");
+		setTitle("Cadastro de Serviços");
 		setBounds(150, 170, 800, 600);
 		setIconImage(new ImageIcon(imgIco).getImage());
 		painel = new JPanel();
@@ -56,13 +56,13 @@ public class ServicoForm extends JDialog implements ActionListener {
 		id = new JLabel("Id:");
 		id.setBounds(20, 20, 120, 30);
 		painel.add(id);
-		usuario = new JLabel("Usuï¿½rio:");
+		usuario = new JLabel("Usuário:");
 		usuario.setBounds(20, 55, 120, 30);
 		painel.add(usuario);
 		pet = new JLabel("Id do pet:");
 		pet.setBounds(20, 90, 120, 30);
 		painel.add(pet);
-		tipo = new JLabel("Tipo de Servoï¿½o:");
+		tipo = new JLabel("Tipo de Serviço:");
 		tipo.setBounds(20, 125, 120, 30);
 		painel.add(tipo);
 		data = new JLabel("Data:");
@@ -99,29 +99,33 @@ public class ServicoForm extends JDialog implements ActionListener {
 		tfValor = new JTextField();
 		tfValor.setBounds(140, 235, 255, 30);
 		painel.add(tfValor);
+		valorSugerido();
 
+		cabecalhoPets = new JLabel("Clique no Animal(Pet) ou em \"Filtrar Pet\" para encontrar.");
+		cabecalhoPets.setBounds(405, 60, 350, 30);
+		painel.add(cabecalhoPets);
 		tableModelPets = new DefaultTableModel();
 		tableModelPets.addColumn("Id");
-		tableModelPets.addColumn("EspÃ©cie");
+		tableModelPets.addColumn("Espécie");
 		tableModelPets.addColumn("Nome Pet");
 		tableModelPets.addColumn("Nome Dono");
-		tableModelPets.addColumn("RaÃ§a");
+		tableModelPets.addColumn("Raça");
 		if (PetProcess.pets.size() != 0) {
 			preencherTabelaPets(PetProcess.pets);
 		}
 		tablePets = new JTable(tableModelPets);
 		rolagem2 = new JScrollPane(tablePets);
-		rolagem2.setBounds(405, 60, 350, 240);
+		rolagem2.setBounds(405, 90, 350, 210);
 		painel.add(rolagem2);
-		
+
 		// Evento que pega linha e coluna da tabela que foi selecionada
 		tablePets.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
 				int lin = tablePets.getSelectedRow();
 				tfPet.setText(tablePets.getValueAt(lin, 0).toString());
-			}	
+			}
 		});
-		
+
 		// 1ï¿½ etapa do READ Monta a tabela
 		tableModelServicos = new DefaultTableModel();
 		tableModelServicos.addColumn("Id");
@@ -158,41 +162,137 @@ public class ServicoForm extends JDialog implements ActionListener {
 		readPet.setBounds(285, 95, 110, 30);
 		painel.add(readPet);
 
-		filtroPet = new JButton("Pet");
-		filtroTipo = new JButton("Tipo");
-		filtroData = new JButton("Data");
-		filtroPet.setBounds(25, 270, 120, 30);
-		filtroTipo.setBounds(150, 270, 120, 30);
-		filtroData.setBounds(275, 270, 120, 30);
-		painel.add(filtroPet);
-		painel.add(filtroTipo);
-		painel.add(filtroData);
+		cabecalhoFiltros = new JLabel("Pet__________ Tipo_________ Data");
+		tfFiltroPet = new JTextField();
+		tfFiltroTipo = new JTextField();
+		tfFiltroData = new JTextField();
+		filtro = new JButton("Filtrar");
+		cabecalhoFiltros.setBounds(20, 265, 300, 15);
+		tfFiltroPet.setBounds(20, 280, 90, 20);
+		tfFiltroTipo.setBounds(115, 280, 90, 20);
+		tfFiltroData.setBounds(210, 280, 90, 20);
+		filtro.setBounds(305, 270, 90, 30);
+		painel.add(cabecalhoFiltros);
+		painel.add(tfFiltroPet);
+		painel.add(tfFiltroTipo);
+		painel.add(tfFiltroData);
+		painel.add(filtro);
 
-		// Ouvir os eventos dos Botï¿½es, ComboBox e outros
+		// Ouvir os eventos dos Botões, ComboBox e outros
+		cbTipo.addActionListener(this);
 		create.addActionListener(this);
 		readServico.addActionListener(this);
 		update.addActionListener(this);
 		delete.addActionListener(this);
 		readPet.addActionListener(this);
-		filtroPet.addActionListener(this);
-		filtroTipo.addActionListener(this);
-		filtroData.addActionListener(this);
+		filtro.addActionListener(this);
 	}
 
-	private ArrayList<Pet> filtroPets(String filtro) {
+	int obterIndiceTipo(String tipo) {
+		switch (tipo) {
+		case "Banho":
+			return 0;
+		case "Tosa":
+			return 1;
+		case "Outro":
+			return 2;
+		default:
+			return -1;
+		}
+	}
+
+	private void valorSugerido() {
+		switch (cbTipo.getSelectedIndex()) {
+		case 0:
+			tfValor.setText("29,90");
+			break;
+		case 1:
+			tfValor.setText("49,90");
+			break;
+		case 2:
+			tfValor.setText("20,00");
+			break;
+		default:
+			tfValor.setText("10,00");
+			break;
+		}
+	}
+
+	private void preencherTabelaServicos() {
+		int totLinhas = tableModelServicos.getRowCount();
+		if (tableModelServicos.getRowCount() > 0) {
+			for (int i = 0; i < totLinhas; i++) {
+				tableModelServicos.removeRow(0);
+			}
+		}
+		for (Servico s : ServicoProcess.servicos) {
+			tableModelServicos.addRow(s.toVetor());
+		}
+	}
+
+	private void filtrarServicos() {
+		int totLinhas = tableModelServicos.getRowCount();
+		if (tableModelServicos.getRowCount() > 0) {
+			for (int i = 0; i < totLinhas; i++) {
+				tableModelServicos.removeRow(0);
+			}
+		}
+		if (tfFiltroPet.getText().length() > 0 || tfFiltroTipo.getText().length() > 0
+				|| tfFiltroData.getText().length() > 0) {
+			for (Servico s : ServicoProcess.servicos) {
+				if (s.getPet().getId("s").contains(tfFiltroPet.getText())
+						&& s.getTipo().toUpperCase().contains(tfFiltroTipo.getText().toUpperCase())
+						&& s.getData("s").contains(tfFiltroData.getText())) {
+					tableModelServicos.addRow(s.toVetor());
+				}
+			}
+		} else {
+			for (Servico s : ServicoProcess.servicos) {
+				tableModelServicos.addRow(s.toVetor());
+			}
+		}
+	}
+
+	private void preencherTabelaPets(ArrayList<Pet> pets) {
+		int totLinhas = tableModelPets.getRowCount();
+		if (tableModelPets.getRowCount() > 0) {
+			for (int i = 0; i < totLinhas; i++) {
+				tableModelPets.removeRow(0);
+			}
+		}
+		for (Pet p : pets) {
+			tableModelPets.addRow(
+					new String[] { p.getId("s"), p.getEspecie(), p.getNomePet(), p.getNomeDono(), p.getRaca() });
+		}
+	}
+
+	private ArrayList<Pet> filtrarPets(String filtro) {
 		ArrayList<Pet> pets = new ArrayList<>();
 		if (filtro.equals("")) {
 			return PetProcess.pets;
 		} else {
 			if (filtro.length() > 0)
 				for (Pet p : PetProcess.pets) {
-					if (p.getEspecie().toUpperCase().contains(filtro.toUpperCase())
+					if (filtro.contains(String.format("%d", p.getId()))
+							|| p.getEspecie().toUpperCase().contains(filtro.toUpperCase())
 							|| p.getNomePet().toUpperCase().contains(filtro.toUpperCase())
 							|| p.getEspecie().toUpperCase().contains(filtro.toUpperCase()))
 						pets.add(p);
 				}
 		}
 		return pets;
+	}
+
+	private void limparCampos() {
+		tfId.setText(String.format("%d", autoId));
+		tfUsuario.setText(UsuarioProcess.LoginUsusarioConectado);
+		tfPet.setText(null);
+		tfData.setText(sdf.format(new Date()));
+		tfHora.setText(shf.format(new Date()));
+		valorSugerido();
+		tfFiltroPet.setText(null);
+		tfFiltroTipo.setText(null);
+		tfFiltroData.setText(null);
 	}
 
 	// CREATE - CRUD
@@ -210,60 +310,89 @@ public class ServicoForm extends JDialog implements ActionListener {
 		}
 	}
 
-	private void limparCampos() {
-		tfId.setText(String.format("%d", autoId));
-		tfUsuario.setText(UsuarioProcess.LoginUsusarioConectado);
-		tfPet.setText(null);
-		tfData.setText(sdf.format(new Date()));
-		tfHora.setText(shf.format(new Date()));
-		tfValor.setText(null);
-	}
-
-	private void preencherTabelaServicos() {
-		int totLinhas = tableModelServicos.getRowCount();
-		if (tableModelServicos.getRowCount() > 0) {
-			for (int i = 0; i < totLinhas; i++) {
-				tableModelServicos.removeRow(0);
-			}
-		}
-		for (Servico s : ServicoProcess.servicos) {
-			tableModelServicos.addRow(s.toVetor());
-		}
-	}
-
-	private void preencherTabelaPets(ArrayList<Pet> pets) {
-		int totLinhas = tableModelPets.getRowCount();
-		if (tableModelPets.getRowCount() > 0) {
-			for (int i = 0; i < totLinhas; i++) {
-				tableModelPets.removeRow(0);
-			}
-		}
-		for (Pet p : pets) {
-			tableModelPets.addRow(
-					new String[] { p.getId("s"), p.getEspecie(), p.getNomePet(), p.getNomeDono(), p.getRaca() });
-		}
-	}
-
 	// READ - CRUD
 	private void buscarServico() {
-	}
+		String entrada = JOptionPane.showInputDialog(this, "Digite o Id do Serviço:");
 
-	private void buscarPet() {
-		String filtro = JOptionPane.showInputDialog(this, "Digite o nome ou espï¿½cie ou deixe em branco para todos");
-		if (filtro != null)
-			preencherTabelaPets(filtroPets(filtro));
+		boolean isNumeric = true;
+		if (entrada != null && !entrada.equals("")) {
+			for (int i = 0; i < entrada.length(); i++) {
+				if (!Character.isDigit(entrada.charAt(i))) {
+					isNumeric = false;
+				}
+			}
+		} else {
+			isNumeric = false;
+		}
+		if (isNumeric) {
+			int id = Integer.parseInt(entrada);
+			Servico servico = new Servico(id);
+			if (ServicoProcess.servicos.contains(servico)) {
+				int indice = ServicoProcess.servicos.indexOf(servico);
+				tfId.setText(ServicoProcess.servicos.get(indice).getId("s"));
+				cbTipo.setSelectedIndex(obterIndiceTipo(ServicoProcess.servicos.get(indice).getTipo()));
+				tfUsuario.setText(ServicoProcess.servicos.get(indice).getUsuario().getLogin());
+				tfPet.setText(ServicoProcess.servicos.get(indice).getPet().getId("s"));
+				tfData.setText(ServicoProcess.servicos.get(indice).getData("s"));
+				tfHora.setText(ServicoProcess.servicos.get(indice).getHora("s"));
+				tfValor.setText(ServicoProcess.servicos.get(indice).getValor("s"));
+				create.setEnabled(false);
+				update.setEnabled(true);
+				delete.setEnabled(true);
+				PetProcess.salvar();
+			} else {
+				JOptionPane.showMessageDialog(this, "Serviço não encontrado");
+			}
+		}
 	}
 
 	// UPDATE - CRUD
 	private void alterar() {
+		if (tfPet.getText().length() > 0 && tfData.getText().length() > 0 && tfHora.getText().length() > 0
+				&& tfValor.getText().length() > 0) {
+			Servico servico = new Servico(tfId.getText(), tfUsuario.getText(), tfPet.getText(),
+					cbTipo.getSelectedItem().toString(), tfData.getText(), tfHora.getText(), tfValor.getText());
+			int indice = ServicoProcess.servicos.indexOf(servico);
+			ServicoProcess.servicos.set(indice, servico);
+			preencherTabelaServicos();
+			limparCampos();
+			create.setEnabled(true);
+			update.setEnabled(false);
+			delete.setEnabled(false);
+			tfId.setText(String.format("%d", autoId));
+			ServicoProcess.salvar();
+		} else {
+			JOptionPane.showMessageDialog(this, "Preencha todos os campos");
+		}
 	}
 
 	// DELETE - CRUD
 	private void excluir() {
+		int id = Integer.parseInt(tfId.getText());
+		Servico servico = new Servico(id);
+		int indice = ServicoProcess.servicos.indexOf(servico);
+		ServicoProcess.servicos.remove(indice);
+		preencherTabelaServicos();
+		limparCampos();
+		create.setEnabled(true);
+		update.setEnabled(false);
+		delete.setEnabled(false);
+		tfId.setText(String.format("%d", autoId));
+		ServicoProcess.salvar();
+	}
+
+	// READ - CRUD
+	private void buscarPet() {
+		String filtro = JOptionPane.showInputDialog(this, "Digite id ou espécie ou nome  ou " + "em branco para todos");
+		if (filtro != null)
+			preencherTabelaPets(filtrarPets(filtro));
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == cbTipo) {
+			valorSugerido();
+		}
 		if (e.getSource() == create) {
 			cadastrar();
 		}
@@ -279,5 +408,9 @@ public class ServicoForm extends JDialog implements ActionListener {
 		if (e.getSource() == readPet) {
 			buscarPet();
 		}
+		if (e.getSource() == filtro) {
+			filtrarServicos();
+		}
 	}
+
 }

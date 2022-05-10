@@ -39,7 +39,7 @@ public class PetForm extends JDialog implements ActionListener {
 	private String[] imagens = { "./assets/doguinho.png", "./assets/miau.png", "./assets/coelho.png",
 			"./assets/ornitorrinco.png" };
 	private ImageIcon icon;
-	private int autoId = PetProcess.pets.size() + 1;
+	private int autoId = PetProcess.pets.get(PetProcess.pets.size()-1).getId() + 1;
 
 	private final Locale BRASIL = new Locale("pt", "BR");
 	private DecimalFormat df = new DecimalFormat("#.00");
@@ -153,10 +153,47 @@ public class PetForm extends JDialog implements ActionListener {
 		delete.addActionListener(this);
 
 	}
-
+	
+	int obterIndiceEspecie(String especie) {
+		switch (especie) {
+		case "Cachorro":
+			return 0;
+		case "Gato":
+			return 1;
+		case "Coelho":
+			return 2;
+		case "Outro":
+			return 3;
+		default:
+			return -1;
+		}
+	}
+	
 	private void alternarImagens(int indice) {
 		icon = new ImageIcon(new ImageIcon(imagens[indice]).getImage().getScaledInstance(350, 240, 100));
 		imagem.setIcon(icon);
+	}
+	private void limparCampos() {
+		tfId.setText(String.format("%d",autoId));
+		tfNomePet.setText(null);
+		tfRaca.setText(null);
+		tfPeso.setText(null);
+		tfNascimento.setText(null);
+		tfNomeDono.setText(null);
+		tfTelefone.setText(null);
+	}
+
+	private void preencherTabela() {
+		int totLinhas = tableModel.getRowCount();
+		if (tableModel.getRowCount() > 0) {
+			for (int i = 0; i < totLinhas; i++) {
+				tableModel.removeRow(0);
+			}
+		}
+		for (Pet p : PetProcess.pets) {
+			tableModel.addRow(new String[] { p.getId("s"), p.getEspecie(), p.getNomePet(), p.getRaca(), p.getPeso("s"),
+					p.getNascimento("s"), String.format("%d", p.obterIdade()), p.getNomeDono(), p.getTelefone() });
+		}
 	}
 
 	// CREATE - CRUD
@@ -183,45 +220,6 @@ public class PetForm extends JDialog implements ActionListener {
 			PetProcess.salvar();
 		} else {
 			JOptionPane.showMessageDialog(this, "Favor preencher todos os campos.");
-		}
-	}
-
-	private void limparCampos() {
-		tfId.setText(String.format("%d",autoId));
-		tfNomePet.setText(null);
-		tfRaca.setText(null);
-		tfPeso.setText(null);
-		tfNascimento.setText(null);
-		tfNomeDono.setText(null);
-		tfTelefone.setText(null);
-	}
-
-	private void preencherTabela() {
-		int totLinhas = tableModel.getRowCount();
-		if (tableModel.getRowCount() > 0) {
-			for (int i = 0; i < totLinhas; i++) {
-				tableModel.removeRow(0);
-			}
-		}
-		for (Pet p : PetProcess.pets) {
-			tableModel.addRow(new String[] { p.getId("s"), p.getEspecie(), p.getNomePet(), p.getRaca(), p.getPeso("s"),
-					p.getNascimento("s"), String.format("%d", p.obterIdade()), p.getNomeDono(), p.getTelefone() });
-		}
-	}
-
-	// Retornar índice da espécie
-	int obterIndiceEspecie(String especie) {
-		switch (especie) {
-		case "Cachorro":
-			return 0;
-		case "Gato":
-			return 1;
-		case "Coelho":
-			return 2;
-		case "Outro":
-			return 3;
-		default:
-			return -1;
 		}
 	}
 
