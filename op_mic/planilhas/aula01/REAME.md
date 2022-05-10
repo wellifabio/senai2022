@@ -1,4 +1,4 @@
-.Fonções básicas de planilhas eletrônicas
+.Funções básicas das planilhas eletrônicas
 ----------------
 - Manipulação das células
 - Contas, Fórmulas e Funções
