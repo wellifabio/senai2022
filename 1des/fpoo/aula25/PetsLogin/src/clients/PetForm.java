@@ -56,13 +56,13 @@ public class PetForm extends JDialog implements ActionListener {
 		id = new JLabel("Id:");
 		id.setBounds(20, 20, 120, 30);
 		painel.add(id);
-		especie = new JLabel("Especie:");
+		especie = new JLabel("EspÃ©cie:");
 		especie.setBounds(20, 55, 120, 30);
 		painel.add(especie);
 		nomePet = new JLabel("Nome pet:");
 		nomePet.setBounds(20, 90, 120, 30);
 		painel.add(nomePet);
-		raca = new JLabel("Raça:");
+		raca = new JLabel("RaÃ§a:");
 		raca.setBounds(20, 125, 120, 30);
 		painel.add(raca);
 		peso = new JLabel("Peso:");
@@ -103,13 +103,13 @@ public class PetForm extends JDialog implements ActionListener {
 		tfTelefone.setBounds(140, 270, 255, 30);
 		painel.add(tfTelefone);
 
-		// 1º etapa do READ Monta a tabela
+		// 1ï¿½ etapa do READ Monta a tabela
 		table = new JTable();
 		tableModel = new DefaultTableModel();
 		tableModel.addColumn("Id");
-		tableModel.addColumn("Espécie");
+		tableModel.addColumn("EspÃ©cie");
 		tableModel.addColumn("Nome Pet");
-		tableModel.addColumn("Raça");
+		tableModel.addColumn("RaÃ§a");
 		tableModel.addColumn("Peso");
 		tableModel.addColumn("Nascimento");
 		tableModel.addColumn("Idade");
@@ -145,7 +145,7 @@ public class PetForm extends JDialog implements ActionListener {
 		painel.add(update);
 		painel.add(delete);
 
-		// Ouvir os eventos dos Botões, ComboBox e outros
+		// Ouvir os eventos dos Botï¿½es, ComboBox e outros
 		cbEspecie.addActionListener(this);
 		create.addActionListener(this);
 		read.addActionListener(this);
@@ -255,7 +255,7 @@ public class PetForm extends JDialog implements ActionListener {
 				delete.setEnabled(true);
 				PetProcess.salvar();
 			} else {
-				JOptionPane.showMessageDialog(this, "Pet não encontrado");
+				JOptionPane.showMessageDialog(this, "Pet nï¿½o encontrado");
 			}
 		}
 

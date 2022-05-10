@@ -36,7 +36,7 @@ public class UsuarioForm extends JDialog implements ActionListener {
 	
 	public UsuarioForm(){
 		// Propriedades B?sicas
-		setTitle("Cadastro de usu·rios");
+		setTitle("Cadastro de Usu√°rios");
 		setIconImage(new ImageIcon(imgIco).getImage());
 		setBounds(320, 250, 470, 400);
 		painel = new JPanel(); // Painel de elementos
@@ -44,7 +44,7 @@ public class UsuarioForm extends JDialog implements ActionListener {
 		setContentPane(painel); // Configua o painel
 		setLayout(null);
 
-		// Textos e Botıes
+		// Textos e BotÔøΩes
 		lbEmail = new JLabel("E-mail:");
 		lbEmail.setBounds(20, 20, 100, 30);
 		painel.add(lbEmail);
@@ -120,7 +120,7 @@ public class UsuarioForm extends JDialog implements ActionListener {
 		if (tfEmail.getText().length() > 0 && new String(pfSenha.getPassword()).length() > 3) {
 			Usuario user = new Usuario(tfEmail.getText(), Cripto.encripta(new String(pfSenha.getPassword())));
 			if (UsuarioProcess.usuarios.contains(user)) {
-				JOptionPane.showMessageDialog(this, "Usu·rio j· cadastrado");
+				JOptionPane.showMessageDialog(this, "Usu√°rio j√° cadastrado");
 			} else {
 				UsuarioProcess.usuarios.add(user);
 				UsuarioProcess.salvar();
@@ -128,7 +128,7 @@ public class UsuarioForm extends JDialog implements ActionListener {
 				limparCampos();
 			}
 		} else {
-			JOptionPane.showMessageDialog(this, "Preencha o email e a senha de no mÌnimo 4 dÌgitos");
+			JOptionPane.showMessageDialog(this, "Preencha o email e a senha de no m√≠nimo 4 d√≠gitos");
 		}
 	}
 
@@ -143,7 +143,7 @@ public class UsuarioForm extends JDialog implements ActionListener {
 				update.setEnabled(true);
 				delete.setEnabled(true);
 			} else {
-				JOptionPane.showMessageDialog(this, "Usu·rio n„o encontrado");
+				JOptionPane.showMessageDialog(this, "Usu√°rio n√£o encontrado");
 			}
 		} else {
 			JOptionPane.showMessageDialog(this, "Preencha o campo email");
@@ -164,7 +164,7 @@ public class UsuarioForm extends JDialog implements ActionListener {
 			update.setEnabled(false);
 			delete.setEnabled(false);
 		} else {
-			JOptionPane.showMessageDialog(this, "Preencha o email e a senha de no mÌnimo 4 dÌgitos");
+			JOptionPane.showMessageDialog(this, "Preencha o email e a senha de no m√≠nimo 4 d√≠gitos");
 		}
 	}
 

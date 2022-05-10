@@ -45,7 +45,7 @@ public class ServicoForm extends JDialog implements ActionListener {
 	private SimpleDateFormat shf = new SimpleDateFormat("HH:mm");
 
 	public ServicoForm() {
-		setTitle("Cadastro de Serviços");
+		setTitle("Cadastro de ServiÃ§os");
 		setBounds(150, 170, 800, 600);
 		setIconImage(new ImageIcon(imgIco).getImage());
 		painel = new JPanel();
@@ -56,13 +56,13 @@ public class ServicoForm extends JDialog implements ActionListener {
 		id = new JLabel("Id:");
 		id.setBounds(20, 20, 120, 30);
 		painel.add(id);
-		usuario = new JLabel("Usuário:");
+		usuario = new JLabel("UsuÃ¡rio:");
 		usuario.setBounds(20, 55, 120, 30);
 		painel.add(usuario);
 		pet = new JLabel("Id do pet:");
 		pet.setBounds(20, 90, 120, 30);
 		painel.add(pet);
-		tipo = new JLabel("Tipo de Serviço:");
+		tipo = new JLabel("Tipo de ServiÃ§o:");
 		tipo.setBounds(20, 125, 120, 30);
 		painel.add(tipo);
 		data = new JLabel("Data:");
@@ -106,10 +106,10 @@ public class ServicoForm extends JDialog implements ActionListener {
 		painel.add(cabecalhoPets);
 		tableModelPets = new DefaultTableModel();
 		tableModelPets.addColumn("Id");
-		tableModelPets.addColumn("Espécie");
+		tableModelPets.addColumn("EspÃ©cie");
 		tableModelPets.addColumn("Nome Pet");
 		tableModelPets.addColumn("Nome Dono");
-		tableModelPets.addColumn("Raça");
+		tableModelPets.addColumn("RaÃ§a");
 		if (PetProcess.pets.size() != 0) {
 			preencherTabelaPets(PetProcess.pets);
 		}
@@ -178,7 +178,7 @@ public class ServicoForm extends JDialog implements ActionListener {
 		painel.add(tfFiltroData);
 		painel.add(filtro);
 
-		// Ouvir os eventos dos Botões, ComboBox e outros
+		// Ouvir os eventos dos Botï¿½es, ComboBox e outros
 		cbTipo.addActionListener(this);
 		create.addActionListener(this);
 		readServico.addActionListener(this);
@@ -312,7 +312,7 @@ public class ServicoForm extends JDialog implements ActionListener {
 
 	// READ - CRUD
 	private void buscarServico() {
-		String entrada = JOptionPane.showInputDialog(this, "Digite o Id do Serviço:");
+		String entrada = JOptionPane.showInputDialog(this, "Digite o Id do ServiÃ§o:");
 
 		boolean isNumeric = true;
 		if (entrada != null && !entrada.equals("")) {
@@ -341,7 +341,7 @@ public class ServicoForm extends JDialog implements ActionListener {
 				delete.setEnabled(true);
 				PetProcess.salvar();
 			} else {
-				JOptionPane.showMessageDialog(this, "Serviço não encontrado");
+				JOptionPane.showMessageDialog(this, "Serviï¿½o nï¿½o encontrado");
 			}
 		}
 	}
@@ -383,7 +383,7 @@ public class ServicoForm extends JDialog implements ActionListener {
 
 	// READ - CRUD
 	private void buscarPet() {
-		String filtro = JOptionPane.showInputDialog(this, "Digite id ou espécie ou nome  ou " + "em branco para todos");
+		String filtro = JOptionPane.showInputDialog(this, "Digite id ou espï¿½cie ou nome  ou " + "em branco para todos");
 		if (filtro != null)
 			preencherTabelaPets(filtrarPets(filtro));
 	}

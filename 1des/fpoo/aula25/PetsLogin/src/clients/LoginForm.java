@@ -78,7 +78,7 @@ public class LoginForm extends JFrame implements ActionListener {
 						JOptionPane.showMessageDialog(this, "Acesso negado");
 					}
 				} else {
-					JOptionPane.showMessageDialog(this, "Usu�rio n�o encontrado");
+					JOptionPane.showMessageDialog(this, "Usuário não encontrado");
 				}
 			} else {
 				JOptionPane.showMessageDialog(this, "Preencha o login e a senha");

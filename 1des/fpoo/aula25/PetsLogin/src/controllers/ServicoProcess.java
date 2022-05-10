@@ -12,6 +12,9 @@ public class ServicoProcess {
 	
 	public static void abrir() {
 		servicos = sd.ler();
+		if(servicos.size() == 0) {
+			servicos.add(new Servico("1", "admin", "1", "Banho", "02/02/2022", "10:00", "29,90"));
+		}
 	}
 	
 	public static void salvar() {
