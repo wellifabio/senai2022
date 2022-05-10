@@ -1,0 +1,79 @@
+.PowerPoint
+----------------
+– Inicializar e fechar o programa;
+- Sua tela;
+- Trabalhar com o arquivo (salvar, fechar, novo documento); 
+- Barra de ferramentas;
+- Ajuda;
+- Criar uma apresentação;
+	- tipos de layouts de slides;
+	- inserir novos slides;
+	- modos de exibição;
+	- Inserir e formatar cliparts, imagens, tabelas, gráficos, organogramas, clipe de mídia e filmes;
+	- Modelo de design;
+	- Plano de Fundo;
+	- Esquema de Cores;
+	- Transição de slides; 
+	- Esquema de animação;
+	- Personalizar animação;
+	- Inserir música na apresentação;
+	- Slide mestre;
+	- Recursos de apresentação;
+	- Configuração de página e impressão.
+
+.MS Word ou Writer
+----------------
+- Básico de edição de texto: iniciando o Writer;
+- apresentando a interface do Writer;
+	- abrir um arquivo existente;
+	- criar um novo arquivo e digitar; guardar um texto; 
+	- navegar no texto;
+	- selecionar letra, palavra, linha; fechar o Open Office;
+- Manipulação de arquivo de texto:
+	- Digitar texto; 
+	- diferenciando guardar de guardar como;
+	- ver página;
+- Edição de textos:
+	- copiar, colar; recortar
+	– selecionar tudo;
+	- localizar & substituir;
+	- atribuir estilo de fonte;
+	- atribuir tamanho da fonte; 
+	- atribuir estilo de destaque (negrito, itálico, sublinhado); 
+	- alinhamento;
+	- marcadores
+	– numeração;
+	- reduzir, aumentar; 
+	- avanço;
+	- régua;
+	- refazer, desfazer;
+	- ver;
+- Visualização:
+	- ferramenta;
+	- barra de estado;
+	- limite do texto;
+	- caracteres não imprimíveis;
+	- configuração online;
+- Inserção de objetos:
+	- quebra manual;
+	- campos;
+	- caracteres especiais;
+	- cabeçalho e rodapé; 
+	- tabela;
+	- gráfico;
+	- imagem;
+- Formatação de textos:
+	- caracteres;
+	- parágrafo;
+	- página;
+	- FontWork;
+	- ferramentas;
+	- ortografia; 
+	- sinônimos;
+	- numeração de linha;
+- Ajuda:
+	- sugestão;
+	- ajuda; 
+	- sobre o Open Office;
+	- conteúdo;
+	- Impressão: Visualizando a impressão, controlando as margens e tamanho de papel. 
