@@ -1,25 +1,25 @@
-.4. Editor de texto
--------------
-- 4.1. Formatação de:
-- 4.1.1. Fonte
-- 4.1.2. Parágrafo
-- 4.1.3. Tabulação
-- 4.1.4. Colunas
-- 4.1.5. Maiúsculas e minúsculas
-- 4.2. Inserção de:
-- 4.2.1. Quebra
-- 4.2.2. Número de páginas
-- 4.2.3. Anotações
-- 4.2.4. Arquivo
-- 4.2.5. Planilha
-- 4.2.6. Tabela
-- 4.2.7. Figura
-- 4.2.8. Marcadores
-- 4.2.9. Cabeçalho e rodapé
-- 4.2.10. Sumário
-- 4.2.11. Índice de ilustrações
-- 4.3. Verificação de ortografia
-- 4.4. Impressão de arquivos
-------------
-- Link do ano anterior com exemplos
-https://github.com/wellifabio/senai2021/tree/master/1des/sop/aula05
+.Competências:
+---------------
+- Identificar as características técnicas dos sistemas de arquivo, tendo em vista a utilização de sistemas operacionais (3)
+- Operar sistemas operacionais por meio de linha de comando e interface gráfica (2)
+---------------
+.Habilidades:
+---------------
+- Digitação, interpretação e criação de linhas de comando
+---------------
+Conhecimentos
+---------------
+. Modo texto (linha de comando)
+- Navegação entre diretórios
+- Criação de diretórios e arquivos
+- Exclusão de diretórios e arquivos
+- Renomeação de diretórios e arquivos
+- Movimentação de diretórios e arquivos
+- Cópia de diretórios e arquivos
+- Edição de arquivos
+---------------
+. Modo gráfico (Interface gráfica)
+---------------
+- Área de trabalho
+- Trabalho com janelas
+---------------

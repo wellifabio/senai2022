@@ -3,14 +3,12 @@ package clients;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DecimalFormat;
-import java.text.ParseException;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
-import java.util.Currency;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -20,7 +18,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
@@ -38,20 +35,17 @@ public class ServicoForm extends JDialog implements ActionListener {
 	private JTextField tfId, tfUsuario, tfPet, tfData, tfHora, tfValor;
 	private JComboBox<String> cbTipo;
 	private JScrollPane rolagem1, rolagem2;
-	private JTextArea taPets;
-	private JTable table;
-	private DefaultTableModel tableModel;
-	private JButton create, readServico, readPet, update, delete;
+	private JTable tableServicos, tablePets;
+	private DefaultTableModel tableModelServicos, tableModelPets;
+	private JButton create, readServico, readPet, update, delete, filtroPet, filtroData, filtroTipo;
 	private String imgIco = "./assets/icone.png";
 	private int autoId = ServicoProcess.servicos.size() + 1;
 
-	private final Locale BRASIL = new Locale("pt", "BR");
-	private DecimalFormat df = new DecimalFormat("#.00");
 	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	private SimpleDateFormat shf = new SimpleDateFormat("HH:mm");
 
 	public ServicoForm() {
-		setTitle("Cadastro de Serviços");
+		setTitle("Cadastro de Serviï¿½os");
 		setBounds(150, 170, 800, 600);
 		setIconImage(new ImageIcon(imgIco).getImage());
 		painel = new JPanel();
@@ -62,13 +56,13 @@ public class ServicoForm extends JDialog implements ActionListener {
 		id = new JLabel("Id:");
 		id.setBounds(20, 20, 120, 30);
 		painel.add(id);
-		usuario = new JLabel("Usuário:");
+		usuario = new JLabel("Usuï¿½rio:");
 		usuario.setBounds(20, 55, 120, 30);
 		painel.add(usuario);
 		pet = new JLabel("Id do pet:");
 		pet.setBounds(20, 90, 120, 30);
 		painel.add(pet);
-		tipo = new JLabel("Tipo de Servoço:");
+		tipo = new JLabel("Tipo de Servoï¿½o:");
 		tipo.setBounds(20, 125, 120, 30);
 		painel.add(tipo);
 		data = new JLabel("Data:");
@@ -90,6 +84,7 @@ public class ServicoForm extends JDialog implements ActionListener {
 		tfUsuario.setEnabled(false);
 		painel.add(tfUsuario);
 		tfPet = new JTextField();
+		tfPet.setEnabled(false);
 		tfPet.setBounds(140, 95, 140, 30);
 		painel.add(tfPet);
 		cbTipo = new JComboBox<String>(new String[] { "Banho", "Tosa", "Outro" });
@@ -105,32 +100,48 @@ public class ServicoForm extends JDialog implements ActionListener {
 		tfValor.setBounds(140, 235, 255, 30);
 		painel.add(tfValor);
 
-		taPets = new JTextArea(filtroPets(""));
-		rolagem2 = new JScrollPane(taPets);
+		tableModelPets = new DefaultTableModel();
+		tableModelPets.addColumn("Id");
+		tableModelPets.addColumn("EspÃ©cie");
+		tableModelPets.addColumn("Nome Pet");
+		tableModelPets.addColumn("Nome Dono");
+		tableModelPets.addColumn("RaÃ§a");
+		if (PetProcess.pets.size() != 0) {
+			preencherTabelaPets(PetProcess.pets);
+		}
+		tablePets = new JTable(tableModelPets);
+		rolagem2 = new JScrollPane(tablePets);
 		rolagem2.setBounds(405, 60, 350, 240);
 		painel.add(rolagem2);
-
-		// 1º etapa do READ Monta a tabela
-		table = new JTable();
-		tableModel = new DefaultTableModel();
-		tableModel.addColumn("Id");
-		tableModel.addColumn("Usuario");
-		tableModel.addColumn("Pet");
-		tableModel.addColumn("Tipo");
-		tableModel.addColumn("Data");
-		tableModel.addColumn("Hora");
-		tableModel.addColumn("Valor");
-		if (PetProcess.pets.size() != 0) {
-			preencherTabela();
+		
+		// Evento que pega linha e coluna da tabela que foi selecionada
+		tablePets.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				int lin = tablePets.getSelectedRow();
+				tfPet.setText(tablePets.getValueAt(lin, 0).toString());
+			}	
+		});
+		
+		// 1ï¿½ etapa do READ Monta a tabela
+		tableModelServicos = new DefaultTableModel();
+		tableModelServicos.addColumn("Id");
+		tableModelServicos.addColumn("Usuario");
+		tableModelServicos.addColumn("Pet");
+		tableModelServicos.addColumn("Tipo");
+		tableModelServicos.addColumn("Data");
+		tableModelServicos.addColumn("Hora");
+		tableModelServicos.addColumn("Valor");
+		if (ServicoProcess.servicos.size() != 0) {
+			preencherTabelaServicos();
 		}
-		table = new JTable(tableModel);
-		table.setEnabled(false);
-		rolagem1 = new JScrollPane(table);
+		tableServicos = new JTable(tableModelServicos);
+		tableServicos.setEnabled(false);
+		rolagem1 = new JScrollPane(tableServicos);
 		rolagem1.setBounds(20, 310, 740, 230);
 		painel.add(rolagem1);
 
 		create = new JButton("Cadastrar");
-		readServico = new JButton("Buscar Serviço");
+		readServico = new JButton("Buscar Serviï¿½o");
 		update = new JButton("Atualizar");
 		delete = new JButton("Excluir");
 		create.setBounds(285, 25, 110, 30);
@@ -147,33 +158,56 @@ public class ServicoForm extends JDialog implements ActionListener {
 		readPet.setBounds(285, 95, 110, 30);
 		painel.add(readPet);
 
-		// Ouvir os eventos dos Botões, ComboBox e outros
+		filtroPet = new JButton("Pet");
+		filtroTipo = new JButton("Tipo");
+		filtroData = new JButton("Data");
+		filtroPet.setBounds(25, 270, 120, 30);
+		filtroTipo.setBounds(150, 270, 120, 30);
+		filtroData.setBounds(275, 270, 120, 30);
+		painel.add(filtroPet);
+		painel.add(filtroTipo);
+		painel.add(filtroData);
+
+		// Ouvir os eventos dos Botï¿½es, ComboBox e outros
 		create.addActionListener(this);
 		readServico.addActionListener(this);
 		update.addActionListener(this);
 		delete.addActionListener(this);
 		readPet.addActionListener(this);
+		filtroPet.addActionListener(this);
+		filtroTipo.addActionListener(this);
+		filtroData.addActionListener(this);
 	}
 
-	private String filtroPets(String filtro) {
-		String retorno = "";
+	private ArrayList<Pet> filtroPets(String filtro) {
+		ArrayList<Pet> pets = new ArrayList<>();
 		if (filtro.equals("")) {
-			for (Pet p : PetProcess.pets) {
-				retorno += p.toString();
-			}
+			return PetProcess.pets;
 		} else {
 			if (filtro.length() > 0)
 				for (Pet p : PetProcess.pets) {
-					if (p.getEspecie().toUpperCase().contains(filtro.toUpperCase()) || p.getNomePet().toUpperCase().contains(filtro.toUpperCase())
+					if (p.getEspecie().toUpperCase().contains(filtro.toUpperCase())
+							|| p.getNomePet().toUpperCase().contains(filtro.toUpperCase())
 							|| p.getEspecie().toUpperCase().contains(filtro.toUpperCase()))
-						retorno += p.toString();
+						pets.add(p);
 				}
 		}
-		return retorno;
+		return pets;
 	}
 
 	// CREATE - CRUD
 	private void cadastrar() {
+		if (tfPet.getText().length() > 0 && tfData.getText().length() > 0 && tfHora.getText().length() > 0
+				&& tfValor.getText().length() > 0) {
+			ServicoProcess.servicos.add(new Servico(tfId.getText(), tfUsuario.getText(), tfPet.getText(),
+					cbTipo.getSelectedItem().toString(), tfData.getText(), tfHora.getText(), tfValor.getText()));
+			preencherTabelaServicos();
+			autoId++;
+			limparCampos();
+			ServicoProcess.salvar();
+		} else {
+			JOptionPane.showMessageDialog(this, "Preencha todos os campos");
+		}
 	}
 
 	private void limparCampos() {
@@ -185,29 +219,28 @@ public class ServicoForm extends JDialog implements ActionListener {
 		tfValor.setText(null);
 	}
 
-	private void preencherTabela() {
-		int totLinhas = tableModel.getRowCount();
-		if (tableModel.getRowCount() > 0) {
+	private void preencherTabelaServicos() {
+		int totLinhas = tableModelServicos.getRowCount();
+		if (tableModelServicos.getRowCount() > 0) {
 			for (int i = 0; i < totLinhas; i++) {
-				tableModel.removeRow(0);
+				tableModelServicos.removeRow(0);
 			}
 		}
 		for (Servico s : ServicoProcess.servicos) {
-			tableModel.addRow(s.toVetor());
+			tableModelServicos.addRow(s.toVetor());
 		}
 	}
 
-	// Retornar índice da espécie
-	int obterIndiceServico(String servico) {
-		switch (servico) {
-		case "Banho":
-			return 0;
-		case "Tosa":
-			return 1;
-		case "Outro":
-			return 2;
-		default:
-			return -1;
+	private void preencherTabelaPets(ArrayList<Pet> pets) {
+		int totLinhas = tableModelPets.getRowCount();
+		if (tableModelPets.getRowCount() > 0) {
+			for (int i = 0; i < totLinhas; i++) {
+				tableModelPets.removeRow(0);
+			}
+		}
+		for (Pet p : pets) {
+			tableModelPets.addRow(
+					new String[] { p.getId("s"), p.getEspecie(), p.getNomePet(), p.getNomeDono(), p.getRaca() });
 		}
 	}
 
@@ -216,9 +249,9 @@ public class ServicoForm extends JDialog implements ActionListener {
 	}
 
 	private void buscarPet() {
-		String filtro = JOptionPane.showInputDialog(this,"Digite o nome ou espécie ou deixe em branco para todos");
-		if(filtro != null)
-			taPets.setText(filtroPets(filtro));
+		String filtro = JOptionPane.showInputDialog(this, "Digite o nome ou espï¿½cie ou deixe em branco para todos");
+		if (filtro != null)
+			preencherTabelaPets(filtroPets(filtro));
 	}
 
 	// UPDATE - CRUD

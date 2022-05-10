@@ -1,18 +1,10 @@
-. Planilha eletrônica
-----------
-- 5.1. Criação de planilhas
-- 5.2. Formatação de células
-- 5.3. Entrada de dados
-- 5.3.1. Números
-- 5.3.2. Textos
-- 5.3.3. Fórmulas
-- 5.4. Funções
-- 5.4.1. Aritméticas
-- 5.4.2. Condicionais
-- 5.5. Criação de gráficos
-- 5.6. Impressão
------------
-.Exercícios
------------
-- execute os exercícios com funções
-- execute os exercícios com gráficos
+.Verificação Prática Somativa
+--------------
+- Este repositório possui dois arquivos:
+	- vps01.pdf
+	- vps01.png
+--------------
+- O objetivo desta aula é resolver a situação problema apresentada no arquivo PDF seguindo os códigos e instruções do arquivo PNG
+- A entrega será no final da aula as 11 horas, salvando o script .bat no diretório disponibilizado pelo professor na rede
+- Serão avaliados seus conhecimentos sobre manipulação de arquivos, hyper texto html, habilidades de resolver problemas e atitudes.
+- Os critérios estão na segunda página do arquivo PDF (excluíndo a parde sobre virtualização que será trabalhada em aula posterior)

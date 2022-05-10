@@ -23,6 +23,7 @@ public class Servico {
 	private SimpleDateFormat shf = new SimpleDateFormat("HH:mm");
 	
 	public Servico(String id, String usuario, String pet, String tipo, String data, String hora, String valor) {
+		df.setCurrency(Currency.getInstance(BRASIL));
 		try {
 			this.id = Integer.parseInt(id);
 			this.usuario = new Usuario(usuario, null);
@@ -30,7 +31,7 @@ public class Servico {
 			this.tipo = tipo;
 			this.data = sdf.parse(data);
 			this.hora = shf.parse(hora);
-			this.valor = Double.parseDouble(valor);
+			this.valor = Double.parseDouble(df.parse(valor).toString());
 		} catch (ParseException e) {
 			System.out.println(e);
 		}

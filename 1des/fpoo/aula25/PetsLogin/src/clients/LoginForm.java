@@ -14,6 +14,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import controllers.PetProcess;
+import controllers.ServicoProcess;
 import controllers.UsuarioProcess;
 import uteis.Cripto;
 
@@ -88,9 +89,8 @@ public class LoginForm extends JFrame implements ActionListener {
 	public static void main(String[] args) {
 		UsuarioProcess.abrir();
 		PetProcess.abrir();
-		//LoginForm login = new LoginForm();
-		//login.setVisible(true);
-		MenuForm mf = new MenuForm();
-		mf.setVisible(true);
+		ServicoProcess.abrir();
+		LoginForm login = new LoginForm();
+		login.setVisible(true);
 	}
 }
