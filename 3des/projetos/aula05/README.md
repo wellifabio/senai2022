@@ -9,17 +9,6 @@
 	- 6. Seguir método de trabalho (Agil + Scrim + Resolve o problema)
 	- 7. Trabalhar em equipe (Todos participaram?)
 	- 8. Comunicar-se com clareza (Postura durante a apresentação, tom de vóz)
-	
-.Avaliação (Segundo critérios)
--------------
-	- Grupo 1 (Diogo, Ana, Daniel)(10100111)
-	- Grupo 2 (Roberto, Leo, Jake)(11111111)
-	- Grupo 3 (Zé, Medeiros, Faria)(10100101)
-	- Grupo 4 (Elian, Larissa, Lavínia) - Livros digitais (https://github.com/laviniasa/Velaris/tree/main/proj_velaris)(11000111)
-	- Grupo 5 (Danilo, Carlos, Pignata) - Masters (https://github.com/daniloafalcirolli/Master)(11101111)
-	- Grupo 6 (Allan, Vital, Rodrigo) - Apostas (https://github.com/Allan2077/aposta)(00110011)
-	- Grupo 7 (Belli, Felipe, Gabriel, Vic) - Loja Bolos (https://github.com/vick7000/Bolos)(10111111)
-	- Grupo 8 (Gusta, Tieppo, Vitor) - Joja Suplementos (https://github.com/rafaeltieppo/RVGSuplementos)(11000111)
 - Critérios Documentação ABNT
 	- 1. Definir os recursos humanos e materiais para o desenvolvimento dos componentes (2)
 	- 2. Elaborar cronograma das etapas sequenciadas do desenvolvimento dos componentes, considerando a integração com outros profissionais envolvidos no projeto (2)
@@ -29,6 +18,18 @@
 	- 6. Demonstrar capacidade de comunicação com profissionais de diferentes áreas e especialidades (7)
 	- 7. Demonstrar visão sistêmica (16)
 	- 8. Manter relacionamento interpessoal
+
+.Avaliação (Segundo critérios)
+-------------
+	- Grupo 1 (Diogo, Ana, Daniel)(10100111)(10101101)
+	- Grupo 2 (Roberto, Leo, Jake)(11111111)(11111111)
+	- Grupo 3 (Zé, Medeiros, Faria)(10100101)
+	- Grupo 4 (Elian, Larissa, Lavínia) - Livros digitais (https://github.com/laviniasa/Velaris/tree/main/proj_velaris)(11000111)
+	- Grupo 5 (Danilo, Carlos, Pignata) - Masters (https://github.com/daniloafalcirolli/Master)(11101111)
+	- Grupo 6 (Allan, Vital, Rodrigo) - Apostas (https://github.com/Allan2077/aposta)(00110011)
+	- Grupo 7 (Belli, Felipe, Gabriel, Vic) - Loja Bolos (https://github.com/vick7000/Bolos)(10111111)
+	- Grupo 8 (Gusta, Tieppo, Vitor) - Joja Suplementos (https://github.com/rafaeltieppo/RVGSuplementos)(11000111)
+-------------
 
 - Grupo 1 (Diogo, Ana, Daniel) - Rede Social Acessibilidade (https://github.com/diogohmedeiros/FacePlus/blob/main/Projeto/documenta%C3%A7%C3%A3o/FacePlus%20(1).pdf)
 - Grupo 2 (Roberto, Leo, Jake) - Ong Assistencial (https://github.com/LeoImenes/Projeto-ONG/blob/main/DOCUMENTOS/PROJETO%20-%20SISTEMA%20ONG%20DIGITAL.pdf)

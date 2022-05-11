@@ -1,0 +1,37 @@
+Grupo 1 (Diogo, Ana, Daniel) (10101101)
+- Capa, Folha de Rosto, Sumário e Listas (OK)
+- Resumo e Introdução (Utilizar alinhamento "Justificado" no texto e não "Centralizado")
+- Objetivos, TAP (OK)
+- Requisitos não funcionais
+	-[RF001] Quais as linguágens de programação e/ou frameworks utilizados
+	-[RF006] não entendi o não consumido do Back-End (Não houve integração?)
+	-[RF007] não entendi o não consumido do Back-End (Não houve integração?)
+	-[RF008] não entendi o não consumido do Back-End (Não houve integração?)
+- Requisitos funcionais (OK)
+- Planejamento
+	- Cronograma (Não encontrei)
+	- Custos do projeto (Não encontrei)
+- Desenvolvimento
+	- Diagrama de Classes (OK)
+	- Protótipos Mobile e FrontEnd (OK)
+	- Dicionario de Dados JSON (Não encontrei)
+	- Descrição dos Resultados (Não encontrei)
+	- Bibliografia (Não encontrei)
+
+Grupo 2 (Roberto, Leo, Jake) (11111111)
+- Capa, Folha de Rosto, Sumário e Listas (OK)
+- Resumo e Introdução (OK)
+- Objetivos, TAP (OK)
+- Escopo (OK) "Não deixar TAP e EAP na mesma página"
+- Requisitos não funcionais (OK)
+- Requisitos funcionais (OK) Ótimos Diagramas de Casos de Uso muito bons, Criticidades bem classificadas
+- Planejamento
+	- Cronograma (OK) Simples e Objetivo
+	- Custos do projeto (OK) Custo por hora e mensal - Perfeito
+- Desenvolvimento
+	- Diagrama de Classes (OK) Deve ter dado bastante trabalho (Muito bom)
+	- Protótipos Mobile e FrontEnd (OK) 
+	- Planejamento do banco de dados não era necessário no pré-projeto, porém foi muito bem executado.
+	- Dicionario de Dados JSON (OK)
+	- Descrição dos Resultados (OK)
+	- Bibliografia (OK) "Colocar em página separada"
