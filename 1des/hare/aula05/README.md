@@ -12,3 +12,7 @@
 - Baixar e instalar o VirtualBox
 - Instalar ISO windows em máquina virtual
 - Instalar ISO de uma versão do linux em máquina virtual
+
+.Links
+----------------
+- Window XP online https://winxp.vercel.app/
