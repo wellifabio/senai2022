@@ -1,0 +1,18 @@
+Executar = CMD
+Ou
+Executar = PowerShell
+Shell <- Interpretador de comandos
+
+Dir ou ls (Listam os arquivos e pastas)
+cd acessar ou sair
+cd .. sair um nível
+cd / ou cd \ sair até a raiz
+raiz windows c: linux /
+copy
+move
+del
+md ou mkdir
+rd ou rmdir
+ping
+ipconfig
+

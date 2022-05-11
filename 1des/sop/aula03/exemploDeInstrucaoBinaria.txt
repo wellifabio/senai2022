@@ -1,0 +1,37 @@
+Binário = 110101
+ASSCCI = 53
+Número = 5
+
+Binário = 110110
+ASSCCI = 54
+Número = 6
+
+Instrução = palavra
+(Endereço, Dado, Controle)
+
+Controles
+00000000 = Ler
+00000001 = Gravar
+00000010 = Somar
+
+Palavra ou instrução de baixo nível
+00000000.00110101.00000000
+00000001.00110110.00000001
+00000010.00110101.00000010
+Endereço.Dado.Controle
+
+leia 5
+grave 6
+some 5
+
+Compilar um programa é "traduzir uma instrução de alto nível para o baixo nível"
+
+Instruções de alto nível
+x = y
+x != y + 1
+x > y + 3 * 5
+
+Endereço = variáveis (x, y, a, nome, endereço)
+Dados = Números inteiros, reais, textos, datas (4, 5, 5.2, "Casa", 23/02/2021)
+Controle = Operadores ( + ,  -,  *, /, = , ==, !=, >, <, >=, <=) E, OU, Não
+

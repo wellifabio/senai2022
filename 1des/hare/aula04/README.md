@@ -19,3 +19,7 @@
 	- Eclipse Instalado (abra e faça o teste)
 	- Notepad++ Abrindo  (abra e faça o teste)
 	- Office (Excel, Word, ...) Instalado  (abra e faça o teste)
+-----------------
+.2 TAA (Tabela de Alocação de Arquivos)
+-----------------
+- exercicios (3 Exercíos com TAA)

@@ -1,41 +1,23 @@
-GitHub x Git
+﻿Exercícios
 --------------------------------------------------------------------------
-1) Criar uma conta no GitHub
-2) Fazer o download e instalar o Git Bach
-(Pesquisar por "download git")
-3) Organizar suas pastas locais com seus códigos fonte
-4) Criar um repositório remoto para seus códigos
-5) Abrir o git bash clicanco com o botão direito do mouse
-
-a) Clonar o diretório remoto vazio
-- git clone <endereco do diretorio remoto.git>
-
-b) Copiar ou mover os arquivos para o diretório clonado e acessar o git bash de dentro do reporitório
-5.3) Adicionar os novos arquivos ao repositório local
-- git add .
-
-c) Colocar uma mensagem no seu commit
-- git commit -m "Mensagem sobre o commit"
-
-d) Caso seja necessário configure seus dados ex:
-- git config user.name "wellifabio"
-- git config user.email wellifabio@hotmail.com
-
-e) Enviar /empurrar os dados para o repositório remoto
-- git push
-
---------------------------------------------------------------------------	
-Caso você já tenha o repositório local e apenas adicionou novos códigos
-Basta iniciar o processo, mas ao invés de clonar utilize
-	git pull
-De dentro do repositório
-Para atualizar o repositório local com o remoto
-
+1) Realize a conversão da base decimal para a base binária
+a. 331 = 101001011(2)
+b. 334 = 101001110(2)
 --------------------------------------------------------------------------
-Se estiver utilizando um computador público
-Limpe as credenciais do windows antes e depois do processo:
-- Painel de controle
-- Contas de usuário 
-- Credenciais do Windows
-- Procure por git
-- Remover
+2) Realize a conversão da base binária para a base decimal.
+a. 11111111 = 255
+b. 10010010 = 146
+--------------------------------------------------------------------------
+3) Realiza a conversão da base decimal para a base octal e hexadecimal
+a. 32 = 20 (16)
+b. 46 = 2E (16)
+--------------------------------------------------------------------------
+4) Realize a conversão da base hexadecimal para decimal
+a. CA = 202
+b. 98 = 153
+--------------------------------------------------------------------------
+5) Realiza a conversão da base octal para a decimal
+a. 71 = 57
+b. 22 = 18
+--------------------------------------------------------------------------
+
