@@ -3,6 +3,7 @@ package clients;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -70,6 +71,16 @@ public class MenuForm extends JFrame implements ActionListener {
 		itemRelatorio.addActionListener(this);
 	}
 
+	private void abrirPlanilha() {
+		Runtime rt = Runtime.getRuntime();
+		String dashboard[] = { "cmd", "/c", "start", "./data/dashboard.xlsm" };
+		try {
+			rt.exec(dashboard);
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+	}
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == itemPets) {
@@ -93,6 +104,7 @@ public class MenuForm extends JFrame implements ActionListener {
 			tf.setVisible(true);
 		}
 		if (e.getSource() == itemDashBoard) {
+			abrirPlanilha();
 		}
 	}
 }

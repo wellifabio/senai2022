@@ -3,19 +3,23 @@ package clients;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.Date;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 import controllers.PetProcess;
+import controllers.RelatorioProcess;
 import controllers.ServicoProcess;
 import controllers.UsuarioProcess;
 import domains.Pet;
@@ -24,17 +28,20 @@ import domains.Usuario;
 
 public class RelatorioForm extends JDialog implements ActionListener {
 
+	// Atributos
 	private static final long serialVersionUID = 1L;
 	private JPanel painel;
 	private JLabel cabecalho = new JLabel("Data_______   Pet________   Usuario_____  Tipo________");
 	private JTextField tfData, tfPet, tfUsuario, tfTipo;
 	private JTextArea areaRelatorio;
 	private JScrollPane rolagem;
-	private JButton pet, usuario, servico;
+	private JButton pet, usuario, servico, exportar;
 	private String imgIco = "./assets/icone.png";
 	private String resultados = "";
 
+	// Construtor
 	public RelatorioForm() {
+		// Propriedades
 		setTitle("Relatórios de Serviços");
 		setBounds(150, 170, 800, 600);
 		setIconImage(new ImageIcon(imgIco).getImage());
@@ -43,11 +50,10 @@ public class RelatorioForm extends JDialog implements ActionListener {
 		setContentPane(painel);
 		setLayout(null);
 
+		// Fornulário de Filtros
 		cabecalho.setBounds(20, 10, 760, 15);
 		painel.add(cabecalho);
-
 		tfData = new JTextField();
-
 		tfPet = new JTextField();
 		tfUsuario = new JTextField();
 		tfTipo = new JTextField();
@@ -60,40 +66,33 @@ public class RelatorioForm extends JDialog implements ActionListener {
 		painel.add(tfUsuario);
 		painel.add(tfTipo);
 
+		// Área de texto do relatório
 		areaRelatorio = new JTextArea();
 		areaRelatorio.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.RED));
 		rolagem = new JScrollPane(areaRelatorio);
 		rolagem.setBounds(20, 50, 745, 490);
 		painel.add(rolagem);
 
-		pet = new JButton("Pets");
-		usuario = new JButton("Usuários");
+		// Botões
 		servico = new JButton("Serviços");
+		usuario = new JButton("Usuários");
+		pet = new JButton("Pets");
+		exportar = new JButton("Exportar");
 		servico.setBounds(360, 15, 100, 30);
 		usuario.setBounds(460, 15, 100, 30);
 		pet.setBounds(560, 15, 100, 30);
-		painel.add(pet);
-		painel.add(usuario);
+		exportar.setBounds(660, 15, 100, 30);
 		painel.add(servico);
-
-		pet.addActionListener(this);
-		usuario.addActionListener(this);
+		painel.add(usuario);
+		painel.add(pet);
+		painel.add(exportar);
 		servico.addActionListener(this);
+		usuario.addActionListener(this);
+		pet.addActionListener(this);
+		exportar.addActionListener(this);
 	}
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == pet) {
-			pets();
-		}
-		if (e.getSource() == usuario) {
-			usuarios();
-		}
-		if (e.getSource() == servico) {
-			servicos();
-		}
-	}
-
+	// Métodos que filtram os relatórios
 	private void servicos() {
 		resultados = "Relatório Geral de Serviços";
 		resultados += "\n___________________________________________________________________________________\n";
@@ -187,10 +186,42 @@ public class RelatorioForm extends JDialog implements ActionListener {
 		areaRelatorio.setText(resultados);
 	}
 
-	public static void main(String[] args) {
-		UsuarioProcess.abrir();
-		PetProcess.abrir();
-		ServicoProcess.abrir();
-		new RelatorioForm().setVisible(true);
+	private void exportar() {
+		// Janela para escolher caminho de destino
+		JFileChooser fc = new JFileChooser();
+		// Definir o tipo de arquivo TXT
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("Selecione apenas TXT", "txt");
+		//Abrir a janela para Salvar
+		fc.setFileFilter(filter);
+		if (fc.showSaveDialog(this) != 1) { // Caso o usuário clique em salvar e conclua
+			// Objeto do tipo aquivo que recebe os dados que o usuario selecionou na janela
+			File arquivo = fc.getSelectedFile();
+			// Verifica se o usuário colocou a extenção .txt
+			if (arquivo.getPath().endsWith(".txt")) {
+				RelatorioProcess.salvar(resultados, arquivo.getPath());
+			} else { // Se não colocou o programa coloca
+				RelatorioProcess.salvar(resultados, arquivo.getPath() + ".txt");
+			}
+		} // Se ele cancelar, retorna 1 e sai
+		this.dispose();
 	}
+
+	// Ações dos botões
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == servico) {
+			servicos();
+		}
+		if (e.getSource() == usuario) {
+			usuarios();
+		}
+		if (e.getSource() == pet) {
+			pets();
+		}
+		if (e.getSource() == exportar) {
+			exportar();
+		}
+
+	}
+
 }
