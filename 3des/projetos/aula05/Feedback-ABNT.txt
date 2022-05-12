@@ -1,3 +1,4 @@
+﻿---------------------------------------------------------------------------------------------
 Grupo 1 (Diogo, Ana, Daniel) (10101101)
 - Capa, Folha de Rosto, Sumário e Listas (OK)
 - Resumo e Introdução (Utilizar alinhamento "Justificado" no texto e não "Centralizado")
@@ -17,7 +18,8 @@ Grupo 1 (Diogo, Ana, Daniel) (10101101)
 	- Dicionario de Dados JSON (Não encontrei)
 	- Descrição dos Resultados (Não encontrei)
 	- Bibliografia (Não encontrei)
-
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 Grupo 2 (Roberto, Leo, Jake) (11111111)
 - Capa, Folha de Rosto, Sumário e Listas (OK)
 - Resumo e Introdução (OK)
@@ -35,3 +37,107 @@ Grupo 2 (Roberto, Leo, Jake) (11111111)
 	- Dicionario de Dados JSON (OK)
 	- Descrição dos Resultados (OK)
 	- Bibliografia (OK) "Colocar em página separada"
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Grupo 3 (Zé, Medeiros, Faria) (00000000) Link do documento do projeto não funcionou
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Grupo 4 (Elian, Larissa, Lavínia)(00001101)
+- Capa, Folha de Rosto, Sumário e Listas (OK)
+	.Boa citação de Steve Jobs, porém deveria estar em uma página separada
+- Resumo e Introdução (OK)
+	.O resumo está com alinhamento "centralizado", deve ser "Justificado"
+	.A matris SWOT/FOFA não era necessária neste projeto, mas como vocês colocaram, faltou informar qual o site ou aplicativo foi comparado ao seu projeto, esta ferramenta serve para comparar um projeto/idéia a outro(a) semelhante e/ou concorrente.
+- Objetivos, TAP (OK) O TAP (termo de abertura do projeto) é logo após os Objetivos e antes do EAP (Escopo)
+- Escopo (OK) "Não deixar TAP e EAP na mesma página"
+- Requisitos não funcionais (OK)
+- Requisitos funcionais (OK) Os DC (Diagramas de Casos de Uso) devem ser separados em partes e colocados juntos com  as Descrições dos Requisitos
+- Planejamento
+	- Cronograma <<NÃO ENCONTRADO>>
+	- Custos do projeto <<NÃO ENCONTRADO>>
+- Desenvolvimento
+	- Diagrama de Classes  <<NÃO ENCONTRADO>>
+	- Protótipos Mobile e FrontEnd <<NÃO ENCONTRADO>>
+	- Planejamento do banco de dados não era necessário no pré-projeto.
+	- Dicionario de Dados JSON <<NÃO ENCONTRADO>>
+	- Descrição dos Resultados <<NÃO ENCONTRADO>>
+	- Bibliografia <<NÃO ENCONTRADO>>
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Grupo 5 (Danilo, Carlos, Pignata)(11101111)
+- Capa, Folha de Rosto, Sumário e Listas (OK) Simples e objetivo
+- Resumo e Introdução (OK) Simples, completa e objetiva
+- Objetivos, TAP (OK) Completa e objetiva
+- Escopo (OK)
+- Requisitos não funcionais (OK)
+- Requisitos funcionais (OK) Ótimos diagramas, descrições condizem com a realidade
+- Planejamento
+	- Cronograma (OK) Simples e Objetivo
+	- Custos do projeto (OK) Muito bom "Tá barato"
+- Desenvolvimento
+	- Protótipos Mobile e FrontEnd (OK) Completo
+	- Diagrama de Classes (OK) Completo
+	- Planejamento do banco de dados não era necessário no pré-projeto, porém foi muito bem executado.
+	- Dicionario de Dados JSON (OK) "Show de bola"
+	- Descrição dos Resultados (OK) Perfeito
+	- Bibliografia (OK) "Colocar em página separada e deve conter o link completo dos sites pesquisados"
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Grupo 6 (Allan, Vital, Rodrigo)(11001101)
+- Capa (Não alterou o nome do projeto, aparece como "Blitz"), Folha de Rosto (Em branco)
+- Sumário e Listas (OK)
+- Resumo (ok)
+- Introdução (Copiou o modelo e fez igual CTRL+C, CTRL+V)
+- Objetivos, TAP (OK)
+- Escopo (OK) "Não deixar TAP e EAP na mesma página"
+- Requisitos não funcionais (OK)
+- Requisitos funcionais (Parcial diagramas com casos de uso trocados)
+- Planejamento
+	- Cronograma (Sem formatação correta, não é possivel ver ou entender as atividades)
+	- Custos do projeto (OK)
+- Desenvolvimento
+	- Diagrama de Classes (OK) O relacionamento entre as classes não está coerente e a imagem está cortada
+	- Protótipos Mobile e FrontEnd (Só aparece o protpotipo do Mobile, do frontEnd não Aparece) 
+	- Planejamento do banco de dados não era necessário no pré-projeto, (Porem foi copiado e colado do modelo, deveria ser retirado)
+	- Dicionario de Dados JSON (OK) Muito bom, a melhor parte da documentação
+	- Descrição dos Resultados (OK)
+	- Bibliografia (OK) Novamente CTRL+C e CTRL+V
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Grupo 7 (Belli, Felipe, Gabriel, Vic)(11101101)
+- Capa, Folha de Rosto, Sumário e Listas (OK)
+- Resumo e Introdução (OK)
+- Objetivos, TAP (OK)
+- Escopo (OK)
+- Requisitos não funcionais (OK)
+- Requisitos funcionais (OK) Diagramas de Casos de Uso muito bons e descrição dos requisitos completa
+- Planejamento
+	- Cronograma (OK) Bem Detalhado.
+	- Custos do projeto (OK)
+- Desenvolvimento
+	- Diagrama de Classes <<NÃO ENCONTRADO>>
+	- Protótipos Mobile e FrontEnd (Gostei das imágens, eu compraria a idéia
+	- Planejamento do banco de dados não era necessário no pré-projeto, porém foi muito bem executado.
+	- Dicionario de Dados JSON (<<NÃO ENCONTRADO>>
+	- Descrição dos Resultados <<NÃO ENCONTRADO>>
+	- Bibliografia <<NÃO ENCONTRADO>>
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Grupo 8 (Gusta, Tieppo, Vitor)(11001101)
+- Capa, Folha de Rosto, Sumário e Listas (OK) Vários erros de Editor de Textos no sumário "indicador não definido"
+- Resumo e Introdução (NOK) CTRL+C CTRL+V não removeu o que estava escrito sobre o aplicativo Blitz de transporte
+- Objetivos, TAP (OK)
+- Escopo (OK)
+- Requisitos não funcionais (OK)
+- Requisitos funcionais (OK)
+- Planejamento
+	- Cronograma (OK) Bem Detalhado.
+	- Custos do projeto (OK)
+- Desenvolvimento
+	- Diagrama de Classes (OK) Faltou o relacionamento entre as classes
+	- Protótipos Mobile e FrontEnd (Gostei das imágens, eu compraria a idéia
+	- Planejamento do banco de dados não era necessário no pré-projeto, porém ficou OK.
+	- Dicionario de Dados JSON (NOK) Mistutou o projeto Apostas com o de Suplementos
+	- Descrição dos Resultados (OK)
+	- Bibliografia (NOK)CTRL+C CTRL+V do modelo
+---------------------------------------------------------------------------------------------
