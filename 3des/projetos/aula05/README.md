@@ -21,17 +21,17 @@
 
 .Avaliação (Segundo critérios)
 -------------
-	- Grupo 1 (Diogo, Ana, Daniel)(10100111)(10101101)
-	- Grupo 2 (Roberto, Leo, Jake)(11111111)(11111111)
-	- Grupo 3 (Zé, Medeiros, Faria)(10100101)
-	- Grupo 4 (Elian, Larissa, Lavínia) - Livros digitais (https://github.com/laviniasa/Velaris/tree/main/proj_velaris)(11000111)
-	- Grupo 5 (Danilo, Carlos, Pignata) - Masters (https://github.com/daniloafalcirolli/Master)(11101111)
-	- Grupo 6 (Allan, Vital, Rodrigo) - Apostas (https://github.com/Allan2077/aposta)(00110011)
-	- Grupo 7 (Belli, Felipe, Gabriel, Vic) - Loja Bolos (https://github.com/vick7000/Bolos)(10111111)
-	- Grupo 8 (Gusta, Tieppo, Vitor) - Joja Suplementos (https://github.com/rafaeltieppo/RVGSuplementos)(11000111)
+	- Grupo 1 (Diogo, Ana, Daniel) - Rede de Acessibilidade (https://github.com/diogohmedeiros/FacePlus)(10100111),(10101101),Notas:70,60
+	- Grupo 2 (Roberto, Leo, Jake) - ONG Assistencial - (https://github.com/LeoImenes/Projeto-ONG-Testes)(11111111),(11111111),Notas:100,100
+	- Grupo 3 (Zé, Medeiros, Faria) - (10100101)(00000000),Notas:50,00
+	- Grupo 4 (Elian, Larissa, Lavínia) - Livros digitais (https://github.com/laviniasa/Velaris/tree/main/proj_velaris)(11000111)(00001101),Notas:70,30
+	- Grupo 5 (Danilo, Carlos, Pignata) - Masters (https://github.com/daniloafalcirolli/Master)(11101111)(11111111),Notas:90,100
+	- Grupo 6 (Allan, Vital, Rodrigo) - Apostas (https://github.com/Allan2077/aposta)(00110011)(11001101),Notas:50,60
+	- Grupo 7 (Belli, Felipe, Gabriel, Vic) - Loja Bolos (https://github.com/vick7000/Bolos)(10111111)(11101101),Notas:90,70
+	- Grupo 8 (Gusta, Tieppo, Vitor) - Joja Suplementos (https://github.com/rafaeltieppo/RVGSuplementos)(11000111)(11001101),Notas:60,60
 -------------
 
-- Grupo 1 (Diogo, Ana, Daniel) - Rede Social Acessibilidade (https://github.com/diogohmedeiros/FacePlus/blob/main/Projeto/documenta%C3%A7%C3%A3o/FacePlus%20(1).pdf)
+- Grupo 1 (Diogo, Ana, Daniel) - Rede Social Acessibilidade  /blob/main/Projeto/documenta%C3%A7%C3%A3o/FacePlus%20(1).pdf)
 - Grupo 2 (Roberto, Leo, Jake) - Ong Assistencial (https://github.com/LeoImenes/Projeto-ONG/blob/main/DOCUMENTOS/PROJETO%20-%20SISTEMA%20ONG%20DIGITAL.pdf)
 - Grupo 3 (Zé, Medeiros, Faria) - Banco digital (https://github.com/MiichaelJose/-banco-digital-/blob/main/doc/SENAI_Jaguariúna.pdf)
 - Grupo 4 (Elian, Larissa, Lavínia) - Livros digitais (https://github.com/laviniasa/SENAI-2021/blob/main/documenta%C3%A7%C3%A3o.pdf)
