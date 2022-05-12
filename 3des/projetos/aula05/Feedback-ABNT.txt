@@ -104,9 +104,9 @@ Grupo 6 (Allan, Vital, Rodrigo)(11001101)
 	- Bibliografia (OK) Novamente CTRL+C e CTRL+V
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
-Grupo 7 (Belli, Felipe, Gabriel, Vic)(11101101)
+Grupo 7 (Belli, Felipe, Gabriel, Vic)(11101111)
 - Capa, Folha de Rosto, Sumário e Listas (OK)
-- Resumo e Introdução (OK)
+- Resumo e Introdução (OK)(Faltou alterar os Cabeçalhos das páginas, aparece Projeto Blitz)
 - Objetivos, TAP (OK)
 - Escopo (OK)
 - Requisitos não funcionais (OK)
@@ -115,12 +115,12 @@ Grupo 7 (Belli, Felipe, Gabriel, Vic)(11101101)
 	- Cronograma (OK) Bem Detalhado.
 	- Custos do projeto (OK)
 - Desenvolvimento
-	- Diagrama de Classes <<NÃO ENCONTRADO>>
-	- Protótipos Mobile e FrontEnd (Gostei das imágens, eu compraria a idéia
+	- Diagrama de Classes (OK) Muito bom - todas os atributos e interligações
+	- Protótipos Mobile e FrontEnd (Gostei das imágens, eu compraria a idéia)
 	- Planejamento do banco de dados não era necessário no pré-projeto, porém foi muito bem executado.
-	- Dicionario de Dados JSON (<<NÃO ENCONTRADO>>
-	- Descrição dos Resultados <<NÃO ENCONTRADO>>
-	- Bibliografia <<NÃO ENCONTRADO>>
+	- Dicionario de Dados JSON (OK)
+	- Descrição dos Resultados (OK)
+	- Bibliografia (OK)
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
 Grupo 8 (Gusta, Tieppo, Vitor)(11001101)
