@@ -14,3 +14,5 @@
 .Atividades
 ------------
 	- Execute a atividade01.png
+	- Execute a atividade02.png
+	- Execute a atividade03.png
