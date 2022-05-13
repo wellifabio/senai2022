@@ -23,6 +23,14 @@
 - Para funcionar com a criptografia básica de exemplo altere o charset para utf-8
 - Todas as linhas de comando que utilizam criptografia possuem uma linha comentada logo acima ou abaixo sem a criptografia para testar sem ela e comparar
 -------------
+.Exemplos de sistemas Desktop para servir de apoio ao desenvolvimento desta Atividade
+-------------
+- Login (Tela de acesso e Formulário com as funcionalidades (CRUD))
+- PetLogin (Sistema completo com Login, Formulários CRUD, Relatórios e integração dom Excel (dashboard)) e Documentação
+- Outros exemplos de sistemas desktops Completos (https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI)
+-------------
+.Grupos
+-------------
 - Grupo 1:
 	- Felipe Augusto Ribeiro Serra
 	- Felipe dos Santos Canizela
