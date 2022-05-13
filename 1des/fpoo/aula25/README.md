@@ -28,6 +28,11 @@
 - Login (Tela de acesso e Formulário com as funcionalidades (CRUD))
 - PetLogin (Sistema completo com Login, Formulários CRUD, Relatórios e integração dom Excel (dashboard)) e Documentação
 - Outros exemplos de sistemas desktops Completos (https://github.com/wellifabio/senai2021/tree/master/1des/fpoo/exemplosGUI)
+	- Dicas-GUI (Dicas sobre técnicas para trabalhar com imagens e desenhos básicos em Java GUI)
+	- Estacionamento (Exemplo de um projeto Desktop básico completo com documentação)
+	- Mapeador (Exemplo de um projeto Desktop básico completo com documentação)
+	- Money (Exemplo de um exercício com imagens e lógica)
+	- ProjetoHortelino (Exemplo de um projeto Desktop com Gestão de Estoque e Vendas com documentação)
 -------------
 .Grupos
 -------------
