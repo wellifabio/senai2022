@@ -1,9 +1,8 @@
-.Operações básicas em planilhas:
+.Operações avançadas em planilhas:
 ------------
 - Fórmulas em planilhas:
-	- fórmulas e funções;
+	- Funções HOJE() e SE()
 ------------
 .Atividades
 ------------
-	- Execute a atividade04.png
-	- Execute a atividade05.png
+	- Execute a atividade06.png
