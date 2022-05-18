@@ -126,7 +126,7 @@
                     <span class="badge text-bg-danger position-absolute rounded-pill top-0 start-100 translate-middle">5</span>
                 </button>
 
-                <div id="frutaiada" class="carousel slide" data-bs-ride="carousel">
+                <!-- <div id="frutaiada" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#frutaiada" data-bs-slide-to="0"></button>
                         <button type="button" data-bs-target="#frutaiada" data-bs-slide-to="1" aria-current="true" class="active"></button>
@@ -153,6 +153,52 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Proximo</span>
                     </button>
+                </div> -->
+
+                <div class="card" style="width: 18rem;">
+                    <img src="http://1.bp.blogspot.com/-5zcW1-8pZYc/UDEGh9P3GuI/AAAAAAAAA8E/F4K6WZUi1Bg/s1600/img_115178544.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Carroça Executiva</h5>
+                        <p class="card-text">Único dono, banco de couro, ar condicionado, suspensão hidraulica, freio ABS. Cavalo de brinde.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mteste">
+                    Mostrar Modal
+                </button>
+
+                <div class="modal fade" id="mteste">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Exemplo Modal</h5>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Texto modelo modal</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Cadastrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btnToast">Mostrar Toast</button>
+
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="toast" class="toast">
+                        <div class="toast-header">
+                            <strong class="me-auto">Notificação</strong>
+                            <small>11 min.</small>
+                            <button class="btn-close" data-bs-dismiss="toast"></button>
+                        </div>
+                        <div class="toast-body">
+                            <p>O texto da sua notificação !</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-2 bg-danger">
@@ -162,5 +208,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
