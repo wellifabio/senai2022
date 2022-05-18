@@ -36,6 +36,7 @@
 - Office 365 atualizado
 	- Word - Recurso de "Ditar"
 	- Word - Recurso de "Leitura Avançada"
+	- Power Point - Recurso de "Acessibilidade investigar"
 -------------
 .Avaliação
 -------------
