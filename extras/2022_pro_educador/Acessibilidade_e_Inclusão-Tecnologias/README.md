@@ -68,3 +68,4 @@
 	- Para algumas pessoas a língua portuguesa é a segunda língua, Dicas:
 		- A gramática deve ser adaptada (auxílio de intérpretes de libras ao avaliar a escrita)
 		- Surdo não é mudo
+-------------
