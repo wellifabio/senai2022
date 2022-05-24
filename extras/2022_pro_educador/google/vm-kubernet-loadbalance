@@ -1,0 +1,149 @@
+
+1.Preparar o Ambiente - Definir Zona e região padrão
+
+gcloud config set compute/zone us-east1-b
+gcloud config set compute/region us-east1
+- Definindo a zona padrão
+export ZONE=us-east1-b
+gcloud config set compute/zone $ZONE 
+
+Tarefa 1: crie uma instância para o projeto jumphost
+
+Você vai usar essa instância para fazer a manutenção do projeto.
+Requisitos: Dê o nome nucleus-jumphost-803 à instância.
+Use um tipo de máquina f1-micro.
+Use o tipo de imagem padrão (Debian Linux).
+
+gcloud compute instances create nucleus-jumphost-433 --machine-type f1-micro --zone $ZONE
+
+Tarefa 2: crie um cluster de serviço do Kubernetes
+
+- Criar o agrupamento de containners
+gcloud container clusters create hello-app
+gcloud container clusters get-credentials hello-app
+kubectl create deployment hello-app --image=gcr.io/google-samples/hello-app:2.0
+kubectl expose deployment hello-app --type=LoadBalancer --port 8080
+kubectl get service
+
+Tarefa 3: configure um balanceador de carga HTTP
+
+- Criar o script de startup-scriptcat
+
+Tarefa 3: configure um balanceador de carga HTTP
+
+- Criar As duas instâncias "para balanceamento de REDE".
+
+gcloud compute instances create www1 \
+--image-family debian-9 \
+--image-project debian-cloud \
+--zone us-east1-b \
+--tags network-lb-tag \
+--metadata startup-script="#! /bin/bash
+	sudo apt-get update
+	apt-get install -y nginx
+	service nginx start
+	sed -i -- 's/nginx/Google Cloud Platform - '"$HOSTNAME"'/' /var/www/html/index.nginx-debian.html
+	echo '<!doctype html><html><body><h1>www1</h1></body></html>' | tee /var/www/html/index.html"
+
+gcloud compute instances create www2 \
+--image-family debian-9 \
+--image-project debian-cloud \
+--zone us-east1-b \
+--tags network-lb-tag \
+--metadata startup-script="#! /bin/bash
+	sudo apt-get update
+	apt-get install -y nginx
+	service nginx start
+	sed -i -- 's/nginx/Google Cloud Platform - '"$HOSTNAME"'/' /var/www/html/index.nginx-debian.html
+	echo '<!doctype html><html><body><h1>www2</h1></body></html>' | tee /var/www/html/index.html"
+
+- Listar as instâncias criadas
+gcloud compute instances list
+
+- Criar uma regra de firewall para permitir o tráfego externo para as instâncias de VM:
+gcloud compute firewall-rules create www-firewall-network-lb --target-tags network-lb-tag --allow tcp:80
+
+- Verificar se cada instância está sendo executada
+curl 34.73.234.139
+curl 35.231.168.63
+
+- Criar um pool de destino.
+- Adicione um pool de destino na mesma região de suas instâncias.
+gcloud compute target-pools create www-pool
+
+- Adicionar as instâncias ao pool:
+gcloud compute target-pools add-instances www-pool --instances www1,www2
+
+- Adicionar uma regra de encaminhamento na região e zona padrão
+gcloud compute forwarding-rules create www-rule --ports 80 --address network-lb-ip-1 --target-pool www-pool
+
+- Visualizar o endereço IP externo da regra de encaminhamento
+gcloud compute forwarding-rules describe www-rule
+
+- Laço de repetição para testar
+for i in $(seq 1 100); do curl -m1 107.178.215.35; done
+
+
+- Criar o modelo de instância
+gcloud compute instance-templates create lb-backend-template \
+   --network=default \
+   --subnet=default \
+   --tags=allow-health-check \
+   --image-family=debian-9 \
+   --image-project=debian-cloud \
+   --metadata=startup-script='#! /bin/bash
+     apt-get update
+     apt-get install apache2 -y
+     a2ensite default-ssl
+     a2enmod ssl
+     vm_hostname="$(curl -H "Metadata-Flavor:Google" \
+     http://169.254.169.254/computeMetadata/v1/instance/name)"
+     echo "Page served from: $vm_hostname" | \
+     tee /var/www/html/index.html
+     systemctl restart apache2'
+
+- Criar um grupo de instâncias gerenciadas, baseada no modelo
+gcloud compute instance-groups managed create lb-backend-group --template=lb-backend-template --size=2 --zone=$ZONE
+
+- Defina uma regra de firewall chamada Firewall rule para permitir o tráfego (80/tcp).
+gcloud compute firewall-rules create allow-tcp-rule-661 \
+    --network=default \
+    --action=allow \
+    --direction=ingress \
+    --source-ranges=130.211.0.0/22,35.191.0.0/16 \
+    --target-tags=allow-health-check \
+    --rules=tcp:80
+
+- Criar o IP externo
+gcloud compute addresses create lb-ipv4-1 --ip-version=IPV4 --global
+
+- Pegar o IP externo
+gcloud compute addresses describe lb-ipv4-1 --format="get(address)" --global
+34.110.129.12
+
+- Crie uma verificação de integridade.
+gcloud compute health-checks create http http-basic-check --port 80
+
+- Crie um serviço de back-end e anexe o grupo gerenciado de instâncias à porta chamada (http:80).
+gcloud compute backend-services create web-backend-service \
+        --protocol=HTTP \
+        --port-name=http \
+        --health-checks=http-basic-check \
+        --global
+- E adicione o grupo
+	    gcloud compute backend-services add-backend web-backend-service \
+        --instance-group=lb-backend-group \
+        --instance-group-zone=$ZONE \
+        --global
+		
+- Crie um mapa de URL e direcione para ele o encaminhamento de solicitações do proxy HTTP.
+gcloud compute url-maps create web-map-http --default-service web-backend-service
+- Proxy
+gcloud compute target-http-proxies create http-lb-proxy --url-map web-map-http
+
+- Crie uma regra de encaminhamento.
+gcloud compute forwarding-rules create http-content-rule \
+        --address=lb-ipv4-1\
+        --global \
+        --target-http-proxy=http-lb-proxy \
+        --ports=80
