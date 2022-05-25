@@ -1,0 +1,51 @@
+Quiz : Google Cloud Platform Storage Options
+
+You are developing an application that transcodes large video files. Which storage option is the best choice for your application?
+	Cloud Datastore
+	Cloud Spanner
+V - 	Cloud Storage
+ 	Google Drive
+
+How do the Nearline and Coldline storage classes differ from Multi-regional and Regional? Choose all that are correct (2 responses).
+	Data in Nearline and Coldline is not retrievable immediately.
+	Nearline and Coldline use a differently-architected API.
+V - 	Nearline and Coldline assess additional retrieval fees.
+V - 	Nearline and Coldline assess lower storage fees.
+	Nearline and Coldline have lower durability.
+
+Which GCP storage service is often the ingestion point for data being moved into the cloud, and is frequently the long-term storage location for data?
+	Local SSD
+	Cloud Spanner
+V - 	Cloud Storage
+	Cloud Datastore
+
+You are building a small application. If possible, you'd like this application's data storage to be at no additional charge. Which service has a free daily quota, separate from any free trials?
+	Bigtable
+	Cloud SQL
+V - 	Cloud Datastore
+	Cloud Spanner
+
+Which statement is true about objects in Cloud Storage?
+	They are immutable unless you turn on versioning.
+	They are immutable, and versioned by default.
+V - 	They are immutable, and new versions overwrite old unless you turn on versioning.
+	They can be edited in place.
+
+
+Your application needs to store data with strong transactional consistency, and you want seamless scaling up. Which storage option is the best choice for your application?
+	Cloud Datastore
+	Cloud Storage
+V - 	Cloud Spanner
+	Cloud SQL
+
+You manufacture devices with sensors and need to stream huge amounts of data from these devices to a storage option in the cloud. Which Google Cloud Platform storage option is the best choice for your application?
+	Cloud Spanner
+	BigQuery
+V - 	Cloud Bigtable
+	Cloud Datastore
+
+Your application needs a relational database, and it expects to talk to MySQL. Which storage option is the best choice for your application?
+	Cloud Storage
+	Bigtable
+V - 	Cloud SQL
+	Cloud Spanner

@@ -1,0 +1,67 @@
+#Quiz : Containers
+---------------
+True or false: each container has its own instance of an operating system.
+V -	False.
+ 	True
+
+Containers are loosely coupled to their environments. What does that mean? Choose all the statements that are true. (3 correct answers)
+	Containers package your application into equally sized components.
+V -	Containers are easy to move around.
+V -	Deploying a containerized application consumes less resources and is less error-prone than deploying an application in virtual machines.
+	Containers don't require any particular runtime binary.
+V -	Containers abstract away unimportant details of their environments.
+
+#Quiz : Kubernetes
+---------------
+What is a Kubernetes cluster?
+V -	A group of machines where Kubernetes can schedule workloads
+	A group of containers that provide high availability for applications
+
+What is a Kubernetes pod?
+V -	A group of containers
+	A group of nodes
+	A group of clusters
+
+#Quiz : Kubernetes Engine
+---------------
+True or false: Google keeps Kubernetes Engine refreshed with successive versions of Kubernetes.
+	False.
+V -	True.
+
+Where do the resources used to build Kubernetes Engine clusters come from?
+	App Engine
+	Bare-metal servers
+V -	Compute Engine
+
+#Quiz : Containers, Kubernetes, and Kubernetes Engine
+---------------
+Does Google Cloud Platform offer its own tool for building containers (other than the ordinary docker command)?
+V -	Yes; the GCP-provided tool is an option, but customers may choose not use it.
+	Yes. Kubernetes Engine customers must use the GCP-provided tool.
+	No; all customers use the ordinary docker command.
+
+*True or False:* Kubernetes allows you to manage container clusters in multiple cloud providers.
+	False
+V -	True
+
+In Kubernetes, what does "pod" refer to?
+	A group of clusters that work together
+	A popular management subsystem
+	A popular logging subsystem
+V -	A group of containers that work together
+
+Identify two reasons for deploying applications using containers. (Choose 2 responses.)
+	Tight coupling between applications and operating systems
+V -	Simpler to migrate workloads
+	No need to allocate resources in which to run containers
+V -	Consistency across development, testing, production environments
+
+*True or False:* Google Cloud Platform provides a secure, high-speed container image storage service for use with Kubernetes Engine.
+	False
+V -	True
+
+Where do your Kubernetes Engine workloads run?
+	In clusters that are built into GCP, not separately manageable
+	In clusters implemented using Cloud Functions
+	In clusters implemented using App Engine
+V -	In clusters built from Compute Engine virtual machines
