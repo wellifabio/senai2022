@@ -12,6 +12,7 @@
 - Ferramenta de diagramas online: https://www.draw.io/
 - Administrar meus links: https://linktr.ee/
 - Criador de desafios tipo Quiz(perguntas e respostas) kahoot.it https://kahoot.com/
+- Caderno compartilhado online: https://www.notion.so/
 - Compartilhador de imagens Prints de tela snag.gy https://snipboard.io/
 - Tradutor de documentos online: https://www.onlinedoctranslator.com/pt/
 - Criador de sorteios diversos: https://app-sorteos.com
