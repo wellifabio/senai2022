@@ -1,0 +1,46 @@
+#Quiz : Big Data and Machine Learning
+
+Name two use cases for Google Cloud Dataflow (Select 2 answers).
+	Reserved compute instances
+	Manual resource management
+V -	Orchestration
+V -	Extract, Transform, and Load (ETL)
+
+What is TensorFlow?
+	A managed service for building data pipelines
+	A hardware device designed to accelerate machine learning workloads
+	A managed service for building machine learning models
+V -	An open-source software library that’s useful for building machine learning applications
+
+Which statements are true about BigQuery? Choose all that are true (2 statements).
+	BigQuery requires that you provision database instances ahead of use.
+V -	BigQuery is a good choice for data analytics warehousing.
+	Once in BigQuery, data is not accessible from other GCP services.
+	BigQuery is a good choice for online transaction processing.
+V -	BigQuery lets you run fast SQL queries against large databases.
+
+Name three use cases for Cloud Pub/Sub (Select 3 answers).
+	Executing ad-hoc SQL queries
+	Internet of Things applications
+	Storage of binary web content
+	Decoupling systems
+	Analyzing streaming data
+
+Name three use cases for the Google Cloud Machine Learning Platform (Select 3 answers).
+V -	Content personalization
+V - Sentiment analysis
+	Data preparation
+	Query architecture
+V -	Fraud detection
+
+Name two use cases for Google Cloud Dataproc (Select 2 answers).
+	Manage data that arrives in realtime
+V -	Data mining and analysis in datasets of known size
+	Manage datasets of unpredictable size
+V -	Migrate on-premises Hadoop jobs to the cloud
+
+What does the Cloud Natural Language API do?
+	Tt performs sentiment analysis on audio and video content.
+	It translates arbitrary strings into any supported language.
+	It extracts text in various languages from images.
+V -	It analyzes text to reveal its structure and meaning.
