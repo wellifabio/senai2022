@@ -1,0 +1,54 @@
+#Quiz: App Engine
+--------------
+True or false: App Engine just runs applications; it doesn't offer any services to the applications it runs.
+	True.
+V - False.
+True or false: App Engine is a better choice for a web application than for long-running batch processing.
+V -	True.
+	False.
+
+#Quiz : App Engine Flexible and Standard Environments
+--------------
+Which of these criteria would make you choose App Engine Flexible Environment, rather than Standard Environment, for your application? Choose all that are correct (2 correct responses).
+Daily free usage quota
+V -	Wider range of choices for application language
+Finer-grained scaling
+V -	Ability to ssh in
+
+True or false: App Engine Flexible Environment applications let their owners control the geographic region where they run.
+V -	True.
+	False.
+	
+# Quiz : Applications in the Cloud
+--------------
+Which statements are true about App Engine? Choose all that are true (2 correct answers).
+v -	It is possible for an App Engine application's daily billing to drop to zero.
+	App Engine charges you based on the resources you pre-allocate rather than based on the resources you use.
+	App Engine requires you to supply or code your own application load balancing and logging services.
+	Developers who write for App Engine do not need to code their applications in any particular way to use the service.
+V -	App Engine manages the hardware and networking infrastructure required to run your code.
+
+You want to gradually decompose a pre-existing monolithic application, not implemented in GCP, into microservices. Which GCP service should you choose?
+	Cloud Endpoints
+V -	Apigee Edge
+
+Name 3 advantages of using the App Engine Flexible Environment over App Engine Standard. Choose all that are true (3 correct answers).
+V -	Your application can write to local disk
+	Google provides automatic in-place security patches
+V -	You can install third-party binaries
+	Your application can execute code in background threads
+V -	You can SSH in to your application
+
+Name 3 advantages of using the App Engine Standard Environment over App Engine Flexible. Choose all that are true (3 correct answers).
+V -	Billing can drop to zero if your application is idle
+V -	Scaling is finer-grained
+	You can choose any programming language
+	You can install third-party binaries
+V -	Google provides and maintains runtime binaries
+
+You want to do business analytics and billing on a customer-facing API. Which GCP service should you choose?
+	Cloud Endpoints
+V -	Apigee Edge
+You want to support developers who are building services in GCP through API logging and monitoring. Which GCP service should you choose?
+	Apigee Edge
+V -	Cloud Endpoints

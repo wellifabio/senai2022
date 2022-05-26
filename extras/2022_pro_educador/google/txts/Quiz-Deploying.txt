@@ -1,0 +1,10 @@
+Quiz : Development in Cloud
+Passing score: 100%
+1.
+Why would a developer choose to store source code in Cloud Source Repositories? Choose all the answers that are correct (2 correct answers).
+
+To keep code private to a GCP project
+
+To reduce work
+
+To have total control over the hosting infrastructure
