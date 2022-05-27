@@ -1,0 +1,48 @@
+#Quiz - Big Data
+Which pattern describes source data that is moved into a BigQuery table in a single operation?
+	Generated data
+	Streaming
+V -	Batch load
+	Spot load
+
+Data has been loaded into BigQuery, and the features have been selected and preprocessed. What should happen next when you use BigQuery ML to develop a machine learning model?
+	Classify labels to train on historical data.
+V -	Create the ML model inside BigQuery.
+	Use the ML model to make predictions.
+	Evaluate the performance of the trained ML model.
+
+Which BigQuery feature leverages geography data types and standard SQL geography functions to analyze a data set?
+	Building business intelligence dashboards
+V-	Geospatial analysis
+	Ad hoc analysis
+	Building machine learning models
+
+In a supervised machine learning model, what provides historical data that can be used to predict future data?
+	Features
+	Examples
+V -	Labels
+	Data points
+	
+You want to use machine learning to identify whether an email is spam. Which should you use?
+	Unsupervised learning, dimensionality reduction
+	Supervised learning, linear regression
+	Unsupervised learning, cluster analysis
+V -	Supervised learning, logistic regression
+
+You want to use machine learning to group random photos into similar groups. Which should you use?
+	Unsupervised learning, dimensionality reduction
+	Supervised learning, linear regression
+V -	Unsupervised learning, cluster analysis
+	Supervised learning, logistic regression
+
+BigQuery is a fully managed data warehouse. What does “fully managed” refer to?
+	BigQuery manages the data source for you.
+V -	BigQuery manages the underlying structure for you.
+	BigQuery manages the data quality for you.
+	BigQuery manages the cost for you.
+
+Which two services does BigQuery provide?
+V -	Storage and analytics
+	Application services and analytics
+	Storage and compute
+	Application services and storage
