@@ -1,0 +1,34 @@
+#Quiz ML WorkFlow
+
+Select the correct machine learning workflow.
+	Model serving, data preparation, model training
+	Data preparation, model serving, model training
+	Model training, data preparation, model serving
+V -	Data preparation, model training, model servin
+A farm uses Google’s machine learning technology to detect defective apples in their crop, such as those that are irregular in size or have scratches. The goal is to identify only the apples that are actually bad so that no good apples are wasted. Which metric should the model focus on?
+	Feature importance
+	Recall
+V -	Precision
+	Confusion matrix
+
+Which stage of the machine learning workflow includes model evaluation?
+X	Model serving
+V -	Model training
+	Data preparation
+
+Which stage of the machine learning workflow includes feature engineering?
+	Model serving
+	Model training
+V -	Data preparation
+
+A hospital uses Google’s machine learning technology to help pre-diagnose cancer by feeding historical patient medical data to the model. The goal is to identify as many potential cases as possible. Which metric should the model focus on?
+	Feature importance
+V -	Recall
+	Precision
+	Confusion matrix
+
+Which Vertex AI tool automates, monitors, and governs machine learning systems by orchestrating the workflow in a serverless manner?
+V -	Vertex AI Pipelines
+	Vertex AI console
+	Vertex AI Workbench
+	Vertex AI Feature Store
