@@ -1,0 +1,31 @@
+#Quiz Machine Learning
+
+Which Google Cloud product lets users create, deploy, and manage machine learning models in one unified platform?
+	TensorFlow
+V -	Vertex AI
+	Document AI
+	AI Platform
+
+Which code-based solution offered with Vertex AI gives data scientists full control over the development environment and process?
+V -	Custom training
+	AI Solutions
+	AutoML
+	AI Platform
+
+Your company has a lot of data, and you want to train your own machine model to see what insights ML can provide. Due to resource constraints, you require a codeless solution. Which option is best?
+	Pre-built APIs
+	Custom training
+	BigQuery ML
+V -	AutoML
+
+You work for a global hotel chain that has recently loaded some guest data into BigQuery. You have experience writing SQL and want to leverage machine learning to help predict guest trends for the next few months. Which option is best?
+	Pre-built APIs
+	Custom training
+V -	BigQuery ML
+	AutoML
+
+You work for a video production company and want to use machine learning to categorize event footage, but want to train your own ML model. Which option can help you get started?
+V -	Pre-built APIs
+	Custom training
+	BigQuery ML
+	AutoML
