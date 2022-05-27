@@ -1,0 +1,42 @@
+- Which data storage class is best for storing data that needs to be accessed less than once a year, such as online backups and disaster recovery?
+
+	Coldline storage
+	Standard storage
+	Nearline storage
+V	Archive storage
+
+- Cloud Storage, Cloud Bigtable, Cloud SQL, Cloud Spanner, and Firestore represent which type of services?
+
+V	Database and storage
+	Machine learning
+	Networking
+	Compute
+	
+- Compute Engine, Google Kubernetes Engine, App Engine, and Cloud Functions represent which type of services?
+
+	Networking
+	Database and storage
+V	Compute
+	Machine learning
+	
+- AutoML, Vertex AI Workbench, and TensorFlow align to which stage of the data-to-AI workflow?
+
+	Analytics
+	Ingestion and process
+	Storage
+V	Machine learning
+
+
+- Which Google hardware innovation tailors architecture to meet the computation needs on a domain, such as the matrix multiplication in machine learning?
+
+V	TPUs (Tensor Processing Units)
+	CPUs (central processing units)
+	GPUs (graphic processing units)
+	DPUs (data processing units)
+	
+- Pub/Sub, Dataflow, Dataproc, and Cloud Data Fusion align to which stage of the data-to-AI workflow?
+
+	Analytics
+V	Ingestion and process
+	Storage
+	Machine learning
