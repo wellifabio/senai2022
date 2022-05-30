@@ -9,11 +9,12 @@
 ------------------
 - Repositório com o a situação problema resolvida em Java https://github.com/wellifabio/XPTOManutencoesDesktop
 - Protótipo adicionado a este respositório
-
+------------------
 .Versionamento
-	- Para testar as três versões da solução
-	- 1. Clone o repositório do git [git clone https://github.com/wellifabio/XPTOManutencoesDesktop.git]
-	- 2. acesse o diretório clonado [cd XPTOManutencoesDesktop/]
-	- 3. veja as logs dos mommits realizados [git log]
-	- 4. volte para a versao desejada utilizando o comando [git checkout]
-	- ex: [git checkout d14080a6037b9e0b2a63640ff852b39132f9a424]
+------------------
+- Para testar as três versões da solução
+- 1. Clone o repositório do git [git clone https://github.com/wellifabio/XPTOManutencoesDesktop.git]
+- 2. acesse o diretório clonado [cd XPTOManutencoesDesktop/]
+- 3. veja as logs dos mommits realizados [git log]
+- 4. volte para a versao desejada utilizando o comando [git checkout]
+- ex: [git checkout d14080a6037b9e0b2a63640ff852b39132f9a424]
