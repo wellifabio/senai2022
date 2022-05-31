@@ -1,10 +1,11 @@
 # TI LINKS E INFORMAÇÕES DIVERSAS
 -------------
-- it_2022 / Plano iT Certificações x Parceiros [Azure, AWS, Google, Oracle, Cisco]
-- it_mercado_2022 / Alguns perfis de vagas DEV anunciadas em 2022
-- pc_2022 / Planos de Curso
+- 2022_pc_ds / Planos de Curso
+- 2022_vagas_ti / Alguns perfis de vagas DEV anunciadas em 2022
+- 2022_pro_educador / Plano iT Certificações x Parceiros [Azure, AWS, Google, Oracle, Cisco]
 - rede_seg_info / Materiais para aulas de Redes básica
 - sql / Meteriais para aulas de Banco de Dados
+- office / Exemplos de atividades do office (Mala Direta)
 
 # Links de ferramentas inportantes:
 - RocketSeat: https://app.rocketseat.com.br/
