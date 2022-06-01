@@ -1,0 +1,4 @@
+PROJECT_ID=`gcloud config get-value project`
+BUCKET=${PROJECT_ID}-bucket
+gsutil mb gs://$BUCKET
+gsutil cp -r gs://spls/gsp431/* gs://$BUCKET
