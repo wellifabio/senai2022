@@ -29,3 +29,6 @@
 - 2.6. Equipamentos ativos e passivos de redes
 - 2.7. Meios físicos de transmissão de dados
 - 2.8. Meios sem fio de transmissão de dados
+
+#Quastionário
+- https://docs.google.com/forms/d/e/1FAIpQLSdF1pCQv-1Sh9iF2ymvM2fEYbbvzWIGt2vV9ygw2CHsv355wg/viewform?usp=sf_link
