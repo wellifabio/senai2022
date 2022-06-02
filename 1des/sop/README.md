@@ -1,9 +1,9 @@
-#Plano de Curso:
+# Plano de Curso:
 ------------------
 - Objetivo Geral: Sistemas Operacionais tem como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a estrutura, funcionamento, instalação, configuração e operação de sistemas operacionais de código aberto e fechado, considerando interface gráfica e linha de comando, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
 ------------------
-#Competências Básicas e de Gestão (gerais)
-#Fundamentos Técnicos e Científicos
+# Competências Básicas e de Gestão (gerais)
+# Fundamentos Técnicos e Científicos
 1. Identificar as características técnicas dos sistemas de arquivo, tendo em vista a utilização de sistemas operacionais (3)
 2. Instalar sistemas operacionais em máquinas virtuais
 3. Operar sistemas operacionais por meio de linha de comando e interface gráfica (2)
@@ -11,13 +11,13 @@
 5. Instalar gerenciador de pacotes de acordo com o sistema operacional
 6. Utilizar ferramentas de edição de texto e planilha eletrônica para a elaboração da documentação técnica
 
-#Capacidades Sociais, Organizativas e Metodológicas
+# Capacidades Sociais, Organizativas e Metodológicas
 1. Demonstrar atenção a detalhes (44)
 2. Demonstrar capacidade de análise (2)
 3. Seguir método de trabalho (21)
 4. Demonstrar capacidade de organização (6)
 
-#Conhecimentos
+# Conhecimentos
 - 1. Arquitetura dos sistemas operacionais
 - 1.1. Definição
 - 1.2. Histórico
@@ -50,7 +50,6 @@
 - 2.5.1. Pacotes
 - 2.5.2. Atualização
 - 2.5.3. Programas
-
 - 3. Sistemas operacional código aberto
 - 3.1. Definição
 - 3.2. Modo texto (linha de comando)
@@ -109,14 +108,14 @@
 - 5.5. Criação de gráficos
 - 5.6. Impressão
 
-#Referências básicas
+# Referências básicas
 - ALVES, Willian Pereira. Sistemas operacionais – Série eixos – Informação e comunicação. São Paulo: Érica, 2014.
 - RAMOS, Alex de Almeida. Informática – Fundamentos e terminologia: MS Windows 7; MS Office Word 2010; MS Office Excel 2010; MS Office Power Point 2010; Internet. São Paulo: Editora Senai, 2017.
 
-#Referências complementares
+# Referências complementares
 - DEITEL, Harvey M.; DEITEL, Paul J.; CHOFFNES, David R. Sistemas operacionais. São Paulo: Pearson Prentice Hall, 2005.
-? GONÇALVES, Ribeiro. Avançando passo a passo – Aumente sua produtividade no escritório ou em casa. São Paulo: Discovery Publicações, 2013.
-? SILVA, Mario Gomes da. Informática – Tecnologia – Microsoft windows 8 – Internet – Microsoft office 2013 – Microsoft office excel 2013 – Microsoft office powerpoint 2013 – Microsoft access 2013. São Paulo: Érica, 2013.
+- GONÇALVES, Ribeiro. Avançando passo a passo – Aumente sua produtividade no escritório ou em casa. São Paulo: Discovery Publicações, 2013.
+- SILVA, Mario Gomes da. Informática – Tecnologia – Microsoft windows 8 – Internet – Microsoft office 2013 – Microsoft office excel 2013 – Microsoft office powerpoint 2013 – Microsoft access 2013. São Paulo: Érica, 2013.
 
 
 
