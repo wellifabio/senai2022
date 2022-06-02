@@ -1,122 +1,122 @@
-Plano de Curso:
-
-- Objetivo Geral: Sistemas Operacionais tem como objetivo proporcionar a aquisiÁ„o de fundamentos tÈcnicos e cientÌficos relativos a estrutura, funcionamento, instalaÁ„o, configuraÁ„o e operaÁ„o de sistemas operacionais de cÛdigo aberto e fechado, considerando interface gr·fica e linha de comando, bem como o desenvolvimento de capacidades sociais, organizativas e metodolÛgicas adequadas a diferentes situaÁıes profissionais.
-
-CompetÍncias B·sicas e de Gest„o (gerais)
-Fundamentos TÈcnicos e CientÌficos
-1. Identificar as caracterÌsticas tÈcnicas dos sistemas de arquivo, tendo em vista a utilizaÁ„o de sistemas operacionais (3)
-2. Instalar sistemas operacionais em m·quinas virtuais
-3. Operar sistemas operacionais por meio de linha de comando e interface gr·fica (2)
-4. Configurar sistemas operacionais considerando vari·veis de ambiente, memÛria, disco, serviÁo, usu·rios e permissıes (2)
+#Plano de Curso:
+------------------
+- Objetivo Geral: Sistemas Operacionais tem como objetivo proporcionar a aquisi√ß√£o de fundamentos t√©cnicos e cient√≠ficos relativos a estrutura, funcionamento, instala√ß√£o, configura√ß√£o e opera√ß√£o de sistemas operacionais de c√≥digo aberto e fechado, considerando interface gr√°fica e linha de comando, bem como o desenvolvimento de capacidades sociais, organizativas e metodol√≥gicas adequadas a diferentes situa√ß√µes profissionais.
+------------------
+#Compet√™ncias B√°sicas e de Gest√£o (gerais)
+#Fundamentos T√©cnicos e Cient√≠ficos
+1. Identificar as caracter√≠sticas t√©cnicas dos sistemas de arquivo, tendo em vista a utiliza√ß√£o de sistemas operacionais (3)
+2. Instalar sistemas operacionais em m√°quinas virtuais
+3. Operar sistemas operacionais por meio de linha de comando e interface gr√°fica (2)
+4. Configurar sistemas operacionais considerando vari√°veis de ambiente, mem√≥ria, disco, servi√ßo, usu√°rios e permiss√µes (2)
 5. Instalar gerenciador de pacotes de acordo com o sistema operacional
-6. Utilizar ferramentas de ediÁ„o de texto e planilha eletrÙnica para a elaboraÁ„o da documentaÁ„o tÈcnica
+6. Utilizar ferramentas de edi√ß√£o de texto e planilha eletr√¥nica para a elabora√ß√£o da documenta√ß√£o t√©cnica
 
-Capacidades Sociais, Organizativas e MetodolÛgicas
-1. Demonstrar atenÁ„o a detalhes (44)
-2. Demonstrar capacidade de an·lise (2)
-3. Seguir mÈtodo de trabalho (21)
-4. Demonstrar capacidade de organizaÁ„o (6)
+#Capacidades Sociais, Organizativas e Metodol√≥gicas
+1. Demonstrar aten√ß√£o a detalhes (44)
+2. Demonstrar capacidade de an√°lise (2)
+3. Seguir m√©todo de trabalho (21)
+4. Demonstrar capacidade de organiza√ß√£o (6)
 
-Conhecimentos
-1. Arquitetura dos sistemas operacionais
-1.1. DefiniÁ„o
-1.2. HistÛrico
-1.3. ClassificaÁ„o
-1.3.1. Monotarefa
-1.3.2. Multitarefa
-1.4. Gerenciador de processos
-1.5. Sistemas de arquivos
-2. Sistema operacional cÛdigo fechado
-2.1. DefiniÁ„o
-2.2. Modo texto (linha de comando)
-2.2.1. NavegaÁ„o entre diretÛrios
-2.2.2. CriaÁ„o de diretÛrios e arquivos
-2.2.3. Exclus„o de diretÛrios e arquivos
-2.2.4. RenomeaÁ„o de diretÛrios e arquivos
-2.2.5. MovimentaÁ„o de diretÛrios e arquivos
-2.2.6. CÛpia de diretÛrios e arquivos
-2.2.7. EdiÁ„o de arquivos
-2.3. Modo gr·fico (Interface gr·fica)
-2.3.1. ¡rea de trabalho
-2.3.2. Trabalho com janelas
-2.3.3. ConfiguraÁ„o do sistema
-2.3.4. Ferramentas do sistema
-2.3.5. AcessÛrios
-2.3.6. Menu de ajuda
-2.3.7. Gerenciamento de arquivos
-2.3.8. Gerenciamento de usu·rios e permissıes
-2.4. NÌveis de inicializaÁ„o e finalizaÁ„o
-2.5. InstalaÁ„o na m·quina virtual
-2.5.1. Pacotes
-2.5.2. AtualizaÁ„o
-2.5.3. Programas
+#Conhecimentos
+- 1. Arquitetura dos sistemas operacionais
+- 1.1. Defini√ß√£o
+- 1.2. Hist√≥rico
+- 1.3. Classifica√ß√£o
+- 1.3.1. Monotarefa
+- 1.3.2. Multitarefa
+- 1.4. Gerenciador de processos
+- 1.5. Sistemas de arquivos
+- 2. Sistema operacional c√≥digo fechado
+- 2.1. Defini√ß√£o
+- 2.2. Modo texto (linha de comando)
+- 2.2.1. Navega√ß√£o entre diret√≥rios
+- 2.2.2. Cria√ß√£o de diret√≥rios e arquivos
+- 2.2.3. Exclus√£o de diret√≥rios e arquivos
+- 2.2.4. Renomea√ß√£o de diret√≥rios e arquivos
+- 2.2.5. Movimenta√ß√£o de diret√≥rios e arquivos
+- 2.2.6. C√≥pia de diret√≥rios e arquivos
+- 2.2.7. Edi√ß√£o de arquivos
+- 2.3. Modo gr√°fico (Interface gr√°fica)
+- 2.3.1. √Årea de trabalho
+- 2.3.2. Trabalho com janelas
+- 2.3.3. Configura√ß√£o do sistema
+- 2.3.4. Ferramentas do sistema
+- 2.3.5. Acess√≥rios
+- 2.3.6. Menu de ajuda
+- 2.3.7. Gerenciamento de arquivos
+- 2.3.8. Gerenciamento de usu√°rios e permiss√µes
+- 2.4. N√≠veis de inicializa√ß√£o e finaliza√ß√£o
+- 2.5. Instala√ß√£o na m√°quina virtual
+- 2.5.1. Pacotes
+- 2.5.2. Atualiza√ß√£o
+- 2.5.3. Programas
 
-3. Sistemas operacional cÛdigo aberto
-3.1. DefiniÁ„o
-3.2. Modo texto (linha de comando)
-3.2.1. NavegaÁ„o entre diretÛrios
-3.2.2. CriaÁ„o de diretÛrios e arquivos
-3.2.3. Exclus„o de diretÛrios e arquivos
-3.2.4. RenomeaÁ„o de diretÛrios e arquivos
-3.2.5. MovimentaÁ„o de diretÛrios e arquivos
-3.2.6. CÛpia de diretÛrios e arquivos
-3.2.7. EdiÁ„o de arquivos
-3.3. Modo gr·fico (interface gr·fica)
-3.3.1. ¡rea de trabalho
-3.3.2. Trabalho com janelas
-3.3.3. ConfiguraÁ„o do sistema
-3.3.4. Ferramentas do sistema
-3.3.5. AcessÛrios
-3.3.6. Menu de ajuda
-3.3.7. Gerenciamento de arquivos
-3.3.8. Gerenciamento de usu·rios e permissıes
-3.4. NÌveis de inicializaÁ„o e finalizaÁ„o
-3.5. InstalaÁ„o na m·quina virtual
-3.5.1. Pacotes
-3.5.2. AtualizaÁ„o
-3.5.3. Programas
-4. Editor de texto
-4.1. FormataÁ„o de:
-4.1.1. Fonte
-4.1.2. Par·grafo
-4.1.3. TabulaÁ„o
-4.1.4. Colunas
-4.1.5. Mai˙sculas e min˙sculas
-4.2. InserÁ„o de:
-4.2.1. Quebra
-4.2.2. N˙mero de p·ginas
-4.2.3. AnotaÁıes
-4.2.4. Arquivo
-4.2.5. Planilha
-4.2.6. Tabela
-4.2.7. Figura
-4.2.8. Marcadores
-4.2.9. CabeÁalho e rodapÈ
-4.2.10. Sum·rio
-4.2.11. Õndice de ilustraÁıes
-4.3. VerificaÁ„o de ortografia
-4.4. Impress„o de arquivos
-5. Planilha eletrÙnica
-5.1. CriaÁ„o de planilhas
-5.2. FormataÁ„o de cÈlulas
-5.3. Entrada de dados
-5.3.1. N˙meros
-5.3.2. Textos
-5.3.3. FÛrmulas
-5.4. FunÁıes
-5.4.1. AritmÈticas
-5.4.2. Condicionais
-5.5. CriaÁ„o de gr·ficos
-5.6. Impress„o
+- 3. Sistemas operacional c√≥digo aberto
+- 3.1. Defini√ß√£o
+- 3.2. Modo texto (linha de comando)
+- 3.2.1. Navega√ß√£o entre diret√≥rios
+- 3.2.2. Cria√ß√£o de diret√≥rios e arquivos
+- 3.2.3. Exclus√£o de diret√≥rios e arquivos
+- 3.2.4. Renomea√ß√£o de diret√≥rios e arquivos
+- 3.2.5. Movimenta√ß√£o de diret√≥rios e arquivos
+- 3.2.6. C√≥pia de diret√≥rios e arquivos
+- 3.2.7. Edi√ß√£o de arquivos
+- 3.3. Modo gr√°fico (interface gr√°fica)
+- 3.3.1. √Årea de trabalho
+- 3.3.2. Trabalho com janelas
+- 3.3.3. Configura√ß√£o do sistema
+- 3.3.4. Ferramentas do sistema
+- 3.3.5. Acess√≥rios
+- 3.3.6. Menu de ajuda
+- 3.3.7. Gerenciamento de arquivos
+- 3.3.8. Gerenciamento de usu√°rios e permiss√µes
+- 3.4. N√≠veis de inicializa√ß√£o e finaliza√ß√£o
+- 3.5. Instala√ß√£o na m√°quina virtual
+- 3.5.1. Pacotes
+- 3.5.2. Atualiza√ß√£o
+- 3.5.3. Programas
+- 4. Editor de texto
+- 4.1. Formata√ß√£o de:
+- 4.1.1. Fonte
+- 4.1.2. Par√°grafo
+- 4.1.3. Tabula√ß√£o
+- 4.1.4. Colunas
+- 4.1.5. Mai√∫sculas e min√∫sculas
+- 4.2. Inser√ß√£o de:
+- 4.2.1. Quebra
+- 4.2.2. N√∫mero de p√°ginas
+- 4.2.3. Anota√ß√µes
+- 4.2.4. Arquivo
+- 4.2.5. Planilha
+- 4.2.6. Tabela
+- 4.2.7. Figura
+- 4.2.8. Marcadores
+- 4.2.9. Cabe√ßalho e rodap√©
+- 4.2.10. Sum√°rio
+- 4.2.11. √çndice de ilustra√ß√µes
+- 4.3. Verifica√ß√£o de ortografia
+- 4.4. Impress√£o de arquivos
+- 5. Planilha eletr√¥nica
+- 5.1. Cria√ß√£o de planilhas
+- 5.2. Formata√ß√£o de c√©lulas
+- 5.3. Entrada de dados
+- 5.3.1. N√∫meros
+- 5.3.2. Textos
+- 5.3.3. F√≥rmulas
+- 5.4. Fun√ß√µes
+- 5.4.1. Aritm√©ticas
+- 5.4.2. Condicionais
+- 5.5. Cria√ß√£o de gr√°ficos
+- 5.6. Impress√£o
 
-ReferÍncias b·sicas
-? ALVES, Willian Pereira. Sistemas operacionais ñ SÈrie eixos ñ InformaÁ„o e comunicaÁ„o. S„o Paulo: …rica, 2014.
-? RAMOS, Alex de Almeida. Inform·tica ñ Fundamentos e terminologia: MS Windows 7; MS Office Word 2010; MS Office Excel 2010; MS Office Power Point 2010; Internet. S„o Paulo: Editora Senai, 2017.
+#Refer√™ncias b√°sicas
+- ALVES, Willian Pereira. Sistemas operacionais ‚Äì S√©rie eixos ‚Äì Informa√ß√£o e comunica√ß√£o. S√£o Paulo: √ârica, 2014.
+- RAMOS, Alex de Almeida. Inform√°tica ‚Äì Fundamentos e terminologia: MS Windows 7; MS Office Word 2010; MS Office Excel 2010; MS Office Power Point 2010; Internet. S√£o Paulo: Editora Senai, 2017.
 
-ReferÍncias complementares
-? DEITEL, Harvey M.; DEITEL, Paul J.; CHOFFNES, David R. Sistemas operacionais. S„o Paulo: Pearson Prentice Hall, 2005.
-? GON«ALVES, Ribeiro. AvanÁando passo a passo ñ Aumente sua produtividade no escritÛrio ou em casa. S„o Paulo: Discovery PublicaÁıes, 2013.
-? SILVA, Mario Gomes da. Inform·tica ñ Tecnologia ñ Microsoft windows 8 ñ Internet ñ Microsoft office 2013 ñ Microsoft office excel 2013 ñ Microsoft office powerpoint 2013 ñ Microsoft access 2013. S„o Paulo: …rica, 2013.
+#Refer√™ncias complementares
+- DEITEL, Harvey M.; DEITEL, Paul J.; CHOFFNES, David R. Sistemas operacionais. S√£o Paulo: Pearson Prentice Hall, 2005.
+? GON√áALVES, Ribeiro. Avan√ßando passo a passo ‚Äì Aumente sua produtividade no escrit√≥rio ou em casa. S√£o Paulo: Discovery Publica√ß√µes, 2013.
+? SILVA, Mario Gomes da. Inform√°tica ‚Äì Tecnologia ‚Äì Microsoft windows 8 ‚Äì Internet ‚Äì Microsoft office 2013 ‚Äì Microsoft office excel 2013 ‚Äì Microsoft office powerpoint 2013 ‚Äì Microsoft access 2013. S√£o Paulo: √ârica, 2013.
 
 
 
