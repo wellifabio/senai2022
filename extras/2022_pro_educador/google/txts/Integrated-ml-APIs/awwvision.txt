@@ -1,0 +1,47 @@
+# Awwvision: API Cloud Vision em um cluster do Kubernetes
+
+.Crie um cluster do Kubernetes Engine
+gcloud config set compute/zone us-central1-a
+
+.Em seguida, inicie o cluster executando isto:
+gcloud container clusters create awwvision \
+    --num-nodes 2 \
+    --scopes cloud-platform
+	
+.Execute o seguinte comando para usar as credenciais do contêiner:
+gcloud container clusters get-credentials awwvision
+
+.Use a ferramenta de linha de comando kubectl para ver se tudo está funcionando:
+kubectl cluster-info
+
+.Os ambientes virtuais do Python servem para isolar a instalação de pacotes do sistema.
+apt-get install -y virtualenv
+
+.Se aparecer [Y/n], pressione Y e depois Enter. Se você receber o erro Permissão negado, execute o comando sudo apt-get install -y virtualenv
+python3 -m venv venv
+
+.Ative o ambiente virtual.
+source venv/bin/activate
+
+# Receba a amostra
+.Agora adicione dados de amostra ao seu projeto executando o seguinte:
+gsutil -m cp -r gs://spls/gsp066/cloud-vision .
+
+# Implante a amostra
+.No Cloud Shell, mude para o diretório python/awwvision no repositório cloud-vision clonado:
+cd cloud-vision/python/awwvision
+
+# No diretório awwvision, execute make all para criar e implantar tudo:
+make all
+
+#Verifique os recursos do Kubernetes no cluster
+.Após a implantação, verifique se os recursos do Kubernetes estão funcionando.
+
+.Primeiro, liste os pods executando o seguinte:
+kubectl get pods
+
+.Em seguida, liste as implantações executando o seguinte:
+kubectl get deployments -o wide
+
+.Após a implantação, descubra o endereço IP externo do serviço do app da Web executando o seguinte:
+kubectl get svc awwvision-webapp
