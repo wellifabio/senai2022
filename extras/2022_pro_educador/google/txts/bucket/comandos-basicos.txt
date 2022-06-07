@@ -1,0 +1,18 @@
+- Crie um conjunto de dados e uma tabela do Cloud BigQuery usando o Cloud Shell
+
+bq mk taxirides
+
+- Agora que você criou seu conjunto de dados, use-o na próxima etapa para instanciar uma tabela do BigQuery. Para isso, execute o seguinte comando:
+
+bq mk \
+--time_partitioning_field timestamp \
+--schema ride_id:string,point_idx:integer,latitude:float,longitude:float,\
+timestamp:timestamp,meter_reading:float,meter_increment:float,ride_status:string,\
+passenger_count:integer -t taxirides.realtime
+
+- Crie um bucket de armazenamento
+
+export BUCKET_NAME=<your-unique-name>
+
+gsutil mb gs://$BUCKET_NAME/
+
