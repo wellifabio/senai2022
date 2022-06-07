@@ -6,3 +6,6 @@
 - Desafio: Desenvolver uma interface gráfica GUI, com as funcionalidades CRUD, para que o funcionário possa registrar seus orçamentos e que compare os produtos iguais e informe qual o mais barato, normalmente são realizados três orçamentos de cada produto, o sistema destaca o mais barato para que o comprador tome a decisão correta.
 - Entregas:
 	- Endereço do repositorio github (xptoOrcamento) contedo apenas este projeto. (Copiar o endereço do seu repositório e colar no campo de mensagem no site do professor https://wellifabio.000webhostapp.com/view/pages/)
+
+# Correção
+- Adicionado o projeto XPTOOrcamentos contendo a solução do problema orientado a objeto, sem a camada MVC view (GUI), somente model, dao e controller
