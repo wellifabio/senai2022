@@ -5,6 +5,7 @@
 - 3. Operar sistemas operacionais por meio de linha de comando e interface gráfica (2)
 	- Critério Crítico: Criou um novo arquivo(Pasta de trabalho do Excel) com os dados informados no arquivo vps02.png
 	- Critério Desejável: Formatou os dados, como moeda, mesclar células, alinhamentos facilitando a compreenção dos mesmos
+	- Critério Desejável: Criou um dashboard que filtra os dados de inventário de bens por Responável, Curso e Linha do tempo
 - 6. Utilizar ferramentas de edição de texto e planilha eletrônica para a elaboração da documentação técnica
 	- Critério Crítico: Realizou a utilização de pelo memos as funções estatísticas básicas (Soma, média, máximo, mínimo)
 	- Critério Desejável: Realizou a utilização das funções (procv, se) e cálculos de porcentagem
