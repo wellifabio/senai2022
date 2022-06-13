@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    background-color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #46b2ee;
+}
+header img{
+    margin: 5px;
+}
+
+.menu{
+    display: none;
+}
+
+.menu1{
+    list-style: none;
+}
+
+.menu1 li{
+    float: left;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu2{
+    display: none;
+    position: absolute;
+    left:0px;
+    top:-15px;
+    width: 180px;;
+    height: 210px;
+    list-style: none;
+    background-color: #86d2ff;
+    flex-direction:column;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0px 0px 25px 0px;
+}
+
+.menu2 li{
+    margin-top: 35px;
+}
+
+.sessao1{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: rgba(255, 141, 21, 0.04);
+    align-items: center;
+}
+
+.sessao1 div {
+    max-width: 500px;
+}
+
+.sessao1 button{
+    width: 150px;
+    height: 35px;
+    background: linear-gradient(98.32deg,#46b2ee 0%,#00679e 116.9%);
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sessao1 button:hover{
+    background: linear-gradient(98.32deg,#00679e 0%,#46b2ee 116.9%);
+}
+
+.sessao1 img {
+    width: 35vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sessao2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sessao2 div {
+    width: 500px;
+}
+
+.cabetopic{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabetopic div{
+    display: flex;
+    flex-direction: row;
+}
+
+.sessao2 div img {
+    max-width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.sessao2 img {
+    width: 30vw;
+    margin:10px;
+}
+
+
+.conteudo {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    background-color: rgba(255, 165, 48, 0.5);
+    max-width: 150px;
+    border-radius: 20px;
+    font-size:12px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.card img{
+    position: absolute;
+    display: block;
+    top: -20px;
+    left: -20px;
+}
+
+.card:hover{
+    background-color: rgba(255, 165, 48, 1);
+}
+
+@media (max-width: 1000px){
+    .sessao1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sessao2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sessao1 img {
+        width: 60vw;
+    }
+    .sessao2 img {
+        width: 60vw;
+    }
+    .card{
+        max-width: 170px;
+    }
+    ul{
+        display: none;
+    }
+    header{
+        flex-direction: row-reverse;
+    }
+    .menu{
+        width:65px;
+        display: flex;
+        cursor: pointer;
+    }
+    .menuSuspenso:hover .menu2{
+        display: flex;
+    }
+}
