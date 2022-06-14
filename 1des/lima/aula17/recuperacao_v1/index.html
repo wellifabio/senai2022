@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel ="shortcut icon" href =" ./assets/icone.png " >
+    <title>TechMan</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/techman.png" alt="LogoMarca">
+    </header>
+    <main>
+        <section class="senha">
+            <input type="password" id="senha" disabled/>
+        </section>
+        <section class="botoes">
+            <button id="b1" onclick = "senha.value+='1'">1</button>
+            <button id="b2" onclick = "senha.value+='2'">2</button>
+            <button id="b3" onclick = "senha.value+='3'">3</button>
+            <button id="b4" onclick = "senha.value+='4'">4</button>
+            <button id="b5" onclick = "senha.value+='5'">5</button>
+            <button id="b6" onclick = "senha.value+='6'">6</button>
+            <button id="b7" onclick = "senha.value+='7'">7</button>
+            <button id="b8" onclick = "senha.value+='8'">8</button>
+            <button id="b9" onclick = "senha.value+='9'">9</button>
+            <button id="bc" onclick = "senha.value=''">C</button>
+            <button id="b0" onclick = "senha.value+='0'">0</button>
+            <button id="bplay" onclick = "alert(senha.value === '3211' ? 'Acesso permitido' : 'Acesso negado')" >&crarr;</button>
+        </section>
+    </main>
+</body>
+</html>
