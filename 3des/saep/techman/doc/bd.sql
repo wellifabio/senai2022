@@ -27,13 +27,13 @@ create table comentarios(
     equipamento_id integer not null,
     perfil_id integer not null,
     data timestamp not null,
-    foreign key (equipamento_id) references equipamentos(id),
+    foreign key (equipamento_id) references equipamentos(id) on delete cascade,
     foreign key (perfil_id) references perfis(id)
 );
 show tables;
 
 -- DML(Manipulação) Importando os dados dos arquivos CSV
-LOAD DATA INFILE 'D:/wellington/senai2022/3des/saep/techman/doc/dados/perfis.csv'
+LOAD DATA INFILE 'c:/wfom/senai2022/3des/saep/techman/doc/dados/perfis.csv'
 INTO TABLE perfis
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -41,7 +41,7 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 select * from perfis;
 
-LOAD DATA INFILE 'D:/wellington/senai2022/3des/saep/techman/doc/dados/usuarios.csv'
+LOAD DATA INFILE 'c:/wfom/senai2022/3des/saep/techman/doc/dados/usuarios.csv'
 INTO TABLE usuarios
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -49,7 +49,7 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 select * from usuarios;
 
-LOAD DATA INFILE 'D:/wellington/senai2022/3des/saep/techman/doc/dados/equipamentos.csv'
+LOAD DATA INFILE 'c:/wfom/senai2022/3des/saep/techman/doc/dados/equipamentos.csv'
 INTO TABLE equipamentos
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -57,10 +57,23 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 select * from equipamentos;
 
-LOAD DATA INFILE 'D:/wellington/senai2022/3des/saep/techman/doc/dados/comentarios.csv'
+LOAD DATA INFILE 'c:/wfom/senai2022/3des/saep/techman/doc/dados/comentarios.csv'
 INTO TABLE comentarios
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 select * from comentarios;
+
+CREATE VIEW vw_login AS
+SELECT u.id as u_id, u.senha, p.id as p_id, p.perfil
+FROM usuarios u INNER JOIN perfis p ON u.perfil_id = p.id;
+
+select * from vw_login;
+
+CREATE VIEW vw_comentarios AS
+SELECT c.id, c.equipamento_id, p.perfil, c.comentario, c.data 
+FROM comentarios c INNER JOIN perfis p ON c.perfil_id = p.id
+order by c.data desc;
+
+select * from vw_comentarios;
