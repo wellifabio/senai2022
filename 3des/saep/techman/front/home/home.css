@@ -251,3 +251,38 @@ button{
     font-style: italic;
     border-bottom: #35797d dotted 1px;
 }
+
+@media(max-width:900px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        text-align: center;
+    }
+    .excluir{
+        width: 90%;
+        height: 200px;
+        top:10%;
+        left:5%;
+    }
+    .comentarios{
+        width: 90%;
+        height: 500px;
+        top:10%;
+        left:5%;
+    }
+       
+    .newComent{
+        width: 90%;
+        height: 200px;
+        top:10%;
+        left:5%;
+    }
+
+    .newEquip{
+        width: 90%;
+        height: 400px;
+        top:10%;
+        left:5%;
+    }
+}
