@@ -1,5 +1,5 @@
-.Azure Inteligência Artificial (Links importantes ai900)
-----------
+# Azure Inteligência Artificial (Links importantes ai900)
+
 - Central de treinamento: https://docs.microsoft.com/pt-pt/learn/
 - Portal Azure: https://portal.azure.com/
 - Introdução: https://ml.azure.com/
@@ -11,4 +11,7 @@
 - LUIS Chat Bot:  https://www.luis.ai/
 - Qna Maker Chat Bot: https://www.qnamaker.ai/
 
+# Azure Data Fundamentals (Links importantes dp900)
 
+- Microsoft for Educators: https://docs.microsoft.com/pt-br/learn/educator-center/programs/msle/
+- https://fsiwwlprd.powerappsportals.com/
