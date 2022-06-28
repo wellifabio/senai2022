@@ -1,0 +1,14 @@
+# Bancos de dados Relacionais
+- Tabelas Relacionais
+  - Linha -> Instância
+  - Chave Primaria e Estrangeira
+  - Classe -> Instância
+ - Normalização
+  - Separar cada entidade na própria tabela
+  - Separe cada atributo discreto na própria coluna
+  - Identifique exclusivamente cada instância de entidade (linha) usando uma cave primária
+  - Use colunas de chave estrangeira para vincular entidades
+- Linguagem SQL
+  - DDL (Linguagem de Definição de Dados) (CREATE, ALTER, DROP, RENAME)
+  - DCL (Linguagem de Controle de Dados) (GRANT, DENY, REVOKE)
+  - DML (Linguagem de Manipulação de Dados) (INSERT, UPDATE, DELETE, SELECT)
