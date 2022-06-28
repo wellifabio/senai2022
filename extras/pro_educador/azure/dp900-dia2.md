@@ -30,3 +30,9 @@
       - Migração LAMP, XAMPP, WAMPP
    # Bancos de dados de Grafos ou Gráficos
     - Relacional
+
+# Clientes de Banco de dados
+- SSMS - SQL Server Management Studio
+- Azure Data Studio > Notebooks -> Bloco de Anotaões
+- SSDT - SQL Server Data Tools -> Visual Studio
+- Mysql WorkBank -> Suporte ao MariaDB
