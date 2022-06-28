@@ -34,5 +34,8 @@
 # Clientes de Banco de dados
 - SSMS - SQL Server Management Studio
 - Azure Data Studio > Notebooks -> Bloco de Anotaões
-- SSDT - SQL Server Data Tools -> Visual Studio
+- SSDT - SQL Server Data Tools -> Visual Studio, Orientado a Projetos
 - Mysql WorkBank -> Suporte ao MariaDB
+
+#OBS:
+- Por padrão, cada banco de dados SQL do Azure é protegido por um firewall em nível de servidor.
