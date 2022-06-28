@@ -21,9 +21,10 @@
   # SQL do Azure
   - IaaS
     - SQL Server em VMs do Azure (Ideal para nuvem híbrida ou migração de configurações complexas locais de banco de dados)
+      - Se já possui uma licença do SQL Server, pode utilizá-la
   - IaaS
     - Instância Gerenciada de SQL do Azure (Ideal para migrar a maioria dos bancos de dados locais para a nuvem)
+      - Consulas e transações em bancos de dados diferentes
+      - Serviços de Macone Learning
     - Banco de Dados SQL do Azure (Ideal para aplicativos baseados em nuvem)
-
-#OBS:
-  - Consulas e transações em bancos de dados diferentes, somente na Instância Gerenciada de SQL do Azure
+      - Migração LAMP, XAMPP, WAMPP
