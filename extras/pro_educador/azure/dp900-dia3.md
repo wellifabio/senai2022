@@ -52,3 +52,28 @@
 
 . Azure Cosmos DB
 --------------------
+- Um sistema de gerenciamento de banco de dados NoSQL de vários modelos e escala global
+ - Suporte para várias APIs de armazenamento
+ - Acesso em tempo real com desempenho rápido de leitura e gravação
+ - Gravações em várias regiões para replicar dados globalmente, permitindo que usuários em regiões especificadas trabalhem com uma réplica local
+ - Documentos
+ - Gráficos
+ - Tabela de chaves-valores
+ - Repositórios de famílias de colunas
+- APIs do Azure Cosmos DB
+- API do Core (SQL)
+ - API nativa para Cosmos DB
+ - Consultas SQL baseadas em documentos JSON
+ - Ex: (Select SQL e retorna JSON)
+- API do MongoDB
+ - Compatibilidade com o MongoDB, um banco de dados conhecido baseado em documentos de código aberto
+ - Ex de consulta MongoDB: db.products.find({ id: 123})
+ - Retorna JSON
+- API de Tabela
+ - API de armazenamento de chaves-valores
+ - Compatível com o Armazenamento de Tabelas do Azure, mas com maior desempenho e escalabilidade
+- API do Cassandra
+ - Compatibilidade com o Apache Cassandra, um banco de dados conhecido de família de colunas de código aberto
+- API do Gremlin
+ - Usado para trabalhar com dados de gráfico/grafos, nós de entidade (vértices) são conectados por meio de relacionamentos (bordas)
+
