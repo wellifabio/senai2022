@@ -33,7 +33,7 @@
      - Os dados são replicados para redundância e criptografados quando estão inativos
   - ACL - Lista de Controle de Acessos
 - Armazenamento de Tabelas do Azure
-  - Armazenamento de <b>chaves-valores<b> para dados de aplicativos
+  - Armazenamento de <b>chaves-valores</b> para dados de aplicativos
   - As tabelas consistem em colunas de chave e valor
      - Chaves de partição e linha
      - Colunas personalizadas de propriedade para valores de dados
