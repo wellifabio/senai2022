@@ -16,6 +16,7 @@
     - Frequnte - Hot -> Quente (maior custo, menor latência)
     - Esporádico - Cold -> Frio (menor custo, maior latência)
     - Arquivos - Archive (menor custo, maior latência)
+   - Arquivos de imagem
 - Azure Data Lake Store Gen 2
  - Sistema de arquivos distribuído criado no Armazenamento de Blobs
    - Combina o Azure Data Lake Store Gen 1 com o Armazenamento de Blobs do Azure
@@ -49,6 +50,7 @@
   - GZRS -> Combinação
   - RA (Prefixo) -> Somente Leitura
    - Ex: RA-LRS
+  - Redundância de <b>Região</b> -> Zonas de Disponibilidade
 
 . Azure Cosmos DB
 --------------------
@@ -60,6 +62,8 @@
   - Gráficos
   - Tabela de chaves-valores
   - Repositórios de famílias de colunas
+  - Suporta um modelo multi-mestre
+  - Supota relacionamentos
 - APIs do Azure Cosmos DB
  - API do Core (SQL)
     - API nativa para Cosmos DB
@@ -76,6 +80,9 @@
   - Compatibilidade com o Apache Cassandra, um banco de dados conhecido de família de colunas de código aberto
 - API do Gremlin
   - Usado para trabalhar com dados de gráfico/grafos, nós de entidade (vértices) são conectados por meio de relacionamentos (bordas)
+- Definir no nível do contêiner
+- chave de partição
+- taxa de transferência
 
 . OBS:
 --------------
@@ -85,3 +92,8 @@
 - Data Lake
   - Não estruturados
   - Ex: .CSV
+  - função (RBAC)
+  - listas de controle de acesso (ACLs) compatíveis com POSIX
+- Para configurar uma conta de armazenamento do Azure para dar suporte à segurança no nível da pasta e à manipulação de diretório <b>atômico</b>, habilite o namespace <b>hierárquico</b>.
+- Tipos de armazenamento <b>colunar</b> (Para informações tipo chave/valor com chaves diversas ex: (id, nome, tel), (id, nome, nascimento)
+- Comando para criar um recurso do Azure para armazenar dados no armazenamento de Tabelas do Azure (az storage account create)
