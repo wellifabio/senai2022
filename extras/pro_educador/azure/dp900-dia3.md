@@ -24,5 +24,19 @@
       - Atualize a conta de armazenamento
         - Processo de atualização unidirecional
    - Arquivos do Azure
-
+      - Compartilhamentos de arquivos na nuvem que podem ser acessados de qualquer lugar que tenha conexão com a Internet
+      - Suporte para protocolos comuns de compartilhamento de arquivos:
+         - Protocolo SMB
+         - NFS (Network File System) – requer camada premium
+      - Os dados são replicados para redundância e criptografados quando estão inativos
+   - ACL - Lista de Controle de Acessos
+ - Armazenamento de Tabelas do Azure
+   - Armazenamento de <b>chaves-valores<b> para dados de aplicativos
+   - As tabelas consistem em colunas de chave e valor
+      - Chaves de partição e linha
+      - Colunas personalizadas de propriedade para valores de dados
+         - Uma coluna Timestamp é adicionada automaticamente para registrar alterações de dados
+   - As linhas são agrupadas em partições para melhorar o desempenho
+   - As colunas de propriedade recebem um tipo de dados e podem conter qualquer valor desse tipo
+   - As linhas não precisam incluir as mesmas colunas de propriedade
 - Azure Cosmos DB
