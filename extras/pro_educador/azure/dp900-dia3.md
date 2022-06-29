@@ -42,5 +42,5 @@
   - As colunas de propriedade recebem um tipo de dados e podem conter qualquer valor desse tipo
       - As linhas não precisam incluir as mesmas colunas de propriedade
 
-. **Azure Cosmos DB**
+. Azure Cosmos DB
 --------------------
