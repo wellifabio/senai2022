@@ -77,3 +77,11 @@
 - API do Gremlin
   - Usado para trabalhar com dados de gráfico/grafos, nós de entidade (vértices) são conectados por meio de relacionamentos (bordas)
 
+. OBS:
+--------------
+- Data Wharehouse
+  - DB Estruturados
+  - DB Semiestruturados
+- Data Lake
+  - Não estruturados
+  - Ex: .CSV
