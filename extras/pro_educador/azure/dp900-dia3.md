@@ -62,9 +62,9 @@
   - Repositórios de famílias de colunas
 - APIs do Azure Cosmos DB
  - API do Core (SQL)
-  - API nativa para Cosmos DB
-  - Consultas SQL baseadas em documentos JSON
-  - Ex: (Select SQL e retorna JSON)
+    - API nativa para Cosmos DB
+    - Consultas SQL baseadas em documentos JSON
+    - Ex: (Select SQL e retorna JSON)
  - API do MongoDB
    - Compatibilidade com o MongoDB, um banco de dados conhecido baseado em documentos de código aberto
    - Ex de consulta MongoDB: db.products.find({ id: 123})
