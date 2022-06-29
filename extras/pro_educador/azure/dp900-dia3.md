@@ -41,6 +41,14 @@
   - As linhas são agrupadas em partições para melhorar o desempenho
   - As colunas de propriedade recebem um tipo de dados e podem conter qualquer valor desse tipo
       - As linhas não precisam incluir as mesmas colunas de propriedade
+- OBS:
+ - Redundância
+  - LRS -> Dentro do Rack
+  - ZRS -> Dentro do Datacenter
+  - GRS -> Dentro da Região
+  - GZRS -> Combinação
+  - RA (Prefixo) -> Somente Leitura
+   - Ex: RA-LRS
 
 . Azure Cosmos DB
 --------------------
