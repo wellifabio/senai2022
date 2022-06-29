@@ -2,44 +2,45 @@
 
 . Armazenamento do Azure
 --------------------
-      - Armazenamento de Blobs do Azure (objetos binários grandes)
-       - Blobs de blocos
-         - Objetos binários, grandes e discretos que são alterados com pouca frequência
-         - Os blobs podem ter até 4,7 TB e blocos de até 100 MB Um blob pode conter até 50.000 blocos
-       - Blobs de páginas
-         - Usados como armazenamento em disco virtual para VMs
-         - Os blobs podem ter até 8 TB e páginas de tamanho fixo de 512 bytes
-       - Blobs de acréscimo
-         - São blobs de blocos usados para otimizar as operações de acréscimo
-         - Tamanho máximo de pouco mais de 195 GB - cada bloco pode ter até 4MB
-       - Camadas de armazenameto
-         - Frequnte - Hot -> Quente (maior custo, menor latência)
-         - Esporádico - Cold -> Frio (menor custo, maior latência)
-         - Arquivos - Archive (menor custo, maior latência)
-      - Azure Data Lake Store Gen 2
-       - Sistema de arquivos distribuído criado no Armazenamento de Blobs
-         - Combina o Azure Data Lake Store Gen 1 com o Armazenamento de Blobs do Azure
-         - Permite controle e gerenciamento de acesso em nível de arquivo e diretório
-         - Compatível com sistemas analíticos comuns de grande escala
-       - Habilitado em uma conta de Armazenamento do Azure na opção <b>Namespace Hierárquico</b>
-         - Defina durante a criação da conta
-         - Atualize a conta de armazenamento
-           - Processo de atualização unidirecional
-      - Arquivos do Azure
-         - Compartilhamentos de arquivos na nuvem que podem ser acessados de qualquer lugar que tenha conexão com a Internet
-         - Suporte para protocolos comuns de compartilhamento de arquivos:
-            - Protocolo SMB
-            - NFS (Network File System) – requer camada premium
-         - Os dados são replicados para redundância e criptografados quando estão inativos
-      - ACL - Lista de Controle de Acessos
-    - Armazenamento de Tabelas do Azure
-      - Armazenamento de <b>chaves-valores<b> para dados de aplicativos
-      - As tabelas consistem em colunas de chave e valor
-         - Chaves de partição e linha
-         - Colunas personalizadas de propriedade para valores de dados
-            - Uma coluna Timestamp é adicionada automaticamente para registrar alterações de dados
-      - As linhas são agrupadas em partições para melhorar o desempenho
-      - As colunas de propriedade recebem um tipo de dados e podem conter qualquer valor desse tipo
+- Armazenamento de Blobs do Azure (objetos binários grandes)
+ - Blobs de blocos
+   - Objetos binários, grandes e discretos que são alterados com pouca frequência
+   - Os blobs podem ter até 4,7 TB e blocos de até 100 MB Um blob pode conter até 50.000 blocos
+ - Blobs de páginas
+   - Usados como armazenamento em disco virtual para VMs
+   - Os blobs podem ter até 8 TB e páginas de tamanho fixo de 512 bytes
+ - Blobs de acréscimo
+   - São blobs de blocos usados para otimizar as operações de acréscimo
+   - Tamanho máximo de pouco mais de 195 GB - cada bloco pode ter até 4MB
+ - Camadas de armazenameto
+   - Frequnte - Hot -> Quente (maior custo, menor latência)
+   - Esporádico - Cold -> Frio (menor custo, maior latência)
+   - Arquivos - Archive (menor custo, maior latência)
+- Azure Data Lake Store Gen 2
+ - Sistema de arquivos distribuído criado no Armazenamento de Blobs
+   - Combina o Azure Data Lake Store Gen 1 com o Armazenamento de Blobs do Azure
+   - Permite controle e gerenciamento de acesso em nível de arquivo e diretório
+   - Compatível com sistemas analíticos comuns de grande escala
+ - Habilitado em uma conta de Armazenamento do Azure na opção <b>Namespace Hierárquico</b>
+   - Defina durante a criação da conta
+   - Atualize a conta de armazenamento
+     - Processo de atualização unidirecional
+- Arquivos do Azure
+  - Compartilhamentos de arquivos na nuvem que podem ser acessados de qualquer lugar que tenha conexão com a Internet
+  - Suporte para protocolos comuns de compartilhamento de arquivos:
+     - Protocolo SMB
+     - NFS (Network File System) – requer camada premium
+     - Os dados são replicados para redundância e criptografados quando estão inativos
+  - ACL - Lista de Controle de Acessos
+- Armazenamento de Tabelas do Azure
+  - Armazenamento de <b>chaves-valores<b> para dados de aplicativos
+  - As tabelas consistem em colunas de chave e valor
+     - Chaves de partição e linha
+     - Colunas personalizadas de propriedade para valores de dados
+        - Uma coluna Timestamp é adicionada automaticamente para registrar alterações de dados
+  - As linhas são agrupadas em partições para melhorar o desempenho
+  - As colunas de propriedade recebem um tipo de dados e podem conter qualquer valor desse tipo
       - As linhas não precisam incluir as mesmas colunas de propriedade
-. Azure Cosmos DB
+
+. **Azure Cosmos DB**
 --------------------
