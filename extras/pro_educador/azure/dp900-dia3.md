@@ -1,5 +1,7 @@
 # Bancos de dados não relacionais do Azure
-   . Armazenamento do Azure
+
+. Armazenamento do Azure
+--------------------
       - Armazenamento de Blobs do Azure (objetos binários grandes)
        - Blobs de blocos
          - Objetos binários, grandes e discretos que são alterados com pouca frequência
@@ -39,4 +41,5 @@
       - As linhas são agrupadas em partições para melhorar o desempenho
       - As colunas de propriedade recebem um tipo de dados e podem conter qualquer valor desse tipo
       - As linhas não precisam incluir as mesmas colunas de propriedade
-   . Azure Cosmos DB
+. Azure Cosmos DB
+--------------------
