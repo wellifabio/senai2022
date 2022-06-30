@@ -40,7 +40,7 @@
     - Análise diagnóstica (Por que aconteceu?)
     - Análise preditiva (O que ira aconteceu?)
     - Análise prescritiva (O que posso fazer?)
-    - Análise cognitiva (Definir padrões)
+    - Análise cognitiva (Definir padrões) Ex: A transcrição de arquivos de áudio
 
 . Análises de streaming e em tempo real
 ---------------
@@ -71,3 +71,10 @@
         - Drill up/down -> Hierarquia
     - Modelagem de dados analíticos
     - Visualizações de dados comuns em relatórios
+
+OBSs:
+- O Microsoft SQL Server Management Studio (SSMS) **Não** permite que os usuários criem e usem blocos de anotações SQL
+- O Data Studio permite que os usuários criem e usem blocos de anotações SQL
+- Tabela central em uma análise de dados e estrela é o fato, as bordas são as dimenções (fato/dimenção)
+- Um modelo do **Azure Resource Manager** - para **automatizar** a criação de um grupo interdependente de recursos do Azure de forma repetível
+- Encryption (TDE) **criptografa** o banco de dados para proteger os **dados em repouso**.
