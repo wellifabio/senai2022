@@ -25,9 +25,9 @@
 
 . Serviços de armazenamento de dados analíticos
 ---------------
-        - Azure Synapse Analytics (Use para uma solução analítica única e unificada em grande escala no Azure)
-        - Azure Databricks (Use para aproveitar as habilidades do Databricks e para portabilidade na nuvem)
-        - Azure HDInsight (Use quando precisar dar suporte a várias plataformas de código aberto)
+- Azure Synapse Analytics (Use para uma solução analítica única e unificada em grande escala no Azure)
+- Azure Databricks (Use para aproveitar as habilidades do Databricks e para portabilidade na nuvem)
+- Azure HDInsight (Use quando precisar dar suporte a várias plataformas de código aberto)
 - Visualização de dados
     - Relatórios
     - Gráficos
