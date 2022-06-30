@@ -42,6 +42,11 @@
 
 . Análises de streaming e em tempo real
 ---------------
+- Processamento em lotes x de fluxo
+    - Lote: Os dados são coletados e processados em intervalosregulares
+    - Fluxo: Os dados são processados (quase) em tempo real à medida que são recebidos
+- Processamento de dados em tempo real com o Azure Stream Analytics
+- Análise de log e telemetria em tempo real com o Azure Data Explorer
 
 . Visualização de dados
 ---------------
