@@ -50,3 +50,22 @@
 
 . Visualização de dados
 ---------------
+- Visualização de dados com PowerBI
+    - Inicie com o Power BI Desktop
+        - Importe dados de uma ou mais fontes
+        - Defina um modelo de dados
+        - Crie visualizações em um relatório
+    - Publique no Serviço do Power BI
+        - Agende atualizações de dados
+        - Crie painéis e apps
+        - Compartilhe com outros usuários
+    - Interaja com relatórios publicados
+        - Navegador da Web
+        - App de telefone do Power BI
+    - OBS:
+        - View -> Tipo de Gráfico
+        - Relatório -> Conjunto de dados + Páginas
+        - Dashboad -> 1 Página
+        - Drill up/down -> Hierarquia
+    - Modelagem de dados analíticos
+    - Visualizações de dados comuns em relatórios
