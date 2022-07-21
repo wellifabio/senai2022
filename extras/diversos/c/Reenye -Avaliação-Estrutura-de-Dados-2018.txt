@@ -1,0 +1,16 @@
+1 - Utilizando as estruturas de fila e pilha, 
+	receba 10 valores inteiros, que serão 
+	temporariamente armazenados em uma fila,
+	que irá comportar apenas 5 valores inteiros
+	e depois, separe os números obtidos em duas
+	pilhas, sendo de, valores ímpares e pares.
+	
+2 - Desenvolva um algoritmo que receba 10 valores
+	inteiros e armazene-os em uma lista. Crie duas
+	funções que serão responsáveis por ordenar sua
+	lista de maneira crescente e decrescente.
+	
+	
+	Obs.: Os resultados obtidos deverão
+		  ser exibidos no prompt.
+

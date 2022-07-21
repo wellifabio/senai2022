@@ -1,0 +1,1 @@
+- Tarefa: Fazer um fluxograma do desafio das 9 pérolas e balança para 01/08/2022 segunda-feira.
