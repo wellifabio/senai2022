@@ -88,11 +88,11 @@ Capacidades Sociais, Organizativas e Metodológicas
 - 6.2.3. Ramificações (branch)
 - 6.2.4. Versionamento
 
-#Ambiente pedagógico
+# Ambiente pedagógico
 
 Laboratório de Informática
 
-#Referências básicas
+# Referências básicas
 
 - PASCHOALINI, Glauber R. Princípios de lógica de programação. São Paulo: Editora SENAI, 2017
 - ALVES, W. P. Lógica de programação de computadores: Ensino didático. São Paulo: Érica, 2010.
