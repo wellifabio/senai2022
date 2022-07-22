@@ -1,4 +1,4 @@
-#Plano de Curso:
+# Plano de Curso:
 
 - Resolução CNE/CEB nº 4/12 e 6/12
 - Técnico em Desenvolvimento de Sistemas
@@ -8,7 +8,7 @@ Fundamentos De Programação Orientada A Objeto: 150 horas
 
 - Objetivo Geral: Fundamentos de Programação tem como objetivo proporcionar a aquisição de fundamentos técnicos e científicos relativos a lógica de programação, como ferramenta para desenvolvimento de aplicações, utilizando linguagem orientada a objetos, bem como o desenvolvimento de capacidades sociais, organizativas e metodológicas adequadas a diferentes situações profissionais.
 
-Fundamentos Técnicos e Científicos
+# Fundamentos Técnicos e Científicos
 1. Identificar as características e tipos de linguagem de programação
 2. Utilizar lógica de programação para a resolução de problemas (7)
 3. Declarar as variáveis e as constantes considerando os tipos de dados na elaboração do programa
@@ -24,7 +24,7 @@ Fundamentos Técnicos e Científicos
 13. Utilizar o paradigma da programação orientada a objetos
 14. Elaborar diagramas de classe
 
-Capacidades Sociais, Organizativas e Metodológicas
+# Capacidades Sociais, Organizativas e Metodológicas
 1. Demonstrar atenção a detalhes (44)
 2. Demonstrar capacidade de análise (2)
 3. Demonstrar objetividade na coleta de informações
@@ -32,7 +32,7 @@ Capacidades Sociais, Organizativas e Metodológicas
 5. Demonstrar visão sistêmica (28)
 6. Seguir método de trabalho (21)
 
-.Conhecimentos
+# Conhecimentos
 --------------
 - 1. Linguagem de programação
 - 1.1. Princípios
