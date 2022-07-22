@@ -15,3 +15,4 @@
 - Portal para Deploy free: https://www.heroku.com/
 - Free deploy phpMyAdmin: https://www.000webhost.com/
 - Free SVG: ícones https://www.svgrepo.com/ Ilustrações https://undraw.co/
+- Cursos NR12: https://www.escolavirtual.gov.br/
