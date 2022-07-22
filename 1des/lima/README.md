@@ -4,6 +4,7 @@
 
 # Competências Básicas e de Gestão 
 # Fundamentos técnicos e científicos
+
 1. Identificar as características e tipos de linguagem de marcação
 2. Utilizar linguagem de marcação para desenvolvimento de páginas web
 3. Desenhar leiautes de tela para ambientes web
@@ -20,6 +21,7 @@ Capacidades Sociais, Organizativas e Metodológicas
 4. Seguir método de trabalho (21)
 
 # Conhecimentos 
+
 1. Linguagem de Marcação
 1.1. Definição
 1.2. Tipos
