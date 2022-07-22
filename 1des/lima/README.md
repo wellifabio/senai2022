@@ -123,9 +123,13 @@ Capacidades Sociais, Organizativas e Metodológicas
 - 6.5. Vetorização
 - 6.6. SVG 
 
-Referências básicasANDRADE, Sidnei da Silva. Criação e interfaces para web HTML5 e CSS3. São Paulo: SENAI-SP Editora, 2017.SENAI, Serviço Nacional de Aprendizagem Industrial. Desenvolvimento Web. Brasília: SENAI/DN, 2012.MANZANO, José Augusto N.G; TOLEDO, Suely Alves. Guia de orientação e desenvolvimento de sites: HTML, XHTML, CSS e JavaScript/JScritp. São Paulo: Érica, 2010. 
+# Referências básicas
 
-Referências complementares 
-https://www.w3schools.com/
-http://www.w3.org/
-https://validator.w3.org.br/  
+- ANDRADE, Sidnei da Silva. Criação e interfaces para web HTML5 e CSS3. São Paulo: SENAI-SP Editora, 2017.
+- SENAI, Serviço Nacional de Aprendizagem Industrial. Desenvolvimento Web. Brasília: SENAI/DN, 2012.
+- MANZANO, José Augusto N.G; TOLEDO, Suely Alves. Guia de orientação e desenvolvimento de sites: HTML, XHTML, CSS e JavaScript/JScritp. São Paulo: Érica, 2010. 
+
+# Referências complementares 
+- https://www.w3schools.com/
+- http://www.w3.org/
+- https://validator.w3.org.br/  
