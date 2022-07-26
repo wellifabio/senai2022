@@ -17,9 +17,9 @@
       - DQL
       - DTL
      - Importação x exportação de dados
-      - CSV
-      - XML
-      - JSON
+        - CSV
+        - XML
+        - JSON
 # INDMO - Interfaces para Dispositivos Móveis
   - Linguagens
   - JavaScript
