@@ -3,7 +3,7 @@
   - TXT
   - DOC
   - PDF
-- Semiestruturado
+- Semi-estruturado
   - CSV
   - XML
   - JSON
