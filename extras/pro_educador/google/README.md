@@ -55,10 +55,28 @@ Thursday, May 26 · 2:00 – 3:30pm
 Google Meet joining info
 Video call link: https://meet.google.com/ybj-kyfj-vyc
  
-
- 
-
 SENAI SP = Cloud GCCF - Engenheiro: Vinicius Xavier
 Friday, May 27 · 2:00 – 3:30pm
 Google Meet joining info
 Video call link: https://meet.google.com/hyg-ztzi-xce
+-------------
+
+- Curso Cursera https://sesisenaisp-my.sharepoint.com/:f:/g/personal/lucas_salomao_sp_senai_br1/Etl7fx7NoXxJoBhywT7sKkgBIrcEd0tE7erMsausLU8uhw?e=GKpdpJ
+- Fluxogramas do GCP https://grumpygrace.dev/posts/gcp-flowcharts/
+- Diagramas de serviços google https://thecloudgirl.dev/serviceorchestration.html
+- Prova Cloud Engineer https://docs.google.com/forms/d/e/1FAIpQLSeWm3PmZ1iMIfoKLEK28K-siXq-2PofdEK1sr3vkeF2bhaqmg/viewform
+- Quest Básica para GCP https://www.cloudskillsboost.google/quests/33
+- Quest Bonus https://www.cloudskillsboost.google/quests/33?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=17584539
+- Quests adicionais recomendadas
+   - https://www.cloudskillsboost.google/paths/17
+   - https://www.cloudskillsboost.google/paths/29
+   - https://www.cloudskillsboost.google/quests/38
+   - https://www.cloudskillsboost.google/course_templates/3
+   - https://www.cloudskillsboost.google/course_templates/125
+   - https://www.cloudskillsboost.google/course_templates/9
+   - https://www.cloudskillsboost.google/course_templates/160
+- Laboratórios com tutorial sobre os serviços básicos https://www.cloudskillsboost.google/quests/33
+- Laboratórios com foco em desenvolvedores de sistemas https://www.cloudskillsboost.google/quests/86
+- Laboratórios para implantação de sistemas https://www.cloudskillsboost.google/quests/26
+- Laboratórios com instruções mais avançadas para controle de acesso https://www.cloudskillsboost.google/quests/150
+
