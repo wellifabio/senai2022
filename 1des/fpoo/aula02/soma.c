@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <locale.h>
 int main(){
+	setlocale(LC_ALL,"");
 	int a,b,c,d;
 	printf("Digite um número inteiro: ");
 	scanf("%d",&a);
