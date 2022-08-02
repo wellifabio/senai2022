@@ -4,6 +4,21 @@ var retorno = document.querySelector("#retorno");
 var inpCpf = document.querySelector("#cpf");
 var retornoCpf = document.querySelector("#retornoCpf");
 
+var inpDdd = document.querySelector("#ddd");
+var inpQtd = document.getElementById("qtd");
+var textNumeros = document.querySelector("#numeros");
+
+var inpQtdCpfs = document.querySelector("#qtdCpf");
+var textCpfs = document.querySelector("#cpfs");
+
+function ex4() {
+    let qtd = inpQtdCpfs.value;
+
+    gerarCpfs(qtd).forEach(cpf => {
+        textCpfs.value += cpf + "\n";
+    })
+}
+
 function ex1() {
     if(validarPlaca(inpPlaca.value)) {
         retorno.innerHTML = "Placa Válida";
@@ -67,13 +82,53 @@ function validarCpf(cpf) {
     return true;
 }
 
-geraCelular('19', 5);
+
+function ex3() {
+    let ddd = inpDdd.value;
+    let qtd = inpQtd.value;
+    let numerosGerados = geraCelular(ddd, qtd);
+
+    numerosGerados.forEach(numero => {
+        textNumeros.value += numero + "\n";
+    });
+}
 
 function geraCelular(ddd, qtd) {
     let numeros = new Array();
 
     for(let i = 0; i < qtd; i++)
-        numeros.push(ddd + '-9' + (Math.floor(Math.random()*9999-1000)+1000) + "-" + (Math.floor(Math.random()*9999-1000)+1000));
+        //numeros.push(ddd + '-9' + (Math.floor(Math.random()*8999)+1000) + "-" + (Math.floor(Math.random()*8999)+1000));
+        //numeros.push(ddd + "-9" + Math.floor(Math.random()*8999+1000) + "-" + Math.floor(Math.random()*8999+1000));
+        numeros.push(ddd + "-9" + Math.floor(Math.random()*8999+1000) + "-" + Math.floor(Math.random()*9999).toString().padStart(4,'0'));
 
-    console.log(numeros);
+    return numeros;
+}
+
+function gerarCpfs(qtd) {
+    let cpfs = new Array();
+
+    for(let i = 0; i < qtd; i++){
+        let temp = Math.floor(Math.random()*999999999).toString().padStart(9, "0");
+        let d1 = 0, d2 = 0;
+
+        for(let j = 0; j < 9; j++) {
+            d1 += temp[j] * (j+1);
+            d2 += temp[j] * j;
+        }
+
+        d1 %= 11;
+        if(d1 == 10) d1 = 0;
+
+
+        d2 += d1 * 9;
+        d2 %= 11;
+        if(d2 == 10) d2 = 0;
+
+        temp += d1 + "" + d2;
+
+        cpfs.push(temp);
+    }
+        
+
+    return cpfs
 }
