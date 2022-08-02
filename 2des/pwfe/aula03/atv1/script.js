@@ -15,36 +15,46 @@ const cpfRes = document.querySelector("#cpfRes");
 const telefones = document.querySelector("#telefones");
 const cpfs = document.querySelector("#cpfs");
 
-btPlaca.addEventListener("click",()=>{ 
-    if(placa.value.length > 0){
-        if(validaPlaca(placa.value)){
+//Arrow Funtions para eventos dos botões
+btPlaca.addEventListener("click", () => {
+    if (placa.value.length > 0) {
+        if (validaPlaca(placa.value)) {
             placaRes.innerHTML = "Placa Válida";
-        }else{
+        } else {
             placaRes.innerHTML = "Placa Inválida";
         }
-    }else{
-        placaRes.innerHTML = "Digite uma placa";
+    } else {
+        placaRes.innerHTML = "Digite uma placa no campo acima";
     }
 });
 
-btCpf.addEventListener("click",()=>{ 
-    if(cpf.value.length > 0){
-        if(validaCPF(cpf.value)){
+btCpf.addEventListener("click", () => {
+    if (cpf.value.length > 0) {
+        if (validaCPF(cpf.value)) {
             cpfRes.innerHTML = "CPF Válido";
-        }else{
+        } else {
             cpfRes.innerHTML = "CPF Inválido";
         }
-    }else{
-        cpfRes.innerHTML = "Digite um CPF";
+    } else {
+        cpfRes.innerHTML = "Digite um CPF no campo acima";
     }
 });
 
-btTels.addEventListener("click",()=>{ 
-    for(i = 0; i < parseInt(qtdTel.value); i++){
-        console.log(novoTelefone(ddd.value));
+btTels.addEventListener("click", () => {
+    telefones.innerHTML = "";
+    for (x = 0; x < parseInt(qtdTel.value); x++) {
+        telefones.innerHTML += (ddd.value + "-" + novoTelefone() + "\n");
     }
 });
 
+btCpfs.addEventListener("click", () => {
+    cpfs.innerHTML = "";
+    for (x = 0; x < parseInt(qtdCpf.value); x++) {
+        cpfs.innerHTML += (novoCPF() + "\n");
+    }
+});
+
+//Funções uteis conforme solicitado
 function validaPlaca(placa) {
     let padrao1 = /^[a-z]{3}[-]{1}[0-9]{4}$/i;
     let padrao2 = /^[a-z]{3}[-]{1}[0-9]{1}[a-z]{1}[0-9]{2}$/i;
@@ -103,30 +113,29 @@ function validaCPF(cpf) {
     }
 }
 
-function novoDecimal(){
-    return Math.floor(Math.random()*10);
+function novoDecimal() {
+    return Math.floor(Math.random() * 10);
 }
 
-function novoTelefone(ddd){
-    let telefone = ddd + "-";
-    for(i = 0; i < 9; i++){
-        telefone += novoDecimal();
-        if(i == 4)
-            telefone += "-";
+function novoTelefone() {
+    let retorno = "";
+    for (i = 0; i < 9; i++) {
+        retorno += novoDecimal();
+        if (i == 4)
+            retorno += "-";
     }
-    return telefone;
+    return retorno;
 }
 
-function novoCPF(){
+function novoCPF() {
     let cpf = "";
-    for(i = 0; i < 9; i++){
+    for (i = 0; i < 9; i++) {
         cpf += novoDecimal();
-        if(i == 2) cpf += ".";
-        if(i == 5) cpf += ".";
-        if(i == 8) cpf += "-";
+        if (i == 2) cpf += ".";
+        if (i == 5) cpf += ".";
     }
     let limpo = cpf.replaceAll(".", "");
-    limpo = cpf.replaceAll("-", "");
-    let digito = calculaDigito(limpo); 
-    return cpf + digito;
+    limpo = limpo.replace("-", "");
+    let digito = calculaDigito(limpo);
+    return (cpf + "-" + digito);
 }

@@ -15,3 +15,4 @@
 
 - Microsoft for Educators: https://docs.microsoft.com/pt-br/learn/educator-center/programs/msle/
 - https://fsiwwlprd.powerappsportals.com/
+- Practice Key, Site para treinar https://www.measureup.com/

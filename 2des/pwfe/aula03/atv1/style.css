@@ -40,6 +40,9 @@ input, button{
 }
 
 button{
+    background-color:#ccc;
+    border: 1px solid #999;
+    box-shadow: 2px 1px 1px #666;
     cursor: pointer;
 }
 
