@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lista 1 - Exercícios</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <label>Digite a placa de um veículo:</label>
+            <input id="placa" type="text" placeholder="Placa" required/>
+            <button id="btPlaca">Validar</button>
+            <textarea id="placaRes" cols="30" rows="2"></textarea>
+        </div>
+        <div class="container">
+            <label>Digite CPF:</label>
+            <input id="cpf" type="text" placeholder="CPF" required/>
+            <button id="btCpf">Validar</button>
+            <textarea id="cpfRes" cols="30" rows="2"></textarea>
+        </div>
+        <div class="container">
+            <label>Digite o ddd e quantos números de telefone deseja criar:</label>
+            <div>
+                <input id="ddd" type="number" placeholder="DDD" required/>
+                <input id="qtdTel" type="number" placeholder="Quantos" required/>
+            </div>
+            <button id="btTels">Criar</button>
+            <textarea id="telefones" cols="30" rows="10"></textarea>
+        </div>
+        <div class="container">
+            <label>Digite quantos CPFs deseja criar:</label>
+            <input id="qtdCpf" type="number" placeholder="Quantos" required/>
+            <button id="btCpfs">Criar</button>
+            <textarea id="cpfs" cols="30" rows="10"></textarea>
+        </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
