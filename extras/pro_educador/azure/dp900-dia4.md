@@ -75,6 +75,6 @@
 OBSs:
 - O Microsoft SQL Server Management Studio (SSMS) **Não** permite que os usuários criem e usem blocos de anotações SQL
 - O Data Studio permite que os usuários criem e usem blocos de anotações SQL
-- Tabela central em uma análise de dados e estrela é o fato, as bordas são as dimenções (fato/dimenção)
+- Tabela central em uma análise de dados em estrela é o fato, as bordas são as dimenções (fato/dimenção)
 - Um modelo do **Azure Resource Manager** - para **automatizar** a criação de um grupo interdependente de recursos do Azure de forma repetível
 - Encryption (TDE) **criptografa** o banco de dados para proteger os **dados em repouso**.
