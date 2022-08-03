@@ -38,7 +38,7 @@
 - Tipos de análises
     - Análise descritiva (O que aconteceu?)
     - Análise diagnóstica (Por que aconteceu?)
-    - Análise preditiva (O que ira aconteceu?)
+    - Análise preditiva (O que irá acontecer?)
     - Análise prescritiva (O que posso fazer?)
     - Análise cognitiva (Definir padrões) Ex: A transcrição de arquivos de áudio
 
