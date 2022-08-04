@@ -3,8 +3,8 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/projeto1',(req, res)=>{
-    res.json("Oi outra coisa");
+app.get('/backnode',(req, res)=>{
+    res.json("Alô mundo");
 });
 
 app.listen(3000,()=>{
