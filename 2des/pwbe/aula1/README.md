@@ -59,7 +59,7 @@
 	- 7. Crie um arquivo chamado "index.js"
 	- 8. Editar o arquivo com os códigos necessários para responder a uma requisição GET
 	- 9. Verificar se foi criado o arquivo package.json e a pasta node_modules
-	- 10. Executar o Servidor com o comando node -> index.js
+	- 10. Executar o Servidor com o comando -> node index.js
 	- 11. Abrir um navegador web e digitar o caminho: http://localhost:PORTA/projeto
 	- 12. Caso for postar no git criar o arquivo .gitignore e colocar a pasta node_modules
 	
