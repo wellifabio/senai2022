@@ -7,16 +7,10 @@
 - 1.4. Gerenciador de processos
 - 1.5. Sistemas de arquivos
 
-# 2. Sistema operacional código fechado
-- 2.1. Definição
-- 2.2. Modo texto (linha de comando)
-- 2.2.1. Navegação entre diretórios
-- 2.2.2. Criação de diretórios e arquivos
-- 2.2.3. Exclusão de diretórios e arquivos
-- 2.2.4. Renomeação de diretórios e arquivos
-- 2.2.5. Movimentação de diretórios e arquivos
-- 2.2.6. Cópia de diretórios e arquivos
-- 2.2.7. Edição de arquivos
+# ULA (Unidade Lógica e Aritmética)
+- Instruções binária 1011.1100.11010 (Exemplo de uma instrução de quatro bits)
+- Endereço, Dado e Controle
+- Exemplo de insrução em linguagem humana A = 10 (A <= Endereço, 10 <= Dado, = <= Controle tipo Atribuição)
 
 # Materiais extras
 - Vídeo youtube (Manual do Mundo) https://www.youtube.com/watch?v=xajcV4lwY3Q
