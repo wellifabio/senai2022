@@ -21,3 +21,7 @@
 # Materiais extras
 - Vídeo youtube (Manual do Mundo) https://www.youtube.com/watch?v=xajcV4lwY3Q
 - Apresentação com a história da Computação https://github.com/wellifabio/senai2020/blob/master/1DES/sop/aula01/Historia_Comp_Hard_SO.pdf
+
+# Atividade EAD
+  - Assistir o filme: Piratas do vale do cilício
+  - Assistir o filme: O jogo da imitação
