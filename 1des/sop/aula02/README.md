@@ -1,0 +1,16 @@
+# Sistema operacional código fechado
+- 2.1. Definição
+- 2.2. Modo texto (linha de comando)
+  - 2.2.1. Navegação entre diretórios
+  - 2.2.2. Criação de diretórios e arquivos
+  - 2.2.3. Exclusão de diretórios e arquivos
+  - 2.2.4. Renomeação de diretórios e arquivos
+  - 2.2.5. Movimentação de diretórios e arquivos
+  - 2.2.6. Cópia de diretórios e arquivos
+  - 2.2.7. Edição de arquivos
+- 2.3. Modo gráfico (Interface gráfica)
+  - 2.3.1. Área de trabalho
+  - 2.3.2. Trabalho com janelas
+  - 2.3.3. Configuração do sistema
+  - 2.3.4. Ferramentas do sistema
+  - 2.3.5. Acessórios
