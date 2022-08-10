@@ -8,6 +8,8 @@ document.querySelector("#teste").addEventListener("keyup", (act) => {
 })
 
 function navegar() {
+    //window.location.href = "./home/home.html";
+
     let val = document.querySelector("#teste").value;
 
     let teste = new Array();
