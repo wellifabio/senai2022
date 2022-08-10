@@ -8,4 +8,4 @@
 	- Importamos a dependência mysql -> npm instal mysql e programamos a conexão e a resposta ao request.
 	
 # Vídeo de Fabio Akita
-	- Como Funciona SocKets, CLiente, Servidor e a Web (https://www.youtube.com/watch?v=lc6U93P4Sxw)
+	- Como Funciona SocKets, CLiente, Servidor e a Web "https://www.youtube.com/watch?v=lc6U93P4Sxw"
