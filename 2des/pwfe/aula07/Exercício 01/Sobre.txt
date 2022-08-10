@@ -1,2 +1,4 @@
 - Criar e carregar dados do usuário em JSON
 - Criar e carregar dados dos produtos em JSON
+
+- Link Entrega : https://drive.google.com/drive/folders/1dVF9dYieak79NuuYYRyRIXDu2JjN9ni8?usp=sharing
