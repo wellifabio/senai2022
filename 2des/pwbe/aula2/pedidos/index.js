@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//Ouve o que chega pelo verbo POST
+//Ouve o que chega pelo verbo POST e envia para o Banco de dados
 app.post('/clientes', (req, res) => {
     let priNome = req.body.priNome;
     let sobrenome = req.body.sobrenome;
@@ -30,14 +30,14 @@ app.post('/clientes', (req, res) => {
     };
     con.query(string, (err, result) => {
         if (err == null) {
-            resposta.telefones = "Tefefones enviados com sucesso ao BD";
+            resposta.cliente = "Dados do cliente enviados com sucesso ao BD";
             telefones.forEach((e)=>{
                 string = `insert into telefones values(${result.insertId},'${e}')`;
                 con.query(string,(err, result)=>{
                     if(err == null){
                         resposta.telefones = "Tefefones enviados com sucesso ao BD";
                     }else{
-                        sucesso = true;
+                        resposta.erroTel = "Erro ao enviar telefones ao BD";
                     }
                 });
             });
