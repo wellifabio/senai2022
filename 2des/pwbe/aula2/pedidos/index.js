@@ -1,19 +1,25 @@
-const express = require('express');
-const mysql = require('mysql');
+//Importa as pricipais dependências
+const express = require('express'); //Habilita os verbos HTTP
+const mysql = require('mysql'); //Habilita a conexão com o Banco de dados
+const bodyParser = require('body-parser'); //Habilita conversão de Form POST para JSON
+
+//Inicia a aplicação para responder as requisições
 const app = express();
 
+//Cria a conexão com o Banco de dados
 const con = mysql.createConnection({
     user: 'root',
     host: 'localhost',
     database: 'pedidos'
 });
 
-const bodyParser = require('body-parser');
+//Configurações básicas da aplicação
+app.use(express.json());
+//Converte o corpo de um formulário recebido via post para json
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.json());
-
+//Ouve o que chega pelo verbo POST
 app.post('/pedidos', (req, res) => {
     let priNome = req.body.priNome;
     let sobrenome = req.body.sobrenome;
@@ -29,6 +35,7 @@ app.post('/pedidos', (req, res) => {
     });
 });
 
+//Inicia o túnel e ouve os verbos HTTP
 app.listen(3000, () => {
     console.log("Respondendo na porta 3000");
 });
