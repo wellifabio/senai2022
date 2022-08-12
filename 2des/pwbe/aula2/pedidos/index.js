@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//Ouve o que chega pelo verbo POST e envia para o Banco de dados
+//Responde ao que chega pelo verbo POST e envia para o Banco de dados
 app.post('/clientes', (req, res) => {
     let priNome = req.body.priNome;
     let sobrenome = req.body.sobrenome;
@@ -28,9 +28,11 @@ app.post('/clientes', (req, res) => {
     let resposta = {
         dados:"Dados recebidos com sucesso"
     };
+    //Preparar o envio ao Banco de Dados
     con.query(string, (err, result) => {
         if (err == null) {
             resposta.cliente = "Dados do cliente enviados com sucesso ao BD";
+            //Laço para enviar os telefones
             telefones.forEach((e)=>{
                 string = `insert into telefones values(${result.insertId},'${e}')`;
                 con.query(string,(err, result)=>{
@@ -48,6 +50,7 @@ app.post('/clientes', (req, res) => {
     });
 });
 
+//Responde as requisições que chegam pelo verbo GET
 app.get('/clientes', (req, res) => {
     let string = `Select * from clientes`;
     con.query(string,(err, result)=>{
