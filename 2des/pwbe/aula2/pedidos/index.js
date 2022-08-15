@@ -2,6 +2,7 @@
 const express = require('express'); //Habilita os verbos HTTP
 const mysql = require('mysql'); //Habilita a conexão com o Banco de dados
 const bodyParser = require('body-parser'); //Habilita conversão de Form POST para JSON
+const cors = require('cors');
 //Inicia a aplicação para responder as requisições
 const app = express();
 
@@ -12,6 +13,7 @@ const con = mysql.createConnection({
     database: 'pedidos'
 });
 
+app.use(cors());
 //Configurações básicas da aplicação
 app.use(express.json());
 //Converte o corpo de um formulário recebido via post para json
