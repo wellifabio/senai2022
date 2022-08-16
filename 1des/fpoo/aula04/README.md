@@ -48,3 +48,6 @@
 		</td>
 	</tr>
 </table>
+
+# Exemplo Fluxograma
+<img src="condicionais.drawio">
