@@ -22,3 +22,19 @@
 <img src="fluxograma1.png">
 - Exemplo 2
 <img src="fluxograma2.png">
+
+# Algoritmo de TROCA
+
+variavel copo1 = uva;
+variavel copo2 = laranja;
+variavel auxiliar;
+
+auxiliar = copo1;
+copo1 = copo2;
+copo2 = auxiliar;
+
+- Com variáveis simples
+int x = 10, y = 3, aux;
+aux = x;
+x = y;
+y = aux;
