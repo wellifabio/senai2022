@@ -1,7 +1,8 @@
 # Condicionais (if) ou (se)
 - if(teste lógico){verdadeiro}
 - if(teste lógico){verdadeiro} else {falso}
-- if(teste lógico){verdadeiro} else if(teste lógico) {verdadeiro} falso {falso}
+- if(teste lógico){verdadeiro} else if(teste lógico) {verdadeiro} else {falso}
+- else = senão
 
 # Árvore binária
 <img src="arvore.png">
@@ -48,6 +49,3 @@
 		</td>
 	</tr>
 </table>
-
-# Exemplo Fluxograma
-<img src="condicionais.drawio">
