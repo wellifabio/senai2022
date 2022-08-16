@@ -4,7 +4,7 @@ int main(){
 	//Configurações e variáveis
 	setlocale(LC_ALL,"");
 	int a,b;
-	printf("Digite seis números inteiros separados por espaço:");
+	printf("Digite dois números inteiros separados por espaço:");
 	scanf("%d",&a);
 	scanf("%d",&b);
 	
