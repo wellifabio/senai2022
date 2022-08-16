@@ -7,12 +7,12 @@
 <img src="arvore.png">
 
 # Teste lógico
-- == igual
-- != diferente
-- > maior
-- < menor
-- >= maior ou igual
-- <= menor ou igual
+- (==) igual
+- (!=) diferente
+- (>) maior
+- (<) menor
+- (>=) maior ou igual
+- (<=) menor ou igual
 
 - && => AND => E
 - || => OR => OU
