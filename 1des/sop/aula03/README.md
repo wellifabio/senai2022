@@ -1,0 +1,32 @@
+# Sistema operacional código fechado (Windows)
+- 2.3. Modo gráfico (Interface gráfica)
+- 2.3.1. Área de trabalho
+- 2.3.2. Trabalho com janelas
+- 2.3.3. Configuração do sistema
+- 2.3.4. Ferramentas do sistema
+- 2.3.5. Acessórios
+- 2.3.6. Menu de ajuda
+- 2.3.7. Gerenciamento de arquivos
+- 2.3.8. Gerenciamento de usuários e permissões
+- 2.4. Níveis de inicialização e finalização
+- 2.5. Instalação na máquina virtual
+- 2.5.1. Pacotes
+- 2.5.2. Atualização
+- 2.5.3. Programas
+
+# 4. Editor de texto
+- 4.1. Formatação de:
+- 4.1.1. Fonte
+- 4.1.2. Parágrafo
+- 4.1.3. Tabulação
+- 4.1.4. Colunas
+- 4.1.5. Maiúsculas e minúsculas
+- 4.2. Inserção de:
+- 4.2.1. Quebra
+- 4.2.2. Número de páginas
+- 4.2.3. Anotações
+- 4.2.4. Arquivo
+- 4.2.5. Planilha
+- 4.2.6. Tabela
+- 4.2.7. Figura
+- 4.2.8. Marcadores
