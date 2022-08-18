@@ -28,4 +28,11 @@
     - Reduz redundância
     - Reduz inconcistência
     - Melhora o desempenho
-    
+
+# Plano de Curso    
+- 2. Modelo relacional
+- 2.1. Modelagem
+- 2.1.1. Dicionário de dados
+- 2.1.2. MER
+- 2.1.3. DER
+- 2.1.4. Formas normais
