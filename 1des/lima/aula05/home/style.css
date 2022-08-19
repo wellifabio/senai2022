@@ -1,0 +1,29 @@
+/* https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+p {
+    color: magenta;
+}
+
+#texto {
+    color: red;
+    font-family: 'Poppins', 'Lucida Sans';
+    font-size: 32px;
+}
+
+.titulo {
+    color: blue;
+    font-family: 'Verdana';
+    background-color: rgba(245,242,66,.5);
+    width: 500px;
+    height: 500px;
+    border: 10px outset white;
+    border-radius: 15px;
+    /*dotted dashed double groove inset outset*/
+}
+
+body {
+    background-image: url("../assets/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
