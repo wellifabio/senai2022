@@ -2,6 +2,15 @@
 
 - Criar o banco de dados SQL/DDL dos 5 exercícios da aula03
 
+# Acessar o ambiente SGBD
+- Via shell
+  - 1. Abrir o XAMPP Control Panel e ativar os serviços Apache e MySQL 
+  - 2. Acessar um terminal (cmd) e digitar "mysql -u root"
+    - 2.1. Caso o comando não execute, corrija a veriável de ambiente para c:\xampp\mysql\bin ou acesse clicando em Shell no XAMPP Control Panel
+- Via PHPMyAdmin
+    - 1. Abrir o XAMPP Control Panel e ativar os serviços Apache e MySQL
+    - 2. Clicar no botão Admin na linha do MySQL
+
 # Plano de Curso
 
 - 1.5. Instalação e configuração
