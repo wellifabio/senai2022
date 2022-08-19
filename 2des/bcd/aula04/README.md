@@ -10,6 +10,14 @@
 - Via PHPMyAdmin
     - 1. Abrir o XAMPP Control Panel e ativar os serviços Apache e MySQL
     - 2. Clicar no botão Admin na linha do MySQL
+	
+# Inportação de dados
+- Manualmente via concatenação de dados no Excel
+- Via arquivos CSV
+- Antes deve ser feito o tratamento dos dados:
+	- Datas no formato universal ANO-MES-DIA
+	- Números utilizando ponto ao invés de virgula, remover o R$ caso possua
+	- Correção do charset via VSCODE ou Notepad++, Substituindo TAB por ";"
 
 # Plano de Curso
 
@@ -37,4 +45,5 @@
 - 2.7.3. Lógicos
 - 2.7.4. Auxiliares
 
-# Avaliação de Sexta 19/08/2022 https://docs.google.com/forms/d/e/1FAIpQLSdUrNO0e34ZV7xUobCwYaNIVeA9nMJCWj_VY9frVpuulKMTFg/viewform
+# Avaliação de Sexta 19/08/2022
+- https://docs.google.com/forms/d/e/1FAIpQLSdUrNO0e34ZV7xUobCwYaNIVeA9nMJCWj_VY9frVpuulKMTFg/viewform
