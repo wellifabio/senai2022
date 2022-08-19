@@ -1,6 +1,7 @@
 # Atividades
 
-- Criar o banco de dados SQL/DDL dos 5 exercícios da aula03
+- 1. Criar o banco de dados SQL/DDL dos 5 exercícios da aula03
+- 2. Importar todos os dados das planilhas para os Bancos de dados
 
 # Acessar o ambiente SGBD MySQL/MariaDB
 - Via shell
