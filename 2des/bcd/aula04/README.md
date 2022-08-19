@@ -36,3 +36,5 @@
 - 2.7.2. Relacionais
 - 2.7.3. Lógicos
 - 2.7.4. Auxiliares
+
+# Avaliação de Sexta 19/08 https://docs.google.com/forms/d/e/1FAIpQLSdUrNO0e34ZV7xUobCwYaNIVeA9nMJCWj_VY9frVpuulKMTFg/viewform
