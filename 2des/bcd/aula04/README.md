@@ -2,7 +2,7 @@
 
 - Criar o banco de dados SQL/DDL dos 5 exercícios da aula03
 
-# Acessar o ambiente SGBD
+# Acessar o ambiente SGBD MySQL/MariaDB
 - Via shell
   - 1. Abrir o XAMPP Control Panel e ativar os serviços Apache e MySQL 
   - 2. Acessar um terminal (cmd) e digitar "mysql -u root"
