@@ -55,7 +55,7 @@
 	- 5.1.2.Bots
 	- 5.2. Treinamento
 	- 5.3. Publicação
-# =Referências Bibliográficas
+# Referências Bibliográficas
 - Guia para Certificação Microsoft AI900 – https://docs.microsoft.com/pt-br/learn/certifications/exams/ai-900?tab=tab-learning-paths
 - Guia de Serviços Cognitivos da Google - https://cloud.google.com/products/ai
 - Guia de Serviços Cognitivos da AWS - https://aws.amazon.com/pt/machine-learning/ai-services
