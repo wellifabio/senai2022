@@ -1,0 +1,61 @@
+#Implantação de Serviços de Inteligência Artificial em Nuvem
+	– Avaliação de certificação: Microsoft AI900
+	- Carga Horária: 40 horas
+	- Certificado: Azure AI Fundamentals
+# Capacidades Técnicas
+- 1. Identificar os usos comuns da inteligência artificial (IA) em plataformas de nuvem
+- 2. Implementar modelos de aprendizado de máquina (Machine Learning)
+- 3. Configurar ambiente para o uso dos diferentes tipos de serviços cognitivos de visão computacional
+- 4. Configurar ambiente dos serviços e funcionalidades de processamento de linguagem natural (NLP)
+- 5. Implementar serviços cognitivos em nuvem de inteligência artificial de conversação
+
+# Conhecimentos
+- 1. Inteligência artificial em nuvem
+	- 1.1. Tipos
+	- 1.1.1.Previsão
+	- 1.1.2.Anomalias
+	- 1.1.3.Visão Computacional
+	- 1.1.4.Processamento de Linguagem Natural
+	- 1.1.5.Conversação
+	- 1.2. Responsabilidades
+	- 1.2.1.Privacidade
+	- 1.2.2.Confiabilidade
+	- 1.2.3.Transparência
+	- 1.2.4.Inclusão
+- 2. Machine Learning
+	- 2.1. Características
+	- 2.1.1.Regressão
+	- 2.1.2.Classificação
+	- 2.1.3.Agrupamento
+	- 2.2. Conceitos
+	- 2.2.1.Base de Dados 
+	- 2.2.1.1. Preparação
+	- 2.2.1.2. Ingestão
+	- 2.2.2.Algoritmos
+	- 2.2.3.Treinamento
+	- 2.2.4.Métricas de avaliação dos modelos
+	- 2.3. Gerenciamento do modelo
+	- 2.4. Publicação do modelo
+- 3. Visão Computacional
+	- 3.1. Tipos
+	- 3.1.1.Classificação de imagens
+	- 3.1.2.Detecção de objetos
+	- 3.1.3.Reconhecimento óptico de caracteres (OCR)
+	- 3.1.4.Reconhecimento facia
+- 4. Processamento de Linguagem Natural
+	- 4.1. Ferramentas
+	- 4.1.1.Extração de palavras-chave
+	- 4.1.2.Reconhecimento de entidades
+	- 4.1.3.Análise de sentimento
+	- 4.1.4.Reconhecimentos de fala (speech)
+	- 4.1.5.Tradução de idiomas
+	- 5. Serviços cognitivos de conversação
+	- 5.1. Tipos
+	- 5.1.1.Agentes de IA
+	- 5.1.2.Bots
+	- 5.2. Treinamento
+	- 5.3. Publicação
+# =Referências Bibliográficas
+- Guia para Certificação Microsoft AI900 – https://docs.microsoft.com/pt-br/learn/certifications/exams/ai-900?tab=tab-learning-paths
+- Guia de Serviços Cognitivos da Google - https://cloud.google.com/products/ai
+- Guia de Serviços Cognitivos da AWS - https://aws.amazon.com/pt/machine-learning/ai-services

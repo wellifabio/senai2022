@@ -3,7 +3,9 @@
 - planos_curso / Planos de Curso
 - vagas_ti / Alguns perfis de vagas DEV anunciadas em 2022
 - pro_educador / Plano iT Certificações x Parceiros [Azure, AWS, Google, Oracle, Cisco]
-- diversos (Materiais para aulas de Redes, Banco de dados, Office e e outros)
+- materiais (Materiais para aulas de Redes, Banco de dados, Office e e outros)
+- old_1des (Turma 1des do primeiro semestre de 2022)
+- old_op_mic (Turma Operador de Microcomputadores do primeiro semestre de 2022)
 
 # Links de ferramentas inportantes:
 
