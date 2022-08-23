@@ -1,12 +1,13 @@
-GitHub x Git
+# GitHub x Git (Ferramenta de Versionamento)
 --------------------------------------------------------------------------
-1) Criar uma conta no GitHub
-2) Fazer o download e instalar o Git Bach
-(Pesquisar por "download git")
-3) Organizar suas pastas locais com seus códigos fonte
-4) Criar um repositório remoto para seus códigos
-5) Abrir o git bash clicanco com o botão direito do mouse
 
+- 1. Criar uma conta no GitHub
+- 2. Fazer o download e instalar o Git Bash (Pesquisar por "download git")
+- 3. Organizar suas pastas locais com seus códigos fonte
+- 4. Criar um repositório remoto para seus códigos
+- 5. Abrir o git bash clicanco com o botão direito do mouse
+
+# Comandos Git Bash
 a) Clonar o diretório remoto vazio
 - git clone <endereco do diretorio remoto.git>
 
