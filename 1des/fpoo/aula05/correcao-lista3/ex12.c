@@ -7,8 +7,7 @@ int main(){
 	for(i = 0; i < 10; i++){
 		n = -1;
 		while(n < 0 || n > 32767){
-			printf("Digite o %dº número: ",
-			i+1);
+			printf("Digite o %dº número: ", i+1);
 			scanf("%d",&n);
 		}
 		if(n > maior)
