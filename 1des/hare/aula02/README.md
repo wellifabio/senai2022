@@ -33,10 +33,15 @@ De dentro do repositório
 Para atualizar o repositório local com o remoto
 
 --------------------------------------------------------------------------
-Se estiver utilizando um computador público
+# Se estiver utilizando um computador público
 Limpe as credenciais do windows antes e depois do processo:
 - Painel de controle
 - Contas de usuário 
 - Credenciais do Windows
 - Procure por git
 - Remover
+--------------------------------------------------------------------------
+# Atividade:
+- Crie um repositório chamado <b>cv</b>
+- Coloque seu "curriculo.pdf" dentro dele
+- E o arquivo README.md com o conteúdo: # Meu Currículo

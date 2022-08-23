@@ -1,9 +1,9 @@
 # TI LINKS E INFORMAÇÕES DIVERSAS
 
-- planos_curso / Planos de Curso
-- vagas_ti / Alguns perfis de vagas DEV anunciadas em 2022
-- pro_educador / Plano iT Certificações x Parceiros [Azure, AWS, Google, Oracle, Cisco]
-- materiais (Materiais para aulas de Redes, Banco de dados, Office e e outros)
+- 01_planos_curso / Planos de Curso
+- 02_materiais (Materiais para aulas de Redes, Banco de dados, Office e e outros)
+- 03_pro_educador / Plano iT Certificações x Parceiros [Azure, AWS, Google, Oracle, Cisco]
+- 04_vagas_ti / Alguns perfis de vagas DEV anunciadas em 2022
 - old_1des (Turma 1des do primeiro semestre de 2022)
 - old_op_mic (Turma Operador de Microcomputadores do primeiro semestre de 2022)
 
