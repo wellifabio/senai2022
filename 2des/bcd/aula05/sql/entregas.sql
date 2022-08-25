@@ -81,9 +81,55 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
+LOAD DATA INFILE 'D:/wellington/senai2022/2des/bcd/aula05/csv/entregas/entregadores.csv'
+INTO TABLE entregadores
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'D:/wellington/senai2022/2des/bcd/aula05/csv/entregas/pedidos.csv'
+INTO TABLE pedidos
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
 select * from clientes;
 select * from telefones;
 select * from entregadores;
 select * from produtos;
 select * from pedidos;
 select * from itens;
+
+-- DQL Junção de tabelas
+select * from clientes join telefones on clientes.id_cliente = telefones.id_cliente;
+select * from clientes c join telefones t on c.id_cliente = t.id_cliente;
+
+select * from clientes c
+join telefones t
+on c.id_cliente = t.id_cliente;
+
+-- JOIN = INNER, LEFT, RIGHT
+
+insert into clientes values (null,"11122233311","Marcelo","13458777","1A","Fundos");
+-- Exemplo de inner
+select * from clientes c
+inner join telefones t
+on c.id_cliente = t.id_cliente;
+-- Exemplo de Left
+select * from clientes c
+left join telefones t
+on c.id_cliente = t.id_cliente;
+-- Exemplo de Right
+select * from telefones t
+right join clientes c
+on c.id_cliente = t.id_cliente;
+
+-- Salvando a Consulta
+create view vw_clientes as
+select c.id_cliente, c.cpf, c.nome, c.cep, c.numero, c.complemento, t.numero as telefone from clientes c
+inner join telefones t
+on c.id_cliente = t.id_cliente;
+
+select * from vw_clientes;
