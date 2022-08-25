@@ -57,3 +57,33 @@ describe pedidos;
 describe itens;
 
 show tables;
+
+-- DML Importação dos dados com LOAD DATA de arquivos CSV
+
+LOAD DATA INFILE 'D:/wellington/senai2022/2des/bcd/aula05/csv/entregas/clientes.csv'
+INTO TABLE clientes
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'D:/wellington/senai2022/2des/bcd/aula05/csv/entregas/telefones.csv'
+INTO TABLE telefones
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'D:/wellington/senai2022/2des/bcd/aula05/csv/entregas/produtos.csv'
+INTO TABLE produtos
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+select * from clientes;
+select * from telefones;
+select * from entregadores;
+select * from produtos;
+select * from pedidos;
+select * from itens;
