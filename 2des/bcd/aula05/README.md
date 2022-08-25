@@ -27,6 +27,10 @@ IGNORE 1 ROWS;
 - ORDER BY DESC - Ordenar por (decrescent)
 - GROUP BY - Agrupar por
 
+# Criar Visões no Banco de Dados
+- CREATE VIEW Nome da Visão AS em seguida a consulta
+- UNIR tabelas INNER JOIN, LEFT JOIN, RIGHT JOIN
+
 # 2. Modelo relacional
 - 2.4. DDL (data definition language)
 - 2.4.1. CREATE DATABASE
