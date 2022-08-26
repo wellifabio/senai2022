@@ -3,11 +3,11 @@ create database onibus charset=UTF8 collate utf8_general_ci;
 use onibus;
 
 create table motoristas(
-    cpf varchar(11) not null primary key,
+    cpf varchar(14) not null primary key,
     nome varchar(50) not null
 );
 create table telefones(
-    cpf varchar(11) not null,
+    cpf varchar(14) not null,
     numero varchar(15) not null,
     foreign key (cpf) references motoristas(cpf)
 );
@@ -21,7 +21,7 @@ create table horarios(
     foreign key (id_linha) references linhas(id_linha)
 );
 create table mot_linhas(
-    cpf varchar(11) not null,
+    cpf varchar(14) not null,
     id_linha varchar(10) not null,
     data date not null,
     foreign key (cpf) references motoristas(cpf),
@@ -79,14 +79,3 @@ select * from linhas;
 select * from horarios;
 select * from mot_linhas;
 
--- DQL Exemplos de buscas no banco de dados
-select count(valor) from duplicatas;
-select sum(valor) from duplicatas;
-select avg(valor) from duplicatas;
-select max(valor) from duplicatas;
-select min(valor) from duplicatas;
-select * from duplicatas order by vencimento desc;
-select * from duplicatas group by cod_cli;
-select * from duplicatas group by cod_cli order by valor;
-select * from duplicatas where vencimento > "2022-10-21";
-select * from duplicatas where vencimento > "2022-11-21" group by cod_cli order by valor;
