@@ -1,0 +1,45 @@
+/* body {
+    background-color: yellow;
+}
+
+.circulos {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border-radius: 75px;
+    position: static;
+}
+
+#segundo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+#retangulo {
+    border: 2px solid red;
+    width: 400px;
+    height: 300px;
+    top: 50px;
+    left: 200px;
+    position: relative;
+}
+
+#terceiro {
+    position: absolute;
+    top: 0;
+    left: 200px;
+} */
+
+.retangulos {
+    width: 400px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+
+#terceiro {
+    background-color: red;
+    position: sticky;
+    top: 20px;
+}

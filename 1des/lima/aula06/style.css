@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 15vh;
+}
+
+main {
+    background-color: aquamarine;
+    width: 100vw;
+    height: 75vh;
+}
+
+footer {
+    background-color: blueviolet;
+    width: 100vw;
+    height: 10vh;
+}
