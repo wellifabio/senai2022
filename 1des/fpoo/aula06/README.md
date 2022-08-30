@@ -1,0 +1,12 @@
+# Vetores
+- Exercícios
+	- 1. Crie dois vetores numéricos de dimensão 5 com valores informados pelo usuário. Apresente a soma do primeiro vetor com o inverso do segundo.
+	- 2. Crie um vetor de tamanho 10, permita que o usuário o preencha e informe :
+	 	- A soma e média dos pares;
+	 	- A soma e média dos impares;
+	 	- O total de números pares;
+	 	- O total de números impares;
+	- 3. Utilizando apenas um vetor de tamanho 6, troque os valores de maneira inversa;
+	- 4. Localize um valor informado pelo usuário dentro de um vetor com dimensão 10;
+	- 5. Faça um programa que leia 10 valores inteiros em qualquer ordem e os classifique em ordem crescente.
+	- 6. Faça um programa que gere 10 valores inteiros aleatorios e os classifique em ordem crescente.
