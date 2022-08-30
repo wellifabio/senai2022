@@ -9,4 +9,4 @@
 	- 3. Utilizando apenas um vetor de tamanho 6, troque os valores de maneira inversa;
 	- 4. Localize um valor informado pelo usuário dentro de um vetor com dimensão 10;
 	- 5. Faça um programa que leia 10 valores inteiros em qualquer ordem e os classifique em ordem crescente.
-	- 6. Faça um programa que gere 10 valores inteiros aleatorios e os classifique em ordem crescente.
+	- 6. Faça um programa que gere 100 valores inteiros aleatorios e os classifique em ordem crescente.
