@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
+const alunos = require("./alunos.js");
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.get('/academia/alunos',(req,res)=>{
     let string = "select * from vw_alunos";
     con.query(string,(err,result)=>{
         if(err == null){
-            res.json(result);
+            res.json(alunos.alunos(result));
         }
     });
 });
