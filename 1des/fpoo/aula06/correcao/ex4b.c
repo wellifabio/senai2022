@@ -24,4 +24,8 @@ int main(){
 	//Saída
 	if(onde != -1) printf("Encontrei na posição %d", onde);
 	else printf("Não encontrei");
+	
+	//Desafio 1 (Mostrar todas as posições em que o número for encontrado caso seja repetido)
+	//Desafio 2 (Não permitir números repetidos)
 }
+
