@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ddd;
+}
+td{
+    text-align: center;
+}
+.tels {
+    cursor: pointer;
+}
+
+.modalTels{
+    position: absolute;
+    top:50px;
+    left:50px;
+}

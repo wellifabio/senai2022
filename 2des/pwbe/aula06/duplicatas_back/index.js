@@ -4,6 +4,7 @@ const mysql = require("mysql");
 const cli = require("./src/clientes.js");
 
 const app = express();
+app.use(cors());
 
 const con = mysql.createConnection({
     user: 'root',
