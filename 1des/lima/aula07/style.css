@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bloco {
+    width: 50vw;
+    height: 20vh;
+    border: 1px solid red;
+}
+
+img {
+    width: 20vw;
+    float: left;
+}
+
+ul {
+    margin: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu > li {
+    float: left;
+    margin-left: 20px; 
+}
+
+.exemplo {
+    width: 90vw;
+    height: 50vh;
+    margin: 30px;
+    border: 2px solid purple;
+}
+
+.exemplo > div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid blue;
+}
+
+.exemplo #caixa2 {
+    background-color: yellow;
+}

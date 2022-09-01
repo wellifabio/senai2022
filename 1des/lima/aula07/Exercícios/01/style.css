@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: pink;
+}
+
+aside {
+    width: 20vw;
+    height: 75vh;
+    background-color: orangered;
+    float: left;
+}
+
+main {
+    width: 80vw;
+    height: 75vh;
+    background-color: green;
+    margin-left: 20vw;
+}
+
+main > div {
+    float: left;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: yellow;
+}

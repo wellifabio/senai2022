@@ -27,7 +27,23 @@
         </thead>
         <tbody id="allCli"></tbody>
     </table>
-    <div id="modais"></div>
+    <div id="modais">
+        <div id="modalTels" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Telefones</th>
+                        <th align="right"><button onclick="modalTels.setAttribute('style','display:none;')">X</button></th>
+                    </tr>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Número</th>
+                    </tr>
+                </thead>
+                <tbody id="telefones"></tbody>
+            </table>
+        </div>
+    </div>
 </body>
 <script src="clientes.js"></script>
 </html>

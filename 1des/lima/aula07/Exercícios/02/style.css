@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: pink;
+}
+
+footer {    
+    width: 100vw;
+    height: 10vh;
+    background-color: pink;
+}
