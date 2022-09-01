@@ -1,0 +1,18 @@
+{
+    "cod_cli": 1,
+    "nome": "Jana?na Costa",
+    "endereco": "Rua do Mel, 25  ",
+    "bairro": "Zambom",
+    "cidade": "Jaguari?na",
+    "uf": "SP",
+    "telefones": [
+        {
+            "tipo": "telefone",
+            "numero": "(19)45646-7897"
+        },
+        {
+            "tipo": "telefone",
+            "numero": "(19)45646-7897"
+        }
+    ]
+}
