@@ -10,8 +10,42 @@ header {
     background-color: pink;
 }
 
+aside {
+    width: 15vw;
+    height: 80vh;
+    background-color: blue;
+}
+
+main {
+    width: 70vw;
+    height: 80vh;
+    background-color: red;
+    float: left;
+}
+
+#a1 {
+    float: left;
+}
+
+#a2 {
+    margin-left: 85vw;
+}
+
+.quadrado {
+    width: 10vw;
+    height: 10vw;
+    background-color: gray;
+    float: left;
+    margin-top: 32vh;
+}
+
+#q1 {
+    margin-left: 20vw;
+    margin-right: 12vw;
+}
+
 footer {    
     width: 100vw;
     height: 10vh;
-    background-color: pink;
+    background-color: yellow;
 }
