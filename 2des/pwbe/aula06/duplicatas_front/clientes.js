@@ -1,6 +1,7 @@
 var uriClientes = `http://localhost:3000/duplicatas/clientes`;
 var clientes = [];
 const allCli = document.querySelector("#allCli");
+const modais = document.querySelector("#modais");
 const modalTels = document.querySelector("#modalTels");
 const telefones = document.querySelector("#telefones");
 
@@ -44,6 +45,7 @@ function preencheTabela() {
 }
 
 function mostraTels(indice) {
+    modais.setAttribute("style","display:flex;");
     modalTels.setAttribute("style","display:flex;");
     telefones.innerHTML = "";
     clientes[indice].telefones.forEach(e=>{
