@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    width: 20vw;
+    height: 100vh;
+    background-color: #add8e6;
+}
+
+ul {
+    list-style: none;
+    color: #666;
+}
+
+ul > li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+main {
+    width: 80vw;
+    height: 100vh;
+    padding: 15px;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 350px;
+    background-color: #FFF;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    justify-content: space-evenly;
+}
+
+.model {
+    display: none;
+    visibility: hidden;
+}
+
+.modal-content > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+
+.modal-content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.modal-content-body {
+    margin-top: 20px;
+}
+
+.confirm {
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    background-color: #2fd659;
+}
+
+.cancel {
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    background-color: #fa2828; 
+}
+
+input {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
