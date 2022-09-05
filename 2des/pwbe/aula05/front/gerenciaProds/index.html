@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <nav>
+            <ul>
+                <li>Gerenciar Produtos</li>
+                <li>Gerenciar Funcionários</li>
+                <li>Efetuar Venda</li>
+                <li>Relatório de Vendas</li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="lista-produtos">
+                <tr class="linhamodelo model">
+                    <td>ABC12345</td>
+                    <td>Roupa</td>
+                    <td>10</td>
+                    <td>R$ 30,50</td>
+                    <td> <button id="exclui"> <img class="icone" src="https://cdn-icons-png.flaticon.com/512/1799/1799391.png" alt="Ícone de excluir"> </button> </td>
+                    <td> <button id="edita"> <img class="icone" src="https://cdn-icons-png.flaticon.com/512/84/84380.png" alt="Ícone de editar"> </button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <div class="modal excluir model">
+        <div class="modal-content">
+            <button onClick="fecharModalExcluir()"> <img class="icone" src="https://cdn.icon-icons.com/icons2/1674/PNG/512/close_111152.png" alt="Icone de Fechar"> </button>
+            <div class="modal-content-body">
+                <p><b>Alerta de Exclusão</b><br><br>Tem certeza que deseja remover o produto de código : <span id="cod"></span></p>
+            </div>
+            <div class="modal-content-footer">
+                <button class="btn confirm">Confirmar</button>
+                <button onClick="fecharModalExcluir()" class="btn cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal editar model">
+        <div class="modal-content">
+            <button onClick="fecharModalEditar()"> <img class="icone" src="https://cdn.icon-icons.com/icons2/1674/PNG/512/close_111152.png" alt="Icone de Fechar"> </button>
+            <div class="modal-content-body">
+                <input type="text" id="codigo" placeholder="Código do Produto">
+                <input type="text" id="nome" placeholder="Nome do Produto">
+                <input type="number" id="quantidade" placeholder="Quantidade em Estoque">
+                <input type="number" id="valor" placeholder="Valor Unitário">
+            </div>
+            <div class="modal-content-footer">
+                <button class="btn confirm">Editar</button>
+                <button onClick="fecharModalEditar()" class="btn cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

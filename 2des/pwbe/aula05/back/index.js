@@ -26,7 +26,7 @@ app.get("/produtos", (req, res) => {
 
 //http://localhost:3000/produtos/MO5214
 //req.params.cod
-app.get("/produtos/:cod/:num", (req,res) => {
+app.get("/produtos/:cod", (req,res) => {
     let query = `SELECT * FROM produtos WHERE cod = '${req.params.cod}'`;
     
     conDB.query(query, (err, result) => {
