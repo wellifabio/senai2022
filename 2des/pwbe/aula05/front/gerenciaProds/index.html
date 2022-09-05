@@ -19,6 +19,7 @@
         </nav>
     </aside>
     <main>
+        <button class="cadastrar">Cadastrar <img class="icone" src="https://freepikpsd.com/file/2019/10/cadastro-icon-png-Transparent-Images.png" alt="Ícone de Cadastrar"></button>
         <table>
             <thead>
                 <tr>
@@ -47,7 +48,7 @@
                 <p><b>Alerta de Exclusão</b><br><br>Tem certeza que deseja remover o produto de código : <span id="cod"></span></p>
             </div>
             <div class="modal-content-footer">
-                <button class="btn confirm">Confirmar</button>
+                <button onClick="excluirProduto()" class="btn confirm">Confirmar</button>
                 <button onClick="fecharModalExcluir()" class="btn cancel">Cancelar</button>
             </div>
         </div>
@@ -63,7 +64,7 @@
                 <input type="number" id="valor" placeholder="Valor Unitário">
             </div>
             <div class="modal-content-footer">
-                <button class="btn confirm">Editar</button>
+                <button onClick="editarProduto()" class="btn confirm">Editar</button>
                 <button onClick="fecharModalEditar()" class="btn cancel">Cancelar</button>
             </div>
         </div>
