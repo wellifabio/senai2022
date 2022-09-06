@@ -23,18 +23,20 @@
         <table>
             <thead>
                 <tr>
-                    <th>Código</th>
+                    <th>Matrícula</th>
                     <th>Nome</th>
-                    <th>Quantidade</th>
-                    <th>Preço</th>
+                    <th>Cargo</th>
+                    <th>Salário</th>
+                    <th>CPF</th>
                 </tr>
             </thead>
             <tbody id="lista-produtos">
                 <tr class="linhamodelo model">
-                    <td>ABC12345</td>
-                    <td>Roupa</td>
-                    <td>10</td>
-                    <td>R$ 30,50</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td> <button id="exclui"> <img class="icone" src="https://cdn-icons-png.flaticon.com/512/1799/1799391.png" alt="Ícone de excluir"> </button> </td>
                     <td> <button id="edita"> <img class="icone" src="https://cdn-icons-png.flaticon.com/512/84/84380.png" alt="Ícone de editar"> </button> </td>
                 </tr>
@@ -45,10 +47,10 @@
         <div class="modal-content">
             <button onClick="fecharModalExcluir()"> <img class="icone" src="https://cdn.icon-icons.com/icons2/1674/PNG/512/close_111152.png" alt="Icone de Fechar"> </button>
             <div class="modal-content-body">
-                <p><b>Alerta de Exclusão</b><br><br>Tem certeza que deseja remover o produto de código : <span id="cod"></span></p>
+                <p><b>Alerta de Exclusão</b><br><br>Tem certeza que deseja remover o funcionario com matricula : <span id="matricula"></span></p>
             </div>
             <div class="modal-content-footer">
-                <button onClick="excluirProduto()" class="btn confirm">Confirmar</button>
+                <button onClick="excluirFuncionario()" class="btn confirm">Confirmar</button>
                 <button onClick="fecharModalExcluir()" class="btn cancel">Cancelar</button>
             </div>
         </div>
@@ -58,13 +60,14 @@
         <div class="modal-content">
             <button onClick="fecharModalEditar()"> <img class="icone" src="https://cdn.icon-icons.com/icons2/1674/PNG/512/close_111152.png" alt="Icone de Fechar"> </button>
             <div class="modal-content-body">
-                <input type="text" id="codigo" placeholder="Código do Produto">
-                <input type="text" id="nome" placeholder="Nome do Produto">
-                <input type="number" id="quantidade" placeholder="Quantidade em Estoque">
-                <input type="number" id="valor" placeholder="Valor Unitário">
+                <input type="text" id="imatricula" placeholder="Matrícula do Funcionário">
+                <input type="text" id="nome" placeholder="Nome do Funcionário">
+                <input type="text" id="cargo" placeholder="Cargo do Funcionário">
+                <input type="number" id="salario" placeholder="Salário do funcionário">
+                <input type="text" id="cpf" placeholder="CPF do funcionário">
             </div>
             <div class="modal-content-footer">
-                <button onClick="cadastrarProduto()" id="cadedit" class="btn confirm">Cadastrar</button>
+                <button onClick="cadastrarFuncionario()" id="cadedit" class="btn confirm">Cadastrar</button>
                 <button onClick="fecharModalEditar()" class="btn cancel">Cancelar</button>
             </div>
         </div>
