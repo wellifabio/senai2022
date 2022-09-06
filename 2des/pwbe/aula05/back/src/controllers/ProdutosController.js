@@ -1,5 +1,3 @@
-const Express = require('express');
-const cors = require('cors');
 const mysql = require('mysql');
 
 const conDB = mysql.createConnection({
@@ -8,11 +6,7 @@ const conDB = mysql.createConnection({
     "database": "lojinha"
 });
 
-const app = Express();
-app.use(Express.json());
-app.use(cors());
-
-app.get("/produtos", (req, res) => {
+function listarProdutos(req, res) {
     let query = "SELECT * FROM produtos";
 
     conDB.query(query, (err, result) => {
@@ -22,11 +16,9 @@ app.get("/produtos", (req, res) => {
             res.json(err).status(400).end();
         }
     })
-});
+};
 
-//http://localhost:3000/produtos/MO5214
-//req.params.cod
-app.get("/produtos/:cod", (req,res) => {
+function listaProduto(req, res) {
     let query = `SELECT * FROM produtos WHERE cod = '${req.params.cod}'`;
     
     conDB.query(query, (err, result) => {
@@ -36,14 +28,9 @@ app.get("/produtos/:cod", (req,res) => {
             res.status(400).json(err).end();
         }
     })
-});
+};
 
-app.post("/produtos", (req, res) => {
-    /*
-        req.query => http://localhost:3000/produtos?cod=ab1234&nome=teste
-        req.params => /produtos/:cod/:nome => http://localhost:3000/produtos/abc1234/teste
-    */
-
+function cadastrarProduto(req, res) {
     let query = `INSERT INTO produtos VALUES (DEFAULT, '${req.body.cod}', '${req.body.nome}', ${req.body.qntd}, ${req.body.preco})`;
 
     conDB.query(query, (err, result) => {
@@ -53,9 +40,9 @@ app.post("/produtos", (req, res) => {
             res.status(400).json(err).end();
         }
     });
-});
+};
 
-app.delete("/produto", (req, res) => {
+function excluirProduto(req, res) {
     let query = `DELETE FROM produtos WHERE cod = '${req.body.cod}'`;
 
     conDB.query(query, (err, result) => {
@@ -65,9 +52,9 @@ app.delete("/produto", (req, res) => {
             res.status(400).json(err).end();
         }
     });
-});
+};
 
-app.put("/produto", (req, res) => {
+function editarProduto(req, res){
     let query = `UPDATE produtos SET cod = '${req.body.cod}', nome = '${req.body.nome}', qntd = ${req.body.qntd}, preco = ${req.body.preco} WHERE cod = '${req.body.cod}'`;
 
     conDB.query(query, (err, result) => {
@@ -77,8 +64,12 @@ app.put("/produto", (req, res) => {
             res.status(400).json(err).end();
         }
     });
-});
+};
 
-app.listen(3000, () => {
-    console.log("App ON");
-});
+module.exports = {
+    listarProdutos,
+    listaProduto,
+    cadastrarProduto,
+    excluirProduto,
+    editarProduto
+}
