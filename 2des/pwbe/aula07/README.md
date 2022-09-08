@@ -8,4 +8,4 @@
 	- Leia com atenção o documento docs/requisitos/escopo.pdf (Estes serão os critérios de avaliação)
 	
 - Entregas
-	- Crie um repositório chamado "japoneis" no seu github, publique seu projeto, copie o link e cole como uma menságem no site : https://wellifabio.000webhostapp.com/view/pages/
+	- Crie um repositório chamado "japoneis" no seu github, publique seu projeto, copie o link e cole como uma mensagem no site : https://wellifabio.000webhostapp.com/view/pages/
