@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    float: left;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+}
+
+header > nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+main {
+    width: 100vw;
+    height: 80vh;
+    background-image: url("./background.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > img {
+    width: 26px;
+}
+
+#nav-sup {
+    justify-content: space-between;
+    background-color: #FCBA03;
+}
+
+#nav-sub {
+    background-color: #000;
+}
+
+#nav-sub > p {
+    color: #FFF;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+#color {
+    color: #FCBA03;
+}
+
+#menu-um > li {
+    color: white;
+}
+
+#menu-dois > li {
+    color: #FC5603;
+}
+
+.container {
+    width: 80%;
+    height: 50%;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container > p {
+    color: #FFF;
+    font-size: 21px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+}
+
+.busca > input {
+    width: 32vw;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.busca > img {
+    width: 30px;
+}
