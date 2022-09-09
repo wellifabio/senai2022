@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+aside {
+    width: 20vw;
+    height: 90vh;
+}
+
+main {
+    width: 80vw;
+    height: 90vh;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#d1 {
+    width: 25%;
+    height: 40%;
+    background-color: aqua;
+}
+
+#d2 {
+    width: 20%;
+    height: 50%;
+    background-color: antiquewhite;
+}
+
+#d3 {
+    width: 50%;
+    height: 40%;
+    background-color: burlywood;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu-superior > ul > li {
+    float: left;
+    margin-left: 10px;
+    color: white;
+}
+
+#menu-lateral li {
+    margin: 15px;
+}
+
+#menu-lateral li:hover {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#pesquisa {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 20%;
+    height: 45%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin: 15px;
+}
+
+.card > img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card > button {
+    width: 90%;
+    background: white;
+    border: none;
+    padding: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+} 
