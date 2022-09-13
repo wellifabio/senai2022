@@ -35,7 +35,7 @@ main {
     width: 100vw;
     height: 80vh;
     background-image: url("./background.jpg");
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
