@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    background-color: #333;
+    width: 100%;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+    font-weight: bold;
+    color: #eee;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+main{
+    margin: 20px;
+    width: 95%;
+}
+
+table{
+    background-color:#fff;
+    width: 100%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr{
+    height: 40px;
+}
+
+button{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;    
+    font-size: large;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#modais{
+    background-color: rgba(0, 0,0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modalCriar{
+    position: relative;
+    top: 10vw;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#modalCriar div{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;;
+    width: 300px;
+}
+
+img{
+    width: 30px;
+    cursor: pointer;
+}
