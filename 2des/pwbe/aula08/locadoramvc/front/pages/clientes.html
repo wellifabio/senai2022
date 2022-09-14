@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/clientes.css">
+    <title>Controle de Clientes</title>
+</head>
+
+<body onload="carregar()">
+    <header>
+        <ul>
+            <li>Clientes</li>
+            <li><a href="./devolucoes.html">Devoluções</a></li>
+        </ul>
+    </header>
+    <main>
+        <button onclick="modal1.setAttribute('style','display:flex');">Novo
+            Cliente +</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tcorpo"></tbody>
+        </table>
+        <div id="modal1" class="modal">
+            <div id="novo">
+                <div class="modalHeader">
+                    <h3>Criar Novo Lançamento</h3>
+                    <button onclick="modal1.setAttribute('style','display:none')">x</button>
+                </div>
+                <div class="modalForm">
+                    Nome:
+                    <input type="text" id="nome" />
+                    Endereco:
+                    <input type="text" id="endereco" />
+                    Telefone:
+                    <input type="text" id="telefone" />
+                </div>
+                <div class="modalFooter">
+                    <button onclick="cadastrarCliente()">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div id="alerta">
+                <div class="modalHeader">
+                    <h3>Mensagem</h3>
+                    <button onclick="modal2.setAttribute('style','display:none')">X</button>
+                </div>
+                <div id="msg"></div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../scripts/clientes.js"></script>
+
+</html>
