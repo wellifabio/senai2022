@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="../gerenciaProds">Gerenciar Produtos</a></li>
+                <li><a href="../gerenciaFuncs">Gerenciar Funcionários</a></li>
+                <li>Efetuar Venda</li>
+                <li>Relatório de Vendas</li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="data-prod">
+            <input type="text" onBlur="buscaProd(this)" id="codigo" placeholder="Inserir o Código do Produto">
+            <input type="text" id="nome" disabled>
+            <input type="text" id="preco" disabled>
+            <input type="text" id="idProd" hidden>
+            <input type="text" id="qntd">
+        </div>
+        <div class="data-func">
+            <input type="text" onBlur="buscaFunc(this)" id="matricula" placeholder="Matricula do Funcionario">
+            <input type="text" id="nomefunc" disabled>
+            <input type="text" id="idFunc" hidden>
+        </div>
+        <button onClick="lancarProduto()">Adicionar produto</button>
+        <table>
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Nome</td>
+                    <td>Matrícula</td>
+                    <td>Quantidade</td>
+                    <td>Sub Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="linha model">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="total">R$ 0,0</h3>
+        <button onClick="lancarVenda()">Finalizar Venda</button>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
