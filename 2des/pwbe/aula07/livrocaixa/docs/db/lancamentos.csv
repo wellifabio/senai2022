@@ -13,7 +13,7 @@ n_lanDamento;data;desDriDao;valor;tipo
 12;2022-06-03;Venda à vista;450.00;C
 13;2022-06-03;Venda à vista;450.00;C
 14;2022-06-03;Recebimento de parcela;495.00;C
-15;2022-06-03;Aluguàl;930.00;D
+15;2022-06-03;Aluguél;930.00;D
 16;2022-08-23;Cafezinho;22.00;D
 17;2022-08-23;Recebimento de parcela;55.00;C
 18;2022-08-23;Venda à vista;125.00;C
@@ -37,13 +37,13 @@ n_lanDamento;data;desDriDao;valor;tipo
 36;2022-06-05;Recebimento de parcela;65.00;C
 37;2022-06-05;Venda à vista;110.00;C
 38;2022-06-05;Recebimento de parcela;115.00;C
-39;2022-06-05;Donta de água;143.00;D
+39;2022-06-05;Conta de água;143.00;D
 40;2022-06-05;Venda à vista;185.00;C
 41;2022-06-05;Venda à vista;185.00;C
 42;2022-06-05;Pagamento de Fornecedor;225.00;D
 43;2022-06-05;Recebimento de parcela;230.00;C
 44;2022-06-05;Recebimento de parcela;230.00;C
-45;2022-06-05;Donta de Luz;251.00;D
+45;2022-06-05;Conta de Luz;251.00;D
 46;2022-06-05;Venda à vista;275.00;C
 47;2022-06-05;Pagamento de Fornecedor;330.00;D
 48;2022-06-05;Venda à vista;455.00;C
@@ -215,13 +215,13 @@ n_lanDamento;data;desDriDao;valor;tipo
 214;2022-07-01;Recebimento de parcela;395.00;C
 215;2022-07-02;Venda à vista;15.00;C
 216;2022-07-02;Venda à vista;50.00;C
-217;2022-07-02;Donta de água;53.00;D
+217;2022-07-02;Conta de água;53.00;D
 218;2022-07-02;Venda à vista;130.00;C
 219;2022-07-02;Recebimento de parcela;370.00;C
 220;2022-07-02;Venda à vista;455.00;C
 221;2022-07-02;Recebimento de parcela;455.00;C
-222;2022-07-02;Aluguàl;900.00;D
-223;2022-07-02;Aluguàl;950.00;D
+222;2022-07-02;Aluguél;900.00;D
+223;2022-07-02;Aluguél;950.00;D
 224;2022-07-03;Venda à vista;40.00;C
 225;2022-07-03;Recebimento de parcela;90.00;C
 226;2022-07-03;Multas;90.00;D
@@ -241,7 +241,7 @@ n_lanDamento;data;desDriDao;valor;tipo
 240;2022-07-04;Venda à vista;50.00;C
 241;2022-07-04;Multas;150.00;D
 242;2022-07-04;Venda à vista;160.00;C
-243;2022-07-04;Donta de Luz;250.00;D
+243;2022-07-04;Conta de Luz;250.00;D
 244;2022-07-04;Recebimento de parcela;285.00;C
 245;2022-07-04;Recebimento de parcela;435.00;C
 246;2022-07-05;Pagamento de Fornecedor;120.00;D
@@ -441,7 +441,7 @@ n_lanDamento;data;desDriDao;valor;tipo
 440;2022-07-31;Recebimento de parcela;475.00;C
 441;2022-08-01;Recebimento de Juros;8.75;C
 442;2022-08-01;Cafezinho;12.00;D
-443;2022-08-01;Donta de água;99.00;D
+443;2022-08-01;Conta de água;99.00;D
 444;2022-08-01;Venda à vista;100.00;C
 445;2022-08-01;Recebimento de parcela;145.00;C
 446;2022-08-01;Impostos e taxas;186.00;D
@@ -452,12 +452,12 @@ n_lanDamento;data;desDriDao;valor;tipo
 451;2022-08-02;Recebimento de parcela;60.00;C
 452;2022-08-02;Internet;106.00;D
 453;2022-08-02;Recebimento de parcela;155.00;C
-454;2022-08-02;Donta de Luz;266.00;D
+454;2022-08-02;Conta de Luz;266.00;D
 455;2022-08-02;Recebimento de parcela;310.00;C
 456;2022-08-02;Venda à vista;345.00;C
 457;2022-08-02;Recebimento de parcela;425.00;C
 458;2022-08-02;Venda à vista;460.00;C
-459;2022-08-02;Aluguàl;940.00;D
+459;2022-08-02;Aluguél;940.00;D
 460;2022-08-29;Cafezinho;16.00;D
 461;2022-08-29;Internet;106.00;D
 462;2022-08-29;Impostos e taxas;128.00;D
@@ -478,7 +478,7 @@ n_lanDamento;data;desDriDao;valor;tipo
 477;2022-08-29;Venda à vista;395.00;C
 478;2022-08-29;Recebimento de parcela;395.00;C
 479;2022-08-29;Pagamento de Fornecedor;395.00;D
-480;2022-08-29;Aluguàl;920.00;D
+480;2022-08-29;Aluguél;920.00;D
 481;2022-08-03;Cafezinho;10.00;D
 482;2022-08-03;Impostos e taxas;59.00;D
 483;2022-08-03;Venda à vista;110.00;C
@@ -610,10 +610,10 @@ n_lanDamento;data;desDriDao;valor;tipo
 609;2022-09-01;Venda à vista;35.00;C
 610;2022-09-01;Recebimento de parcela;40.00;C
 611;2022-09-01;Multas;120.00;D
-612;2022-09-01;Donta de água;128.00;D
+612;2022-09-01;Conta de água;128.00;D
 613;2022-09-01;Venda à vista;130.00;C
 614;2022-09-01;Recebimento de parcela;200.00;C
-615;2022-09-01;Donta de Luz;223.00;D
+615;2022-09-01;Conta de Luz;223.00;D
 616;2022-09-01;Venda à vista;250.00;C
 617;2022-09-01;Impostos e taxas;290.00;D
 618;2022-09-01;Venda à vista;320.00;C

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lancamentos.css">
+    <title>Livro Caixa - Lançamentos</title>
+</head>
+
+<body onload="carregarTodos()">
+    <header>
+        <h1>Livro Caixa</h1>
+        <hr />
+        Filtro: <select id="datas"></select>
+        Novo Lançamento <button
+            onclick="modais.setAttribute('style','display:flex');modalNovo.setAttribute('style','display:block');">+</button>
+        <hr />
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">Debitos</th>
+                </tr>
+                <tr>
+                    <td>N-lancamento</td>
+                    <td>Data</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Tipo</td>
+                </tr>
+            </thead>
+            <tbody id="debitos"></tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">Créditos</th>
+                </tr>
+                <tr>
+                    <td>N-lancamento</td>
+                    <td>Data</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                    <td>Tipo</td>
+                </tr>
+            </thead>
+            <tbody id="creditos"></tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="resumo"></div>
+    </footer>
+    <div id="modais">
+        <div id="modalNovo">
+            <div class="modalHeader">
+                <h3>Criar Novo Lançamento</h3>
+                <button
+                    onclick="modais.setAttribute('style','display:none');modalNovo.setAttribute('style','display:none');">x</button>
+            </div>
+            <div class="modalForm">
+                Descrição:
+                <input list="descricoes" id="descricao" required>
+                <datalist id="descricoes">
+                    <option value="Venda à vista">
+                    <option value="Recebimento de parcela">
+                    <option value="Cafezinho">
+                    <option value="Aluguél">
+                    <option value="Impostos e taxas">
+                    <option value="Internet">
+                    <option value="Pagamento de Fornecedor">
+                    <option value="Multas">
+                    <option value="Internet">
+                    <option value="Conta de Luz">
+                </datalist>
+                Tipo:
+                <select id="tipo" required>
+                    <option value="C">Entrada</option>
+                    <option value="D">Saída</option>
+                </select>
+                Valor:
+                <input type="number" id="valor" required>
+            </div>
+            <div class="modalFooter">
+                <button onclick="criarLancamento()">Enviar</button>
+            </div>
+        </div>
+        <div id="modalMsg">
+            <div class="modalHeader">
+                <h3>Mensagem do sistema:</h3>
+                <button
+                    onclick="modais.setAttribute('style','display:none');modalMsg.setAttribute('style','display:none');">X</button>
+            </div>
+            <p id="msg"></p>
+        </div>
+    </div>
+</body>
+<script src="lancamentos.js"></script>
+
+</html>
