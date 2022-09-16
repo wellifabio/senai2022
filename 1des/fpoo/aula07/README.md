@@ -14,4 +14,14 @@
 	- (9) Preencha uma matriz 5x5 com valores aleatórios entre 0 e 50. Depois exiba os numeros pares e impares existentes na matriz, e suas quantidades.
 	- (10) Crie um programa que leia o nome e duas notas de 5 alunos, em seguida mostre a lista com nomes notas e médias dos 5 alunos.
 	- (11) Crie um programa que calcule o IMC (Índice de Massa Corpórea) de 5 pessoas Entradas: Nome, peso e altura, Saída Nome, Peso, Altura e IMC.
-
+# Desafios
+- desafio_1_ead (Fila do Recreio)
+- desafio_2_ead (Suco de Acerola)
+- Sena (Criar um programa que sorteie 6 numeros aleatórios de 1 à 60 e mostre conforme abaixo
+[01][02][03][04][05][06][07][08][09][10]
+[11][12][  ][14][15][16][17][  ][19][20]
+[21][22][23][24][25][26][27][28][29][30]
+[31][32][33][34][  ][36][37][38][39][40]
+[41][42][43][44][45][46][47][  ][49][50]
+[51][52][  ][54][55][56][57][58][  ][60]
+Sorteados: [13][18][35][48][53][59]
