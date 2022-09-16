@@ -10,5 +10,5 @@
 	- (4) Localize um valor informado pelo usuário dentro de um vetor com dimensão 10;
 	- (5) Faça um programa que leia 10 valores inteiros em qualquer ordem e os classifique em ordem crescente.
 	- (6) Faça um programa que gere 100 valores inteiros aleatorios e os classifique em ordem crescente.
-	- (7) Faça um programa que leia 5 nomes inteiros aleatorios e os classifique em ordem crescente.
-	- (8) Faça um programa que leia 5 nomes inteiros aleatorios e os classifique em ordem decrescente.
+	- (7) Faça um programa que leia 5 números inteiros aleatorios e os classifique em ordem crescente.
+	- (8) Faça um programa que leia 5 nomes aleatorios e os classifique em ordem decrescente.
