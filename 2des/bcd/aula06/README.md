@@ -1,3 +1,5 @@
+# Subconsultas e ações transaçionais
+	- Pode ser utilizadas em qualquer operação CRUD - DML
 # Atividade pré-aula:
 - Criar o script de criação e população do banco de dados "Pizzaria"
 - Este banco de dados está no livro "Princípio de Banco de dados com MySQL 5.7"
