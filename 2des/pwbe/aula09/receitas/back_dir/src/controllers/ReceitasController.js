@@ -1,0 +1,31 @@
+const con = require('../dao/dbreceitas');
+
+const listarReceitas= (req, res) => {
+    let string = "select * from receitas";
+    con.query(string, (err, result) => {
+        if (err == null) {
+            res.json(result).end();
+        }
+    });
+}
+
+const criarReceita = (req, res) => {
+    let tipo = req.body.tipo;
+    let nome = req.body.nome;
+    let ingredientes = req.body.ingredientes;
+    let modoPreparo = req.body.modoPreparo;
+    let foto = req.body.foto;
+    let string = `insert into receitas values (default,'${tipo}','${nome}','${ingredientes}','${modoPreparo}','${foto}')`;
+    con.query(string, (err, result) => {
+        if (err == null) {
+            res.status(201).end();
+        } else {
+            res.status(400).json(err).end();
+        }
+    });
+}
+
+module.exports = {
+    listarReceitas,
+    criarReceita
+}
