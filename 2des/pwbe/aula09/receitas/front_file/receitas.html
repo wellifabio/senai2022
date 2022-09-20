@@ -12,13 +12,14 @@
 <body onload="carregar()">
     <header>
         <h1>Receitas</h1>
-        <button onclick="modal.setAttribute('style','display:flex');">Nova</button>
+        <button onclick="modal.setAttribute('style','display:flex');">Cadastrar Receita</button>
     </header>
     <main id="receitas">
     </main>
     <div class="modal" id="modal">
         <div class="form">
-            <div class="modalHeader">Cadastro de Receitas<button onclick="modal.setAttribute('style','display:none');">x</button></div>
+            <div class="modalHeader">Cadastro de Receitas<button
+                    onclick="modal.setAttribute('style','display:none');">x</button></div>
             <select id="tipo">
                 <option value="salgada">Salgada</option>
                 <option value="doce">Doce</option>
@@ -27,9 +28,10 @@
             <textarea id="ingredientes" placeholder="Ingredientes"></textarea>
             <textarea id="modo_preparo" placeholder="Modo de preparo"></textarea>
             <input type="file" id="foto" />
-            <button>Enviar</button>
+            <button onclick="cadastrarReceita()">Enviar</button>
         </div>
     </div>
 </body>
 <script src="receitas.js"></script>
+
 </html>
