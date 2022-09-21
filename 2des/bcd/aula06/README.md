@@ -13,6 +13,12 @@
 - Através de comandos SQL/DML Remova os demais telefones e cadastre apenas o novo telefone 19991865503
 - Crie uma view que mostre os clientes e telefones juntos, coloque o nome de "vw_clientes"
 - Acrescente um novo cliente "Joaquim Inácio Silva", um endereço qualquer, telefone 19989995511 que pediu 2 pizzas (uma baiana e uma de atum)
+# Exercícios (lista2)
+- Quando foi o último pedido do cliente "Cesar Augusto Pascali Rago"? Qual o valor deste pedido?
+- Quantas pizzas ele pediu e quantos sabores diferentes
+- Crie uma view da tabela Itens_pedido que mostre também o nome de cada pizza em ordem de pedido_id, coloque o nome de "vw_itens"
+- Crie uma view que mostre por ordem de pedido os dados (pedido_id, cliente_id, data, hora, pizza_id, nome da pizza, valor da pizza, subtotal e total), nomeie como "vw_pedidos"
+- Acrescente na view anterior o nome do cliente e mostre na ordem de pedido decrescente.
 
 # Desafio:
 - Criar um banco de dados para registro e controle de empréstimos conforme regras de negócio estabelecidas

@@ -1,17 +1,26 @@
 const con = require('../dao/dbreceitas');
+const multer = require('multer');
+// Configuração de armazenamento temporario
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, '../repositorio/')
+    },
+    filename: function (req, file, cb) {
+        cb(null, 'temp.png')
+    }
+});
+const parser = multer({ storage });
 
-const listarReceitas = (req, res) => {
-    let string = "select * from receitas order by id desc";
-    con.query(string, (err, result) => {
-        if (err == null) {
-            res.json(result).end();
+const cadastrarReceita = async (req, res) => {
+    parser.single('foto')(req, res, err => {
+        if (err)
+            res.status(500).json({ error: 1, payload: err }).end();
+        else {
+            let data = {};
+            data.arquivo = req.file.filename;
+            res.status(200).json(data).end();
         }
     });
-}
-
-const cadastrarReceita = (req, res) => {
-    console.log(req.body)
-    res.json(req.body).end()
     /*
     let tipo = req.body.tipo;
     let nome = req.body.nome;
@@ -27,6 +36,15 @@ const cadastrarReceita = (req, res) => {
         }
     });
     */
+}
+
+const listarReceitas = (req, res) => {
+    let string = "select * from receitas order by id desc";
+    con.query(string, (err, result) => {
+        if (err == null) {
+            res.json(result).end();
+        }
+    });
 }
 
 const excluirReceita = (req, res) => {
