@@ -28,7 +28,7 @@ function montarCards() {
         nome.innerHTML = `<b>Nome:</b> ${e.nome}`;
         ingredientes.innerHTML = `<b>Ingredientes:</b> ${e.ingredientes}`;
         modoPreparo.innerHTML = `<b>Modo de Preparo:</b> ${e.modo_preparo}`;
-        foto.setAttribute('src', `../repositorio/${e.foto}`);
+        foto.setAttribute('src', montaImg(e.foto));
         card.appendChild(id);
         card.appendChild(tipo);
         card.appendChild(nome);
@@ -37,6 +37,14 @@ function montarCards() {
         card.appendChild(foto);
         receitas.appendChild(card);
     });
+}
+
+function montaImg(img) {
+    if (img != null) {
+        console.log(img);
+        return `../repositorio/default.png`;
+    } else
+        return `../repositorio/default.png`;
 }
 
 function excluirReceita(id) {

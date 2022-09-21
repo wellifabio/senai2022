@@ -11,7 +11,7 @@ create table receitas(
     foto mediumblob
 );
 
-load data infile 'D:/wellington/senai2022/2des/pwbe/aula09/receitas/docs/db/receitas.csv'
+load data infile 'D:/well/senai2022/2des/pwbe/aula09/receitas/docs/db/receitas.csv'
 into table receitas
 fields terminated by ';'
 enclosed by '"'
