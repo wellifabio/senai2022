@@ -1,0 +1,11 @@
+Sair do Git
+
+Gerenciador de Credenciais > Credenciais do Windows
+Remover o GitHub
+
+No terminal executar os comandos:
+
+git config --global user.name "NOME DO USUARIO"
+git config --global user.email "EMAIL DO GIT"
+
+

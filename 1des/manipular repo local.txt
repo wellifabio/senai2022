@@ -1,0 +1,14 @@
+--Para clonar um repo
+
+git clone link-repo
+
+--Para enviar uma alteração
+
+git add .
+git commit -m "Comentario
+"
+git push
+
+--Para atualizar o repo local
+
+git pull

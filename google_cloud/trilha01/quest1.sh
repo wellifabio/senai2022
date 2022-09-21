@@ -5,13 +5,14 @@ export REGION=us-east1
 export ZONE=us-east1-b
 export RF_NAME=grant-tcp-rule-324
 
+gcloud config set compute/region $REGION
+gcloud config set compute/zone $ZONE
+
 ## Tarefa 1: crie uma instância para o projeto jumphost
 gcloud compute instances create $INST_NAME --project=qwiklabs-gcp-04-7a9ccf48e67d --zone=$ZONE --machine-type=n1-standard-1 --network-interface=network-tier=PREMIUM,subnet=default --metadata=enable-oslogin=true --maintenance-policy=MIGRATE --provisioning-model=STANDARD --service-account=896877271621-compute@developer.gserviceaccount.com --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append --create-disk=auto-delete=yes,boot=yes,device-name=nucleus-jumphost-569,image=projects/debian-cloud/global/images/debian-11-bullseye-v20220822,mode=rw,size=10,type=projects/qwiklabs-gcp-04-7a9ccf48e67d/zones/us-east1-b/diskTypes/pd-balanced --no-shielded-secure-boot --shielded-vtpm --shielded-integrity-monitoring --reservation-affinity=any
 
 ## Tarefa 2: crie um cluster de serviço do Kubernetes
 ## - criar um cluster na zona us-east1-b para hospedar o serviço;
-
-gcloud config set compute/zone $ZONE
 gcloud container clusters create cluster1
 
 ## - Usar o contêiner "hello-app" do Docker (gcr.io/google-samples/hello-app:2.0) como um marcador de posição que será substituído pelo trabalho da equipe mais tarde;
