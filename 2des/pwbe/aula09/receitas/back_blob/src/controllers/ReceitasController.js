@@ -10,7 +10,8 @@ const listarReceitas = (req, res) => {
 }
 
 const cadastrarReceita = (req, res) => {
-    console.log(req);
+    console.log(req.body)
+    res.json(req.body).end()
     /*
     let tipo = req.body.tipo;
     let nome = req.body.nome;

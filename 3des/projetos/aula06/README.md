@@ -25,7 +25,7 @@ OBS(Anote em um script.sql os comandos utilizados para cada uma das etapas a seg
 - Quantos telefones ele possui cadastrado?
 - Através de comandos SQL/DML Remova os demais telefones e cadastre apenas o novo telefone 19991865503
 - Crie uma view que mostre os clientes e telefones juntos, coloque o nome de "vw_clientes"
-- Acrescente um novo cliente "Joaquim Inácio Silva", um endereço qualquer, telefone 19989995511 que pediu 2 pizzas Baiana e uma de atum
+- Acrescente um novo cliente "Joaquim Inácio Silva", um endereço qualquer, telefone 19989995511 que pediu 2 pizzas (uma baiana e uma de atum)
 ------------
 .Desafios nível 2
 ------------

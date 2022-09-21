@@ -7,6 +7,13 @@
 - Cadastrar 10 pizzas, 5 Clientes e um pedido para cada cliente.
 - Cada pedido deve ter de 1 a 5 ítens.
 
+# Exercícios (lista1)
+- Qual o telefone do cliente "Cesar Augusto Pascali Rago"?
+- Quantos telefones ele possui cadastrado?
+- Através de comandos SQL/DML Remova os demais telefones e cadastre apenas o novo telefone 19991865503
+- Crie uma view que mostre os clientes e telefones juntos, coloque o nome de "vw_clientes"
+- Acrescente um novo cliente "Joaquim Inácio Silva", um endereço qualquer, telefone 19989995511 que pediu 2 pizzas (uma baiana e uma de atum)
+
 # Desafio:
 - Criar um banco de dados para registro e controle de empréstimos conforme regras de negócio estabelecidas
 - Regras de negócio:
