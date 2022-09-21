@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    margin-left: 30px;
+}
+
+header button{
+    margin-right: 30px;
+}
+
+button{
+    padding:5px;
+    padding-left: 20px;
+    padding-right: 20px;    
+    font-size: large;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #666;
+    color: #fff;
+}
+
+
+input, select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    margin: 5px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal{
+    background-color: rgba(0, 0,0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    position: relative;
+    top: 10vw;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: large;
+}
+
+.card{
+    width:350px;
+    height:500px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 0px 0px 5px 0px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px #ccc;
+    border-radius: 3px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.card img{
+    width: 100%;
+    box-shadow: 2px 2px 4px #ccc;
+    border-radius: 3px;
+    margin: 2px;
+}
