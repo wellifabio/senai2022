@@ -1,7 +1,7 @@
 const con = require('../dao/dbreceitas');
 
 const listarReceitas = (req, res) => {
-    let string = "select * from receitas";
+    let string = "select * from receitas order by id desc";
     con.query(string, (err, result) => {
         if (err == null) {
             res.json(result).end();
@@ -10,6 +10,8 @@ const listarReceitas = (req, res) => {
 }
 
 const cadastrarReceita = (req, res) => {
+    console.log(req);
+    /*
     let tipo = req.body.tipo;
     let nome = req.body.nome;
     let ingredientes = req.body.ingredientes;
@@ -23,6 +25,7 @@ const cadastrarReceita = (req, res) => {
             res.status(400).json(err).end();
         }
     });
+    */
 }
 
 const excluirReceita = (req, res) => {

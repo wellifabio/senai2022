@@ -1,5 +1,4 @@
-const uri = 'http://localhost:5000/receitas';
-const uriFile = 'http://localhost:5000/arquivos';
+const uri = 'http://localhost:4500/receitas';
 const receitas = document.querySelector("#receitas");
 var dados = [];
 
@@ -29,7 +28,7 @@ function montarCards() {
         nome.innerHTML = `<b>Nome:</b> ${e.nome}`;
         ingredientes.innerHTML = `<b>Ingredientes:</b> ${e.ingredientes}`;
         modoPreparo.innerHTML = `<b>Modo de Preparo:</b> ${e.modo_preparo}`;
-        foto.setAttribute('src', `../imgs/${e.foto}`);
+        foto.setAttribute('src', `../repositorio/${e.foto}`);
         card.appendChild(id);
         card.appendChild(tipo);
         card.appendChild(nome);
@@ -59,36 +58,4 @@ function excluirReceita(id) {
             })
             .catch(err => alert("Erro ao enviar dados, Erro:" + err));
     }
-}
-
-function cadastrarReceita() {
-    //Pega o arquivo de imagem
-    const arquivo = document.querySelector("#foto");
-    //Monta o corpo da requisição
-    const body = {
-        "tipo": document.querySelector("#tipo").value,
-        "nome": document.querySelector("#nome").value,
-        "ingredientes": document.querySelector("#ingredientes").value,
-        "modoPreparo": document.querySelector("#modo_preparo").value,
-        "foto": arquivo.files.length > 0 ? arquivo.files[0].name : "default.png"
-    }
-    const options = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' }
-    };
-    options.body = JSON.stringify(body);
-    //Envia os dados do formulário para o back-end
-    fetch(uri, options)
-        .then(resp => resp.status)
-        .then(resp => {
-            if (resp == 201) {
-                alert("Receita cadastrada com sucesso");
-                window.location.reload();
-            } else {
-                alert("Erro ao cadastrar receita, Código HTTP:" + resp);
-            }
-        })
-        .catch(err => {
-            alert("Erro ao enviar dados, Erro:" + err);
-        });
 }
