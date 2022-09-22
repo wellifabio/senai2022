@@ -1,0 +1,7 @@
+id;tipo;nome;ingredientes;modo_preparo;foto
+1;salgada;Ovo cozido;1 ovo;Ferva a água, bote o ovo e espere por 5 minutos;ovo.png
+2;salgada;Miojo;1 miojo;Ferva a água, bote o miojo e espere por 3 minutos, misture o tempero e divirta-se;miojo.png
+3;salgada;Ovo frito;1 ovo;Aqueça a frigideira, bote o ovo e espere dar o ponto;ovo_frito.png
+4;salgada;Salada de alface;1 pé de alface;Lave o alface em água corrente, tempere a gosto;alface.png
+5;doce;Brigadeiro;1 lata de brigadeiro pronto;Abra a lata;brigadeiro.png
+6;doce;Doce de leite;1 lata de doce de leite;Abra a lata;doce_de_leite.png
