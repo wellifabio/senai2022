@@ -43,7 +43,7 @@ function montaImg(img) {
     if (img != null) {
         return `data:image/png;base64,${img}`;
     } else
-        return `../repositorio/default.png`;
+        return `./default.png`;
 }
 
 function excluirReceita(id) {

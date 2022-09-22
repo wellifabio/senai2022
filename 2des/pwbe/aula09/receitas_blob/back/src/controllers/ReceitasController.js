@@ -18,7 +18,6 @@ const cadastrarReceita = async (req, res) => {
                     res.status(500).json(err).end();
                 }
             });
-
         }
     });
 }
