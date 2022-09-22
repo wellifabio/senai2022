@@ -1,9 +1,9 @@
 # Funções
-	- Executa um trecho de código
-	- Pode ser chamada várias vezes pelo programa ou por outra função
-	- Quanda apenas executa apenas um trecho de código pode ser chamada de procedimento
-	- Pode receber parâmetros
-	- Pode retornar um resultado.
+	- Uma <b>função</b> é um trecho de código isolado
+	- Pode ser chamada várias vezes pelo programa ou por outra <b>função</b>
+	- Quando apenas executa apenas um trecho de código pode ser chamada de <b>procedimento</b>
+	- Uma <b>função</b> pode receber parâmetros que alteram sua execução
+	- Uma <b>função</b> pode retornar um resultado.
 	
 # Exercícios
 - 1. Crie uma função que receba um número decimal e imprima sua representação em binário.
