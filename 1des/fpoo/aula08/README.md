@@ -1,0 +1,13 @@
+# Funções
+	- Executa um trecho de código
+	- Pode ser chamada várias vezes pelo programa ou por outra função
+	- Quanda apenas executa apenas um trecho de código pode ser chamada de procedimento
+	- Pode receber parâmetros
+	- Pode retornar um resultado.
+	
+# Exercícios
+- 1. Crie uma função que receba um número decimal e imprima sua representação em binário.
+- 2. Crie uma função que receba um valor em Celsius e retorne em Fahrenheit.
+- 3. Crie uma função que receba um valor em Fahrenheit e retorne em Celsius.
+- 4. Crie uma função que receba dois valores e retorne o maior entre eles.
+- 5. Crie uma função que compare se dois valores são iguais e retorne um booleano.
