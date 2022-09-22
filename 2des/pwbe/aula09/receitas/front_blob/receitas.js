@@ -41,8 +41,7 @@ function montarCards() {
 
 function montaImg(img) {
     if (img != null) {
-        console.log(img);
-        return `../repositorio/default.png`;
+        return `data:image/png;base64,${img}`;
     } else
         return `../repositorio/default.png`;
 }

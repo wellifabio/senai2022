@@ -11,7 +11,7 @@ create table receitas(
     foto mediumblob
 );
 
-load data infile 'D:/well/senai2022/2des/pwbe/aula09/receitas/docs/db/receitas.csv'
+load data infile 'C:/Users/wellington.martins/Desktop/github/senai2022/2des/pwbe/aula09/receitas/docs/db/receitas.csv'
 into table receitas
 fields terminated by ';'
 enclosed by '"'
@@ -20,3 +20,10 @@ ignore 1 rows
 set foto=null;
 
 select * from receitas;
+
+update receitas set foto=to_base64(LOAD_FILE("C:/Users/wellington.martins/Desktop/github/senai2022/2des/pwbe/aula09/receitas/repositorio/ovo.png")) where id = 1;
+update receitas set foto=to_base64(LOAD_FILE("C:/Users/wellington.martins/Desktop/github/senai2022/2des/pwbe/aula09/receitas/repositorio/miojo.png")) where id = 2;
+update receitas set foto=to_base64(LOAD_FILE("C:/Users/wellington.martins/Desktop/github/senai2022/2des/pwbe/aula09/receitas/repositorio/ovo_frito.png")) where id = 3;
+update receitas set foto=to_base64(LOAD_FILE("C:/Users/wellington.martins/Desktop/github/senai2022/2des/pwbe/aula09/receitas/repositorio/alface.png")) where id = 4;
+update receitas set foto=to_base64(LOAD_FILE("C:/Users/wellington.martins/Desktop/github/senai2022/2des/pwbe/aula09/receitas/repositorio/brigadeiro.png")) where id = 5;
+update receitas set foto=to_base64(LOAD_FILE("C:/Users/wellington.martins/Desktop/github/senai2022/2des/pwbe/aula09/receitas/repositorio/doce_de_leite.png")) where id = 6;

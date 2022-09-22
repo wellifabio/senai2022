@@ -15,15 +15,15 @@ const cadastrarReceita = async (req, res) => {
             dados.modoPreparo = req.body.modo_preparo;
             let string = null;
             if (req.file != null){
-                dados.foto = JSON.stringify(req.file);
+                dados.foto = req.file.buffer.toString('base64');
                 string = `insert into receitas values (default,'${dados.tipo}','${dados.nome}','${dados.ingredientes}','${dados.modoPreparo}','${dados.foto}')`;
             }else
                 string = `insert into receitas values (default,'${dados.tipo}','${dados.nome}','${dados.ingredientes}','${dados.modoPreparo}',null)`;
             if (dados.tipo != null && dados.nome != null) {
                 con.query(string, (err, result) => {
                     if (err == null) {
-                        res.status(201).json(dados).end();
-                        //res.redirect('http://127.0.0.1:5500/front_blob/receitas.html');
+                        //res.status(201).json(dados).end();
+                        res.redirect('http://127.0.0.1:5500/front_blob/receitas.html');
                     } else {
                         res.status(500).json(err).end();
                     }
@@ -35,14 +35,20 @@ const cadastrarReceita = async (req, res) => {
     });
 }
 
-
 const listarReceitas = (req, res) => {
     let string = "select * from receitas order by id desc";
     con.query(string, (err, result) => {
         if (err == null) {
-            res.json(result).end();
+            res.json(receita(result)).end();
         }
     });
+}
+
+function receita(dados){
+    dados.forEach(d => {
+        if(d.foto != null) d.foto = d.foto.toString('ascii');
+    });
+    return dados;
 }
 
 const excluirReceita = (req, res) => {
