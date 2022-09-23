@@ -10,3 +10,5 @@
 - 3. Crie uma função que receba um valor em Fahrenheit e retorne em Celsius.
 - 4. Crie uma função que receba dois valores e retorne o maior entre eles.
 - 5. Crie uma função que compare se dois valores são iguais e retorne um booleano.
+- 6. Crie uma função que desenhe um retângulo na tela com caracteres, recebendo como parâmetros (largura, altura e caractere).
+- 7. Crie uma função que calcule o fatorial de um número.
