@@ -15,8 +15,13 @@ int main(){
 void retangulo(int x, int y, char c){
 	int i, j;
 	for(i = 0; i < y; i++){
-		for(j = 0; j < y; j++)
-			printf("%c",c);
+		for(j = 0; j < x; j++){
+			if(i == 0)	printf("%c",c);
+			else if(j == 0)printf("%c",c);
+			else if(j == x - 1)printf("%c",c);
+			else if(i == y - 1)printf("%c",c);
+			else printf(" ");
+		}
 		printf("\n");
 	}
 }
