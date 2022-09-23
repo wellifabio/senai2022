@@ -6,6 +6,8 @@
 #53693C
 #FFFFFF
 
+//Os dados utilizados não podem ser alterados ou reordenados.
+
 //Base Tela Compromissos
 const data = [
     {
