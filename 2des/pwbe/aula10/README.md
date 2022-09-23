@@ -3,7 +3,7 @@
 - Transferência para Servidor de Arquivos
 - Exemplo com sistema de livro de receitas
 - Tutorial BLOB com PHP https://www.devmedia.com.br/armazenando-imagens-no-mysql/32104
-- Base64
+- Projeto de cadastro de receitas culinárias simples de exemplo.
 # Plano de Curso
 - 4. Persistência de dados
 - 4.1. Conexão com base de dados
