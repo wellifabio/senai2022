@@ -1,5 +1,9 @@
 # Subconsultas, ações transaçionais
-	- Pode ser utilizadas em qualquer operação CRUD - DML
+- Pode ser utilizadas em qualquer operação CRUD - DML
+	- insert
+	- update
+	- delete
+	
 # Atividade pré-aula:
 - Criar o script de criação e população do banco de dados "Pizzaria"
 - Este banco de dados está no livro "Princípio de Banco de dados com MySQL 5.7"
@@ -13,6 +17,7 @@
 - Através de comandos SQL/DML Remova os demais telefones e cadastre apenas o novo telefone 19991865503
 - Crie uma view que mostre os clientes e telefones juntos, coloque o nome de "vw_clientes"
 - Acrescente um novo cliente "Joaquim Inácio Silva", um endereço qualquer, telefone 19989995511 que pediu 2 pizzas (uma baiana e uma de atum)
+
 # Exercícios (lista2)
 - Quando foi o último pedido do cliente "Cesar Augusto Pascali Rago"? Qual o valor deste pedido?
 - Quantas pizzas ele pediu e quantos sabores diferentes
