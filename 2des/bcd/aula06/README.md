@@ -1,4 +1,4 @@
-# Subconsultas e ações transaçionais
+# Subconsultas, ações transaçionais
 	- Pode ser utilizadas em qualquer operação CRUD - DML
 # Atividade pré-aula:
 - Criar o script de criação e população do banco de dados "Pizzaria"
