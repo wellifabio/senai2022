@@ -8,7 +8,7 @@ IGNORE 1 ROWS;
 
 select * from clientes;
 
--- Insrção de dados nas tabelas
+-- Inserção de dados nas tabelas
 insert into clientes values
 (null,'101.346.425-70','Quevin Bispo','13919-404','940',null),
 (null,'484.876.090-90','Sara de Souza Alves','13919-405','604',null),
