@@ -3,7 +3,7 @@ create database solicitacoes charset=utf8 collate utf8_general_ci;
 use solicitacoes;
 -- SQL - DDL
 Create table Funcionarios(
-	Cod_Func integer(4)     not null,   
+	Cod_Func numeric(4) not null,   
 	Nome_Func varchar(50) not null,
 	Sexo char(1) not null,            
 	Cidade varchar(30),
@@ -12,22 +12,22 @@ Create table Funcionarios(
 );
 
 Create table Departamentos(
-	Cod_Depto integer(4) not null,
+	Cod_Depto numeric(4) not null,
 	Nome_Depto varchar(50) not null,
 	constraint pk_dep_1 primary key(Cod_Depto)
 ); 
 
 Create table Produtos(
-	Cod_Produto integer(4) not null,  
+	Cod_Produto numeric(4) not null,  
 	Nome_produto varchar(50) not null,
 	constraint pk_prod_1 primary key(Cod_Produto)
 );
 
 Create table Solicitacoes(
-	Num_Sol integer(4) not null,     
+	Num_Sol numeric(4) not null,     
 	Data_sol date null,
-	Cod_Depto integer(4) not null,           
-	Cod_Func  integer(4) not null,
+	Cod_Depto numeric(4) not null,           
+	Cod_Func  numeric(4) not null,
 	constraint pk_sol_1 primary key(Num_Sol),
 	constraint fk_sol_dep_1 Foreign Key(Cod_Depto) references Departamentos(Cod_Depto),
 	constraint fk_sol_fun_1 Foreign Key(Cod_Func) references Funcionarios(Cod_Func)
@@ -97,6 +97,6 @@ show tables;
 -- 2. Escreva um comando select para mostrar o nome do funcionário que mais fez solicitações (em Reais).
 -- Então, você deverá mostrar o nome do funcionário e seu respectivo valor total, em Reais.
 
--- 3. Escreva um comando select para mostrar os nomes e datas dos departamentos que requisitaram Parafuso e Difusor.
+-- 3. Escreva um comando select para mostrar os nomes e datas dos departamentos que requisitaram "Parafuso" e "Difusor".
 
 -- 4. Escreva um comando select para mostrar os nomes dos produtos vendidos em Fevereiro de 2018.
