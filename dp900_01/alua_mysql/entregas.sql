@@ -2,6 +2,7 @@ drop database if exists entregas;
 create database entregas charset=UTF8 collate utf8_general_ci;
 use entregas;
 
+-- SQL - DDL Criação da estrutura do banco de dados
 create table clientes(
     id_cliente integer not null primary key auto_increment,
     cpf varchar(11) not null,
@@ -30,8 +31,8 @@ create table produtos(
 );
 
 create table pedidos(
+	id_pedido integer not null primary key auto_increment,
     id_cliente integer not null,
-    id_pedido integer not null primary key auto_increment,
     id_intregador integer not null,
     data date not null,
     hora_pedido time,

@@ -21,7 +21,7 @@ select * from dados_cli;
 create index i_nome on dados_cli(nome);
 
 -- Se precisar exportar dados de uma consulta
-select nome from dados_cli into outfile 'd:/nomes.txt';
+select nome from dados_cli into outfile 'd:/nomes.txt' CHARACTER SET utf8;
 
 -- Alterar os CPFs de NULL para cpfs válidos
 update dados_cli set cpf="59620146263" where nome = "Adelcio Biazi";
@@ -125,9 +125,10 @@ update dados_cli set cpf="48071660930" where nome = "Sergio Willians Poneli";
 update dados_cli set cpf="54058020504" where nome = "Silvia Roberta de Jesus Garcia";
 update dados_cli set cpf="70079079202" where nome = "Su?llen Rodolfo Martinelli";
 update dados_cli set cpf="38135794924" where nome = "Taynara Cerigueli Dutra";
-update dados_cli set cpf="07341310383" where nome	 = "Thamires de Campos Luz";
+update dados_cli set cpf="07341310383" where nome = "Thamires de Campos Luz";
 update dados_cli set cpf="33710576822" where nome = "Viviane Mello Bonadia dos Sant";
 update dados_cli set cpf="05045619950" where nome = "Walter Paulo Costenaro";
 update dados_cli set cpf="00201026821" where nome = "Wellington Fabio de Oliveira M";
 
 -- Criar um índice para o CPF
+create index i_nome on dados_cli(cpf);
