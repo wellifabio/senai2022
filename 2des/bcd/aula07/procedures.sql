@@ -113,3 +113,5 @@ select last_insert_id();
 insert into itens_pedido values (30,11,1,31.33);
 insert into itens_pedido values (30,14,2,30.85);
 select * from pedidos order by pedido_id desc limit 1;
+
+-- Crie uma procedure que receba como parâmetros cliente_id, pizza_id e quantidade e gere um pedido com um item, coloque o nome de "new_pedido_1item()"

@@ -13,3 +13,4 @@
 	- 1. "Thamires de Campos Luz" quer uma pizza Vienense
 	- 2. "Everton Jose de Souza" que duas Toscana
 	- 3. "Silvia Roberta de Jesus Garcia" que uma Canadense e 2	Cubanas
+- Crie uma procedure que receba como parâmetros cliente_id, pizza_id e quantidade e gere um pedido com um item, coloque o nome de "new_pedido_1item()"
