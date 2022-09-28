@@ -99,6 +99,9 @@ for each row
 	update pedidos
 	set valor = (select sum(quantidade * valor) from itens_pedido where pedido_id = new.pedido_id)
 	where pedido_id = new.pedido_id;
+
+-- Mostrar os gatilhos (triggers) que meu BD possui.
+show triggers;
 	
 -- testando com o último exercício
 -- "Silvia Roberta de Jesus Garcia" que uma Canadense e 2 Cubanas
@@ -114,4 +117,44 @@ insert into itens_pedido values (30,11,1,31.33);
 insert into itens_pedido values (30,14,2,30.85);
 select * from pedidos order by pedido_id desc limit 1;
 
+
+-- Criada uma view para mostrar o resultado do Procedimento  a seguir:
+create view vw_pedidos_itens as
+select  p.pedido_id, c.nome, p.data, p.hora, pz.nome as pizza, i.quantidade, i.valor, p.valor as total
+from pedidos p inner join clientes c on p.cliente_id = c.cliente_id
+inner join itens_pedido i on p.pedido_id = i.pedido_id
+inner join pizzas pz on i.pizza_id = pz.pizza_id;
+
 -- Crie uma procedure que receba como parâmetros cliente_id, pizza_id e quantidade e gere um pedido com um item, coloque o nome de "new_pedido_1item()"
+drop procedure if exists new_pedido_1item;
+delimiter //
+create procedure new_pedido_1item(idc int,idp int,qtd int)
+begin
+	insert into pedidos value(default, idc, curdate(), curtime(), null);
+	set @preco = (select valor from pizzas where pizza_id = idp);
+	insert into itens_pedido value(last_insert_id(),idp,qtd,@preco);
+	select * from vw_pedidos_itens where pedido_id = last_insert_id();
+end //
+delimiter ;
+
+-- Com tratamento de erros e condicionais (IF ELSE)
+drop procedure if exists new_pedido_1item;
+delimiter //
+create procedure new_pedido_1item(idc int,idp int,qtd int)
+begin
+	declare erro_sql tinyint default false;
+	declare continue handler for sqlexception set erro_sql = true;
+	insert into pedidos value(default, idc, curdate(), curtime(), null);
+	set @preco = (select valor from pizzas where pizza_id = idp);
+	insert into itens_pedido value(last_insert_id(),idp,qtd,@preco);
+	IF erro_sql = false THEN
+		select * from vw_pedidos_itens where pedido_id = last_insert_id();
+		select 'Pedido cadastrado com sucesso' as 'Sucesso';
+	ELSE
+		select 'Erro ao inserir pedido' as 'Erro';
+	END IF;
+end //
+delimiter ;
+
+call new_pedido_1item(200,3,1);
+
