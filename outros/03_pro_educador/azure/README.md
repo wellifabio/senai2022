@@ -16,3 +16,13 @@
 - Microsoft for Educators: https://docs.microsoft.com/pt-br/learn/educator-center/programs/msle/
 - https://fsiwwlprd.powerappsportals.com/
 - Practice Key, Site para treinar https://www.measureup.com/
+
+# Emails para utilização em aulas
+
+- cfp513T1.1057928@senaisp.edu.br
+- cfp513T2.1057928@senaisp.edu.br
+- cfp513T3.1057928@senaisp.edu.br
+- cfp513T4.1057928@senaisp.edu.br
+- cfp513T5.1057928@senaisp.edu.br
+- Trocar https://login.sesisenaispedu.org.br/adfs/portal/updatepassword
+- email@2022
