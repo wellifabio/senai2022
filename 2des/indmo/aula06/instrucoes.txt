@@ -3,6 +3,10 @@
 - O botão login e o item da lista da página home devem ser componentes.
 - Os dados não podem ser alterados.
 
+Cores : 
+#FFF
+#7242F5
+
 Dados utilizados : 
  
  Tela Login
