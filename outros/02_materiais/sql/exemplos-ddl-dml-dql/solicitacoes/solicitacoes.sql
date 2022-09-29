@@ -91,12 +91,3 @@ select max(valor) from Itens_Solicitacao;
 Select Year(curdate()) as ano;
 Select month(curdate()) as mes;
 show tables;
-
--- 1. Desenvolva o modelo MER/DER conceitual deste banco de dados.
-
--- 2. Escreva um comando select para mostrar o nome do funcionário que mais fez solicitações (em Reais).
--- Então, você deverá mostrar o nome do funcionário e seu respectivo valor total, em Reais.
-
--- 3. Escreva um comando select para mostrar os nomes e datas dos departamentos que requisitaram "Parafuso" e "Difusor".
-
--- 4. Escreva um comando select para mostrar os nomes dos produtos vendidos em Fevereiro de 2018.
