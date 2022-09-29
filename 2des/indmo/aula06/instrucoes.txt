@@ -1,0 +1,61 @@
+#Exercício Chamados
+
+- O botão login e o item da lista da página home devem ser componentes.
+- Os dados não podem ser alterados.
+
+Dados utilizados : 
+ 
+ Tela Login
+
+    const users = [
+        {
+            "id": 1,
+            "email": "user01@empresa.com",
+            "senha": "teste1234",
+        },
+        {
+            "id": 2,
+            "email": "user02@empresa.com",
+            "senha": "1234teste",
+        }
+    ]
+
+
+Tela Home
+
+    const chamados = [
+        {
+            "user_id": 1,
+            "chamados": [
+                {
+                    "titulo":"Manutenção de Roteador",
+                    "descricao":"Cliente reclamou que está sem internet, possível troca"
+                },
+                {
+                    "titulo":"Mudança de Endereço",
+                    "descricao":"Fazer a instalação na nova instalação"
+                },
+                {
+                    "titulo":"Recolher equipamento",
+                    "descricao":"Assinatura Cancelada, recolher os equipamentos da instalação"
+                }
+            ]
+        },
+        {
+            "user_id": 2,
+            "chamados": [
+                {
+                    "titulo":"Recolher equipamento",
+                    "descricao":"Assinatura Cancelada, recolher os equipamentos da instalação"
+                },
+                {
+                    "titulo":"Mudança de Endereço",
+                    "descricao":"Fazer a instalação na nova instalação"
+                },
+                {
+                    "titulo":"Manutenção de Roteador",
+                    "descricao":"Cliente reclamou que está sem internet, possível troca"
+                }
+            ]
+        }
+    ]
