@@ -19,3 +19,5 @@
 # Para compilar remotamente
 - 1. Opção 1: google "java online" https://www.jdoodle.com/online-java-compiler/
 - 2. Opção 2: https://replit.com/languages/java
+# Becrowd (Comunidade global de desenvolvedores)
+-1. Opção 3: https://www.beecrowd.com.br/judge/en/login
