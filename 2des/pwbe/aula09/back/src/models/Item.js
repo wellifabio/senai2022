@@ -7,6 +7,15 @@ const toReadAll = () => {
 const toRead = (model) => {
     return `SELECT * FROM itens  WHERE ni=${model.ni}`;
 }
+
+const toReadNome = (model) => {
+    return `SELECT * FROM itens  WHERE denominacao like '%${model.denominacao}%'`;
+}
+
+const toReadData = (model) => {
+    return `SELECT * FROM itens  WHERE aquisicao like '%${model.aquisicao}%'`;
+}
+
 const toUpdate = (model) => {
     return `UPDATE itens SET 
                 aquisicao = '${model.aquisicao}',
@@ -23,6 +32,8 @@ module.exports = {
     toCreate,
     toReadAll,
     toRead,
+    toReadNome,
+    toReadData,
     toUpdate,
     toDelete
 }

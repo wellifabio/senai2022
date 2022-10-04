@@ -34,6 +34,30 @@ const listarItem = (req, res) => {
     });
 }
 
+const listarItemNome = (req, res) => {
+    con.query(Item.toReadNome(req.params), (err, result) => {
+        if (err == null)
+            if (result.length > 0)
+                res.json(result).end();
+            else
+                res.status(404).end();
+        else
+            res.status(500).end();
+    });
+}
+
+const listarItemData = (req, res) => {
+    con.query(Item.toReadData(req.params), (err, result) => {
+        if (err == null)
+            if (result.length > 0)
+                res.json(result).end();
+            else
+                res.status(404).end();
+        else
+            res.status(500).end();
+    });
+}
+
 const alterarItem = (req, res) => {
     con.query(Item.toUpdate(req.body), (err, result) => {
         if (err == null)
@@ -62,6 +86,8 @@ module.exports = {
     criarItem,
     listarItens,
     listarItem,
+    listarItemNome,
+    listarItemData,
     alterarItem,
     excluirItem
 }
