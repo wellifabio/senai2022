@@ -34,9 +34,10 @@ header button{
 }
 
 .card{
-    width: 80vw;
-    display: grid;
-    grid-template-columns: 65% 30% 5%;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 3px 3px 5px #000;
     margin: 5px;
@@ -44,6 +45,11 @@ header button{
 
 .card p{
     margin: 20px;
+}
+
+.imgbt{
+    display: flex;
+    margin:10px;
 }
 
 #del{
