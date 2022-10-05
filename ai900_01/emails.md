@@ -2,7 +2,7 @@
 <table>
 <thead>
 <tr>
-</td><td><th>Nome</th><th>Email</th>
+<th>Nome</th><th>Email</th>
 </tr>
 </thead>
 </tbody>
