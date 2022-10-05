@@ -5,9 +5,10 @@ const criarItem = (req, res) => {
 }
 
 const listarItens = (req, res) => {
-    Promise.apply(Item.abrir())
-        .then(conteudoArquivos => {
-            res.json(conteudoArquivos);
+    Promise.resolve(Item.abrir())
+        .then(arquivo => {
+            console.log(arquivo);
+            res.json(arquivo).end();
         })
         .catch(err => {
             res.status(500).send(err);
