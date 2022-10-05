@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preveja Alugueis de Bicicletas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Aplicação Web Para consumir a API <br />Machine Learning-Previsão de Vendas</h2>
+    <Form>
+        <div>Dia:<input type="number" id="day" class="data" /></div>
+        <div>Mês:<input type="number" id="mnth" class="data" /></div>
+        <div>Ano:<input type="number" id="year" class="data" /></div>
+        <div>Estação:
+            <select id="season" class="data">
+                <option value="0">Primavera</option>
+                <option value="1">Verão</option>
+                <option value="2">Outono</option>
+                <option value="3">Inverno</option>
+            </select>
+        </div>
+        <div>Feriado:<input type="checkbox" id="holiday" class="data" /></div>
+        <div>Dia da Semana
+            <select id="weekday" class="data">
+                <option value="0">Dom</option>
+                <option value="1">Seg</option>
+                <option value="2">Ter</option>
+                <option value="3">Qua</option>
+                <option value="4">Qui</option>
+                <option value="5">Sex</option>
+                <option value="6">Sab</option>
+            </select>
+        </div>
+        <div>Dia de trabalho:<input type="checkbox" id="workingday" class="data" /></div>
+        <div>Tempo:<input type="range" min="0" max="3" id="weathersit" class="data" /></div>
+        <div>Temperatura:<input type="number" id="temp" class="data" /></div>
+        <div>Tempo de Locação:<input type="number" id="atemp" class="data" /></div>
+        <div>Umidade:<input type="number" id="hum" class="data" /></div>
+        <div>Velocidade do vento:<input type="text" id="windspeed" class="data" /></div>
+    </Form>
+    <button onclick="enviar()">Prever</button>
+</body>
+<script src="script.js"></script>
+
+</html>

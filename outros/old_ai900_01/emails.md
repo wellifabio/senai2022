@@ -1,0 +1,22 @@
+# Emails para acesso ao ambiente de estudos:
+- ANA CLARA OLIVEIRA SANTOS    ana.santos419@senaisp.edu.br
+- ANDRE FERNANDES IZIDRO    andre.izidro@senaisp.edu.br
+- BEATRIZ GABRIELA GODOI DE SOUZA    beatriz.souza48@senaisp.edu.br
+- CYRO BRANDÃO ALVARES    cyro.alvares@senaisp.edu.br
+- DAVID GOMES DA SILVA    david.silva55@senaisp.edu.br
+- GABRIEL ALVES SOUSA SILVA    gabriel.sousa45@senaisp.edu.br
+- GILMARA REFUNDINI    gilmara.refundini@senaisp.edu.br
+- GIOVANE FERNANDES DE OLIVEIRA    giovane.oliveira5@senaisp.edu.br
+- GLEIDSON PEREIRA DA SILVA    gleidson.pereira@senaisp.edu.br
+- GUILHERME MELRO    guilherme.melro@senaisp.edu.br
+- GUSTAVO DOS SANTOS TAVARES    gustavo.tavares11@senaisp.edu.br
+- HORTÊNCIO JOSÉ DA SILVA JUNIOR    hortencio.junior@senaisp.edu.br
+- ISAAC CORDEIRO GONÇALVES    isaac.cordeiro@senaisp.edu.br
+- LARISSA FERREIRA PARDIM    larissa.pardim@senaisp.edu.br
+- LARISSA MOTTA CARRARA    larissa.carrara@senaisp.edu.br
+- LETICIA AMARAL LOPES    leticia.amaral6@senaisp.edu.br
+- LUCAS ALMEIDA CAMACHO    lucas.camacho@senaisp.edu.br
+- LUCAS PEREIRA BRITO    lucas.brito26@senaisp.edu.br
+- LUIZ FERNANDO DE SOUZA    luiz.fernando7@senaisp.edu.br
+- VERA LUCIA PEREIRA    vera.pereira3@senaisp.edu.br
+- WILLIAN YUDJI NISHIO    willian.yudji@senaisp.edu.br

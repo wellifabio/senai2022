@@ -15,7 +15,7 @@ int main(){
 	//Processamento
 	for(i = 0; i < 6; i++)
 		porcentagens[i] = (float) votos[i] * 100 / total;
-	//Ordenação (double sort)
+	//Ordenação (bubble sort)
 	for(i = 0; i < 6; i++)
 		for(j = i + 1; j < 6; j++)
 			if(porcentagens[i]<porcentagens[j]){
