@@ -92,7 +92,8 @@ Select Year(curdate()) as ano;
 Select month(curdate()) as mes;
 show tables;
 
--- Crie uma view(visão) que mostre os seguintes campos: Num_Sol, Data_sol, Cod_Depto, Nome_Depto , Cod_Func, Nome_Func, Cod_Produto, Nome_produto, Qtde, valor e ordene por num_sol decrescente;
+-- Crie uma view(visão) que mostre os seguintes campos: 
+-- Num_Sol, Data_sol, Cod_Depto, Nome_Depto , Cod_Func, Nome_Func, Cod_Produto, Nome_produto, Qtde, valor e ordene por num_sol decrescente;
 create view vw_solicitacoes as
 select s.Num_Sol, s.Data_sol , s.Cod_Depto, d.Nome_Depto,
 s.Cod_Func, f.Nome_Func, i.Cod_Produto, p.Nome_produto,
@@ -103,4 +104,23 @@ inner join itens_solicitacao i on s.Num_Sol = i.Num_Sol
 inner join produtos p on i.Cod_Produto = p.Cod_Produto
 order by num_sol desc;
 
--- Crie um procedimento armazenado chamado solicita_um_item(n_sol,depto,func,prod,qtd,total) que receba estes valores e cadastre uma solicitação e um item na data atual.
+-- Crie um procedimento armazenado chamado solicita_um_item(n_sol,depto,func,prod,qtd,total)
+-- que receba estes valores e cadastre uma solicitação e um item na data atual.
+drop procedure if exists solicita_um_item;
+delimiter //
+create procedure solicita_um_item(n_sol int,depto int,func int,prod int,qtd int,total float)
+BEGIN
+	declare erro_sql tinyint default false;
+	declare continue handler for sqlexception set erro_sql = true;
+	insert into Solicitacoes values (n_sol,curdate(),depto,func);
+	insert into Itens_Solicitacao values (n_sol,prod,qtd,total);
+	IF erro_sql = false THEN
+		select * from vw_solicitacoes where Num_Sol = n_sol;
+		select 'Solicitação cadastrada com sucesso' as 'Sucesso';
+	ELSE
+		select 'Erro ao inserir solicitação' as 'Erro';
+	END IF;
+end //
+delimiter ;
+
+call solicita_um_item(1055,1000,100,125,1,10);
