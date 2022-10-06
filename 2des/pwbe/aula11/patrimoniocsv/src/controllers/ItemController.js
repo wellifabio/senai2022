@@ -1,31 +1,33 @@
-const Item = require('../models/ItemDAO');
+const ItemDAO = require('../models/ItemDAO');
+const Item = require('../models/Itens');
 
-const criarItem = (req, res) => {
-    res.json('Construção').end();
-}
-
-const listarItens = (req, res) => {
-    Promise.resolve(Item.abrir())
+const carregar = () => {
+    Promise.resolve(ItemDAO.abrir())
         .then(arquivo => {
-            console.log(arquivo);
-            res.json(arquivo).end();
-        })
-        .catch(err => {
-            res.status(500).send(err);
+            Item.toListObj(arquivo);
+        }).catch(err => {
+            console.error(err);
         });
 }
 
-const alterarItem = (req, res) => {
-    res.json('Construção').end();
+const gravar = () => {
+    Promise.resolve(ItemDAO.salvar(Item.toCSV())).catch(err => {
+        console.error(err);
+    });
 }
 
-const excluirItem = (req, res) => {
-    res.json('Construção').end();
+const criarItem = (req, res) => {
+    Item.itens.push(req.body);
+    res.status(201).json(req.body).end();
+    gravar();
+}
+
+const listarItens = (req, res) => {
+    res.json(Item.itens).end();
 }
 
 module.exports = {
+    carregar,
     criarItem,
-    listarItens,
-    alterarItem,
-    excluirItem
+    listarItens
 }

@@ -12,7 +12,7 @@ const abrir = () => {
 const salvar = (dados) => {
     return new Promise((resolve, reject) => {
         fs.writeFile(arquivo, dados, (err) => {
-            err ? err : true;
+            err ? reject(err) : resolve(true);
         });
     });
 }
