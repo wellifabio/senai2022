@@ -25,8 +25,17 @@ const toCSV = () => {
     return csv;
 }
 
+const find = (ni) => {
+    let contem = -1;
+    for(i = 0; i < itens.length; i++)
+        if(itens[i].ni == ni)
+            contem = i;
+    return contem;
+}
+
 module.exports = {
     itens,
     toListObj,
-    toCSV
+    toCSV,
+    find
 }

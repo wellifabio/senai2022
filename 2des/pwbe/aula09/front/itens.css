@@ -20,7 +20,7 @@ header{
     background-color: #666;
     color: #fff;
     width: 100vw;
-    height: 80px;
+    height: 10vh;
     justify-content: space-around;
 }
 
@@ -31,6 +31,12 @@ header button{
     font-weight: bold;
     box-shadow: 3px 3px 5px #000;
     cursor: pointer;
+}
+
+main{
+    height: 84vh;
+    max-height: 84vh;
+    overflow-y:auto;
 }
 
 .card{
@@ -66,4 +72,15 @@ header button{
 }
 .model{
     display: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #666;
+    color: #fff;
+    width: 100vw;
+    height: 6vh;
+    justify-content: space-around;
 }

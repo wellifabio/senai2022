@@ -1,5 +1,5 @@
 const fs = require('fs');
-const arquivo = '../bucket/itens.csv';
+const arquivo = '../docs/bd/itens.csv';
 
 const abrir = () => {
     return new Promise((resolve, reject) => {

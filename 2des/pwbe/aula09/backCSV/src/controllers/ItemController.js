@@ -26,8 +26,30 @@ const listarItens = (req, res) => {
     res.json(Item.itens).end();
 }
 
+const alterarItem = (req, res) => {
+    let indice = Item.find(req.body.ni);
+    if (indice > -1) {
+        Item.itens[indice] = req.body;
+        res.status(200).json(Item.itens[indice]).end();
+        gravar();
+    } else
+        res.status(404).end();
+}
+
+const excluirItem = (req, res) => {
+    let indice = Item.find(req.params.ni);
+    if (indice > -1) {
+        res.status(204).json(Item.itens[indice]).end();
+        Item.itens.splice(indice, 1);
+        gravar();
+    } else
+        res.status(404).end();
+}
+
 module.exports = {
     carregar,
     criarItem,
-    listarItens
+    listarItens,
+    alterarItem,
+    excluirItem
 }
