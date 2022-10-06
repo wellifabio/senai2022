@@ -16,9 +16,9 @@ const carregar = () => {
 const preencherTela = () => {
     itens.forEach(e => {
         let card = document.querySelector(".card").cloneNode(true);
-        card.classList.remove('model');
+        card.classList.remove('modal');
         card.querySelector("#ni").innerHTML += e.ni;
-        card.querySelector("#aquisicao").innerHTML += e.aquisicao.slice(0,10);
+        card.querySelector("#aquisicao").innerHTML += e.aquisicao.slice(0, 10);
         card.querySelector("#denominacao").innerHTML += e.denominacao;
         card.querySelector("#valor").innerHTML += e.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         card.querySelector("#img").src = '../docs/assets/' + e.img;
