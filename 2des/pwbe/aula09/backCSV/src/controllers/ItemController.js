@@ -17,9 +17,13 @@ const gravar = () => {
 }
 
 const criarItem = (req, res) => {
-    Item.itens.push(req.body);
-    res.status(201).json(req.body).end();
-    gravar();
+    if (Item.find(req.body.ni) == -1){
+        Item.itens.push(req.body);
+        res.status(201).json(req.body).end();
+        gravar();
+    }else{
+        res.status(406).json(req.body).end();
+    }
 }
 
 const listarItens = (req, res) => {

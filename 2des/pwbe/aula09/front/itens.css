@@ -59,7 +59,7 @@ main {
     margin: 10px;
 }
 
-#del {
+#del, #alterar {
     width: 35px;
     height: 35px;
     font-size: 18px;
@@ -94,12 +94,12 @@ main {
     box-shadow: 3px 3px 5px #000;
     top: 10vw;
     width: 300px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .cadastro input,
 select {
-    width: 90%;
+    width: 95%;
     height: 25px;
     border: 0px;
     box-shadow: 1px 1px 2px #000;
@@ -122,6 +122,11 @@ select {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+form div{
+    display: flex;
+    flex-direction: row;
 }
 
 footer {

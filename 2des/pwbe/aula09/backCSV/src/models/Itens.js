@@ -5,10 +5,10 @@ const toListObj = (dados) => {
     let item = {};
     vetor.forEach(e => {
         item = {};
-        item.ni = e.split(",")[0];
+        item.ni = isNaN(e.split(",")[0]) ? e.split(",")[0] : parseInt(e.split(",")[0]);
         item.aquisicao = e.split(",")[1];
         item.denominacao = e.split(",")[2];
-        item.valor = e.split(",")[3];
+        item.valor = isNaN(e.split(",")[3]) ? e.split(",")[3] : parseFloat(e.split(",")[3]);
         item.img = e.split(",")[4];
         itens.push(item);
     });

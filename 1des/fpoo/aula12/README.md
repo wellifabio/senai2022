@@ -21,5 +21,5 @@
 - <img src="instancia.png">
 - A instância é a reserva/ponteiro de memória para um objeto, porém sem dados ainda
 - <img src="objeto.png">
-- O objeto em fim é o que podemos utilizar na programação
+- O objeto, em fim é o que podemos utilizar na programação
 - existe a partir do comando <b>new</b>
