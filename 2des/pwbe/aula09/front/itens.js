@@ -1,5 +1,6 @@
 const uri = 'http://localhost:3000/patrimonio/itens/';
 const corpo = document.querySelector("#corpo");
+const cadastro = document.querySelector("#cadastro");
 var itens = [];
 
 const carregar = () => {
@@ -12,6 +13,32 @@ const carregar = () => {
         })
         .catch(err => console.error(err));
 }
+
+cadastro.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    body = {
+        ni: document.querySelector("#nic").value,
+        aquisicao: document.querySelector("#aquisicaoc").value,
+        denominacao: document.querySelector("#denominacaoc").value,
+        valor: document.querySelector("#valorc").value,
+        img: document.querySelector("#imgc").value
+    }
+
+    const options = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+    };
+    options.body = JSON.stringify(body);
+
+    fetch(uri, options)
+        .then(resp => resp.status)
+        .then(resp => {
+            if (resp == 201)
+                window.location.reload()
+        })
+        .catch(err => console.error(err));
+})
 
 const preencherTela = () => {
     itens.forEach(e => {
