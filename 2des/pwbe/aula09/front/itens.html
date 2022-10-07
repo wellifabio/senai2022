@@ -14,7 +14,7 @@
 <body onload="carregar()">
     <header>
         <h1>Cadastro de patrimônios</h1>
-        <button>Novo</button>
+        <button onclick="mcad.setAttribute('style','display:flex;')">Novo</button>
     </header>
     <main id="corpo">
         <div class="card modal">
@@ -29,8 +29,11 @@
                 <button id="del">-</button>
             </div>
         </div>
-        <div class="fundoescuro">
+        <div class="fundoescuro modal" id="mcad">
             <div class="cadastro">
+                <div class="modalHeader">
+                    <h2>Cadastrar item</h2><button onclick="mcad.setAttribute('style','display:none;')">X</button>
+                </div>
                 <form>
                     <input type="number" name="ni" id="ni" placeholder="NI" required>
                     <input type="text" name="aquisicao" id="aquisicao" placeholder="Data de aquisição" required>
