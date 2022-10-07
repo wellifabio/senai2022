@@ -15,11 +15,11 @@
 - O início da POO é a <b>Classe</b>:
 - <img src="classe.png">
 - Formada pelos ítens:
-	- Nome da classe iniciando em maiúsculas:
-	- Atributos que são as características da classe, suas variáveis
-	- Métodos que são as funções da classe
+- Nome da classe iniciando em maiúsculas:
+- Atributos que são as características da classe, suas variáveis
+- Métodos que são as funções da classe
 - <img src="instancia.png">
-	- A instância é a reserva/ponteiro de memória para um objeto, porém sem dados ainda
+- A instância é a reserva/ponteiro de memória para um objeto, porém sem dados ainda
 - <img src="objeto.png">
-	- O objeto em fim é o que podemos utilizar na programação
-	- existe a partir do comando <b>new</b>
+- O objeto em fim é o que podemos utilizar na programação
+- existe a partir do comando <b>new</b>
