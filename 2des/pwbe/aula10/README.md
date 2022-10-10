@@ -1,8 +1,11 @@
-# Padrão de desenvolvimento MVC
-# Atividade
-- 1. Executar o script docs/solicitacoes.sql no SGBD MariaDB local de seu computador
-- 2. Criar uma API com duas rotas
-	- GET "/solicitacoes/todas"
-	- POST "/solicitacoes/umitem"
-- 3. Seguir o padrão de projeto MVC
-- 4. Criar as 4 rotas CRUD para cada tabela do BD docs/solicitacoes.sql e todas as classes MVC
+# 2. Padrão de desenvolvimento MVC
+- 2.1. Definição
+- 2.2. Aplicabilidade
+- 2.3. Design patterns
+# Design Patterns - GOF
+- Criação
+- Estrutura
+- Comportamento
+# Links importantes
+- (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
+- Slides: https://github.com/wellifabio/senai2021/blob/master/3des/projetos/aula22/design_patterns.pdf
