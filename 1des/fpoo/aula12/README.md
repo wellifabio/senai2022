@@ -23,3 +23,9 @@
 - <img src="objeto.png">
 - O objeto, em fim é o que podemos utilizar na programação
 - existe a partir do comando <b>new</b>
+
+# Java: Vetores
+- Como declarar vetores primitivos:
+- <img src="vetores.png">
+- Como declarar e utilizar vetores de Classes:
+- <img src="vetoresclasse.png">
