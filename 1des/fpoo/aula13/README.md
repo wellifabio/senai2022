@@ -38,3 +38,4 @@
 	- 3. Deve calcular o imc() com a fórmula peso / (altura * altura)
 	- 4. Deve traçar o diagnóstico conforme tabela a seguir
 	- <img src="imc.png">
+- O programa deve utilizar Construtores, toString() e no método mai() deve utilizar a classe Scanner para ler os dados a partir do usuário:
