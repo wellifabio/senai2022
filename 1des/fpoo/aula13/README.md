@@ -23,3 +23,6 @@
 - Senão estará "Reprovado"
 - Programa Completo com Construtores:
 - <img src="projeto.png">
+
+# Java Classe Scanner
+- <img src="scanner.png">
