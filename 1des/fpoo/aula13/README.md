@@ -26,3 +26,15 @@
 
 # Java Classe Scanner
 - <img src="scanner.png">
+
+# Atividade 2
+- Crie um novo projeto chamado <b>Nutricao</b>
+- Crie um pacote chamado <b>programa</b>
+- Crie uma classe modelo chamada <b>Paciente</b> conforme o DC, UML a seguir:
+- <img src="classePaciente.png">
+- Crie um programa seguindo as regras de negócio a seguir:
+	- 1. Deve permitir cadastrar até 10 pacientes:
+	- 2. Deve mostrar todos os pacientes cadastrados em uma lista na tela do console, com o imc e diagnóstico:
+	- 3. Deve calcular o imc() com a fórmula peso / (altura * altura)
+	- 4. Deve traçar o diagnóstico conforme tabela a seguir
+	- <img src="imc.png">
