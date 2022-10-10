@@ -1,6 +1,7 @@
 const itens = [];
 
 const toListObj = (dados) => {
+    itens.length = 0;
     let vetor = dados.split("\r\n");
     let item = {};
     vetor.forEach(e => {

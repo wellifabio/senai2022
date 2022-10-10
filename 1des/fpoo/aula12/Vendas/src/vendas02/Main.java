@@ -3,8 +3,9 @@ package vendas02;
 public class Main {
 
 	public static void main(String[] args) {
-		Venda vs[] = new Venda[10];
+		Venda vs[] = new Venda[10]; //Vetor de 10 instâncias da classe Venda
 		
+		//10 Objetos
 		vs[0] = new Venda();
 		vs[0].produto = "Camiseta";
 		vs[0].preco = 19.9f;

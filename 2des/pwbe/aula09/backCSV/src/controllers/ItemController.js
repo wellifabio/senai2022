@@ -27,6 +27,7 @@ const criarItem = (req, res) => {
 }
 
 const listarItens = (req, res) => {
+    carregar();
     res.json(Item.itens).end();
 }
 
