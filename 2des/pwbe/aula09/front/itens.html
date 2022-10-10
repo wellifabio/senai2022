@@ -14,10 +14,10 @@
 <body onload="carregar()">
     <header>
         <h1>Cadastro de patrimônios</h1>
-        <button>Novo</button>
+        <button onclick="modalCad.setAttribute('style','display:flex;')">Novo</button>
     </header>
     <main id="corpo">
-        <div class="card model">
+        <div class="card modal">
             <div class="texto">
                 <p id="ni">NI:</p>
                 <p id="aquisicao">Aquisição:</p>
@@ -26,11 +26,77 @@
             </div>
             <div class="imgbt">
                 <img id="img" src="../docs/assets/default.png" alt="Ilustração">
-                <button id="del">-</button>
+                <div style="display:flex; flex-direction:column;">
+                    <button id="del">-</button>
+                    <button id="alterar">*</button>
+                </div>
             </div>
         </div>
+        <div class="fundoescuro modal" id="modalCad">
+            <div class="cadastro">
+                <div class="modalHeader">
+                    <h2>Cadastrar item</h2><button onclick="modalCad.setAttribute('style','display:none;')">X</button>
+                </div>
+                <form id="cadastro">
+                    <input type="number" name="ni" placeholder="NI" required>
+                    <input type="text" name="aquisicao" placeholder="Data de aquisição" required>
+                    <input type="text" name="denominacao" placeholder="Denominação" required>
+                    <input type="number" name="valor" placeholder="Valor" min="0" max="9999999" step="any" required>
+                    <select name="img">
+                        <option value="default.png">Nenhum</option>
+                        <option value="access.png">Access Poit</option>
+                        <option value="aparelho.png">Aparelho</option>
+                        <option value="microcomputador.png">PC</option>
+                        <option value="monitor.png">Monitor</option>
+                        <option value="nobreak.png">Nobreak</option>
+                        <option value="notebook.png">Notebook</option>
+                        <option value="projetor.png">Projetor</option>
+                        <option value="roteador.png">Roteador</option>
+                        <option value="servidor.png">Servidor</option>
+                        <option value="switch.png">Switch</option>
+                        <option value="televisao.png">TV</option>
+                    </select>
+                    <div><input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="fundoescuro modal" id="modalAlteracao">
+            <div class="cadastro">
+                <div class="modalHeader">
+                    <h2>Cadastrar item</h2><button
+                        onclick="modalAlteracao.setAttribute('style','display:none;')">X</button>
+                </div>
+                <form id="alteracao">
+                    <input type="number" name="ni" placeholder="NI" required>
+                    <input type="text" name="aquisicao" placeholder="Data de aquisição" required>
+                    <input type="text" name="denominacao" placeholder="Denominação" required>
+                    <input type="number" name="valor" placeholder="Valor" min="0" max="9999999" step="any" required>
+                    <select name="img">
+                        <option value="default.png">Nenhum</option>
+                        <option value="access.png">Access Poit</option>
+                        <option value="aparelho.png">Aparelho</option>
+                        <option value="microcomputador.png">PC</option>
+                        <option value="monitor.png">Monitor</option>
+                        <option value="nobreak.png">Nobreak</option>
+                        <option value="notebook.png">Notebook</option>
+                        <option value="projetor.png">Projetor</option>
+                        <option value="roteador.png">Roteador</option>
+                        <option value="servidor.png">Servidor</option>
+                        <option value="switch.png">Switch</option>
+                        <option value="televisao.png">TV</option>
+                    </select>
+                    <div><input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
+    <footer>
+        <h2>SENAI 2022</h2>
+    </footer>
 </body>
 
 </html>
