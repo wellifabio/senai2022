@@ -17,7 +17,7 @@
 - <img src="construtores.png">
 
 # Continuação da atividade
-- A média entre as disciplinas não faz centido, por este motivo vamos alterar o método média para conceito
+- A média entre as disciplinas não faz sentido, por este motivo vamos alterar o método média para conceito
 - <img src="classe_corrigida.png">
 - Para ser "Aprovado" o aluno deve ter nota maior do que 5 nas três disciplinas(Português, Matemática e Cinências)
 - Senão estará reprovado
