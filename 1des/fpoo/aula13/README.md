@@ -17,9 +17,9 @@
 - <img src="construtores.png">
 
 # Continuação da atividade
-- A média entre as disciplinas não faz sentido, por este motivo vamos alterar o método média para conceito
+- A média entre as disciplinas não faz sentido, por este motivo vamos alterar o método <b>media()</b> para <b>conceito()</b>
 - <img src="classe_corrigida.png">
-- Para ser "Aprovado" o aluno deve ter nota maior do que 5 nas três disciplinas(Português, Matemática e Cinências)
-- Senão estará reprovado
+- Para ser "Aprovado" o aluno deve ter nota maior ou igual a 5 nas três disciplinas(Português, Matemática e Cinências)
+- Senão estará "Reprovado"
 - Programa Completo com Construtores:
 - <img src="projeto.png">
