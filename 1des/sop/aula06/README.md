@@ -9,7 +9,7 @@
 <tr><td>Ivone</td><td>78,5</td><td>1,81</td><td>23,96141754</td><td>Normal</td></tr>
 <tr><td>Maria</td><td>55</td><td>1,57</td><td>22,31327843</td><td>Normal</td></tr>
 <tr><td>Marcelo</td><td>125,5</td><td>1,88</td><td>35,50814848</td><td>Obeso</td></tr>
-
+</table>
 - Calcular o imc com a fórmula: peso/(altura*altura)
 - E utilizando função SE() fazer o diagnóstico 
 <img src="imc.png">
