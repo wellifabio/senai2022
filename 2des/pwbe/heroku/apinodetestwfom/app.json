@@ -1,0 +1,8 @@
+{
+    "name": "WFOM API teste: Node.js",
+    "description": "Simples API NodeJS para teste de implantação",
+    "repository": "https://github.com/wellifabio",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+  }
+  
