@@ -13,3 +13,4 @@
 - Calcular o imc com a fórmula: peso/(altura*altura)
 - E utilizando função SE() fazer o diagnóstico 
 <img src="imc.png">
+- Solução: =SE(D2<16;"Subpeso severo";SE(D2<20;"Subpeso";SE(D2<25;"Normal";SE(D2<30;"Sobrepeso";SE(D2<40;"Obeso";"Obeso Mórbido")))))
