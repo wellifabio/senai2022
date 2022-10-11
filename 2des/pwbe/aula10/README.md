@@ -1,6 +1,8 @@
 # Avaliação prática Backend
+- Banco de dados
+	- ./aula09/docs/solicitacoes.sql
 
--Objetivos
+- Objetivos
 ---------
     - Cadastrar novos produtos;
     - Listar os produtos cadastrados;
