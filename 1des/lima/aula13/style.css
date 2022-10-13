@@ -36,6 +36,10 @@ main {
     margin-top: 5%;
 }
 
+main > img {
+    width: 272px;
+}
+
 .sites, .search {
     width: 33%;
 }
