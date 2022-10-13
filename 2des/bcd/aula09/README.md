@@ -1,10 +1,18 @@
-# Banco de dados não relacionais / NoSQL
-- Solução para bases de dados que não requer <b>Normalização</b>
-- Solução prática simples e em <b>Nuvem</b>
-- SGBD MongoDB Atlas, gratuito até 500MB
-- Criar uma conta em https://www.mongodb.com/atlas/database
+# Functions (Funções)
+- Com a mesma estrutura dos Procedimentos armazenados ou Trigger
+- Funções servem para:
+	- Fazer cálculos
+	- Formatar valores
+	- Entre outras soluções de programação em banco de dados
 
-# links
-- Criar uma app CRUD com Node.js + MongoDB <br/> https://pedrompinto.medium.com/criar-uma-app-crud-com-node-js-mongodb-9cdc703000ae
-- Criando uma API REST com Node.js + Express + Mongoose <br/> https://medium.com/@rafaelbarbosadc/criando-uma-api-rest-com-node-js-express-mongoose-f75a27e8cdc1
-- Criar um aplicativo do MongoDB com React e Azure Cosmos DB <br/> https://learn.microsoft.com/pt-br/azure/cosmos-db/mongodb/tutorial-develop-mongodb-react
+# Atividades (Programação e Análise de dados)
+- No banco de dados ./entregas/entregas.sql
+	- Criar uma função que retorne o valor total do pedido
+	- Criar uma função que retorne o status do pedido "Aberto", "Entrega", "Finalizado"
+	- Criar uma procedure com o nome pedido_um_produto(id_cliente, id_entregador, id_produto) e utilize uma transação com commit|rollback com apenas um item/produto
+
+- Análise de dados, responda as seguintes questões:
+	- Qual o tempo médio de um pedido finalizado?
+	- Qual o tempo médio de entregas?
+	- Qual o entregador mais eficiente? (Será que não é necessário mais dados, como distância?)
+	- Qual o produto mais pedido?
