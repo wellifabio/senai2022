@@ -5,9 +5,9 @@ use entregas;
 -- SQL - DDL Criação da estrutura do banco de dados
 create table clientes(
     id_cliente integer not null primary key auto_increment,
-    cpf varchar(11) not null,
+    cpf varchar(15) not null,
     nome varchar(50) not null,
-    cep varchar(8) not null,
+    cep varchar(9) not null,
     numero varchar(6) not null,
     complemento varchar(20)
 );
@@ -239,15 +239,4 @@ inner join produtos pr on i.id_produto = pr.id_produto
 order by p.id_pedido;
 
 select * from vw_pedidos_full;
-
--- Possibilidades de Programação neste Banco de Dados
--- Criar uma função que retorne o valor total do pedido
--- Criar uma função que retorne o status do pedido "Aberto", "Entrega", "Finalizado"
--- Criar um procedimento que receba o id_cliente, id_entregador, id_produto a trensação de pedido complete quando apenas um produto é pedido
-
--- Possibilidade de análise de dados
--- Qual o tempo médio de um pedido finalizado?
--- Qual o tempo médio de entregas?
--- Qual o entregador mais eficiente? (Será que não é necessário mais dados, como distância?)
--- Qual o produto mais pedido?
 

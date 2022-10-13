@@ -24,3 +24,13 @@
 - Select
 - Update
 - Delete
+
+# XAMPP (Ambiente de desenvolvimento)
+- X - Sistema Operacional Windows/Linux
+- A - Apache (Servidor de Aplicações PHP)
+- M - MariaDB - SGBD (Sistema Gerenciador de Banco de Dados) baseado em MySql
+- P - PHP - Linguagem de programação web
+- P - Perl - Linguagem de programação
+
+# PHPMyAdmin Web (demonstração)
+- https://demo.phpmyadmin.net/master-config/
