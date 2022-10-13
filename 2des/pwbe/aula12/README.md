@@ -1,8 +1,13 @@
-# MVC - Com 3 Tipos de bases de dados diferentes SQL, Arquivo Local e NoSQL
-- Padrão de projeto por Camadas
+# Exemplos - Bases de Dados
+	- Arquivos de Texto locais .csv
+	- SGBD SQL MariaDB
+	- SGBD NoSQL MongoBD Atlas
+	
+# MVC - Padrão de projeto por Camadas
 	- Modelo
 	- Visão
 	- Controle
+	
 # Atividade inicial
 - 1. Criar o banco de dados e uma tabela de itens (patrimonio.itens)
 - 2. Importar os dados do arquivo "itens.csv" para a tabela patrimonio.itens
@@ -14,5 +19,5 @@
 - backSQL (Solução da atividades 3 em estrutura CSV)
 - backFILE (Solução da atividades 3 sem SGBD apenas com arquivo texto.csv)
 - backCSV (Solução da atividades 3 sem SGBD apenas com arquivo texto.csv e estrura MVC)
-- backNoSQL (Solução da atividades 3 com SGBD NoSQL em Nuvem MongoDB Atlas)
 - front (Solução das atividade 4 consome qualquer uma das três APIs anteriores)
+- backNoSQL (Solução da atividades 3 com SGBD NoSQL em Nuvem MongoDB Atlas)
