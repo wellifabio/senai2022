@@ -17,16 +17,16 @@ const create = (req, res) => {
     );
     item.save(function (err) {
         if (err) {
-            return next(err);
+            res.status(500).json({ erro: err }).end();
         } else {
-            res.json('Item de patrimonio criado com sucesso').end();
+            res.status(201).end();
         }
     });
 };
 
 const readAll = function (req, res) {
     Item.find({}, (err, items) => {
-        if (err) return next(err);
+        if (err) res.status(500).json({ erro: err }).end();
         else res.json({ items: items }).end();
     });
 }

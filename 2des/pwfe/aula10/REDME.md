@@ -1,0 +1,14 @@
+# Exercícios
+- Criar formulário de cadastro com:
+	- Nome
+	- Email
+	- Senha e Repetir Senha
+	- Telefone
+	- CEP
+	- Logradouro (disabled)
+	- Complemento
+	- Bairro (disabled)
+	- Cidade (disabled)
+	- Estado (disabled)
+- Ao clicar em cadastrar, criar objeto JSON com os dados do formulário
+- EBS: As informações de endereço devem estar em uma estrutura JSON.
