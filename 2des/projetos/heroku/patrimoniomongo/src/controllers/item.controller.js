@@ -24,14 +24,22 @@ const create = (req, res) => {
 };
 
 const read = function (req, res) {
-    Item.findById(req.params.id, function (err, product) {
+    Item.findById(req.params.id, function (err, item) {
         if (err) return next(err);
         res.json(item).end();
     })
 };
 
+const readAll = function (req, res) {
+    Item.list(function (err, items) {
+        if (err) return next(err);
+        res.json(items).end();
+    });
+}
+
 module.exports = {
     teste,
     create,
-    read
+    read,
+    readAll
 }
