@@ -124,3 +124,19 @@ end //
 delimiter ;
 
 call solicita_um_item(1055,1000,100,125,1,10);
+
+-- Buscar produtos através do nome do produto e informar o departamento relacionado;
+create view vw_produtos_depto as
+select p.cod_produto, p.nome_produto, d.nome_depto from produtos p 
+left join itens_Solicitacao i on p.Cod_Produto = i.Cod_Produto
+left join solicitacoes s on s.num_sol = i.num_sol
+left join departamentos d on s.cod_depto = d.cod_depto
+group by p.cod_produto;
+
+select * from vw_produtos_depto;
+
+-- Filtrar a data pelo mes
+select * from vw_solicitacoes WHERE data_sol LIKE '_____03___';
+
+-- Exibir o total de solicitações feitas por funcionários;
+select Nome_Func, count(valor) as total_sol from vw_solicitacoes group by nome_func;
