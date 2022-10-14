@@ -4,11 +4,64 @@ const express = require('express');
 const cors = require('cors');
 const router = express.Router();
 
-const getStatus = (req, res) => {
-    res.json("API online").end();
+var users = [];
+var user = {
+    id: 0,
+    name: null,
+    password: null
 }
 
-router.get("/", getStatus);
+const getIndex = (id) => {
+    let index = -1;
+    for (i = 0; i < users.length; i++)
+        if (users[i].id == id) {
+            index = i;
+            break;
+        }
+    return index;
+}
+
+const test = (req, res) => {
+    res.json({ status: "API online" }).end();
+}
+
+const create = (req, res) => {
+    if (getIndex(req.body.id) == -1) {
+        users.push(req.body);
+        res.status(201).end();
+    } else {
+        res.status(406).end();
+    }
+}
+
+const readAll = (req, res) => {
+    res.json(users).end();
+}
+
+const update = (req, res) => {
+    let index = getIndex(req.body.id);
+    if (index != -1) {
+        users[index] = req.body;
+        res.status(202).json(users[index]).end();
+    } else
+        res.status(404).end();
+}
+
+const del = (req, res) => {
+    let index = getIndex(req.params.id);
+    if (index != -1) {
+        users.splice(index, 1);
+        res.status(204).end();
+    } else {
+        res.status(404).end();
+    }
+}
+
+router.get("/", test);
+router.post("/create", create);
+router.get("/read", readAll);
+router.put("/update", update);
+router.get("/delete/:id", del);
 
 //Iniciar a API
 const app = express();
