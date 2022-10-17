@@ -41,8 +41,8 @@
 - O programa deve utilizar Construtores, toString() e no método mai() deve utilizar a classe Scanner para ler os dados a partir do usuário:
 # Atividade (Análise Estatística)
 - Calcule e apresente as médias dos IMCs, pesos e alturas
-- Conte quantos pacientes temos em cada diagnóstico:
 - Mostre o paciente mais magro
 - Mostre o paciente mais obeso
 - Mostre o paciente mais alto
 - Mostre o paciente mais baixo
+- Conte quantos pacientes temos em cada diagnóstico:

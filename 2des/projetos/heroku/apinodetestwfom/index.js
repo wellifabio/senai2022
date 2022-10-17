@@ -5,11 +5,6 @@ const cors = require('cors');
 const router = express.Router();
 
 var users = [];
-var user = {
-    id: 0,
-    name: null,
-    password: null
-}
 
 const getIndex = (id) => {
     let index = -1;
@@ -61,7 +56,7 @@ router.get("/", test);
 router.post("/create", create);
 router.get("/read", readAll);
 router.put("/update", update);
-router.get("/delete/:id", del);
+router.delete("/delete/:id", del);
 
 //Iniciar a API
 const app = express();
