@@ -1,5 +1,5 @@
 # Excel Atividade Multidisciplinar
-- Criar uma planilha conforme instruções de FPOO(aula13)
+- Criar uma planilha conforme instruções de FPOO(aula13) para calcular o IMC(Índice de Massa Corporea) e auxiliar a traçar um Diagnóstico de cada paciente.
 - Salvar como: Nutrição.xlsx
 <table>
 <tr><td>Nome</td><td>Peso</td><td>Altura</td><td>IMC</td><td>Diagnóstico</td></tr>
@@ -10,7 +10,15 @@
 <tr><td>Maria</td><td>55</td><td>1,57</td><td>22,31327843</td><td>Normal</td></tr>
 <tr><td>Marcelo</td><td>125,5</td><td>1,88</td><td>35,50814848</td><td>Obeso</td></tr>
 </table>
-- Calcular o imc com a fórmula: peso/(altura*altura)
+- Calcular o <b>IMC</b> com a fórmula: peso/(altura^2)
 - E utilizando função SE() fazer o diagnóstico 
 <img src="imc.png">
 - Solução: =SE(D2<16;"Subpeso severo";SE(D2<20;"Subpeso";SE(D2<25;"Normal";SE(D2<30;"Sobrepeso";SE(D2<40;"Obeso";"Obeso Mórbido")))))
+- Fazer uma Análise Estatítica dos dados:
+	- Contar - Função: cont.num()
+	- Somar - Função: soma()
+	- Calcular a Média: Função Média()
+	- Encontrar os mais pesados, mais altos
+	- Encontrar os mais leves, mais baixos
+	- Contar cada um dos possíveis diagnósticos: quantos obesos, normais, sub pesos, etc.
+	

@@ -1,14 +1,14 @@
 const texto = document.querySelector("#texto");
 const luz = document.querySelector("#luz");
 const ventilador = document.querySelector("#ventilador");
-var url = "https://residenciawell.cognitiveservices.azure.com/language/:analyze-conversations?api-version=2022-05-01"
+var url = "https://luis-well-esperimento.cognitiveservices.azure.com/luis/prediction/v3.0/apps/2f7e2377-c6ba-47f5-824f-b8ef748d84f1/slots/production/predict"
 
 
 function enviar() {
     const options = {
         method: 'POST',
         headers: {
-            'Ocp-Apim-Subscription-Key': '69d99f410b15469098b15a9f79f45bd4',
+            'Ocp-Apim-Subscription-Key': '4c03d31e56d047959ebdc3f7b3fca696',
             'Content-Type': 'application/json'
         },
         body: '{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"1","text":"'+texto.value+'","modality":"text","language":"en","participantId":"1"}},"parameters":{"projectName":"autoresidwell","verbose":true,"deploymentName":"atomaticresidencedeploied","stringIndexType":"TextElement_V8"}}'
