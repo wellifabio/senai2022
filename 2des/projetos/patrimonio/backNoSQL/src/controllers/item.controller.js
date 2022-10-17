@@ -1,4 +1,3 @@
-const { json } = require('express');
 var Item = require('../models/item.model');
 
 const teste = function (req, res) {
