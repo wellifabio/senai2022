@@ -48,3 +48,16 @@
 - Diagrama de Classes:
 <br/><img src="./uml_dc_comercio.png">
 - Tabela com dados de teste para a planilha e o programa:
+<table>
+	<tr><th>Produto</th><th>qtdComprada</th><th>qtdVendida</th><th>precoCompra</th><th>precoVenda</th></tr>
+	<tr><td>Alicate</td><td>10</td><td>7</td><td>11,16</td><td>15,5</th></tr>
+	<tr><td>Martelo</td><td>10</td><td>6</td><td>13,77</td><td>25,5</th></tr>
+	<tr><td>Serrote</td><td>5</td><td>3</td><td>14,20</td><td>35,5</th></tr>
+	<tr><td>Turquesa</td><td>5</td><td>5</td><td>12,78</td><td>18</th></tr>
+	<tr><td>ChaveFenda</td><td>50</td><td>35</td><td>4,94</td><td>8,99</th></tr>
+	<tr><td>ChaveBoca</td><td>50</td><td>28</td><td>4,41</td><td>8,99</th></tr>
+	<tr><td>ChavePhilips</td><td>50</td><td>32</td><td>5,03</td><td>8,99</th></tr>
+	<tr><td>Furadeira</td><td>10</td><td>6</td><td>80,62</td><td>350,5</th></tr>
+	<tr><td>Lixadeira</td><td>5</td><td>3</td><td>102,36</td><td>255,9</th></tr>
+	<tr><td>SerraMarmore</td><td>5</td><td>4</td><td>191,62</td><td>435,5</th></tr>
+</table>
