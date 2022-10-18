@@ -31,27 +31,19 @@
 	<tr><td>Lixadeira</td><td>2</td><td>255,9</td><td></td></tr>
 	<tr><td>SerraMarmore</td><td>3</td><td>435,5</td><td></td></tr>
 </table>
+
 # Atividade 2 (Java x Excel)
 - Após receber sua ajuda tecnológica, o Sr. Osmar decidiu empreender e abrir o seu comércio
 <br/> foi até o Paraguai e comprou muitas mercadorias, porém agora precisa de uma planilha
 <br/> para conrolar seus investimentos e saber se terá lucro com os preços que estimou:
 	- 1. Calcule o investimento que o sr. Osmar fez em cada compra (precoCompra * qtdComprada)
 	- 2. Calcule o faturamento que o sr. Osmar teve em cada venda (precoVenda * qtdVendida)
-	- 3. Calcule o
+	- 3. Calcule o lucro em dinheiro para cada operação que o Sr. osmar teve (faturamento - investimento).
+	- 4. Calcule o lucro em dinheiro para cada operação que o Sr. osmar teve
+	- 5. Calcule o Investimento total do sr Osmar.
+	- 6. Calcule o faturamento total do sr Osmar.
+	- 7. Calcule e aponte se até o momento o Sr. Osmar está no lucro ou prejuíso em dinheiro e em porcentagem.
 
 - Diagrama de Classes:
 <br/><img src="./uml_dc_comercio.png">
 - Tabela com dados de teste para a planilha e o programa:
-<table>
-	<tr><th>Produto</th><th>Quantidade</th><th>Preço</th><th>Subtotal()</th></tr>
-	<tr><td>Alicate</td><td>5</td><td>15,5</td><td></td></tr>
-	<tr><td>Martelo</td><td>3</td><td>25,5</td><td></td></tr>
-	<tr><td>Serrote</td><td>2</td><td>35,5</td><td></td></tr>
-	<tr><td>Turquesa</td><td>2</td><td>18,0</td><td></td></tr>
-	<tr><td>ChaveFenda</td><td>12</td><td>8,99</td><td></td></tr>
-	<tr><td>ChaveBoca</td><td>8</td><td>8,99</td><td></td></tr>
-	<tr><td>ChavePhilips</td><td>10</td><td>8,99</td><td></td></tr>
-	<tr><td>Furadeira</td><td>4</td><td>350,5</td><td></td></tr>
-	<tr><td>Lixadeira</td><td>2</td><td>255,9</td><td></td></tr>
-	<tr><td>SerraMarmore</td><td>3</td><td>435,5</td><td></td></tr>
-</table>
