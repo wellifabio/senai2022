@@ -18,7 +18,7 @@
 - <img src="./uml_dc_inss.png">
 # Tabela com dados de teste para a planilha e o programa:
 <table>
-	<tr><th>Produto</th><th>Quantidade</th><td>Preço</th><td>Subtotal()</th></tr>
+	<tr><th>Produto</th><th>Quantidade</th><th>Preço</th><th>Subtotal()</th></tr>
 	<tr><td>Alicate</td><td>5</td><td>15,5</td><td></td></tr>
 	<tr><td>Martelo</td><td>3</td><td>25,5</td><td></td></tr>
 	<tr><td>Serrote</td><td>2</td><td>35,5</td><td></td></tr>
