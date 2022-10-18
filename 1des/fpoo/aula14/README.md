@@ -35,7 +35,8 @@
 # Atividade 2 (Java x Excel)
 - Após receber sua ajuda tecnológica, o Sr. Osmar decidiu empreender e abrir o seu comércio
 <br/> foi até o Paraguai e comprou muitas mercadorias, porém agora precisa de uma planilha
-<br/> para conrolar seus investimentos e saber se terá lucro com os preços que estimou:
+<br/> para conrolar seus investimentos e saber se terá lucro com os preços e quantidades que estimou.
+<br/> Continue ajudando-o com um programa que:
 	- 1. Calcule o investimento que o sr. Osmar fez em cada compra (precoCompra * qtdComprada)
 	- 2. Calcule o faturamento que o sr. Osmar teve em cada venda (precoVenda * qtdVendida)
 	- 3. Calcule o lucro em dinheiro para cada operação que o Sr. osmar teve (faturamento - investimento).
