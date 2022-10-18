@@ -7,7 +7,7 @@
 			- Classe > Instância > Objeto
 # Atividade (Java x Excel)
 	- Crie a seguinte solução orientada a objeto
-	- O cliente precisa de uma planilha de ventas onde possa:
+	- O cliente precisa de uma planilha de vendas onde possa:
 		- 1. Calcular os subtotais (preço x quantidade)
 		- 2. Calcular o total das vendas
 		- 3. Obter a média de preços dos produtos
