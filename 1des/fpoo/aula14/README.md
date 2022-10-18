@@ -5,7 +5,7 @@
 	- Projeto
 		- Pacote
 			- Classe > Instância > Objeto
-# Atividade (Java x Excel)
+# Atividade 1 (Java x Excel)
 	- Crie a seguinte solução orientada a objeto
 	- O cliente precisa de uma planilha de vendas onde possa:
 		- 1. Calcular os subtotais (preço x quantidade)
@@ -14,9 +14,9 @@
 		- 4. Destacar o produto mais barado.
 		- 5. Destacar o produto mais caro.
 		- 6. Destacar o produto mais vendido.
-# Diagrama de Classes
-- <img src="./uml_dc_inss.png">
-# Tabela com dados de teste para a planilha e o programa:
+- Diagrama de Classes:
+<br/><img src="./uml_dc_inss.png">
+- Tabela com dados de teste para a planilha e o programa:
 <table>
 	<tr><th>Produto</th><th>Quantidade</th><th>Preço</th><th>Subtotal()</th></tr>
 	<tr><td>Alicate</td><td>5</td><td>15,5</td><td></td></tr>
