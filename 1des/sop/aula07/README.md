@@ -34,7 +34,7 @@
 # Atividade 2
 - Após receber sua ajuda tecnológica, o Sr. Osmar decidiu empreender e abrir o seu comércio
 <br/> foi até o Paraguai e comprou muitas mercadorias, porém agora precisa de uma planilha
-<br/> para conrolar seus investimentos e saber se terá lucro com os preços e quantidades que estimou.
+<br/> para controlar seus investimentos e saber se terá lucro com os preços e quantidades que estimou.
 <br/> Continue ajudando-o com uma planilha que:
 	- 1. Calcule o investimento que o sr. Osmar fez em cada compra (precoCompra * qtdComprada)
 	- 2. Calcule o faturamento que o sr. Osmar teve em cada venda (precoVenda * qtdVendida)
