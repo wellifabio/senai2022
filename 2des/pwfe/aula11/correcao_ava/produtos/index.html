@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li><a href="../produtos">Produtos</a></li>
+        </ul>
+        <ul>
+            <li id="username">User Name</li>
+            <li><img id="perfil" src="" alt="Perfil"></li>
+        </ul>
+    </header>
+    <main>
+        <button onClick="modalCad()">Cadastrar</button>
+        <div class="lista">
+            <div class="item-lista model">
+                <img src="../assets/roteador.png" alt="Patrimonio">
+                <p id="id">12345648789</p>
+                <p id="ni">10100</p>
+                <p id="aquisicao">10/10/1000</p>
+                <p id="nome">Roteador</p>
+                <p id="valor">R$ 150,00</p>
+                <span><img src="../assets/remove.png" alt="Remover"></span>
+            </div>
+        </div>
+    </main>
+    <div class="modal mc model">
+        <div class="modal-body">
+            <input type="text" class="ni" placeholder="NI" value="12345">
+            <input type="text" class="aquisicao" placeholder="Aquisição" value="2022-10-19">
+            <input type="text" class="denominacao" placeholder="Denominação" value="Computador">
+            <input type="text" class="valor" placeholder="Valor" value="1500">
+            <input type="text" class="img" placeholder="Imagem" value="televisao.png">
+            <div class="modal-footer">
+                <button class="cancelar">Cancelar</button>
+                <button onClick="cadastrar()" class="cadastrar">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal ms model">
+        <div class="modal-body">
+            <img src="../assets/download.png" alt="">
+            <p>Produto Cadastrado com Sucesso !</p>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

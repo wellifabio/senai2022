@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0182B0;    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul > li {
+    float: left;
+    margin: 0 15px;
+}
+
+
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #04558A;
+    font-weight: bold;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 32px;
+    color: white;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: 3px solid #F8C304;
+    border-radius: 7px;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F8C304;
+    cursor: pointer;
+}
+
+.lista {
+    margin-top: 50px;
+}
+
+.item-lista {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.item-lista > img{
+    width: 80px;
+    height: 80px;
+}
+
+.item-lista > span> img{
+    width: 32px;
+    height: 32px;
+}
+
+input {
+    width: 400px;
+    outline: none;
+    padding: 14px 16px;
+    border: none;
+    border-bottom: 1px solid #6C117B;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(52, 7, 99, .8);
+}
+
+modal button {
+    font-weight: bold;
+    font-size: 24px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 13px 24px;
+    border-radius: 5px;
+}
+
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 32px 28px;
+    gap: 28px;
+    border-radius: 10px;
+}
+
+.modal-footer {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body img {
+    width: 50px;
+    height: 50px;
+}
+
+.cancelar {
+    border: 3px solid #6C117B;
+    color: #6C117B;
+}
+
+.cadastrar {
+    border: 3px solid #6C117B;
+    background: #6C117B;
+    color: white;
+}
+
+.model {
+    display: none;
+}
