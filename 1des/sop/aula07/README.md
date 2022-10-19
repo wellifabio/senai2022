@@ -39,7 +39,7 @@
 	- 1. Calcule o investimento que o sr. Osmar fez em cada compra (precoCompra * qtdComprada)
 	- 2. Calcule o faturamento que o sr. Osmar teve em cada venda (precoVenda * qtdVendida)
 	- 3. Calcule o lucro em dinheiro para cada operação que o Sr. osmar teve (faturamento - investimento).
-	- 4. Calcule o lucro em dinheiro para cada operação que o Sr. osmar teve
+	- 4. Calcule o lucro em porcentagem para cada operação que o Sr. osmar teve
 	- 5. Calcule o Investimento total do sr Osmar.
 	- 6. Calcule o faturamento total do sr Osmar.
 	- 7. Calcule e aponte se até o momento o Sr. Osmar está no lucro ou prejuíso em dinheiro e em porcentagem.
