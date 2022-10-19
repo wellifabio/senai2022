@@ -1,10 +1,18 @@
 # FPOO x SOP (Orientação a Objetos)
-	- Vetores
-	- Listas
-	- Menus
-	- Projeto
-		- Pacote
-			- Classe > Instância > Objeto
+	- Vetores (vários elementos/variáveis/objetos)
+		- Estáticos (Sempre possuem o mesmo comprimento que foram definidos)
+		- Não é possível adicionar novos itens ou excluir
+		- Possui no mínimo 1 elemento
+	- Listas (Vetores dinâmicos)
+		- É um vetor dinâmico
+		- É possível adicionar, alterar ou excluir ítens da lista
+		- Possui as 4 funcionalidades <b>CRUD (Create, Read, Update, Delete)</b>
+		- Em Java utilizamos a classe ArrayList com seus quatro métodos
+			- .add() //Para adicionar um elemento à lista
+			- .get() //Para pegar/ler um elemento à lista
+			- .set() //Para alterar/configurar um elemento da lista
+			- .remove() //Para remover um elemento da lista
+		- Possui no mínimo 0 elementos
 # Atividade 1 (Java x Excel)
 - O Sr. Osmar Motta, planeja abrir uma loja de ferramentas.<br/> Para isso fez alguns orçamentos de preços dos produtos que deseja vender
 <br/>Também fez estimativas de quantidades de produtos que precisa para iniciar o negócio.
