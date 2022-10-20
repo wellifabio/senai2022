@@ -40,6 +40,6 @@
 <tr><td>melhorIdade02</td><td>tarde</td><td>sexta</td><td>2</td><td>2</td><td>119,9</td><td></td><td></td></tr>
 </table>
 - Diagrama de Classes:
-<img src="aluno.png">
+<img src="turma.png">
 - O programa deve perguntar quantas turmas deseja cadastrar
 - Ler os dados da planilha em uma lista (ArrayList) e mostrar os itens solicitados.
