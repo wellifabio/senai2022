@@ -1,16 +1,11 @@
-# Avaliação prática Backend
-
-- Banco de dados:
-	- ../aula09/docs/solicitacoes.sql
-
-- Objetivos
----------
-    - Cadastrar novos produtos;
-    - Listar os produtos cadastrados;
-    - Criar novos departamentos;
-    - Excluir departamentos existentes pelo id;
-    - Criar solicitações através da procedure;
-    - Exibir as solicitações utilizando a view criada;
-    - Buscar produtos através do nome do produto e informar o departamento relacionado;
-    - Buscar produtos solicitados a partir de uma mês;
-    - Exibir o total de solicitações feitas por funcionários;
+# 2. Padrão de desenvolvimento MVC
+- 2.1. Definição
+- 2.2. Aplicabilidade
+- 2.3. Design patterns
+# Design Patterns - GOF
+- Criação
+- Estrutura
+- Comportamento
+# Links importantes
+- (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
+- Slides: https://github.com/wellifabio/senai2021/blob/master/3des/projetos/aula22/design_patterns.pdf
