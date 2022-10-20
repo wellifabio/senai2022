@@ -16,3 +16,4 @@ insert into usuarios values
 ("anamello","Ana Maria Mello","2008-08-22","(19)98888-7661",to_base64(LOAD_FILE("D:/wellington/senai2022/2des/pwbe/aula11/atividade/assets/avatar03.png")));
 
 select login, nome, nascimento, telefone from usuarios;
+
