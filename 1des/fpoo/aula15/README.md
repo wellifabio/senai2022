@@ -32,10 +32,14 @@
 - O faturamento mensal de cada turma;
 - O faturamento por hora;
 - O faturamento total mensal;
+<table>
 <tr><th>nomeTurma</th><th>periodo</th><th>diaSemana</th><th>numAlunos</th><th>horasSemanais</th><th>mensalidade</th><th>faturamentoMensal</th><th>faturamentoHora</th></tr>
 <tr><td>criancas01</td><td>manha</td><td>segunda</td><td>1</td><td>2</td><td>149,9</td><td></td><td></td></tr>
 <tr><td>adultos01</td><td>noite</td><td>terça</td><td>4</td><td>1</td><td>99,9</td><td></td><td></td></tr>
 <tr><td>melhorIdade01</td><td>tarde</td><td>sabado</td><td>3</td><td>2</td><td>129,9</td><td></td><td></td></tr>
 <tr><td>melhorIdade02</td><td>tarde</td><td>sexta</td><td>2</td><td>2</td><td>119,9</td><td></td><td></td></tr>
+</table>
+- Diagrama de Classes:
+<img src="aluno.png">
 - O programa deve perguntar quantas turmas deseja cadastrar
 - Ler os dados da planilha em uma lista (ArrayList) e mostrar os itens solicitados.
