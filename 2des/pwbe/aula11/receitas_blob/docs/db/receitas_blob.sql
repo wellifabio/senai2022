@@ -11,7 +11,7 @@ create table receitas(
     foto mediumblob
 );
 
-load data infile 'D:/senai2022/2des/pwbe/aula09/receitas_blob/docs/db/receitas.csv'
+load data infile 'D:/wellington/senai2022/2des/pwbe/aula11/receitas_blob/docs/db/receitas.csv'
 into table receitas
 fields terminated by ';'
 enclosed by '"'
@@ -21,9 +21,9 @@ set foto=null;
 
 select * from receitas;
 
-update receitas set foto=to_base64(LOAD_FILE("D:/senai2022/2des/pwbe/aula09/receitas_arquivo/repositorio/ovo.png")) where id = 1;
-update receitas set foto=to_base64(LOAD_FILE("D:/senai2022/2des/pwbe/aula09/receitas_arquivo/repositorio/miojo.png")) where id = 2;
-update receitas set foto=to_base64(LOAD_FILE("D:/senai2022/2des/pwbe/aula09/receitas_arquivo/repositorio/ovo_frito.png")) where id = 3;
-update receitas set foto=to_base64(LOAD_FILE("D:/senai2022/2des/pwbe/aula09/receitas_arquivo/repositorio/alface.png")) where id = 4;
-update receitas set foto=to_base64(LOAD_FILE("D:/senai2022/2des/pwbe/aula09/receitas_arquivo/repositorio/brigadeiro.png")) where id = 5;
-update receitas set foto=to_base64(LOAD_FILE("D:/senai2022/2des/pwbe/aula09/receitas_arquivo/repositorio/doce_de_leite.png")) where id = 6;
+update receitas set foto=to_base64(LOAD_FILE("D:/wellington/senai2022/2des/pwbe/aula11/receitas_arquivo/repositorio/ovo.png")) where id = 1;
+update receitas set foto=to_base64(LOAD_FILE("D:/wellington/senai2022/2des/pwbe/aula11/receitas_arquivo/repositorio/miojo.png")) where id = 2;
+update receitas set foto=to_base64(LOAD_FILE("D:/wellington/senai2022/2des/pwbe/aula11/receitas_arquivo/repositorio/ovo_frito.png")) where id = 3;
+update receitas set foto=to_base64(LOAD_FILE("D:/wellington/senai2022/2des/pwbe/aula11/receitas_arquivo/repositorio/alface.png")) where id = 4;
+update receitas set foto=to_base64(LOAD_FILE("D:/wellington/senai2022/2des/pwbe/aula11/receitas_arquivo/repositorio/brigadeiro.png")) where id = 5;
+update receitas set foto=to_base64(LOAD_FILE("D:/wellington/senai2022/2des/pwbe/aula11/receitas_arquivo/repositorio/doce_de_leite.png")) where id = 6;

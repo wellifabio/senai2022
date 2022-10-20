@@ -2,10 +2,9 @@ const Receita = require('../models/Receita');
 const con = require('../dao/dbreceitas');
 const multer = require('multer');
 const upload = multer().single('foto')
-const fs = require('fs');
 
 const cadastrarReceita = async (req, res) => {
-    upload(req, res, function (err) {
+    upload(req, res, (err) => {
         if (err)
             res.status(500).json({ error: 1, payload: err }).end();
         else {
