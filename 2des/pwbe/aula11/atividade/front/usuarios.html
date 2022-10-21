@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,70 @@
     <link rel="stylesheet" href="./usuarios.css">
     <title>Usuarios CRUD</title>
 </head>
+
 <body onload="load()">
-    <header></header>
+    <header>
+        <h1>Usuários</h1><button onclick="cadastro.classList.remove('modal');">Novo</button>
+    </header>
     <main id="cards">
         <div class="card modal">
             <div class="dados">
-                <label id="login">Login:</label>
-                <label id="nome">Nome:</label>
-                <label id="nascimento">Nascimento:</label>
-                <label id="telefone">Telefone:</label>
+                <label id="login">Login: </label>
+                <label id="nome">Nome: </label>
+                <label id="nascimento">Nascimento: </label>
+                <label id="telefone">Telefone: </label>
+            </div>
+            <img id="avatar" src="../assets/default.png" alt="Avatar">
+            <div class="botoes">
                 <button id="update">-</button>
                 <button id="del">X</button>
             </div>
-            <img id="avatar" alt="Avatar">
         </div>
-        <form id="cadastro" class="form modal">
-            <input type="text" name="login" placeholder="Login" required />
-            <input type="text" name="nome" placeholder="Nome completo" required />
-            <input type="date" name="nascimento" required />
-            <input type="text" name="telefone" placeholder="Telefone" required />
-            <input type="file" name="avatar" id="file" onchange="toBase64()">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-            <input type="button" value="Cancelar">
+        <form id="cadastro" class="modal">
+            <div class="fundoModal">
+                <div class="form">
+                    <input type="text" name="login" placeholder="Login" required />
+                    <input type="text" name="nome" placeholder="Nome completo" required />
+                    <input type="date" name="nascimento" required />
+                    <input type="text" name="telefone" placeholder="Telefone" required />
+                    <input type="file" name="avatar" id="fileCreate" onchange="toBase64create()"
+                        accept="image/jpeg, image/png" />
+                    <div class="comandos">
+                        <img name="imagem" src="../assets/default.png" alt="Avatar" />
+                        <div class="btn">
+                            <input type="submit" value="Enviar" />
+                            <input type="reset" value="Limpar" />
+                            <input type="button" onclick="cadastro.classList.add('modal');" value="Cancelar" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
-        <form id="alteracao" class="form modal">
-            <input type="text" name="login" placeholder="Login" required />
-            <input type="text" name="nome" placeholder="Nome completo" required />
-            <input type="date" name="nascimento" required />
-            <input type="text" name="telefone" placeholder="Telefone" required />
-            <input type="file" name="avatar" id="file" onchange="toBase64()">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-            <input type="button" value="Cancelar">
+        <form id="alteracao" class="modal">
+            <div class="fundoModal">
+                <div class="form">
+                    <input type="text" name="login" placeholder="Login" required />
+                    <input type="text" name="nome" placeholder="Nome completo" required />
+                    <input type="date" name="nascimento" required />
+                    <input type="text" name="telefone" placeholder="Telefone" required />
+                    <input type="file" name="avatar" id="fileUpdate" onchange="toBase64update()"
+                        accept="image/jpeg, image/png" />
+                    <div class="comandos">
+                        <img name="imagem" src="../assets/default.png" alt="Avatar" />
+                        <div class="btn">
+                            <input type="submit" value="Enviar" />
+                            <input type="reset" value="Limpar" />
+                            <input type="button" onclick="alteracao.classList.add('modal');" value="Cancelar" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <h3>Aula Full Stack SENAI Jaguariúna</h3>
+    </footer>
 </body>
 <script src="./usuarios.js"></script>
+
 </html>

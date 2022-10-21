@@ -10,6 +10,10 @@ const readAll = () => {
     return "select * from usuarios";
 }
 
+const update = (dados) => {
+    return `update usuarios set nome = '${dados.nome}', nascimento = '${dados.nascimento}', telefone = '${dados.telefone}', avatar = '${dados.avatar}' where login ='${dados.login}'`;
+}
+
 const del = (login) => {
     return `delete from usuarios where login = '${login}'`
 }
@@ -25,6 +29,7 @@ module.exports = {
     create,
     readAll,
     read,
+    update,
     del,
     blobToAscii
 }
