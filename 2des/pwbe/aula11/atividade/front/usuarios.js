@@ -2,6 +2,7 @@ const uri = 'http://localhost:3000/usuarios';
 const card = document.querySelector('.card');
 const cards = document.querySelector("#cards");
 const cadastro = document.querySelector("#cadastro");
+const alteracao = document.querySelector("#alteracao");
 var avatarBase64 = null;
 var usuarios = [];
 
@@ -50,7 +51,9 @@ cadastro.addEventListener('submit', () => {
 });
 
 const preencheCards = () => {
+    let index = - 1;
     usuarios.forEach(e => {
+        index++;
         let usuario = card.cloneNode(true);
         usuario.classList.remove("model");
         usuario.querySelector("#login").innerHTML += e.login;
@@ -58,10 +61,18 @@ const preencheCards = () => {
         let data = new Date(e.nascimento);
         usuario.querySelector("#nascimento").innerHTML += data.toLocaleString('pt-BR', { timeZone: 'UTC' }).split(" ")[0];
         usuario.querySelector("#telefone").innerHTML += e.telefone;
-        usuario.querySelector("#avatar").src = e.avatar == 'null' ? 'default.png' : `data:image/png;base64,${e.avatar}`;
+        usuario.querySelector("#avatar").src = e.avatar == 'null' ? '../assets/default.png' : `data:image/png;base64,${e.avatar}`;
+        usuario.querySelector("#update").setAttribute('onclick', `alterar('${index}')`);
         usuario.querySelector("#del").setAttribute('onclick', `excluir('${e.login}')`);
         cards.appendChild(usuario);
     });
+}
+
+const alterar = (i) => {
+    alteracao.login.value = usuarios[i].login;
+    alteracao.nome.value = usuarios[i].nome;
+    alteracao.nascimento.value = usuarios[i].nascimento.split("T")[0];
+    alteracao.telefone.value = usuarios[i].telefone;
 }
 
 const excluir = (login) => {
