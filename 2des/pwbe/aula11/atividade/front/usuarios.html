@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./usuarios.css">
+    <title>Usuarios CRUD</title>
+</head>
+<body onload="load()">
+    <header></header>
+    <main id="cards">
+        <div class="card modal">
+            <div class="dados">
+                <label id="login">Login:</label>
+                <label id="nome">Nome:</label>
+                <label id="nascimento">Nascimento:</label>
+                <label id="telefone">Telefone:</label>
+                <button id="del">X</button>
+            </div>
+            <img id="avatar" alt="Avatar">
+        </div>
+        <form id="cadastro" class="form modal">
+            <input type="text" name="login" placeholder="Login" required />
+            <input type="text" name="nome" placeholder="Nome completo" required />
+            <input type="date" name="nascimento" required />
+            <input type="text" name="telefone" placeholder="Telefone" required />
+            <input type="file" name="avatar" id="file" onchange="toBase64()">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Cancelar">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+<script src="./usuarios.js"></script>
+</html>
