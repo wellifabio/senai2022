@@ -52,6 +52,7 @@ button{
     box-shadow: 0 0 5px rgba(255,255,255,0.5);
     cursor: pointer;
     font-weight: bold;
+    border-radius: 100px;
 }
 
 .card{
@@ -107,10 +108,13 @@ button{
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .form img{
     width: 15vw;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .form .comandos{
@@ -128,6 +132,7 @@ button{
     box-shadow: 0 0 5px rgba(255,255,255,0.5);
     cursor: pointer;
     font-weight: bold;
+    border-radius: 100px;
 }
 
 .form .btn{
@@ -135,4 +140,10 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#avatar{
+    width: 10vw;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
