@@ -16,6 +16,7 @@ const readAll = (req, res) => {
     let string = Usuario.readAll();
     con.query(string, (err, result) => {
         if (err == null) {
+            //res.json(result).end();
             res.json(Usuario.blobToAscii(result)).end();
         }
     });

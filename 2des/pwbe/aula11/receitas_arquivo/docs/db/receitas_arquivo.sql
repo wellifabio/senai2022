@@ -11,7 +11,7 @@ create table receitas(
     foto varchar(30)
 );
 
-load data infile 'D:/senai2022/2des/pwbe/aula09/receitas_arquivo/docs/db/receitas.csv'
+load data infile 'D:/wellington/senai2022/2des/pwbe/aula11/receitas_arquivo/docs/db/receitas.csv'
 into table receitas
 fields terminated by ';'
 enclosed by '"'

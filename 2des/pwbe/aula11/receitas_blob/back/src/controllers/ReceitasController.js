@@ -25,6 +25,7 @@ const listarReceitas = (req, res) => {
     let string = Receita.toReadAll();
     con.query(string, (err, result) => {
         if (err == null) {
+            //res.json(result).end();
             res.json(Receita.toAscii(result)).end();
         }
     });
