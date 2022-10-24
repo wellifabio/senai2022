@@ -18,3 +18,6 @@ $ heroku ps:scale web=1<br/>
 $ heroku open<br/>
 $ heroku logs --tail<br/>
 $ heroku ps<br/>
+<br/>
+- Acessar o Terminal SSH do Heroku App<br/>
+$ heroku ps:exec<br/>

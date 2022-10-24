@@ -12,3 +12,9 @@ $ heroku ps:scale web=1<br/>
 $ heroku open<br/>
 $ heroku logs --tail<br/>
 $ heroku ps<br/>
+<br/>
+Acessar o "Container" via SSH<br/>
+$ heroku ps:exec<br/>
+<br/>
+Saber o endereço IP externo<br/>
+$ curl ifconfig.me

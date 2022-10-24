@@ -4,7 +4,23 @@ const express = require('express');
 const cors = require('cors');
 const router = express.Router();
 
-var users = [];
+var users = [
+    {
+        "id": 1,
+        "name": "Roberto",
+        "password": "12345678"
+    },
+    {
+        "id": 2,
+        "name": "Marcela",
+        "password": "12345678"
+    },
+    {
+        "id": 3,
+        "name": "Jair",
+        "password": "12345678"
+    }
+];
 
 const getIndex = (id) => {
     let index = -1;
