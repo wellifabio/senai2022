@@ -8,7 +8,7 @@
 - Big Data no Cloud
 - Machine Learning
 # Obter os créditos google CLOUD SKILLS BOOST
-- 1. na guia anônima pesquisa CLOUD SKILLS BOOST;
+- 1. na guia anônima pesquisa CLOUD SKILLS BOOST https://www.cloudskillsboost.google/;
 - 2. aluno se conecta com o seu gmail;
 - 3. torna o perfil público e deixa na página com o link do perfil (sugiro copiar num bloco de notas para usar no passo 8);
 - 4. ainda com navegação anônima acessa o forms bit.ly/3zONCuK e preenche todos os campos atentamente, principalmente os campos *NOME* e *SOBRENOME* para que estejam iguais ao do perfil público;
