@@ -17,7 +17,8 @@ const load = () => {
         .catch(err => console.error(err));
 }
 
-cadastro.addEventListener('submit', () => {
+cadastro.addEventListener('submit', (e) => {
+	e.preventDefault();
     const usuario = {
         login: cadastro.login.value,
         nome: cadastro.nome.value,
@@ -69,7 +70,8 @@ const alterar = (i) => {
     alteracao.imagem.src = usuarios[i].avatar == 'null' ? '../assets/default.png' : `data:image/png;base64,${avatarBase64}`;
 }
 
-alteracao.addEventListener('submit', () => {
+alteracao.addEventListener('submit', (e) => {
+	e.preventDefault();
     const usuario = {
         login: alteracao.login.value,
         nome: alteracao.nome.value,
