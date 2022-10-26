@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate Papo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./socketio/socket.io.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sala01</h1>
+    </header>
+    <main>
+        <section id="recebe">
+        </section>
+    </main>
+    <footer>
+        <select name="nick" id="nick">
+            <option value="vermelho">Vermelho</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="azul">Azul</option>
+            <option value="preto">Preto</option>
+            <option value="branco">Branco</option>
+        </select>
+        <input type="text" id="envia">
+        <button onClick="enviar()">Enviar</button>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
