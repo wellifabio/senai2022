@@ -1,21 +1,87 @@
-*{
-    top:0;
+* {
+    top: 0;
     left: 0;
     margin: 0;
     padding: 0;
 }
 
-body{
+html {
+    overflow: hidden;
+}
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(255, 246, 224);
+    overflow: hidden;
 }
 
-#recebe{
-    width: 100vw;
-    height: 50vh;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+footer input {
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+footer input[type="button"] {
+    background-color: rgb(124, 91, 7);
+    color: #fff;
+    box-shadow: 0px 0px 5px #000;
+    font-size: 14px;
+}
+
+footer input[type="text"] {
+    border: solid 1px rgb(124, 91, 7);
+}
+footer label{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(124, 91, 7);
+    text-shadow: #666 0px 0px 2px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(124, 91, 7);
+    text-shadow: #666 0px 0px 2px;
+}
+
+#recebe {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
     border: solid 1px #ccc;
+    background-color: #eee;
     border-radius: 5px;
     margin: 10px;
     display: flex;
@@ -24,23 +90,34 @@ body{
     overflow: auto;
 }
 
-#recebe div{
+#recebe div {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
 }
-.vermelho{
-    border: solid 1px #fcc;
+
+.vermelho {
+    border: solid 1px rgb(233, 128, 128);
 }
-.amarelo{
-    border: solid 1px rgb(250, 244, 165);
+
+.verde {
+    border: solid 1px rgb(89, 235, 113);
 }
-.azul{
+
+.azul {
     border: solid 1px rgb(171, 216, 253);
 }
-.preto{
+
+.amarelo {
+    border: solid 1px rgb(250, 244, 165);
+}
+
+.preto {
     border: solid 1px rgb(73, 73, 73);
 }
-.branco{
-    border: solid 1px rgb(255, 255, 255);
+
+.balao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

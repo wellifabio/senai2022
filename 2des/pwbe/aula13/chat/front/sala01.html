@@ -10,7 +10,7 @@
     <script src="./socketio/socket.io.js"></script>
 </head>
 
-<body>
+<body onload="nickname()">
     <header>
         <h1>Sala01</h1>
     </header>
@@ -19,15 +19,9 @@
         </section>
     </main>
     <footer>
-        <select name="nick" id="nick">
-            <option value="vermelho">Vermelho</option>
-            <option value="amarelo">Amarelo</option>
-            <option value="azul">Azul</option>
-            <option value="preto">Preto</option>
-            <option value="branco">Branco</option>
-        </select>
-        <input type="text" id="envia">
-        <button onClick="enviar()">Enviar</button>
+        <label for="envia" id="nick"></label>
+        <input type="text" name="envia" id="envia">
+        <input type="button" onClick="enviar()" value="Enviar"/>
     </footer>
 </body>
 <script src="./script.js"></script>
