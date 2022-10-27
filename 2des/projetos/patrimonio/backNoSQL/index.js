@@ -5,7 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 //Conectar ao MongoDB (SGBD NoSQL)
-let url = 'mongodb+srv://appuser:h9GI8dx4nAPAn4fi@cluster0.miqh8q2.mongodb.net/?retryWrites=true&w=majoritygit add .';
+let url = 'mongodb+srv://';
 let mongoDB = process.env.MONGODB_URI || url;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
