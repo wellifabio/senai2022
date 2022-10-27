@@ -11,8 +11,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // FIM QUIZ
 
 //CORRECAO PIZZARIA
-import Cardapio from './src/pizzaria/screens/cardapio';
-import Carrinho from './src/pizzaria/screens/carrinho';
+// import Cardapio from './src/pizzaria/screens/cardapio';
+// import Carrinho from './src/pizzaria/screens/carrinho';
+
+//CORRECAO COMPROMISSOS
+// import Home from './src/compromissos/screens/home'
+// import Descricao from './src/compromissos/screens/descricao'
+
+//CORRECAO CHAMADOS
+import Login from './src/chamados/screens/login';
+import Lista from './src/chamados/screens/lista';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,10 +38,25 @@ export default function App() {
         <Stack.Screen name="final" component={Final} />
       </Stack.Navigator> 
       */}
+      
+      {/* 
+      CORRECAO PIZZARIA 
       <Stack.Navigator>
         <Stack.Screen name="Cardapio" component={Cardapio} />
         <Stack.Screen name="Carrinho" component={Carrinho} />
-      </Stack.Navigator>
+      </Stack.Navigator> 
+      */}
+      {/* 
+      CORRECAO COMPROMISSOS
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Descricao" component={Descricao} />
+      </Stack.Navigator>  
+      */}
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Lista" component={Lista} />
+      </Stack.Navigator>  
     </NavigationContainer>
   );
 }
