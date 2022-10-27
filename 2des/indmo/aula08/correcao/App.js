@@ -53,6 +53,10 @@ export default function App() {
         <Stack.Screen name="Descricao" component={Descricao} />
       </Stack.Navigator>  
       */}
+      {/*
+      CORRECAO CHAMADOS 
+      
+      */}
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Lista" component={Lista} />
