@@ -1,0 +1,2 @@
+placeholderTextColor={"#00000077"}
+secureTextEntry={true}
