@@ -1,0 +1,10 @@
+const data = [
+        {
+            "email":"fulano@gmail.com",
+            "senha":"umdoistresquatro",
+        },
+        {
+            "email":"beltrano@ig.com.br",
+            "senha":"s3nh4",
+        }
+    ];
