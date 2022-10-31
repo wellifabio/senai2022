@@ -15,7 +15,11 @@
 - Equals && hachcode
 # Exemplo 1
 <img src="./encapsulamento/vendas_private_encapsulada.png">
-
+<img src="./Vendas/docs/estrutura.png">
+<br/>
+<img src="./Vendas/docs/venda.png">
+<img src="./Vendas/docs/main.png">
+<img src="./Vendas/docs/crud.png">
 # Atividade
 - Sr. Willian, dono do maior PetShop de Campinas precisa de um sistema para registrar as vacinas dos pets, ele precisa saber o nome do pet(animal), quem aplicou a vacina, qual vacina foi aplicada e quando.
 - Inicialmente desenvolva só as funcionalidades em tempo de execução, no futuro os dados deverão ser salvos em uma base de dados (planilha).
