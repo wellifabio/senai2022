@@ -1,4 +1,4 @@
-const socket = io("http://172.0.0.1:3000");
+const socket = io("http://127.0.0.1:3000");
 const envia = document.querySelector("#envia");
 const recebe = document.querySelector("#recebe");
 var nick = null;

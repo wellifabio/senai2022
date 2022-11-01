@@ -1,8 +1,8 @@
 # WEB Socket
-- Troca de mensagens entre front + back
+- Troca de mensagens entre front + back via WebSocket
 - Exemplo de um bate papo (chat)
 
-- Documentação WebSocket
+# Documentação WebSocket
 	- https://github.com/socketio/socket.io-client/releases/tag/4.5.3
 	- https://socket.io/docs/v4/server-installation/
 - Este exemplo utiliza "http" sem implementação de segurança

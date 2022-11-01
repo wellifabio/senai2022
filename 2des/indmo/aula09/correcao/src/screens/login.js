@@ -20,7 +20,7 @@ export default function Login({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Image style={styles.panda} source={dog} />
+            <Image style={styles.dog} source={dog} />
             <TextInput style={styles.input} onChangeText={(val) => {setEmail(val)}} placeholder="Informe o email" placeholderTextColor={"#00000077"} />
             <TextInput style={styles.input} onChangeText={(val) => {setSenha(val)}} secureTextEntry={true} placeholder="Informe sua senha" placeholderTextColor={"#00000077"} />
             <TouchableOpacity style={styles.button} onPress={() => {
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         gap: '20px',
         backgroundColor: '#505050'
     },
-    panda: {
+    dog: {
         width: '200px',
         height: '200px',
         shadowColor: "#000",
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     },
     button: {
         width: '75%',
-        backgroundColor: '#8a66fa',
+        backgroundColor: '#8A66FA',
         paddingHorizontal: '12px',
         paddingVertical: '12px',
         alignItems: 'center',
