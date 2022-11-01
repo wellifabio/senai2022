@@ -6,6 +6,7 @@
 - Criação
 - Estrutura
 - Comportamento
+- Exemplos com Java: https://github.com/wellifabio/senai2022/tree/master/3des/projetos/aula09/exemplo-java
 <img src="Patterns.png">
 # Links importantes
 - (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
