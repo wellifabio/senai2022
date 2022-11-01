@@ -6,6 +6,7 @@
 - Criação
 - Estrutura
 - Comportamento
+<img src="Patterns.png">
 # Links importantes
 - (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
 - Slides: https://github.com/wellifabio/senai2021/blob/master/3des/projetos/aula22/design_patterns.pdf
