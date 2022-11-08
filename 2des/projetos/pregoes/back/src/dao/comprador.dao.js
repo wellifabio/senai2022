@@ -2,9 +2,9 @@ const con = require('./connection');
 const Comprador = require('../models/Comprador');
 const Documento = require('../models/Documento');
 const Telefone = require('../models/Telefone');
+const compradores = [];
 
 const composer = (lista) => {
-    let compradores = [];
     let lastId = 0;
     lista.forEach(e => {
         if (lastId != e.usuario_id) {
@@ -17,17 +17,16 @@ const composer = (lista) => {
     return compradores;
 }
 
-const readAll = () => {
-    let string = 'SELECT * FROM vw_compradores';
-    con.query(string, (err, result) => {
-        if (err == null) {
-            return composer(result);
-        } else {
-            return { erro: err };
-        }
+const readAll = async () => {
+    return new Promise((resolve, reject) => {
+        let string = 'SELECT * FROM vw_compradores';
+        con.query(string, (err, result) => {
+            err ? reject(err) : resolve(composer(result));
+        })
     })
 }
 
 module.exports = {
+    compradores,
     readAll
 }
