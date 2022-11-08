@@ -6,10 +6,6 @@ class Fornecedor extends Usuario{
         super(id, email, senha, doc, nome, tel);
         this.tipo = 1;
     }
-
-    readAll(){
-        return 'SELECT * FROM vw_fornecedores';
-    }
 }
 
 module.exports = Fornecedor;
