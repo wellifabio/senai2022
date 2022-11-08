@@ -1,10 +1,10 @@
-const con = require('./pregao.dao');
+const con = require('../dao/connection');
 const Fornecedor = require('../models/Fornecedor');
 const Documento = require('../models/Documento');
 const Telefone = require('../models/Telefone');
-const fornecedores = [];
 
 const composer = (lista) => {
+    let fornecedores = [];
     let lastId = 0;
     lista.forEach(e => {
         if (lastId != e.usuario_id) {
@@ -27,6 +27,5 @@ const listar = (req, res) => {
 }
 
 module.exports = {
-    fornecedores,
     listar
 }
