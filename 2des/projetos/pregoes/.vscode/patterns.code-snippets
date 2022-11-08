@@ -1,0 +1,24 @@
+{
+	"Print to console": {
+		"scope": "javascript",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"Promise to DAO": {
+		"scope": "javascript",
+		"prefix": "prom",
+		"body": [
+			"return new Promise((resolve, reject) => {",
+			"\tlet string = `$1;`",
+			"\tcon.query(string, (err, result) => {",
+			"\t\terr ? reject(err) : resolve(result);",
+			"\t})",
+			"});"
+		],
+		"description": "Bloco Promise para requisições no BD"
+	}
+}

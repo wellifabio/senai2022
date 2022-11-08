@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 
 //Importar as Rotas
+const usuario = require('./src/views/usuario.routes');
 const comprador = require('./src/views/comprador.routes');
 const fornecedor = require('./src/views/fornecedor.routes');
 
@@ -11,6 +12,7 @@ const fornecedor = require('./src/views/fornecedor.routes');
 const app = express()
     .use(express.json())
     .use(cors())
+    .use('/usuarios', usuario)
     .use('/compradores', comprador)
     .use('/fornecedores', fornecedor);
 

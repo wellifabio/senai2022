@@ -19,7 +19,7 @@ create table telefones(
     usuario integer not null,
     tipo varchar(15) not null,
     numero varchar(20) not null,
-    foreign key (usuario) references usuarios(usuario_id)
+    foreign key (usuario) references usuarios(usuario_id) on delete cascade on update cascade
 );
 
 create table pregoes(
@@ -589,14 +589,14 @@ insert into ofertas (objeto, fornecedor, data, valor) values
 create view vw_compradores as
 select u.usuario_id, u.email, u.senha, u.tipo_documento, u.numero_documento,
 u.nome, t.tipo as telefone, t.numero
-from usuarios u inner join telefones t on u.usuario_id = t.usuario 
+from usuarios u left join telefones t on u.usuario_id = t.usuario 
 where u.tipo = 0
 order by u.usuario_id;
 
 create view vw_fornecedores as
 select u.usuario_id, u.email, u.senha, u.tipo_documento, u.numero_documento,
 u.nome, t.tipo as telefone, t.numero
-from usuarios u inner join telefones t on u.usuario_id = t.usuario
+from usuarios u left join telefones t on u.usuario_id = t.usuario
 where u.tipo = 1
 order by u.usuario_id;
 

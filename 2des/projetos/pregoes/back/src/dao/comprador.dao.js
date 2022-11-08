@@ -1,41 +1,45 @@
 const con = require('./connection');
-const Comprador = require('../models/Comprador');
-const Documento = require('../models/Documento');
-const Telefone = require('../models/Telefone');
+const Usuario = require('./usuario.dao');
 
-const composer = (lista) => {
-    let compradores = [];
-    let lastId = 0;
-    lista.forEach(e => {
-        if (lastId != e.usuario_id) {
-            lastId = e.usuario_id;
-            compradores.push(new Comprador(e.usuario_id, e.email, e.senha, new Documento(e.tipo_documento, e.numero_documento), e.nome, new Telefone(e.telefone, e.numero)));
-        } else {
-            compradores[compradores.length - 1].addTelefone(new Telefone(e.telefone, e.numero));
-        }
-    })
-    return compradores;
+const create = (data) => {
+    return new Promise((resolve, reject) => {
+        let string = `INSERT INTO usuarios (email, senha, tipo_documento, numero_documento, nome, tipo) VALUES` +
+            `('${data.email}','${data.senha}','${data.documento.tipo}','${data.documento.numero}','${data.nome}',0);`
+        con.query(string, (err, result) => {
+            if (err)
+                reject(err)
+            else {
+                if (data.telefones != undefined)
+                    data.telefones.forEach(e => {
+                        Promise.resolve(Usuario.createTel(result.insertId, e))
+                            .then(result.changedRows++);
+                    });
+                resolve(result);
+            }
+        })
+    });
 }
 
-const readAll = async () => {
+const readAll = () => {
     return new Promise((resolve, reject) => {
         let string = 'SELECT * FROM vw_compradores';
         con.query(string, (err, result) => {
-            err ? reject(err) : resolve(composer(result));
+            err ? reject(err) : resolve(Usuario.compradores(result));
         })
     })
 }
 
-const read = async (id) => {
+const read = (id) => {
     return new Promise((resolve, reject) => {
         let string = `SELECT * FROM vw_compradores WHERE usuario_id = ${id}`;
         con.query(string, (err, result) => {
-            err ? reject(err) : resolve(composer(result));
+            err ? reject(err) : resolve(Usuario.compradores(result));
         })
     })
 }
 
 module.exports = {
+    create,
     readAll,
     read
 }

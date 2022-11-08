@@ -20,7 +20,6 @@ class Usuario {
     addTelefone(tel) {
         this.telefones.push(tel);
     }
-
 }
 
 module.exports =  Usuario;
