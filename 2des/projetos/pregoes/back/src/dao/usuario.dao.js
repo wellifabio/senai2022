@@ -52,27 +52,27 @@ const del = (id) => {
     });
 }
 
-const createTel = (id, data) => {
+const createTel = (data) => {
     return new Promise((resolve, reject) => {
-        let string = `INSERT INTO telefones (usuario, tipo, numero) VALUES (${id},'${data.tipo}','${data.numero}');`;
+        let string = `INSERT INTO telefones (usuario, tipo, numero) VALUES (${data.id},'${data.tipo}','${data.numero}');`;
         con.query(string, (err, result) => {
             err ? reject(err) : resolve(result);
         })
     });
 }
 
-const updateTel = (id, data) => {
+const updateTel = (data) => {
     return new Promise((resolve, reject) => {
-        let string = `UPDATE telefones SET tipo = '${data.tipo}', numero = '${data.numero}') WHERE usuario = ${id};`;
+        let string = `UPDATE telefones SET tipo = '${data.tipo}', numero = '${data.numero}' WHERE usuario = ${data.id} AND tipo = '${data.tipo}';`;
         con.query(string, (err, result) => {
             err ? reject(err) : resolve(result);
         })
     });
 }
 
-const delTel = (id) => {
+const delTel = (id, numero) => {
     return new Promise((resolve, reject) => {
-        let string = `DELETE FROM telefones WHERE usuario = ${id};`
+        let string = `DELETE FROM telefones WHERE usuario = ${id} AND numero = '${numero}';`
         con.query(string, (err, result) => {
             err ? reject(err) : resolve(result);
         })

@@ -1,6 +1,7 @@
 class Oferta{
-    constructor(id, fornecedor, data, valor){
+    constructor(id, objeto, fornecedor, data, valor){
         this.id = id;
+        this.objeto = objeto;
         this.fornecedor = fornecedor;
         this.data = data;
         this.valor = valor;
