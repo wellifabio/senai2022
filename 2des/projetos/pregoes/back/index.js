@@ -8,6 +8,7 @@ const usuario = require('./src/views/usuario.routes');
 const comprador = require('./src/views/comprador.routes');
 const fornecedor = require('./src/views/fornecedor.routes');
 const oferta = require('./src/views/oferta.routes');
+const objeto = require('./src/views/objeto.routes');
 
 //Iniciar a API
 const app = express()
@@ -16,7 +17,8 @@ const app = express()
     .use('/usuarios', usuario)
     .use('/compradores', comprador)
     .use('/fornecedores', fornecedor)
-    .use('/ofertas', oferta);
+    .use('/ofertas', oferta)
+    .use('/objetos', objeto);
 
 app.listen(PORT, () => {
     console.log('API em execução na porta ' + PORT);

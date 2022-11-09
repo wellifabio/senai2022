@@ -2,10 +2,13 @@ class Objeto {
 
     ofertas = [];
     
-    constructor(id, nome, descricao) {
+    constructor(id, pregao, nome, descricao, quantidade, orcamento) {
         this.id = id;
+        this.pregao = pregao;
         this.nome = nome;
         this.descricao = descricao;
+        this.quantidade = quantidade;
+        this.orcamento = orcamento;
     }
 
     addOferta(oferta){
