@@ -32,6 +32,15 @@ const fornecedores = (lista) => {
     return fornecedores;
 }
 
+const login = (u) => {
+    return new Promise((resolve, reject) => {
+        let string = `SELECT * FROM usuarios WHERE email = '${u.email}' AND senha = '${u.senha}';`
+        con.query(string, (err, result) => {
+            err ? reject(err) : resolve(result);
+        })
+    });
+}
+
 const update = (data) => {
     return new Promise((resolve, reject) => {
         let string = `UPDATE usuarios SET email = '${data.email}', senha = '${data.senha}', tipo_documento = '${data.documento.tipo}',` +
@@ -82,6 +91,7 @@ const delTel = (id, numero) => {
 module.exports = {
     compradores,
     fornecedores,
+    login,
     update,
     del,
     createTel,
