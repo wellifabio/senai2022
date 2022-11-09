@@ -1,6 +1,6 @@
 # Avaliação prática Backend
 - Banco de dados
-	- ./aula09/docs/solicitacoes.sql
+	- https://github.com/wellifabio/senai2022/tree/master/2des/bcd/aula09/solicitacoes
 
 - Objetivos
 ---------
