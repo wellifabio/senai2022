@@ -29,9 +29,9 @@ const update = (req, res) => {
     Promise.resolve(Pregao.update(req.body))
         .then(result => {
             if (result.affectedRows != 0)
-                return res.json(result).end()
+                res.json(result).end()
             else
-                return res.status(404).json(result).end()
+                res.status(404).json(result).end()
         })
         .catch(err => res.status(500).json(err).end());
 }
@@ -40,9 +40,9 @@ const del = (req, res) => {
     Promise.resolve(Pregao.del(req.params.id))
         .then(result => {
             if (result.affectedRows != 0)
-                return res.json(result).end()
+                res.json(result).end()
             else
-                return res.status(404).json(result).end()
+                res.status(404).json(result).end()
         })
         .catch(err => res.status(500).json(err).end());
 }

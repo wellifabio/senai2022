@@ -24,15 +24,19 @@ const readPregao = (pregao) => {
     return new Promise((resolve, reject) => {
         let string = `SELECT * FROM Objetos WHERE pregao = ${pregao};`
         con.query(string, (err, result) => {
-            if (err) reject(err)
+            if (err) reject(err);
             else if (result.length > 0) {
-                for (i = 0; i < result.length; i++) {
-                    Promise.resolve(Oferta.readObjeto(result[i].objeto_id))
-                        .then(res => {
-                            result[i].ofertas = res;
-                        }).catch(erro => reject(erro));
-                        resolve(result);
-                }
+                let promises = [];
+                result.forEach(e => {
+                    promises.push(Promise.resolve(Oferta.readObjeto(e.objeto_id)))
+                });
+                Promise.all(promises)
+                    .then(resul => {
+                        for (i = 0; i < result.length; i++)
+                            result[i].ofertas = resul[i];
+                        return result;
+                    })
+                    .then(result => resolve(result));
             } else {
                 resolve(result);
             }
