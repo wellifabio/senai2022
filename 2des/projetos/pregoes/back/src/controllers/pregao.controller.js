@@ -14,6 +14,12 @@ const readAll = (req, res) => {
         .catch(err => res.status(500).json(err).end());
 }
 
+const readAtivos = (req, res) => {
+    Promise.resolve(Pregao.readAtivos())
+        .then(result => res.json(result).end())
+        .catch(err => res.status(500).json(err).end());
+}
+
 const read = (req, res) => {
     Promise.resolve(Pregao.read(req.params.id))
         .then(result => {
@@ -50,6 +56,7 @@ const del = (req, res) => {
 module.exports = {
     create,
     readAll,
+    readAtivos,
     read,
     update,
     del

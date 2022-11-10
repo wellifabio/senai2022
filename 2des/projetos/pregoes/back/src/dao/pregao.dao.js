@@ -20,6 +20,30 @@ const readAll = () => {
     });
 }
 
+const readAtivos = () => {
+    return new Promise((resolve, reject) => {
+        let string = `SELECT * FROM Pregoes WHERE data_encerramento > curdate() ORDER BY data_encerramento DESC;`
+        con.query(string, (err, result) => {
+            if (err) reject(err);
+            else if (result.length > 0) {
+                let promises = [];
+                result.forEach(e => {
+                    promises.push(Promise.resolve(Objeto.readPregao(e.pregao_id)))
+                });
+                Promise.all(promises)
+                    .then(resul => {
+                        for (i = 0; i < result.length; i++)
+                            result[i].objetos = resul[i];
+                        return result;
+                    })
+                    .then(result => resolve(result));
+            } else {
+                resolve(result);
+            }
+        })
+    });
+}
+
 //Pattern Composite (Objeto compõe a estrutura do objeto Pregão)
 const read = (id) => {
     return new Promise((resolve, reject) => {
@@ -61,6 +85,7 @@ const del = (id) => {
 module.exports = {
     create,
     readAll,
+    readAtivos,
     read,
     update,
     del

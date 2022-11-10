@@ -8,18 +8,18 @@ const geraJWT = (usuario) => {
     let token = null;
     if (tipo == 0) {
         token = jwt.sign({ id }, process.env.SECRET_COMP || "comp", {
-            expiresIn: 300 // milisegundos -> expira e 5min
+            expiresIn: 600 // milisegundos -> expira e 10min
         });
     } else {
         token = jwt.sign({ id }, process.env.SECRET_FORN || "forn", {
-            expiresIn: 300 // milisegundos -> expira e 5min
+            expiresIn: 600 
         });
     }
     return { id: id, tipo: tipo, token: token }
 }
 
 function compradorJWT(req, res, next) {
-    const token = req.headers['token'];
+    const token = req.headers['token-comp'];
     if (!token) return res.status(401).json({ auth: false, message: 'Token não fornecido.' });
 
     jwt.verify(token, process.env.SECRET_COMP || "comp", function (err, decoded) {
@@ -30,7 +30,7 @@ function compradorJWT(req, res, next) {
 }
 
 function fornecedorJWT(req, res, next) {
-    const token = req.headers['token'];
+    const token = req.headers['token-forn'];
     if (!token) return res.status(401).json({ auth: false, message: 'Token não fornecido.' });
 
     jwt.verify(token, process.env.SECRET_FORN || "forn", function (err, decoded) {
