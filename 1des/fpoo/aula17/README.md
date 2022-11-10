@@ -3,7 +3,7 @@
 - FileWriter (Salva os dados no HD em um arquivo de texto)
 - BufferedReader (Carrega os dados na memória RAM)
 - FileReader (Lê os dados do arquivo no HD)
-- <img src="lousa.png">
+- <img src="lousa.jpg">
 
 # Exercícios
 - 1. Faça um programa que receba como entrada o nome e o salário de um funcionário, calcule valor de depósito FGTS e salve em um arquivo "fgts.csv"
