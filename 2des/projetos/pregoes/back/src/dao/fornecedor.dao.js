@@ -12,7 +12,8 @@ const create = (data) => {
             else {
                 if (data.telefones != undefined)
                     data.telefones.forEach(e => {
-                        Promise.resolve(Usuario.createTel(result.insertId, e))
+                        e.id = result.insertId;
+                        Promise.resolve(Usuario.createTel(e))
                             .then(result.changedRows++);
                     });
                 resolve(result);
