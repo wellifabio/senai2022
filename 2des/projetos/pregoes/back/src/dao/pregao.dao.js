@@ -20,6 +20,7 @@ const readAll = () => {
     });
 }
 
+//Pattern Composite (Objeto compõe a estrutura do objeto Pregão)
 const read = (id) => {
     return new Promise((resolve, reject) => {
         let string = `SELECT * FROM Pregoes WHERE pregao_id = ${id};`

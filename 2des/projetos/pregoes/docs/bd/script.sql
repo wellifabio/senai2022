@@ -53,7 +53,7 @@ create table ofertas(
 show tables;
 
 insert into usuarios (email, senha, tipo_documento, numero_documento, nome, tipo) values
-('ama@souza.com',md5('1234'),'cpf','590.610.841-64','Ana Pereira de Souza',0),
+('ana@souza.com',md5('1234'),'cpf','590.610.841-64','Ana Pereira de Souza',0),
 ('maria@barros.com',md5('1234'),'cpf','481.145.560-64','Maria Mello de Barros',0),
 ('marcos@rego.com',md5('1234'),'cpf','339.455.110-11','Marcos Mello Rego',0),
 ('sansung@sansung.com',md5('1234'),'cnpj','79.267.167/0001-90','Sansung',1),

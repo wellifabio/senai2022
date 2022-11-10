@@ -1,6 +1,7 @@
 const con = require('./connection');
 const Usuario = require('./usuario.dao');
 
+//Pattern Composite (Telefone compõe a estrutura do Objeto)
 const create = (data) => {
     return new Promise((resolve, reject) => {
         let string = `INSERT INTO usuarios (email, senha, tipo_documento, numero_documento, nome, tipo) VALUES` +

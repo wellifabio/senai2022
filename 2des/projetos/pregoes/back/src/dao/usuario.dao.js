@@ -4,6 +4,7 @@ const Telefone = require('../models/Telefone');
 const Comprador = require('../models/Comprador');
 const Fornecedor = require('../models/Fornecedor');
 
+//Pattern Composite (Documento e Telefone compõe a estrutura do Objeto)
 const compradores = (lista) => {
     let compradores = [];
     let lastId = 0;
@@ -18,6 +19,7 @@ const compradores = (lista) => {
     return compradores;
 }
 
+//Pattern Composite (Documento e Telefone compõe a estrutura do Objeto)
 const fornecedores = (lista) => {
     let fornecedores = [];
     let lastId = 0;

@@ -1,3 +1,4 @@
+//Pattern Builder (Classe utilizando Consrutor)
 class Usuario {
 
     id = 0;

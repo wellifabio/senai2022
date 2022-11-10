@@ -46,6 +46,7 @@ const readObjeto = (objetoId) => {
     });
 }
 
+//Pattern Composite (Forncecedor compõe a estrutura do objeto Oferta)
 const read = (id) => {
     return new Promise((resolve, reject) => {
         let string = `SELECT * FROM ofertas WHERE oferta_id = ${id};`

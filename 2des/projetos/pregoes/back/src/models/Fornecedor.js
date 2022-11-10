@@ -1,5 +1,6 @@
 const Usuario = require("./Usuario");
 
+//Pattern Builder (Classe utilizando Consrutor)
 class Fornecedor extends Usuario{
     
     constructor(id, email, senha, doc, nome, tel){

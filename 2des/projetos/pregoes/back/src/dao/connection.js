@@ -1,10 +1,14 @@
 const mysql = require("mysql");
 
-//Singleton (Ponto único de conexão com BD)
-const con = mysql.createConnection({
-    host: 'localhost',
-    database: 'pregao',
-    user: 'root'
-});
+//Pattern Singleton (Ponto único de conexão com BD)
+class Connect {
+    static con = mysql.createConnection({
+        host: 'localhost',
+        database: 'pregao',
+        user: 'root'
+    });
+}
+
+const con = Connect.con;
 
 module.exports = con;
