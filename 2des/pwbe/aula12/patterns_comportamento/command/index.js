@@ -1,3 +1,4 @@
+//Pattern de Comportamento "Command": Exemplo de um controle remoto que da comandos (Faz checagem/validação antes de dar o comando)
 class CaixaDeSom {
 
     status = false;
@@ -89,5 +90,3 @@ switch (menu) {
     case 4: console.log(ctrTV.desligar()); break;
     default: console.log("Tchaw");
 }
-
-
