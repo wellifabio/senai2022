@@ -63,8 +63,16 @@
 	- OLIVIERO, Carlos A. J. Faça um site: PHP 5.2 com MySQL 5.0: Comércio Eletrônico. São Paulo: Érica, 2010.
 	- SANCHES, Fabrício; ALTHMANN, Fábio. Desenvolvimento web com ASP.NET MVC. São Paulo: Editora Casa do Código, 2013.
 
-Referências complementares
+- Referências complementares
 	- SALVADOR, Fábio B. Programando em PHP: Integração com MySQL. São Paulo: Editora Viena, 2012.
 	- ALVES, William Pereira. Java para WEB: Desenvolvimento de Aplicações. São Paulo: Érica, 2015.
 	- NIEDERAUER, Juliano. Desenvolvendo Websites com PHP. São Paulo: Novatec, 2011.
 	- ALVES, Wesley Machado. Microsoft ASP: Recursos, Técnicas de Programação e Acesso a Dados. São Paulo: Érica, 2000.
+
+# Competências transversais
+- Acessar o site do senai: https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898
+- Escolher um dos três cursos a seguir:
+	- Desvendando a Indústria 4.0
+	- Desvendando a BlockChain
+	- Economia circular
+- Fazer a inscrição e fazer o curso pelo portal EAD https://ead.sp.senai.br
