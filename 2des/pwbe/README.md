@@ -76,3 +76,5 @@
 	- Desvendando a BlockChain
 	- Economia circular
 - Fazer a inscrição e fazer o curso pelo portal EAD https://ead.sp.senai.br
+- Tutorial de como acessar o Portal EAD https://ead.sp.senai.br/tutorial/comoacessar/
+- Ao concluir o curso enviar o certificado para wellington.martins2@senaisp.edu.br
