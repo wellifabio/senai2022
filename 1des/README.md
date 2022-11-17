@@ -16,3 +16,8 @@ Arquivos para o primeiro semestre de Desenvolvimento de Sistemas 2022
 	- https://www.youtube.com/watch?v=oUPaJxk6TZ0
 - Como eu aprendi Inglês? E entendendo "padrões"!
 	- https://www.youtube.com/watch?v=OkboNGQ9LU0
+
+.Competências Transversais
+--------------
+- Link de Acesso : https://ead.sp.senai.br/
+- Form para envio dos certificados : https://forms.gle/Mn7QUSBPvPYwiwqt8
