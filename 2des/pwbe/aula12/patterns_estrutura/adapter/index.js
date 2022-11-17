@@ -1,4 +1,6 @@
-class Vendas {
+//Adapter - Pattern de Estrutura (Adaptador)
+//Neste exemplo o banco de dados padrão é MySQL e precisamos de um adaptador para Mongo DB
+class Venda {
 
     constructor(bd) {
         if (bd != undefined) this.bd = bd;
@@ -9,7 +11,7 @@ class Vendas {
     }
 
     listarMongo() {
-        return "list(vendas)";
+        return "vendas.find()";
     }
 
     listar() {
@@ -17,8 +19,26 @@ class Vendas {
     }
 }
 
-var v = new Vendas();
-console.log(v.listar());
+class Cliente{
+    
+    venda =  new Venda();
+    
+    show(){
+        console.log(this.venda.listar());
+    }
+}
 
-v = new Vendas("mongo");
-console.log(v.listar());
+class ClienteAdapter{
+    
+    venda =  new Venda(true);
+    
+    show(){
+        console.log(this.venda.listar());
+    }
+}
+
+var teste = new Cliente();
+var teste2 = new ClienteAdapter();
+
+teste.show();
+teste2.show();

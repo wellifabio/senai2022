@@ -1,5 +1,5 @@
 //Pattern de Comportamento "Command": Exemplo de um controle remoto que da comandos (Faz checagem/validação antes de dar o comando)
-class CaixaDeSom {
+class Dispositivo {
 
     status = false;
 
@@ -19,30 +19,6 @@ class CaixaDeSom {
 
     setVolume(volume) {
         console.log("Caixa está configurada no volume " + volume);
-    }
-
-}
-
-class TV {
-
-    status = false;
-
-    ligar() {
-        this.status = true;
-        console.log("TV ligada");
-    }
-
-    desligar() {
-        this.status = false;
-        console.log("TV desligada");
-    }
-
-    setCanal(canalPadrao) {
-        console.log("TV está configurada no canal " + canalPadrao);
-    }
-
-    setVolume(volume) {
-        console.log("TV está configurada no volume " + volume);
     }
 
 }
@@ -67,14 +43,13 @@ class Controle {
     }
 }
 
-//Testando o pattern (Solução clássica)
-const caixa = new CaixaDeSom();
-const tv = new TV();
+//Testando o pattern Command
+const caixa = new Dispositivo();
+const tv = new Dispositivo();
 const ctrCaixa = new Controle(caixa);
 const ctrTV = new Controle(tv);
 
 console.log("Caixa de Som status: " + caixa.status + " Status TV:" + tv.status);
-
 console.log("1. Ligar Caixa de Som");
 console.log("2. Desligar Caixa de Som");
 console.log("3. Ligar TV");
@@ -88,5 +63,5 @@ switch (menu) {
     case 2: console.log(ctrCaixa.desligar()); break;
     case 3: console.log(ctrTV.ligar()); break;
     case 4: console.log(ctrTV.desligar()); break;
-    default: console.log("Tchaw");
+    default: console.log();
 }

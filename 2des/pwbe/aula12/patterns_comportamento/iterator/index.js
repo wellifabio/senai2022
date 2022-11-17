@@ -28,15 +28,14 @@ const iterator = {
     "cidade" : "km",
     "caminhada" : "m",
     "mesa" : "cm",
-    "caneta" : "mm"
-}
-
-function getIterator(item){
-    return iterator[item] == undefined ? "m" : iterator[item];
+    "caneta" : "mm",
+    getIterator(item){
+        return iterator[item] == undefined ? "m" : iterator[item];
+    }
 }
 
 let item = prompt("Digite o item que deseja saber a medida: ");
 console.log(`O item buscado é "${item}"`);
 console.log(getItemIf(item));
 console.log(getItemCase(item));
-console.log(getIterator(item));
+console.log(iterator.getIterator(item));
