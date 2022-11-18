@@ -40,6 +40,6 @@
 - 4. Faça um programa que leia o arquivo "eleicao.csv" e faça a apuração dos votos na tela do console.
 	- A. Mostre quantos votos cada candidato conquistou incluindo Brancos e Nulos.
 	- B. Mostre a porcentagem de votos de cada candidato sem contar Brancos e Nulos.
-	- C. Mostre a frass: "O candidato XXXX foi eleito em segundo turno com XX% dos votos"
+	- C. Mostre a frase: "O candidato XXXX foi eleito em segundo turno com XX% dos votos"
 	- D. Salve todos os dados apresentados na tela em um arquivo "apuracao.txt"
 - OBS: Os arquivos estão na pasta "Exercicios2/bd"
