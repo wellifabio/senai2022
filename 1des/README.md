@@ -25,5 +25,5 @@ Arquivos para o primeiro semestre de Desenvolvimento de Sistemas 2022
 	- Desvendando a BlockChain
 	- Economia circular
 	- Outro se estiver matriculado
-- Acessar o site do senai: https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898
 - Ao concluir o curso enviar o certificado no Form: https://forms.gle/Mn7QUSBPvPYwiwqt8
+- Caso deseje fazer mais cursos gratuitors acessar o site do senai: https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898
