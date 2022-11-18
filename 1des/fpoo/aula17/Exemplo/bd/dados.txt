@@ -1,0 +1,8 @@
+Produto-Preço
+Arroz-29.9
+Feijão-8.98
+Batata-4.99
+Macarrão-5.65
+Pão-29.9
+Cogumelo-18.9
+Brócolis-10.5
