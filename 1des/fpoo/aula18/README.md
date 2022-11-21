@@ -1,4 +1,4 @@
-# Exercícios de Recuperação (Lógica de Programação - Linguágem C)
+# Exercícios de Recuperação (Lógica de Programação - Linguagem C)
 - 1. Faça um programa que receba como entrada o nome e a idade de 5 pessoas e retorne a fase da vida.
 - 2. Faça um programa que receba como entrada o nome, a idade e o peso de 5 pessoas e retorne se estas podem ou não doar sangue, conforme os critérios a seguir: Idade entre 18 e 69 anos e pesar mais do que 50kg.
 - 3. Faça um programa que receba como entrada o nome, a idade, sexo e quantos dias desde a ultima doação de uma pessoa e retorne se esta pode ou não doar sangue, conforme os critérios a seguir: Idade entre 18 e 69 anos se homem intervalo de 60 dias, se mulher 90 dias.
