@@ -7,11 +7,12 @@
 - https://forms.gle/xRuQ9H7MefUBb1Em6
 
 # Competências transversais (Novembro2022)
-- Acessar o site do senai: https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898
-- Escolher um dos três cursos a seguir:
+- Acessar o portal EAD https://ead.sp.senai.br
+- Tutorial de como acessar o Portal EAD a primeira vez https://ead.sp.senai.br/tutorial/comoacessar/
+- Verificar se está matriculado em algum dos cursos a seguir:
 	- Desvendando a Indústria 4.0
 	- Desvendando a BlockChain
 	- Economia circular
-- Fazer a inscrição e fazer o curso pelo portal EAD https://ead.sp.senai.br
-- Tutorial de como acessar o Portal EAD https://ead.sp.senai.br/tutorial/comoacessar/
-- Ao concluir o curso enviar o certificado para wellington.martins2@senaisp.edu.br
+	- Outro se estiver matriculado
+- Ao concluir o curso enviar o certificado no Form: https://forms.gle/Mn7QUSBPvPYwiwqt8
+- Caso deseje fazer mais cursos gratuitors acessar o site do senai: https://jaguariuna.sp.senai.br/cursos/13/899/formacao-inicial-e-continuada?Parent=898
