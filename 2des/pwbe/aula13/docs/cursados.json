@@ -1,0 +1,15 @@
+{
+    "aluno":{
+        "id":1,
+        "nome":"Jair Messias Oliveira",
+        "nascimento":"25/08/2001"
+    },
+    "curso":{
+        "id":1,
+        "curso":"Desvendando Indústria 4.0",
+        "duracao":20
+    },
+    "data":"21/11/2022"
+}
+
+r
