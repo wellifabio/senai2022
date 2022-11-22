@@ -9,8 +9,8 @@ public class Veiculo {
 	public Veiculo() {
 	}
 
-	public Veiculo(String veiculo) {
-		String[] colunas = veiculo.split(",");
+	public Veiculo(String linha) {
+		String[] colunas = linha.split(",");
 		this.modelo = colunas[0];
 		this.ano = Integer.parseInt(colunas[1]);
 		this.valor = Double.parseDouble(colunas[2]);

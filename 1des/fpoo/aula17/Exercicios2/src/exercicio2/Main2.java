@@ -14,10 +14,10 @@ public class Main2 {
 	public static void main(String[] args) {
 		try {
 			br = new BufferedReader(new FileReader("./bd/dados2.csv"));
-			String linha = br.readLine();
+			String linha = br.readLine(); //Lê a primeira linha
 			System.out.println(new Veiculo().rotulos());
-			linha = br.readLine();
-			while (linha != null) {
+			linha = br.readLine(); //Lê a segunda linha
+			while (linha != null) {//Lê as outras linhas
 				v = new Veiculo(linha);
 				System.out.println(v);
 				i++;

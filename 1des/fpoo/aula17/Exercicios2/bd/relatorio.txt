@@ -1,0 +1,18 @@
+Veículo	Ano	Valor
+Corsa	1998	5000,00
+Fiesta	1996	2535,90
+Gol	2010	16000,50
+Palio	2012	15358,00
+Voyage	2015	35240,00
+Celta	2008	12590,00
+Ka	2013	11365,00
+Uno	2011	10000,00
+A media de valores dos veículos é 13511,18
+O veículo mais caro é:
+Voyage	2015	35240,00
+O veículo mais barato é:
+Fiesta	1996	2535,90
+O veículo mais novo é:
+Voyage	2015	35240,00
+O veículo mais velho é:
+Fiesta	1996	2535,90
