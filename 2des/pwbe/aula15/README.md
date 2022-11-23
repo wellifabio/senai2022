@@ -57,17 +57,17 @@
 # Níveis de desempenho
 <table>
 <tr><th>NÍVEIS DE DESEMPENHO</th><th>NÍVEIS</th><th>NOTA</th></tr>
-<tr><td>Atingiu todos os critérios críticos e desejáveis<td></td>1<td></td>100</td></tr>
-<tr><td>Atingiu todos os critérios críticos e 9 desejáveis<td></td>3<td></td>95</td></tr>
-<tr><td>Atingiu todos os critérios críticos e 8 desejáveis<td></td>2<td></td>90</td></tr>
-<tr><td>Atingiu todos os critérios críticos e 7 desejáveis<td></td>3<td></td>85</td></tr>
-<tr><td>Atingiu todos os critérios críticos e 6 desejáveis<td></td>3<td></td>80</td></tr>
-<tr><td>Atingiu todos os critérios críticos e 5 desejáveis<td></td>3<td></td>75</td></tr>
-<tr><td>Atingiu todos os critérios críticos e 4 desejáveis<td></td>3<td></td>70</td></tr>
-<tr><td>Atingiu todos os critérios críticos e 3 desejáveis<td></td>4<td></td>65</td></tr>
-<tr><td>Atingiu todos os critérios críticos <td></td>5<td></td>50</td></tr>
-<tr><td>Atingiu 6 critérios críticos<td></td>6<td></td>40</td></tr>
-<tr><td>Atingiu 5 critérios críticos<td></td>7<td></td>30</td></tr>
-<tr><td>Atingiu 3 critérios críticos<td></td>8<td></td>20</td></tr>
-<tr><td>Atingiu 1critério crítico<td></td>9<td></td>10</td></tr>
+<tr><td>Atingiu todos os critérios críticos e desejáveis</td><td>1</td><td>100</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 9 desejáveis</td><td>3</td><td>95</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 8 desejáveis</td><td>2</td><td>90</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 7 desejáveis</td><td>3</td><td>85</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 6 desejáveis</td><td>3</td><td>80</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 5 desejáveis</td><td>3</td><td>75</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 4 desejáveis</td><td>3</td><td>70</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 3 desejáveis</td><td>4</td><td>65</td></tr>
+<tr><td>Atingiu todos os critérios críticos </td><td>5</td><td>50</td></tr>
+<tr><td>Atingiu 6 critérios críticos<td><td>6</td><td>40</td></tr>
+<tr><td>Atingiu 5 critérios críticos<td><td>7</td><td>30</td></tr>
+<tr><td>Atingiu 3 critérios críticos<td><td>8</td><td>20</td></tr>
+<tr><td>Atingiu 1critério crítico</td><td>9</td><td>10</td></tr>
 </table>
