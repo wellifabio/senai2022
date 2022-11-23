@@ -11,11 +11,13 @@
             "tramamentos": [
                 {
                     "id": 1,
+                    "consulta": 1,
                     "nome": "Carie",
                     "valor": 100
                 },
                 {
-                    "id": 1,
+                    "id": 2,
+                    "consulta": 1,
                     "nome": "Limpeza",
                     "valor": 50
                 }
@@ -28,12 +30,14 @@
             "horario": "14:45",
             "tramamentos": [
                 {
-                    "id": 2,
+                    "id": 3,
+                    "consulta": 2,
                     "nome": "Canal",
                     "valor": 500
                 },
                 {
-                    "id": 2,
+                    "id": 4,
+                    "consulta": 2,
                     "nome": "Limpeza",
                     "valor": 50
                 }
@@ -46,7 +50,8 @@
             "horario": "15:45",
             "tramamentos": [
                 {
-                    "id": 3,
+                    "id": 5,
+                    "consulta": 3,
                     "nome": "Prótese",
                     "valor": 1000
                 }
