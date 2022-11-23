@@ -1,0 +1,56 @@
+{
+    "id": 1,
+    "nome": "Ana flávia",
+    "especialidade": "Dentista",
+    "consultas":[
+        {
+            "id": 1,
+            "nome": "Carlos Roberto",
+            "data":"23/11/2022",
+            "horario": "13:45",
+            "tramamentos": [
+                {
+                    "id": 1,
+                    "nome": "Carie",
+                    "valor": 100
+                },
+                {
+                    "id": 1,
+                    "nome": "Limpeza",
+                    "valor": 50
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Juliana Solza",
+            "data":"23/11/2022",
+            "horario": "14:45",
+            "tramamentos": [
+                {
+                    "id": 2,
+                    "nome": "Canal",
+                    "valor": 500
+                },
+                {
+                    "id": 2,
+                    "nome": "Limpeza",
+                    "valor": 50
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Carla Oliveira",
+            "data":"23/11/2022",
+            "horario": "15:45",
+            "tramamentos": [
+                {
+                    "id": 3,
+                    "nome": "Prótese",
+                    "valor": 1000
+                }
+            ]
+        }
+    ]
+}

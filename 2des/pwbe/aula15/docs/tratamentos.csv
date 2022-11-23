@@ -1,0 +1,14 @@
+id, consulta, tratamento, valor
+1, 1, Carie, 100
+2, 1, Limpeza, 50
+3, 2, Canal, 500
+4, 2, Limpeza, 50
+5, 3, Prótese, 1000
+6, 4, Prótese, 1000
+7, 5, Correção Óssea, 1500
+8, 5, Limpesa, 
+9, 6, Extração, 300
+10, 6, Implante, 2000
+11,7, Limpeza, 50
+12, 8, Limpeza, 50
+13, 9, Limpeza, 50
