@@ -66,8 +66,8 @@
 <tr><td>Atingiu todos os critérios críticos e 4 desejáveis</td><td>3</td><td>70</td></tr>
 <tr><td>Atingiu todos os critérios críticos e 3 desejáveis</td><td>4</td><td>65</td></tr>
 <tr><td>Atingiu todos os critérios críticos </td><td>5</td><td>50</td></tr>
-<tr><td>Atingiu 6 critérios críticos<td><td>6</td><td>40</td></tr>
-<tr><td>Atingiu 5 critérios críticos<td><td>7</td><td>30</td></tr>
-<tr><td>Atingiu 3 critérios críticos<td><td>8</td><td>20</td></tr>
+<tr><td>Atingiu 6 critérios críticos<td>6</td><td>40</td></tr>
+<tr><td>Atingiu 5 critérios críticos<td>7</td><td>30</td></tr>
+<tr><td>Atingiu 3 critérios críticos<td>8</td><td>20</td></tr>
 <tr><td>Atingiu 1critério crítico</td><td>9</td><td>10</td></tr>
 </table>
