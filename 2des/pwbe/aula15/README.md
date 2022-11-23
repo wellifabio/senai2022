@@ -32,7 +32,7 @@
 - 6. <b>Utilizar interações com base de dados para desenvolvimento de sistemas web</b>
 	- Evidência: A API deve estar conectada ao BD (Crítico)
 - 7. Transferir arquivos entre cliente e servidor por meio da aplicação web
-	- Evidência: Para este desafio não é necessário, porém se desejar envar o avatar/foto do profissional (Desejável)
+	- Evidência: Para este desafio não é necessário, porém se desejar enviar o avatar/foto do profissional (Desejável)
 - 8. Estabelecer envio de notificações entre cliente e servidor por meio de aplicação web
 	- Evidência: Utilizar os códigos HTTP adequados ex: 200 OK, 201 criado e mensagens de erro (Desejável)
 - 9. <b>Desenvolver API (web services) para integração de dados entre plataformas</b>
@@ -54,3 +54,19 @@
 - 17. Seguir método de trabalho (15)
 	- Evidência: Seguir o padrão de projeto MVC e Código limpo, organização das pastas (Desejável)
 
+<table>
+<tr><th>NÍVEIS DE DESEMPENHO</th><th>NÍVEIS</th><th>NOTA</th></tr>
+<tr><td>Atingiu todos os critérios críticos e desejáveis<td></td>1<td></td>100</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 9 desejáveis<td></td>3<td></td>95</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 8 desejáveis<td></td>2<td></td>90</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 7 desejáveis<td></td>3<td></td>85</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 6 desejáveis<td></td>3<td></td>80</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 5 desejáveis<td></td>3<td></td>75</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 4 desejáveis<td></td>3<td></td>70</td></tr>
+<tr><td>Atingiu todos os critérios críticos e 3 desejáveis<td></td>4<td></td>65</td></tr>
+<tr><td>Atingiu todos os critérios críticos <td></td>5<td></td>50</td></tr>
+<tr><td>Atingiu 6 critérios críticos<td></td>6<td></td>40</td></tr>
+<tr><td>Atingiu 5 critérios críticos<td></td>7<td></td>30</td></tr>
+<tr><td>Atingiu 3 critérios críticos<td></td>8<td></td>20</td></tr>
+<tr><td>Atingiu 1critério crítico<td></td>9<td></td>10</td></tr>
+</table>
