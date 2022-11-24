@@ -9,3 +9,5 @@
 - 8. Faça um programa que receba o nome e o salário de 5 pessoas, informe o mais bem pago e o menos pago.
 - 9. Faça um programa que receba o nome e o salário de 5 pessoas, calcule o INSS, o IRRF e o FGTS some os totais e a média de cada um destes itens, mostre o funcionário mais bem pago e o menos pago.
 - 10. Faça esta planilha (do exercício anterior) no Excel para validar os resultados.
+# Verificação Prática Somativa de Lógica de Programação em linguagem C
+- https://forms.gle/JqruNyj5Zyb8TaZP9
