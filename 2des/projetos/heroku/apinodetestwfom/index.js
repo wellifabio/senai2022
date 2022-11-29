@@ -1,9 +1,10 @@
 require('dotenv').config();
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 2000
 const express = require('express');
 const cors = require('cors');
 const router = express.Router();
 
+//Pattern prototype
 var users = [
     {
         "id": 1,
@@ -22,6 +23,7 @@ var users = [
     }
 ];
 
+//Pattern facade
 const getIndex = (id) => {
     let index = -1;
     for (i = 0; i < users.length; i++)
