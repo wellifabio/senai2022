@@ -1,7 +1,23 @@
-# VPS02 PWBE (Patterns)
-- MVC
-- GoF
-- link https://forms.gle/Lsje3MG2sq2uCmQJA
+# VPF02 - Back-End - Design Patterns
+- 1. A partir dos três arquivos CSV na pasta "docs":
+    - A. Crie um Modelo Conceitual MER x DER do banco de dados e salve em uma pasta chamada "docs/der.png"
+    - B. Crie um script de Criação DDL e Inserção dos dados DML conforme arquivos CSV, salvem em "docs/script.sql"
+        - OBS: você pode inserir os dados via comandos DML (INSERT INTO) ou importar os dados (LOAD DATA INFILE)
+    - C. Crie uma view que junte os dados das três tabelas (p.id, p.nome, p.especialidade, c.id, c.paciente, c.data, c.horario, t.id, t.tratamento, t.valor)
+        - OBS: profissionais p, consultas c, tratamentos t
+- 2. Crie uma API com 7 End Points no padrão de projeto MVC, crie em uma pasta chamada "back"
+    - A. Read de Profissionais (1 EndPoint) "/profissionais/read/"
+    - B. Read de Consultas (1 EndPoint) "/consultas/read/"
+    - C. CRUD de Tratamentos (4 EndPoint) "/tratamentos/create/", "/tratamentos/read/", "/tratamentos/update/", "/tratamentos/delete/"
+    - D. Read Tratamentos por id do Profissional (1 EndPoint) "/tratamentos/profissional/:id" (Utilize o Gof Pattern Composite)
+        - OBS: o result deve vir no formato apresentado no arquivo "docs/composite.json"
+- 3. Exporte o arquivo de testes do Insomnia e salve na pasta "docs/insomnia.json"
+- 4. Deixe a estrutura de pastas de seu projeto organizada
+    - Uma única pasta com o nome do projeto "dentistas"
+    - Dentro desta pasta uma chamada "docs" contendo o script.sql, o der.png, os arquivos CSV e JSON
+    - Também dentro da pasta de seu projeto a API NodeJS em uma pasta chamada "back"
+- 5. Crie um repositório público no GitHub com o nome do seu projeto "dentistas", suba seu projeto e apresente ao professor.
+
 # Critérios de avaliação
 - 1. <b>Identificar as características de programação backend em ambiente web</b>
 	- Evidência: Criou ao menos um EndPoint Read (Crítico)
