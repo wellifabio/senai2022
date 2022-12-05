@@ -1,0 +1,14 @@
+# GUI (Graphics User Interface)
+- Tela de interação com usuário
+- Bibliotecas
+	- JOptionPane (Mensagens de Entrada e Saída)
+		- showMessageDialog("Saída")
+		- showImputDialog("Entrada")
+	- extends JFrame -> Quadro, tela de relacionento com o usuáruio (Formulário),
+	- JPanel -> Painel onde colocamos os objetos, semelhante ao CSS quanto a posicionamento em pixels
+	- JLabel -> Rótulos, textos expplicativos,
+	- JTextField -> Campos de entrada de dados
+	- JTextArea -> Area de texto grande (Saída/Entrada).
+	- Jbuton -> Botões de ação
+	- implements ActionListener - Ouvir os eventos / clicar no botão
+	- Método actionPerformed(evento) -> onde implementamos os códicos dos eventos
