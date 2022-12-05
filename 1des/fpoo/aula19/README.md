@@ -22,7 +22,7 @@
 	- <b>Interfaces</b> são classes que possuem apenas métodos (assinaturas de métodos a serem implementados)
 	- Neste caso nós implementamos o método actionPerformed() da interface ActionListener que escuta os clicks nos botões
 	
-	#Exemplo (GUI)
+# Exemplo (GUI)
 	- Com a utilização de telas, precisamos também de eventos
 	- Por isso nossa programação evolui para <b>Orientada a Eventos</b>
 	- Temos um exemplo com programação Estrutural orientada a evento e um exemplo com POO
