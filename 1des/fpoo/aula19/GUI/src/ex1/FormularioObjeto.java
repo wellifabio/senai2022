@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class Formulario extends JFrame implements ActionListener{
+public class FormularioObjeto extends JFrame implements ActionListener{
 
 	private static final long serialVersionUID = 1L;
 	JPanel painel;
@@ -18,9 +18,9 @@ public class Formulario extends JFrame implements ActionListener{
 	JTextField campoNome, campoIdade;
 	JButton botao, limpar;
 	JTextArea areaResultado;
-	String resultado = "";
 
-	Formulario() {
+	//Construtor que realmente desenha a tela
+	FormularioObjeto() {
 		setTitle("Entrada Processamento e Saída");
 		setBounds(50, 50, 755, 600);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -64,20 +64,22 @@ public class Formulario extends JFrame implements ActionListener{
 
 	}
 
-	public static void main(String[] args) {
-		System.out.println("Este programa está funcionando");
-		new Formulario().setVisible(true);
-	}
-
+	//Execução dos Eventos (Click nos botões)
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == botao) {
-			resultado += "Opa, você clicou no botão\n";
-			areaResultado.setText(resultado);
+			Pessoa p = new Pessoa(campoNome.getText(),campoIdade.getText());
+			areaResultado.setText(p.toString());
 		}
 		if(e.getSource() == limpar) {
-			resultado = "";
-			areaResultado.setText(resultado);
+			campoNome.setText("");
+			campoIdade.setText("");
+			areaResultado.setText("");
 		}
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Este programa está funcionando");
+		new FormularioObjeto().setVisible(true);
 	}
 }
