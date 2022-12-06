@@ -27,3 +27,15 @@
 - Com a utilização de telas, precisamos também de eventos
 - Por isso nossa programação evolui para <b>Orientada a Eventos</b>
 - Temos um exemplo com programação Estrutural orientada a evento e um exemplo com POO
+
+# Exercícios
+- 1. "Avaliação de Saúde" - Crie um programa orientado a objeto <img src="./docs/classe_paciente.png"> e interface gráfica.<br/>
+O um formulário deve ter os campos nome, peso e altura e ao clicar no botão "Calcular" deve mostrar o IMC do paciente e um diagnóstico:<br/>
+Abaixo do peso, Peso normal, Acima do Peso ou Obesidade.<br/>
+<img src="./docs/paciente1.png"><br/>
+Crie o formulário conforme a imagem
+- 2. "Doação de Sangue" - Crie um programa orientado a objeto <img src="./docs/classe_doador.png"> e interface gráfica.<br/>
+O um formulário deve ter os campos nome, idade e sexo e ao clicar no botão "Calcular" mostrar se o doador está apto ou não a doar<br/>
+Conforme os critérios: idade entre 18 e 69 anos e peso acima de 50kg<br/>
+<img src="./docs/doador1.png"><br/>
+Crie o formulário conforme a imagem 
