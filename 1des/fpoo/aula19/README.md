@@ -41,9 +41,11 @@ Conforme os critérios: idade entre 18 e 69 anos e peso acima de 50kg<br/>
 Crie o formulário conforme a imagem 
 - 3. "Acrescentar Funcionalidades" - No projeto "Avaliação de Saúde" Ao clicar no botão Calcular, além de mostrar o resultado na tela, também salve os dados em um arquivo "./bd/pacientes.csv"
 - 4. "Acrescentar Funcionalidades" - No projeto "Doação de Sangue" Ao clicar no botão Calcular, além de mostrar o resultado na tela, também salve os dados em um arquivo "./bd/doadores.csv"
-- 5. "Acrescentar Funcionalidades" - No projeto "Avaliação de Saúde" Melhore a interface gráfica, colocando os dados de resultado em uma tabela "JTable"
+- 5. "Acrescentar Funcionalidades" - No projeto "Avaliação de Saúde" Melhore a interface gráfica, colocando os dados de resultado em uma tabela "JTable"<br/>
+<img src="./docs/paciente2.png"><br/>
 - 6. "Acrescentar Funcionalidades" - No projeto "Doação de Sangue" Melhore a interface gráfica, altere o campo de texto do sexo para um Combo Box com as opções "M" e "F",
-coloque os dados de resultado em uma tabela "JTable"
+coloque os dados de resultado em uma tabela "JTable"<br/>
+<img src="./docs/doador2.png"><br/>
 - 7. "Acrescentar Funcionalidades" - No projeto "Avaliação de Saúde" Ao executar o programa os dados do arquivo "./bd/pacientes.csv" devem ser lidos do arquivo e mostrados na tela.
 - 8. "Acrescentar Funcionalidades" - No projeto "Doação de Sangue" Ao executar o programa os dados do arquivo "./bd/doadores.csv" devem ser lidos do arquivo e mostrados na tela.
 - 9. "Tela de Login" - Crie um programa orientado a objeto <img src="./docs/classe_usuario.png"> e interface gráfica.<br/>
