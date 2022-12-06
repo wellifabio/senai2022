@@ -3,17 +3,16 @@
   - TXT
   - DOC
   - PDF
+  - XLS (Excel)
 - Semi-estruturado
-  - CSV
   - XML
   - JSON
-  - XLS (Excel)
 - Estruturado
+  - CSV
   - Não SQL (Ex: MongoDB, FireBase ...)
-    - Relacional
     - Não Relacional
   - SQL (Ex: Mysql, Oracle, SQL Server, Postgres, FireBird ...)
-    - Relacional
+    - Relacionais
 
 # MER x DER
 - Conceitual
