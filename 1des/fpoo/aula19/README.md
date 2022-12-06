@@ -39,3 +39,19 @@ O um formulário deve ter os campos nome, idade e sexo e ao clicar no botão "Ca
 Conforme os critérios: idade entre 18 e 69 anos e peso acima de 50kg<br/>
 <img src="./docs/doador1.png"><br/>
 Crie o formulário conforme a imagem 
+- 3. "Acrescentar Funcionalidades" - No projeto "Avaliação de Saúde" Ao clicar no botão Calcular, além de mostrar o resultado na tela, também salve os dados em um arquivo "./bd/pacientes.csv"
+- 4. "Acrescentar Funcionalidades" - No projeto "Doação de Sangue" Ao clicar no botão Calcular, além de mostrar o resultado na tela, também salve os dados em um arquivo "./bd/doadores.csv"
+- 5. "Acrescentar Funcionalidades" - No projeto "Avaliação de Saúde" Melhore a interface gráfica, colocando os dados de resultado em uma tabela "JTable"
+- 6. "Acrescentar Funcionalidades" - No projeto "Doação de Sangue" Melhore a interface gráfica, altere o campo de texto do sexo para um Combo Box com as opções "M" e "F",
+coloque os dados de resultado em uma tabela "JTable"
+- 7. "Acrescentar Funcionalidades" - No projeto "Avaliação de Saúde" Ao executar o programa os dados do arquivo "./bd/pacientes.csv" devem ser lidos do arquivo e mostrados na tela.
+- 8. "Acrescentar Funcionalidades" - No projeto "Doação de Sangue" Ao executar o programa os dados do arquivo "./bd/doadores.csv" devem ser lidos do arquivo e mostrados na tela.
+- 9. "Tela de Login" - Crie um programa orientado a objeto <img src="./docs/classe_usuario.png"> e interface gráfica.<br/>
+O formulário deve ter os campos nome e senha  ao clicar no botão "Entrar" deve validar os dados e se estiverem corretos exibir a mensagem "Acesso Pemitido" caso contrário "Acesso Negado"<br/>
+<img src="./docs/login.png"><br/>
+OBS: O nome do usuário deve ser: admin e a senha 1234<br/>
+Utilize a clase JOptionPane para dar as mensagens.
+- 10. "Acrescentar Funcionalidades" No projeto "Tela de Login" faça as seguintes modificações:
+	- O programa deve permitir que os usuários que estão no arquivo "./usuarios.csv" façam login.
+- 11. "Acrescentar Funcionalidades" acrescente a tela de login nos projetos "Avaliação de Saúde" e "Doação de Sangue"
+	- Ao executar o programa a tela a ser executada deve ser a de login e caso os dados estejam corretos deve apresentar o formulário do programa.
