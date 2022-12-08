@@ -4,3 +4,4 @@
 - Aplicabilidade
 - Tipos
 - Topologia
+- <img src="lousa.jpeg">
