@@ -3,9 +3,6 @@
 - Curso que visa a formação de programador Full Stack para atuar como técnico na Indústria em Geral
 - Compartilhado com o Professor Reenye https://github.com/ReenyeLima
 
-# Mensagem para Andreina
-- https://forms.gle/xRuQ9H7MefUBb1Em6
-
 # Competências transversais (Novembro2022)
 - Acessar o portal EAD https://ead.sp.senai.br
 - Tutorial de como acessar o Portal EAD a primeira vez https://ead.sp.senai.br/tutorial/comoacessar/
