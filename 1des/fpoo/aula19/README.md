@@ -28,6 +28,9 @@
 - Por isso nossa programação evolui para <b>Orientada a Eventos</b>
 - Temos um exemplo com programação Estrutural orientada a evento e um exemplo com POO
 
+# Questionário POO
+- https://forms.gle/mRTWuvwQwAkxNadTA
+
 # Exercícios
 - 1. "Avaliação de Saúde" - Crie um programa orientado a objeto <img src="./docs/classe_paciente.png"> e interface gráfica.<br/>
 O um formulário deve ter os campos nome, peso e altura e ao clicar no botão "Calcular" deve mostrar o IMC do paciente e um diagnóstico:<br/>
