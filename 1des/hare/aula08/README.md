@@ -1,4 +1,5 @@
 # Redes de computadores
+- VPS01 - Será visto as três trilhas do curso Google Cloud Foundations
 - VOS02 - Verificação Objetiva Somativa de Redes
 - https://forms.gle/PPbNEEK3EQyxJxEJ7
 
