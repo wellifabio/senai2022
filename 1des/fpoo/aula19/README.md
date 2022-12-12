@@ -28,6 +28,11 @@
 - Por isso nossa programação evolui para <b>Orientada a Eventos</b>
 - Temos um exemplo com programação Estrutural orientada a evento e um exemplo com POO
 
+# Exemplo (DAO)
+- DAO (Data Access Object) Objeto de acesso a dados
+- Criamos este objeto para ler e salvar arquivos de texto tipo CSV
+- Acessar banco de dados
+
 # Questionário POO
 - https://forms.gle/mRTWuvwQwAkxNadTA
 
