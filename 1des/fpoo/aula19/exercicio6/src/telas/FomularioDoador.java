@@ -20,7 +20,7 @@ import modelos.Doador;
 
 public class FomularioDoador extends JFrame implements ActionListener {
 
-	private static final long serialVersionUID = 2L;
+	private static final long serialVersionUID = 3L;
 	JPanel painel;
 	JLabel lbNome, lbIdade, lbSexo, lbPeso, lbResult;
 	JTextField tfNome, tfIdade, tfPeso;
@@ -64,7 +64,7 @@ public class FomularioDoador extends JFrame implements ActionListener {
 		tfIdade.setBounds(110, 40, 500, 30);
 		painel.add(tfIdade);
 
-		cbSexo = new JComboBox<String>(new String[] {"M","F"}) ;
+		cbSexo = new JComboBox<String>(new String[] { "M", "F" });
 		cbSexo.setBounds(110, 70, 100, 30);
 		painel.add(cbSexo);
 
@@ -99,6 +99,12 @@ public class FomularioDoador extends JFrame implements ActionListener {
 
 	}
 
+	public void limparTabela() {
+		int tamanho = tableModel.getRowCount();
+		for (int i = 0; i < tamanho; i++)
+			tableModel.removeRow(0);
+	}
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btLimpar) {
@@ -106,10 +112,12 @@ public class FomularioDoador extends JFrame implements ActionListener {
 			tfIdade.setText("");
 			tfPeso.setText("");
 			saidaArquivo = "";
+			limparTabela();
 		}
 		if (e.getSource() == btAdicionar) {
 			if (tfNome.getText().length() > 0 && tfIdade.getText().length() > 0 && tfPeso.getText().length() > 0) {
-				Doador d = new Doador(tfNome.getText(), tfIdade.getText(), cbSexo.getSelectedItem().toString(), tfPeso.getText());
+				Doador d = new Doador(tfNome.getText(), tfIdade.getText(), cbSexo.getSelectedItem().toString(),
+						tfPeso.getText());
 				saidaArquivo += d.toCSV();
 				dd.salvar(saidaArquivo);
 				tableModel.addRow(d.toTable());
