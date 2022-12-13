@@ -12,4 +12,4 @@ app.use(routes);
 
 app.listen(PORT, () => {
     console.log("Respondendo na porta " + PORT);
-});
+}); 
