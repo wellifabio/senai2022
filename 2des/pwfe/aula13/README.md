@@ -1,6 +1,14 @@
 # Atividades Práticas de Recuperação
 
-- Desenvolver interface web comsumindo API com as 4 funcionalidades CRUD
+- A empresa XPTO precisa de uma interfaçe para abertura e atendimento de chamados
+- O Back-End e Banco de dados estão prontos
+- Desenvolva interface web comsumindo API com as 4 funcionalidades CRUD
+- Regras de negócio
+	- São três tipos de chamados "Incidentes", "Solicitações" e "Mudanças"
+	- Três tipos de Severidade "3 Normal", "2 Grave" e "1 Urgente", preferencialmente destacar os chamados urgentes
+	- São três equipes de destino dos chamados "Supoirte", "Almoxarifado" e "Financeiro"
+- Instale o banco de dados e back-end em seu computador e mãos a obra
+- Ao conluir publicar em um repositório git e colar o link neste formulário https://forms.gle/g8GY1Yi7bnwM6hJz8
 
 # Capacidades Técnicas
 
