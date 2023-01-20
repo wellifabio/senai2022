@@ -1,5 +1,0 @@
-id_cli;pri_nome;sobrenome;cep;numero;complemento;
-1;Ana;Sousa;13914456;15;;"insert into clidp02 values(1,'Ana','Sousa','13914456','15','');"
-2;Lúcia;Silva;13914452;43B;bl15 ap44;"insert into clidp02 values(2,'Lúcia','Silva','13914452','43B','bl15 ap44');"
-3;Mariana;Melo;13914426;23A;fundos;"insert into clidp02 values(3,'Mariana','Melo','13914426','23A','fundos');"
-4;Silvia;Oliveira;13914413;314;;"insert into clidp02 values(4,'Silvia','Oliveira','13914413','314','');"
