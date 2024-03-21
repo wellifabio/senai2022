@@ -1,2 +1,2 @@
 # Correção
-- Correção das ativodades da aula08
+- Correção das atividades da aula08
